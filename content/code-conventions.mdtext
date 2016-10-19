@@ -1,0 +1,35 @@
+Title: Apache OpenNLP Code Conventions
+
+The Apache OpenNLP code should follow our code conventions. All code which
+is contributed to the project should adhere to these guidelines. 
+
+* Use 2 spaces for indentation. No tabs!
+* Place open braces on the same line as the declaration, for example:
+        <pre><code>
+public class Foo extends Bar {
+  public static void main(String args[]) {
+    try {
+      for (int i = 0; i < args.length; i++) {
+        System.out.println(Integer.parseInt(args[i]));
+      }		        
+    }
+    catch(NumberFormatException e) {
+      e.printStackTrace();
+    }
+  }
+}
+        </code></pre>
+* Wrap lines longer than 80 to 100 characters. For wrapped lines use an indent of 8 characters.
+* Within a class or interface, definitions should be ordered as follows:
+    * Inner classses
+    * Class (static) variables
+    * Instance variables
+    * Constructors
+    * Methods
+
+* Do not use package imports (for example import org.apache.opennlp.*)
+* For other cases, we try to follow
+  [Java code conventions](http://www.oracle.com/technetwork/java/codeconv-138413.html) as much as possible.
+  
+# Formatter and Style files
+A code formatter file for Eclipse can be found [here](code-formatter/OpenNLP-Eclipse-Formatter.xml).

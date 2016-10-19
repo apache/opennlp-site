@@ -1,0 +1,9 @@
+opennlp.uima.chunker
+opennlp.uima.namefind
+opennlp.uima.normalizer
+opennlp.uima.tokenize
+opennlp.uima.parser
+opennlp.uima.util
+opennlp.uima.doccat
+opennlp.uima.postag
+opennlp.uima.sentdetect

@@ -1,0 +1,24 @@
+-classpath
+'/home/joern/Desktop/1.5.2-release/opennlp/opennlp-maxent/target/classes'
+-encoding
+'UTF-8'
+-public
+-quiet
+-sourcepath
+'/home/joern/Desktop/1.5.2-release/opennlp/opennlp-maxent/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2011 <a href="http://www.apache.org/">The Apache Software Foundation</a>. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'/home/joern/Desktop/1.5.2-release/opennlp/opennlp-maxent/target/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Apache OpenNLP Maxent 3.0.2-incubating API'
+-linkoffline
+'http://download.oracle.com/javase/1.5.0/docs/api' '/home/joern/Desktop/1.5.2-release/opennlp/opennlp-maxent/target/javadoc-bundle-options'
+-version
+-windowtitle
+'Apache OpenNLP Maxent 3.0.2-incubating API'

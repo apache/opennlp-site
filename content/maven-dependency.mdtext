@@ -1,0 +1,51 @@
+Title: Maven Dependency
+
+Apache OpenNLP is also distributed via the repo1.maven.org repository and
+the maven artifacts are located [here](http://repo1.maven.org/maven2/org/apache/opennlp/).
+
+The Apache OpenNLP project publishes the library, javadoc and source code jars.
+
+To use OpenNLP in your project specify exactly one of the following dependencies,
+all transient dependencies are resolved automatically.
+
+## OpenNLP Tools Dependency
+
+To use the OpenNLP Tools define the following dependency:
+
+
+    <dependency>
+      <groupId>org.apache.opennlp</groupId>
+      <artifactId>opennlp-tools</artifactId>
+      <version>1.6.0</version>
+    </dependency>
+
+
+## OpenNLP UIMA Annotators Dependency
+
+To use the OpenNLP UIMA Annotators define the following dependency:
+
+    <dependency>
+      <groupId>org.apache.opennlp</groupId>
+      <artifactId>opennlp-uima</artifactId>
+      <version>1.6.0</version>
+    </dependency>
+
+
+## OpenNLP Tools SNAPSHOT Dependency
+
+To use the current trunk version define the following dependency:
+
+    <dependency>
+      <groupId>org.apache.opennlp</groupId>
+      <artifactId>opennlp-tools</artifactId>
+      <version>1.6.1-SNAPSHOT</version>
+    </dependency>
+
+The SNAPSHOT dependency requires the following repository:
+
+    <repositories>
+      <repository>
+        <id>apache opennlp snapshot</id>
+        <url>https://repository.apache.org/content/repositories/snapshots/</url>
+      </repository>
+    </repositories>

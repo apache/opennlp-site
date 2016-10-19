@@ -1,0 +1,39 @@
+Title: Building from Source
+
+## Prerequisites
+
+ - If you have an IDE installed such as [NetBeans](http://www.netbeans.org/) or [Eclipse](http://www.eclipse.org/) installed, it will make your development easier.  However, follow on for the brave.
+ - At least [JDK 5](http://www.oracle.com/technetwork/java/javase/overview/index.html) is required to compile and run the object code.
+ - At least [Apache Maven 3.0](http://maven.apache.org/) is required to build the source files and assemble the project.
+
+## Build Procedure
+
+OpenNLP can either be build from the distributed sources or from
+a subversion checkout. These build instructions document how
+to build from the latest trunk version. The distributed source package
+includes a README file which explains how to build it.
+
+On the first checkout everything should be built.
+Go to the opennlp folder inside the trunk folder (e.g. opennlp-trunk) and type 
+<pre><code>cd opennlp-trunk/opennlp<br>mvn install</code></pre>
+to build all modules.
+The build installs the maven artifacts in the local repository
+and creates a binary and source distribution inside the 
+opennlp-distr/target folder.
+
+After the initial build the individual modules can be built on their own
+with: <pre><code>mvn install</code></pre>
+
+In the opennlp-docs project it is
+recommended to always build with <pre><code>mvn clean install</code></pre> because
+changed docbook xml files might not be re-processed otherwise.
+
+In some cases it might be convenient to skip the tests.
+That can be done with the "-Dmaven.test.skip=true" option.
+For example type: <pre><code>mvn clean install -Dmaven.test.skip=true</pre></code>
+
+No tests will be executed.
+
+It might happen from time to time that the build fails,
+if so please report a broken build on the opennlp-dev mailing
+list. The build should always work for everyone.
