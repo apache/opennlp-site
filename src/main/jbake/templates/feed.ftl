@@ -19,11 +19,11 @@
 -->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JBake</title>
+    <title>Apache OpenNLP</title>
     <link>${config.site_host}</link>
     <atom:link href="${config.site_host}/feed.xml" rel="self" type="application/rss+xml" />
-    <description>JBake - Java based open source static site/blog generator for developers</description>
-    <language>en-gb</language>
+    <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
+    <language>en-us</language>
     <pubDate>${published_date?string("EEE, d MMM yyyy HH:mm:ss Z")}</pubDate>
     <lastBuildDate>${published_date?string("EEE, d MMM yyyy HH:mm:ss Z")}</lastBuildDate>
 
