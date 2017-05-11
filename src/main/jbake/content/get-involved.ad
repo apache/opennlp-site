@@ -41,3 +41,25 @@ or https://www.apache.org/licenses/software-grant.txt[software grant] is on file
 
 Contributors who have a history of successful participation are invited to join
 the project as a committer from the https://incubator.apache.org/guides/ppmc.html[PPMC].
+
+## Contributions wanted
+
+* https://issues.apache.org/jira/browse/OPENNLP-941[OPENNLP-941]: Add eval support to detokenizer
+* https://issues.apache.org/jira/browse/OPENNLP-912[OPENNLP-912]: Add a rule based sentence detector
+* https://issues.apache.org/jira/browse/OPENNLP-892[OPENNLP-892]: Add a Entity-Relationship Extraction component
+* https://issues.apache.org/jira/browse/OPENNLP-788[OPENNLP-788]: Add a language detection component
+* https://issues.apache.org/jira/browse/OPENNLP-780[OPENNLP-780]: Add formats support for NKJP
+* https://issues.apache.org/jira/browse/OPENNLP-712[OPENNLP-712]: Creating a date time recognizer
+* https://issues.apache.org/jira/browse/OPENNLP-652[OPENNLP-652]: Add 20Newsgroups format support to the doccat component
+* https://issues.apache.org/jira/browse/OPENNLP-565[OPENNLP-565]: Add MASC format support
+* https://issues.apache.org/jira/browse/OPENNLP-547[OPENNLP-547]: Add a dependency parser component
+* https://issues.apache.org/jira/browse/OPENNLP-546[OPENNLP-546]: Add TokenizerPTB
+* https://issues.apache.org/jira/browse/OPENNLP-244[OPENNLP-244]: Write documentation for the BIONLP converter
+* https://issues.apache.org/jira/browse/OPENNLP-217[OPENNLP-217]: Add Detokenizer Dictionary section
+* https://issues.apache.org/jira/browse/OPENNLP-216[OPENNLP-216]: Add Detokenizer API section
+* https://issues.apache.org/jira/browse/OPENNLP-198[OPENNLP-198]: Develop a demonstration web app for our website 
+* https://issues.apache.org/jira/browse/OPENNLP-108[OPENNLP-108]: Write the OpenNLP White Paper
+* https://issues.apache.org/jira/browse/OPENNLP-49[OPENNLP-49]: Write documentation for the uima integration
+* https://issues.apache.org/jira/browse/OPENNLP-47[OPENNLP-47]: Rewrite the CONLL06 documentation based on the tutorial
+* https://issues.apache.org/jira/browse/OPENNLP-32[OPENNLP-32]: Write more documentation for the parser
+
