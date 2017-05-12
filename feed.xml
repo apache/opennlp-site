@@ -19,17 +19,17 @@
 -->
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JBake</title>
-    <link>http://jbake.org</link>
-    <atom:link href="http://jbake.org/feed.xml" rel="self" type="application/rss+xml" />
-    <description>JBake - Java based open source static site/blog generator for developers</description>
-    <language>en-gb</language>
-    <pubDate>Sun, 7 May 2017 00:08:48 +1200</pubDate>
-    <lastBuildDate>Sun, 7 May 2017 00:08:48 +1200</lastBuildDate>
+    <title>Apache OpenNLP</title>
+    <link>https://opennlp.apache.org</link>
+    <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
+    <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
+    <language>en-us</language>
+    <pubDate>Fri, 12 May 2017 23:08:09 +1200</pubDate>
+    <lastBuildDate>Fri, 12 May 2017 23:08:09 +1200</lastBuildDate>
 
     <item>
       <title>Apache OpenNLP 1.7.2 released</title>
-      <link>http://jbake.org/news/release-172.html</link>
+      <link>https://opennlp.apache.org/news/release-172.html</link>
       <pubDate>Sat, 4 Feb 2017 00:00:00 +1300</pubDate>
       <guid isPermaLink="false">news/release-172.html</guid>
       	<description>
@@ -103,7 +103,7 @@ notes.&lt;/pre&gt;
     </item>
     <item>
       <title>Apache OpenNLP 1.7.1 released</title>
-      <link>http://jbake.org/news/release-171.html</link>
+      <link>https://opennlp.apache.org/news/release-171.html</link>
       <pubDate>Mon, 23 Jan 2017 00:00:00 +1300</pubDate>
       <guid isPermaLink="false">news/release-171.html</guid>
       	<description>
@@ -179,7 +179,7 @@ For a complete list of fixed bugs and improvements please see the RELEASE_NOTES 
     </item>
     <item>
       <title>Apache OpenNLP 1.7.0 released</title>
-      <link>http://jbake.org/news/release-170.html</link>
+      <link>https://opennlp.apache.org/news/release-170.html</link>
       <pubDate>Sat, 31 Dec 2016 00:00:00 +1300</pubDate>
       <guid isPermaLink="false">news/release-170.html</guid>
       	<description>
@@ -256,7 +256,7 @@ notes.&lt;/p&gt;
     </item>
     <item>
       <title>Apache OpenNLP 1.6.0 released</title>
-      <link>http://jbake.org/news/release-160.html</link>
+      <link>https://opennlp.apache.org/news/release-160.html</link>
       <pubDate>Mon, 13 Jul 2015 00:00:00 +1200</pubDate>
       <guid isPermaLink="false">news/release-160.html</guid>
       	<description>
@@ -335,7 +335,7 @@ file included in the distribution.&lt;/p&gt;
     </item>
     <item>
       <title>Apache OpenNLP 1.5.3 released</title>
-      <link>http://jbake.org/news/release-153.html</link>
+      <link>https://opennlp.apache.org/news/release-153.html</link>
       <pubDate>Wed, 17 Apr 2013 00:00:00 +1200</pubDate>
       <guid isPermaLink="false">news/release-153.html</guid>
       	<description>
@@ -396,7 +396,7 @@ validators.&lt;/p&gt;
     </item>
     <item>
       <title>OpenNLP graduated from the incubator as a Top Level Project</title>
-      <link>http://jbake.org/news/news-2012-02-15.html</link>
+      <link>https://opennlp.apache.org/news/news-2012-02-15.html</link>
       <pubDate>Wed, 15 Feb 2012 00:00:00 +1300</pubDate>
       <guid isPermaLink="false">news/news-2012-02-15.html</guid>
       	<description>
@@ -412,7 +412,7 @@ validators.&lt;/p&gt;
     </item>
     <item>
       <title>New members and new features&amp;#8230;&amp;#8203;</title>
-      <link>http://jbake.org/news/news-2011-12-22.html</link>
+      <link>https://opennlp.apache.org/news/news-2011-12-22.html</link>
       <pubDate>Thu, 22 Dec 2011 00:00:00 +1300</pubDate>
       <guid isPermaLink="false">news/news-2011-12-22.html</guid>
       	<description>
@@ -433,7 +433,7 @@ validators.&lt;/p&gt;
     </item>
     <item>
       <title>First release of 1.5.1-incubating is ready!</title>
-      <link>http://jbake.org/news/news-2011-05-02.html</link>
+      <link>https://opennlp.apache.org/news/news-2011-05-02.html</link>
       <pubDate>Mon, 28 Nov 2011 00:00:00 +1300</pubDate>
       <guid isPermaLink="false">news/news-2011-05-02.html</guid>
       	<description>
@@ -457,7 +457,7 @@ validators.&lt;/p&gt;
     </item>
     <item>
       <title>Apache OpenNLP 1.5.2 Incubating released</title>
-      <link>http://jbake.org/news/release-152.html</link>
+      <link>https://opennlp.apache.org/news/release-152.html</link>
       <pubDate>Mon, 28 Nov 2011 00:00:00 +1300</pubDate>
       <guid isPermaLink="false">news/release-152.html</guid>
       	<description>
@@ -534,7 +534,7 @@ file included in the distribution.&lt;/p&gt;
     </item>
     <item>
       <title>Issue tracker moved to JIRA</title>
-      <link>http://jbake.org/news/news-2011-01-29.html</link>
+      <link>https://opennlp.apache.org/news/news-2011-01-29.html</link>
       <pubDate>Sat, 29 Jan 2011 00:00:00 +1300</pubDate>
       <guid isPermaLink="false">news/news-2011-01-29.html</guid>
       	<description>
@@ -552,7 +552,7 @@ file included in the distribution.&lt;/p&gt;
     </item>
     <item>
       <title>Working on Apache Incubator requirements</title>
-      <link>http://jbake.org/news/news-2010-12-24.html</link>
+      <link>https://opennlp.apache.org/news/news-2010-12-24.html</link>
       <pubDate>Fri, 24 Dec 2010 00:00:00 +1300</pubDate>
       <guid isPermaLink="false">news/news-2010-12-24.html</guid>
       	<description>
@@ -571,7 +571,7 @@ Incubator requirements.&lt;/p&gt;
     </item>
     <item>
       <title>OpenNLP is now into Apache Incubation!</title>
-      <link>http://jbake.org/news/news-2010-11-23.html</link>
+      <link>https://opennlp.apache.org/news/news-2010-11-23.html</link>
       <pubDate>Tue, 23 Nov 2010 00:00:00 +1300</pubDate>
       <guid isPermaLink="false">news/news-2010-11-23.html</guid>
       	<description>
@@ -582,7 +582,7 @@ Incubator requirements.&lt;/p&gt;
     </item>
     <item>
       <title>OpenNLP is candidated to Apache Incubation!</title>
-      <link>http://jbake.org/news/news-2010-11-18.html</link>
+      <link>https://opennlp.apache.org/news/news-2010-11-18.html</link>
       <pubDate>Thu, 18 Nov 2010 00:00:00 +1300</pubDate>
       <guid isPermaLink="false">news/news-2010-11-18.html</guid>
       	<description>
