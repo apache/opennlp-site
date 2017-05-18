@@ -172,6 +172,45 @@
                   <outputDirectory>${project.build.directory}/opennlp-site/docs/1.7.2/apidocs/opennlp-uima</outputDirectory>
                 </artifactItem>
                 <!-- End of 1.7.2 -->
+
+                <!-- Start of 1.8.0 -->
+                <artifactItem>
+                  <groupId>org.apache.opennlp</groupId>
+                  <artifactId>opennlp-tools</artifactId>
+                  <version>1.8.0</version>
+                  <type>jar</type>
+                  <classifier>javadoc</classifier>
+                  <overWrite>false</overWrite>
+                  <outputDirectory>${project.build.directory}/opennlp-site/docs/1.8.0/apidocs/opennlp-tools</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.opennlp</groupId>
+                  <artifactId>opennlp-brat-annotator</artifactId>
+                  <version>1.8.0</version>
+                  <type>jar</type>
+                  <classifier>javadoc</classifier>
+                  <overWrite>false</overWrite>
+                  <outputDirectory>${project.build.directory}/opennlp-site/docs/1.8.0/apidocs/opennlp-brat-annotator</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.opennlp</groupId>
+                  <artifactId>opennlp-morfologik-addon</artifactId>
+                  <version>1.8.0</version>
+                  <type>jar</type>
+                  <classifier>javadoc</classifier>
+                  <overWrite>false</overWrite>
+                  <outputDirectory>${project.build.directory}/opennlp-site/docs/1.8.0/apidocs/opennlp-morfologik-addon</outputDirectory>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.opennlp</groupId>
+                  <artifactId>opennlp-uima</artifactId>
+                  <version>1.8.0</version>
+                  <type>jar</type>
+                  <classifier>javadoc</classifier>
+                  <overWrite>false</overWrite>
+                  <outputDirectory>${project.build.directory}/opennlp-site/docs/1.8.0/apidocs/opennlp-uima</outputDirectory>
+                </artifactItem>
+                <!-- End of 1.8.0 -->
               </artifactItems>
             </configuration>
           </execution>
