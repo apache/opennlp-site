@@ -22,7 +22,6 @@
 :jbake-status: published
 :idprefix:
 
-
 Apache OpenNLP is also distributed via the Maven Central Repository and
 the maven artifacts are located http://repo1.maven.org/maven2/org/apache/opennlp/[here].
 
@@ -35,59 +34,75 @@ all transient dependencies are resolved automatically.
 
 To use the OpenNLP Tools define the following dependency:
 
-
-    <dependency>
-      <groupId>org.apache.opennlp</groupId>
-      <artifactId>opennlp-tools</artifactId>
-      <version>1.7.2</version>
-    </dependency>
-
+[source,xml,indent=0,subs=attributes+]
+----
+<dependency>
+  <groupId>org.apache.opennlp</groupId>
+  <artifactId>opennlp-tools</artifactId>
+  <version>{opennlp_version}</version>
+</dependency>
+----
 
 ## OpenNLP UIMA Annotators Dependency
 
 To use the OpenNLP UIMA Annotators define the following dependency:
 
-    <dependency>
-      <groupId>org.apache.opennlp</groupId>
-      <artifactId>opennlp-uima</artifactId>
-      <version>1.7.2</version>
-    </dependency>
+[source,xml,indent=0,subs=attributes+]
+----
+<dependency>
+  <groupId>org.apache.opennlp</groupId>
+  <artifactId>opennlp-uima</artifactId>
+  <version>{opennlp_version}</version>
+</dependency>
+----
 
 ## OpenNLP Morfologik AddOn Dependency
 
 To use the OpenNLP Morfologik-Addon define the following dependency:
 
-    <dependency>
-      <groupId>org.apache.opennlp</groupId>
-      <artifactId>opennlp-morfologik-addon</artifactId>
-      <version>1.7.2</version>
-    </dependency>
+[source,xml,indent=0,subs=attributes+]
+----
+<dependency>
+  <groupId>org.apache.opennlp</groupId>
+  <artifactId>opennlp-morfologik-addon</artifactId>
+  <version>{opennlp_version}</version>
+</dependency>
+----
 
 ## OpenNLP Brat Annotator Dependency
 
 To use the OpenNLP UIMA Annotators define the following dependency:
 
-    <dependency>
-      <groupId>org.apache.opennlp</groupId>
-      <artifactId>opennlp-brat-annotator</artifactId>
-      <version>1.7.2</version>
-    </dependency>
+[source,xml,indent=0,subs=attributes+]
+----
+<dependency>
+  <groupId>org.apache.opennlp</groupId>
+  <artifactId>opennlp-brat-annotator</artifactId>
+  <version>{opennlp_version}</version>
+</dependency>
+----
 
 ## OpenNLP Tools SNAPSHOT Dependency
 
 To use the current trunk version define the following dependency:
 
-    <dependency>
-      <groupId>org.apache.opennlp</groupId>
-      <artifactId>opennlp-tools</artifactId>
-      <version>1.7.3-SNAPSHOT</version>
-    </dependency>
+[source,xml,indent=0,subs=attributes+]
+----
+<dependency>
+  <groupId>org.apache.opennlp</groupId>
+  <artifactId>opennlp-tools</artifactId>
+  <version>{opennlp_next_version}</version>
+</dependency>
+----
 
 The SNAPSHOT dependency requires the following repository:
 
-    <repositories>
-      <repository>
-        <id>apache opennlp snapshot</id>
-        <url>https://repository.apache.org/content/repositories/snapshots/</url>
-      </repository>
-    </repositories>
+[source,xml,indent=0,subs=attributes+]
+----
+<repositories>
+  <repository>
+    <id>apache opennlp snapshot</id>
+    <url>https://repository.apache.org/content/repositories/snapshots/</url>
+  </repository>
+</repositories>
+----
