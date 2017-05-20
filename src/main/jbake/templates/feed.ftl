@@ -17,6 +17,9 @@
    specific language governing permissions and limitations
    under the License. 
 -->
+<#setting date_format="dd-MM-yyyy">
+<#setting locale="en_US">
+<#setting time_zone="GMT">
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Apache OpenNLP</title>
