@@ -71,7 +71,7 @@
         <executions>
           <execution>
             <id>default-generate</id>
-            <phase>generate-resources</phase>
+            <phase>compile</phase>
             <goals>
               <goal>generate</goal>
             </goals>
@@ -84,23 +84,6 @@
         <artifactId>maven-resources-plugin</artifactId>
         <version>3.0.2</version>
         <executions>
-          <execution>
-            <id>copy-docs</id>
-            <!-- here the phase you need -->
-            <phase>validate</phase>
-            <goals>
-              <goal>copy-resources</goal>
-            </goals>
-            <configuration>
-              <outputDirectory>${basedir}/target/opennlp-site/docs</outputDirectory>
-              <resources>
-                <resource>
-                  <directory>src/main/docs</directory>
-                  <filtering>false</filtering>
-                </resource>
-              </resources>
-            </configuration>
-          </execution>
           <execution>
             <id>copy-code-formatter</id>
             <!-- here the phase you need -->
@@ -122,95 +105,132 @@
       </plugin>
 
       <plugin>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <version>1.7</version>
+        <executions>
+          <execution>
+            <phase>process-resources</phase>
+            <configuration>
+              <target>
+                <ac:for param="folder" xmlns:ac="antlib:net.sf.antcontrib">
+                  <dirset dir="target/distr/">
+                    <include name="*"/>
+                  </dirset>
+                  <sequential>
+                    <echo>Copy @{folder} docs</echo>
+                    
+                    <copy todir="target/opennlp-site/docs">
+                        <fileset dir="@{folder}" casesensitive="yes">
+                            <include name="**/docs/**/*"/>
+                            <exclude name="**/opennlp-uima-descriptors/**"/>
+                        </fileset>
+                        <mapper type="regexp" from="^.*apache-opennlp-(.*?)/docs/(.*)" to="\1/\2" />
+                    </copy>
+
+                  </sequential>
+                </ac:for>
+ 
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+        <dependencies>
+          <dependency>
+            <groupId>ant-contrib</groupId>
+            <artifactId>ant-contrib</artifactId>
+            <version>1.0b3</version>
+            <exclusions>
+              <exclusion>
+                <groupId>ant</groupId>
+                <artifactId>ant</artifactId>
+              </exclusion>
+            </exclusions>
+          </dependency>
+          <dependency>
+            <groupId>org.apache.ant</groupId>
+            <artifactId>ant-nodeps</artifactId>
+            <version>1.8.1</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-dependency-plugin</artifactId>
         <version>3.0.0</version>
         <executions>
           <execution>
             <id>unpack</id>
-            <phase>package</phase>
+            <phase>generate-resources</phase>
             <goals>
               <goal>unpack</goal>
             </goals>
             <configuration>
               <artifactItems>
-                <!-- Start of 1.7.2 -->
+                
                 <artifactItem>
                   <groupId>org.apache.opennlp</groupId>
-                  <artifactId>opennlp-tools</artifactId>
-                  <version>1.7.2</version>
-                  <type>jar</type>
-                  <classifier>javadoc</classifier>
+                  <artifactId>opennlp-distr</artifactId>
+                  <version>1.5.3</version>
                   <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}/opennlp-site/docs/1.7.2/apidocs/opennlp-tools</outputDirectory>
+                  <type>zip</type>
+                  <classifier>bin</classifier>
+                  <outputDirectory>${project.build.directory}/distr/1.5.3</outputDirectory>
                 </artifactItem>
-                <artifactItem>
-                  <groupId>org.apache.opennlp</groupId>
-                  <artifactId>opennlp-brat-annotator</artifactId>
-                  <version>1.7.2</version>
-                  <type>jar</type>
-                  <classifier>javadoc</classifier>
-                  <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}/opennlp-site/docs/1.7.2/apidocs/opennlp-brat-annotator</outputDirectory>
-                </artifactItem>
-                <artifactItem>
-                  <groupId>org.apache.opennlp</groupId>
-                  <artifactId>opennlp-morfologik-addon</artifactId>
-                  <version>1.7.2</version>
-                  <type>jar</type>
-                  <classifier>javadoc</classifier>
-                  <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}/opennlp-site/docs/1.7.2/apidocs/opennlp-morfologik-addon</outputDirectory>
-                </artifactItem>
-                <artifactItem>
-                  <groupId>org.apache.opennlp</groupId>
-                  <artifactId>opennlp-uima</artifactId>
-                  <version>1.7.2</version>
-                  <type>jar</type>
-                  <classifier>javadoc</classifier>
-                  <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}/opennlp-site/docs/1.7.2/apidocs/opennlp-uima</outputDirectory>
-                </artifactItem>
-                <!-- End of 1.7.2 -->
 
-                <!-- Start of 1.8.0 -->
                 <artifactItem>
                   <groupId>org.apache.opennlp</groupId>
-                  <artifactId>opennlp-tools</artifactId>
-                  <version>1.8.0</version>
-                  <type>jar</type>
-                  <classifier>javadoc</classifier>
+                  <artifactId>opennlp-distr</artifactId>
+                  <version>1.6.0</version>
                   <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}/opennlp-site/docs/1.8.0/apidocs/opennlp-tools</outputDirectory>
+                  <type>zip</type>
+                  <classifier>bin</classifier>
+                  <outputDirectory>${project.build.directory}/distr/1.6.0</outputDirectory>
                 </artifactItem>
+
                 <artifactItem>
                   <groupId>org.apache.opennlp</groupId>
-                  <artifactId>opennlp-brat-annotator</artifactId>
-                  <version>1.8.0</version>
-                  <type>jar</type>
-                  <classifier>javadoc</classifier>
+                  <artifactId>opennlp-distr</artifactId>
+                  <version>1.7.0</version>
                   <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}/opennlp-site/docs/1.8.0/apidocs/opennlp-brat-annotator</outputDirectory>
+                  <type>zip</type>
+                  <classifier>bin</classifier>
+                  <outputDirectory>${project.build.directory}/distr/1.7.0</outputDirectory>
                 </artifactItem>
+
                 <artifactItem>
                   <groupId>org.apache.opennlp</groupId>
-                  <artifactId>opennlp-morfologik-addon</artifactId>
-                  <version>1.8.0</version>
-                  <type>jar</type>
-                  <classifier>javadoc</classifier>
+                  <artifactId>opennlp-distr</artifactId>
+                  <version>1.7.1</version>
                   <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}/opennlp-site/docs/1.8.0/apidocs/opennlp-morfologik-addon</outputDirectory>
+                  <type>zip</type>
+                  <classifier>bin</classifier>
+                  <outputDirectory>${project.build.directory}/distr/1.7.1</outputDirectory>
                 </artifactItem>
+
                 <artifactItem>
                   <groupId>org.apache.opennlp</groupId>
-                  <artifactId>opennlp-uima</artifactId>
-                  <version>1.8.0</version>
-                  <type>jar</type>
-                  <classifier>javadoc</classifier>
+                  <artifactId>opennlp-distr</artifactId>
+                  <version>1.7.2</version>
                   <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}/opennlp-site/docs/1.8.0/apidocs/opennlp-uima</outputDirectory>
+                  <type>zip</type>
+                  <classifier>bin</classifier>
+                  <outputDirectory>${project.build.directory}/distr/1.7.2</outputDirectory>
                 </artifactItem>
-                <!-- End of 1.8.0 -->
+
+                <artifactItem>
+                  <groupId>org.apache.opennlp</groupId>
+                  <artifactId>opennlp-distr</artifactId>
+                  <version>1.8.0</version>
+                  <overWrite>false</overWrite>
+                  <type>zip</type>
+                  <classifier>bin</classifier>
+                  <outputDirectory>${project.build.directory}/distr/1.8.0</outputDirectory>
+                </artifactItem>
+
               </artifactItems>
             </configuration>
           </execution>

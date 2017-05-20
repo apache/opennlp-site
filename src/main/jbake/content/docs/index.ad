@@ -34,3 +34,5 @@ explains how the various OpenNLP components can be used and trained.
 * link:/docs/1.8.0/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]
 
 Note: All the documentation is also included in the binary distribution.
+
+Documentation for archieved releases can be found link:/docs/legacy.html[here].
