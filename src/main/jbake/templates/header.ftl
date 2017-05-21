@@ -17,6 +17,9 @@
    specific language governing permissions and limitations
    under the License. 
 -->
+<#setting date_format="dd-MM-yyyy">
+<#setting locale="en_US">
+<#setting time_zone="GMT">
 <html lang="en">
 <head>
     <meta charset="utf-8">
