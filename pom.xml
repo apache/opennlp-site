@@ -103,7 +103,24 @@
           </execution>
         </executions>
       </plugin>
-
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <id>timestamp-property</id>
+            <goals>
+              <goal>timestamp-property</goal>
+            </goals>
+            <phase>validate</phase>
+            <configuration>
+              <name>current.year</name>
+              <pattern>yyyy</pattern>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <artifactId>maven-antrun-plugin</artifactId>
         <version>1.7</version>
@@ -126,6 +143,25 @@
                         </fileset>
                         <mapper type="regexp" from="^.*apache-opennlp-(.*?)/docs/(.*)" to="\1/\2" />
                     </copy>
+
+                    <!-- Fix copyright year for 1.5.3 -->
+                    <replaceregexp>
+                      <regexp pattern="copy; ,  The Apache Software Foundation"/>
+                      <substitution expression="copy; 2011, ${current.year} The Apache Software Foundation"/>
+                      <fileset dir="target/opennlp-site/docs/1.5.3/manual">
+                        <include name="opennlp.html"/>
+                      </fileset>
+                    </replaceregexp>
+
+                    <!-- Update copyright year for all releases -->
+                    <replaceregexp>
+                      <regexp pattern="copy; 2011, \d+ The Apache Software Foundation"/>
+                      <substitution expression="copy; 2011, ${current.year} The Apache Software Foundation"/>
+                      <fileset dir="target/opennlp-site/docs/">
+                        <include name="**/manual/opennlp.html"/>
+                      </fileset>
+                    </replaceregexp>
+
 
                   </sequential>
                 </ac:for>
