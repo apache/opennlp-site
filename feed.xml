@@ -24,9 +24,110 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Sat, 20 May 2017 11:31:06 +0000</pubDate>
-    <lastBuildDate>Sat, 20 May 2017 11:31:06 +0000</lastBuildDate>
+    <pubDate>Sun, 21 May 2017 22:53:57 +0000</pubDate>
+    <lastBuildDate>Sun, 21 May 2017 22:53:57 +0000</lastBuildDate>
 
+    <item>
+      <title>Apache OpenNLP 1.8.0 released</title>
+      <link>https://opennlp.apache.org/news/release-180.html</link>
+      <pubDate>Fri, 19 May 2017 03:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-180.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of version 1.8.0 of Apache OpenNLP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP 1.8.0 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt; page for more details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Java 1.8 is required to run OpenNLP Maven 3.3.9 is required for building it building from the Source Distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To build everything execute the following command in the root folder: &lt;code&gt;mvn clean install&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The results of the build will be placed in: &lt;code&gt;opennlp-distr/target/apache-opennlp-1.8.0-bin.tar.gz&lt;/code&gt; (or &lt;code&gt;.zip&lt;/code&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_8_0&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.0&lt;/h1&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and many deprecated methods were removed. Java 1.8 is required.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Additionally the release contains the following noteworthy changes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;POS Tagger context generator now supports feature generation XML&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add a Name Finder feature generator that adds POS Tag features&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add CONLL-U format support&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improve default Name Finder settings&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TokenNameFinderEvaluator CLI now support nameTypes argument&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stupid backoff is now the default in NGramLanguageModel&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Language codes now are ISO 639-3 compliant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add many unit tests&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Distribution package now includes example parameters file&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now prefix and suffix feature generators are configurable&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove API in Document Categorizer for user specified tokenizer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Learnable lemmatizer now returns all possible lemmas for a given word and pos tag&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lemmatizer API backward compatibility break: no need to encode/decode lemmas anymore, now LemmatizerME lemmatize method returns the actual lemma&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add stemmer, detokenizer and sentence detection abbreviations for Irish&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Chunker SequenceValidator signature changed to allow access to both token and POS tag&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A detailed list of the issues related to this release can be found in the release notes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thanks again to all contributors and committers for their help.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Apache OpenNLP 1.7.2 released</title>
       <link>https://opennlp.apache.org/news/release-172.html</link>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Source Code - Apache OpenNLP</title>
+    <title>Apache OpenNLP 1.8.0 released - Apache OpenNLP</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Apache OpenNLP  is a machine learning based toolkit for the processing of natural language text." />
@@ -167,57 +167,129 @@ body {
 </nav>
 
 <div class="container">
-    <h1 class="title">Source Code</h1>
+    <h1 class="title">Apache OpenNLP 1.8.0 released</h1>
 
-    <div class="sect1">
-<h2 id="github_mirror_access">GitHub Mirror Access</h2>
+    <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>View the code, fork and send pull requests on Github:</p>
+<p>The Apache OpenNLP team is pleased to announce the release of version 1.8.0 of Apache OpenNLP.</p>
+</div>
+<div class="paragraph">
+<p>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.</p>
+</div>
+<div class="paragraph">
+<p>It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.</p>
+</div>
+<div class="paragraph">
+<p>The OpenNLP 1.8.0 binary and source distributions are available for download from our <a href="/download.html">download page</a>.</p>
+</div>
+<div class="paragraph">
+<p>The OpenNLP library is distributed by Maven Central as well. See the <a href="/maven-dependency.html">Maven Dependency</a> page for more details.</p>
+</div>
+<div class="paragraph">
+<p>Java 1.8 is required to run OpenNLP Maven 3.3.9 is required for building it building from the Source Distribution.</p>
+</div>
+<div class="paragraph">
+<p>To build everything execute the following command in the root folder: <code>mvn clean install</code></p>
+</div>
+<div class="paragraph">
+<p>The results of the build will be placed in: <code>opennlp-distr/target/apache-opennlp-1.8.0-bin.tar.gz</code> (or <code>.zip</code>)</p>
+</div>
+</div>
+</div>
+<h1 id="what_s_new_in_apache_opennlp_1_8_0" class="sect0">What&#8217;s new in Apache OpenNLP 1.8.0</h1>
+<div class="paragraph">
+<p>This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and many deprecated methods were removed. Java 1.8 is required.</p>
+</div>
+<div class="paragraph">
+<p>Additionally the release contains the following noteworthy changes:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://github.com/apache/opennlp">Github opennlp</a></p>
+<p>POS Tagger context generator now supports feature generation XML</p>
 </li>
 <li>
-<p><a href="https://github.com/apache/opennlp-site">Github opennlp-site</a></p>
+<p>Add a Name Finder feature generator that adds POS Tag features</p>
 </li>
 <li>
-<p><a href="https://github.com/apache/opennlp-addons">Github opennlp-addons</a></p>
+<p>Add CONLL-U format support</p>
 </li>
 <li>
-<p><a href="https://github.com/apache/opennlp-sandbox">Github opennlp-sandbox</a></p>
+<p>Improve default Name Finder settings</p>
+</li>
+<li>
+<p>TokenNameFinderEvaluator CLI now support nameTypes argument</p>
+</li>
+<li>
+<p>Stupid backoff is now the default in NGramLanguageModel</p>
+</li>
+<li>
+<p>Language codes now are ISO 639-3 compliant</p>
+</li>
+<li>
+<p>Add many unit tests</p>
+</li>
+<li>
+<p>Distribution package now includes example parameters file</p>
+</li>
+<li>
+<p>Now prefix and suffix feature generators are configurable</p>
+</li>
+<li>
+<p>Remove API in Document Categorizer for user specified tokenizer</p>
+</li>
+<li>
+<p>Learnable lemmatizer now returns all possible lemmas for a given word and pos tag</p>
+</li>
+<li>
+<p>Lemmatizer API backward compatibility break: no need to encode/decode lemmas anymore, now LemmatizerME lemmatize method returns the actual lemma</p>
+</li>
+<li>
+<p>Add stemmer, detokenizer and sentence detection abbreviations for Irish</p>
+</li>
+<li>
+<p>Chunker SequenceValidator signature changed to allow access to both token and POS tag</p>
 </li>
 </ul>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="apache_git_repository">Apache Git Repository</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>The Git repositories can be checked out with these commands:</p>
+<p>A detailed list of the issues related to this release can be found in the release notes.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>git clone <a href="https://git-wip-us.apache.org/repos/asf/opennlp.git" class="bare">https://git-wip-us.apache.org/repos/asf/opennlp.git</a></code></p>
-</li>
-<li>
-<p><code>git clone <a href="https://git-wip-us.apache.org/repos/asf/opennlp-site.git" class="bare">https://git-wip-us.apache.org/repos/asf/opennlp-site.git</a></code></p>
-</li>
-<li>
-<p><code>git clone <a href="https://git-wip-us.apache.org/repos/asf/opennlp-addons.git" class="bare">https://git-wip-us.apache.org/repos/asf/opennlp-addons.git</a></code></p>
-</li>
-<li>
-<p><code>git clone <a href="https://git-wip-us.apache.org/repos/asf/opennlp-sandbox.git" class="bare">https://git-wip-us.apache.org/repos/asf/opennlp-sandbox.git</a></code></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>Thanks again to all contributors and committers for their help.</p>
 </div>
-</div>
+<div class="paragraph">
+<p>--The Apache OpenNLP Team</p>
 </div>
 
+    <p><em>19 May 2017</em></p>
+    <div id="share"><!-- Google Plus -->
+<div class="g-plusone" data-size="medium"></div>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<!-- Twitter -->
+<a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- Facebook -->
+<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script></div>
 </div>
 
     <footer class='footer'>
