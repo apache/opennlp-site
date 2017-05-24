@@ -1,0 +1,43 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.   
+////
+= News
+:jbake-type: page
+:jbake-tags: maven
+:jbake-status: published
+:idprefix:
+
+== Releases
+
+* 04 February 2017 - link:/news/release-172.html[OpenNLP 1.7.2 Released]
+* 23 January 2017 - link:/news/release-171.html[OpenNLP 1.7.1 Released]
+* 31 December 2016 - link:/news/release-170.html[OpenNLP 1.7.0 Released]
+* 13 July 2015 - link:/news/release-160.html[OpenNLP 1.6.0 Released]
+* 17 April 2013 - link:/news/release-153.html[OpenNLP 1.5.3 Released]
+* 28 November 2011 - link:/news/release-152.html[OpenNLP 1.5.2 Released]
+* 02 May 2011 - link:/news/news-2011-05-02.html[OpenNLP 1.5.1-incubating Released]
+
+== General News
+
+* 15 February 2012 - link:/news/news-2012-02-15.html[OpenNLP graduates from the Apache Incubator]
+* 22 December 2011 - link:/news/news-2011-12-22.html[Announcing New Members]
+* 29 January 2011 - link:/news/news-2011-01-29.html[Issues now tracked in JIRA]
+* 14 December 2010 - link:/news/news-2010-12-24.html[Meeting Apache Incubator Requirements]
+* 23 November 2010 - link:/news/news-2010-11-23.html[OpenNLP accepted into the Apache Incubator]
+* 18 November 2010 - link:/news/news-2010-11-18.html[OpenNLP proposed for Apache Incubator]
+
