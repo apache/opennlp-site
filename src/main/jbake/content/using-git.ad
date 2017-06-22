@@ -1,0 +1,178 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.   
+////
+= Using Git
+:jbake-type: page
+:jbake-tags: maven
+:jbake-status: published
+:idprefix:
+
+There are several ways to setup Git for committers and contributors. Contributors can safely setup Git any way they
+choose but committers should take extra care since they can push new commits to the master at Apache and various
+policies there make backing out mistakes problematic. Therefore all but very small changes should go through a PR,
+even for committers. To keep the commit history clean take note of the use of `--squash` below when merging into
+`apache/master`.
+
+## Git setup for Committers
+
+This describes setup for one local repo and two remotes. It allows you to push the code on your machine to either your
+GitHub repo or to Git at Apache (i.e. git-wip-us.apache.org). You will want to fork GitHub's apache/opennlp to your own
+account on GitHub, this will enable Pull Requests of your own. Cloning this fork locally will set up "origin" to point
+to your remote fork on GitHub as the default remote. So if you perform "git push origin master" it will go to GitHub.
+
+To attach to the apache Git repo do the following:
+
+    git remote add apache https://git-wip-us.apache.org/repos/asf/opennlp.git
+
+To check your remote setup:
+
+    git remote -v
+
+You should see something like this:
+
+    origin    https://github.com/your-github-id/opennlp.git (fetch)
+    origin    https://github.com/your-github-id/opennlp.git (push)
+    apache    https://git-wip-us.apache.org/repos/asf/opennlp.git (fetch)
+    apache    https://git-wip-us.apache.org/repos/asf/opennlp.git (push)
+
+Now if you want to experiment with a branch, this by default points to your GitHub account because "origin" is default.
+You can work as you normally do using just GitHub, until you are ready to merge with the Apache remote repository.
+Some conventions will integrate with Apache JIRA ticket numbers.
+
+    git checkout -b opennlp-xxxx #xxxx typically is a JIRA ticket number
+    #do some work on the branch
+    git commit -a -m "doing some work"
+    git push origin opennlp-xxxx # notice pushing to **origin** not **apache**
+
+Once you are ready to commit to the Apache remote you can merge and push them directly, or better yet create a
+pull request (PR). 
+
+## How to create a PR (committers)
+
+Push your branch to GitHub:
+
+    git checkout opennlp-xxxx
+    git push origin opennlp-xxxx
+
+Go to your opennlp-xxxx branch on GitHub. Since you forked it from GitHub's apache/opennlp it will default any PR to
+go to apache/master. 
+
+* Click the green "Compare, review, and create pull request" button. 
+* You can edit the _to_ and _from_ for the PR if it is not correct. The "base fork" should be apache/opennlp unless
+you are collaborating separately with one of the committers on the list. The "base" will be master. Do not submit a
+PR to one of the other branches unless you know what you are doing. The "head fork" will be your forked repo and the
+"compare" will be your opennlp-xxxx branch. 
+* Click the "Create pull request" button and name the request "OPENNLP-XXXX" (uppercase). This will connect the
+comments of the PR to the mailing list and JIRA comments.
+* From now on the PR lives on GitHub's apache/opennlp. You can use the commenting UI there. 
+* If you are looking for a review or sharing with someone else say so in the comments but do not worry about 
+automated merging of your PR -- you will have to do that later. The PR is tied to your branch so you can respond to 
+comments, fix code, and commit from your local repository. They will appear on the PR page and be mirrored to JIRA 
+and to the mailing list. 
+
+When you are satisfied and want to push it to Apache's remote repository proceed with **Merging a PR**
+
+## How to create a PR (contributors)
+
+Create pull requests: <<anchor-1,[1]>>. 
+
+Pull requests are made to apache/opennlp repository on GitHub. In the GitHub UI you should pick the master 
+branch to target the PR as described for committers. This will be reviewed and commented on so the merge is 
+not automatic. This can be used for discussing a contributions in progress.
+
+## Merging a PR (yours or contributors) 
+
+Start with reading <<anchor-2,[2]>> (merging locally). 
+
+Remember that pull requests are equivalent to a remote GitHub branch with potentially a multitude of commits. 
+In this case it is recommended to squash remote commit history to have one commit per issue, rather 
+than merging in a multitude of contributor's commits. In order to do that, as well as close the PR at the 
+same time, it is recommended to use **squash commits**.
+
+Merging pull requests is equivalent to a "pull" of a contributor's branch:
+
+    git checkout master      # switch to local master branch
+    git pull apache master   # fast-forward to current remote HEAD
+    git pull --squash https://github.com/cuser/opennlp cbranch  # merge to master 
+
+`--squash` ensures all PR history is squashed into single commit, and allows committer to use his/her own
+message. Read git help for merge or pull for more information about `--squash` option. In this example we 
+assume that the contributor's GitHub handle is "cuser" and the PR branch name is "cbranch". 
+Next, resolve conflicts, if any, or ask the contributor to rebase on top of master, in case the PR went out of sync.
+
+If you are ready to merge your own (committer's) PR you probably only need to merge (not pull), since you have a local
+copy that you have been working on. This is the branch that you used to create the PR.
+
+    git checkout master      # switch to local master branch
+    git pull apache master   # fast-forward to current remote HEAD
+    git merge --squash opennlp-xxxx
+
+Remember to run regular patch checks, build with tests enabled, and change CHANGELOG.
+
+If everything is fine, you now can commit the squashed request along the lines
+
+    git commit --author <contributor_email> -a -m "OPENNLP-XXXX description closes #ZZ"
+
+OPENNLP-XXXX is all caps and `ZZ` is the pull request number on apache/opennlp repository. Including 
+"closes #ZZ" will close the PR automatically. More information is found here <<anchor-3,[3]>>.
+
+Next, push to git-wip-us.a.o:
+
+    push apache master
+
+(this will require Apache handle credentials).
+
+The PR, once pushed, will get mirrored to GitHub. To update your GitHub version push there too:
+
+    push origin master
+
+*Note on squashing: Since squash discards remote branch history, repeated PR's from the same remote branch are 
+difficult for merging. The workflow implies that every new PR starts with a new rebased branch. This is more 
+important for contributors to know, rather than for committers, because if new PR is not mergeable, GitHub
+would warn to begin with. Anyway, watch for dupe PR's (based on same source branches). This is a bad practice.*
+     
+## Closing a PR without committing (for committers)
+
+When we want to reject a PR (close without committing), we can just issue an empty commit on master's HEAD 
+*without merging the PR*: 
+
+    git commit --allow-empty -m "closes #ZZ *Won't fix*"
+    git push apache master
+
+That should close PR `ZZ` on GitHub mirror without merging and any code modifications in the master repository.
+
+## Apache/GitHub integration features 
+
+Read <<anchor-4,[4]>>. Comments and PR's with OpenNLP issue handles should post to mailing lists and JIRA.
+OpenNLP issue handles must be in the form OpenNLP-YYYYY (all capitals). Usually it makes sense to 
+file a JIRA issue first, and then create a PR with description 
+    
+    OPENNLP-YYYY: <jira-issue-description>
+
+
+In this case all subsequent comments will automatically be copied to JIRA without having to mention 
+JIRA issue explicitly in each comment of the PR.
+
+[[anchor-1]]
+[1]: https://help.github.com/articles/creating-a-pull-request/
+[[anchor-2]]
+[2]: https://help.github.com/articles/merging-a-pull-request#merging-locally
+[[anchor-3]]
+[3]: https://help.github.com/articles/closing-issues-via-commit-messages/
+[[anchor-4]]
+[4]: https://blogs.apache.org/infra/entry/improved_integration_between_apache_and
