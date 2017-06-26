@@ -1,0 +1,43 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Books, Tutorials and Talks
+:jbake-type: page
+:jbake-tags: download
+:jbake-status: published
+:idprefix:
+
+## Books
+
+* https://www.manning.com/books/taming-text[Taming Text] - Grant S. Ingersoll, Tom Morton and Drew Farris published
+ Dec 2012 by Manning Publications
+
+## Talks
+
+* https://www.slideshare.net/DataScienceMD/it-takes-a-village-to-solve-a-problem-in-data-science[It takes a
+Village to solve a Problem in Data Science] Daniel Russ, Data Science Maryland Meetup, Laurel Maryland, June 19, 2017
+
+* https://www.slideshare.net/SuneelMarthi/large-scale-text-processing[Large Scale Processing
+ of Text] Suneel Marthi, Hadoop Summit/DataWorks Summit, San Jose California, June 15, 2017
+
+* https://www.slideshare.net/SuneelMarthi/embracing-diversity-searching-over-multiple-languages[
+Embracing Diversity: Searching over multiple languages] Tommaso Teofili and Suneel Marthi, Berlin Buzzwords,
+Berlin Germany, June 12, 2017
+https://www.youtube.com/watch?v=ZrWxySF-9KY&index=34&list=PLq-odUc2x7i-9Nijx-WfoRMoAfHC9XzTt
+
+
