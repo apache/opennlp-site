@@ -52,7 +52,7 @@
                         <li><a href="/mailing-lists.html">Mailing Lists</a></li>
                         <li><a href="https://issues.apache.org/jira/browse/OPENNLP">Issue tracker</a></li>
                         <li><a href="/books-tutorials-and-talks.html">Books, Tutorials and Talks</a></li>
-                        <li><a href="/Powered-by-OpenNLP.html">Powered by Apache OpenNLP</a></li>
+                        <li><a href="/powered-by-opennlp.html">Powered by Apache OpenNLP</a></li>
                         
                     </ul>
                 </li>
