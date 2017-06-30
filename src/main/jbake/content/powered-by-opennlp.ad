@@ -27,6 +27,16 @@ Are you using Apache OpenNLP to do Natural Language Processing? Please do share 
 
 ## Commercial Use
 
+### Air New Zealand Oscar chat bot
+
+image::/img/use-cases/air_nz_wordmark-02_0.jpg["Air New Zealand logo",width=300px,link=https://www.airnewzealand.co.nz/]
+
+========================================================================================
+&ldquo;Air New Zealand uses OpenNLP to power its chatbot, Oscar. Launched in February 2017,
+Oscar provides a conversational interface for customers to ask questions about flights,
+amenities and policies. Using OpenNLP, we've been able to consistently provide over 50%
+conversational success and support hundreds of intents.&rdquo;
+========================================================================================
 
 ## Academic/Research Use
 
