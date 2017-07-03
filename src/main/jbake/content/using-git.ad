@@ -1,0 +1,114 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.   
+////
+= Using Git
+:jbake-type: page
+:jbake-tags: maven
+:jbake-status: published
+:idprefix:
+
+## Introduction
+
+The Apache OpenNLP project has a series of rules that every developer must adhere to. The contents in this page
+can be helpful even to experienced developers, as it includes information about merging GitHub pull requests
+programmatically, which is not an easy task, or sometimes users are more familiar with the web interface.
+
+Simple rules include always merging pull requests with the fast-forward, using a JIRA ticket ID in the commit message
+whenever possible, and always squashing pull requests. Also, changes are verified by a build server, so developers
+must remember to check if all tests pass, as well as other quality checks such as code style.
+
+## Cloning the OpenNLP Git repository
+
+After obtaining committership to OpenNLP, you probably want to submit your changes to the project source repository.
+This section contains the steps that every committer must follow, in order to make sure every developer is following
+the workflow, and have a consistent and simple commit tree.
+
+    git clone https://git-wip-us.apache.org/repos/asf/opennlp.git
+    cd opennlp
+    git config user.name "Your Name"
+    git config user.email "your-email"
+    git config merge.ff only
+
+You can also clone the project web site repository.
+
+    https://git-wip-us.apache.org/repos/asf/opennlp.git
+    # repeat remaining steps as above
+
+In order to test your commit rights, and following a project tradition, normally the first commit of every new
+member is to add his/her name to the list of project members. Look for the `team.ad` source file in the web site
+repository, add your name, and try sending your first commit.
+
+For a complete list of the project repositories, visit the link:/source-code.html[Source Code] section.
+
+## Merging Pull Requests
+
+This section documents the process of merging code changes contributed via
+link:https://help.github.com/articles/about-pull-requests/[Github Pull Requests]. It is important to
+remember to **always merge with link:https://git-scm.com/docs/git-merge[fast-forward]**. If you followed the steps in
+the first section, your local working copy should be already configured for that. Otherwise, remember to use `ff-only`
+when merging.
+
+### Adding a remote repository pointing to GitHub
+
+In order to fetch the pull requests in GitHub, you need to add a remote repository.
+
+    git remote add github https://github.com/apache/opennlp.git
+    git fetch --all
+    git fetch github pull/<PULL-ID>/head:<BRANCHNAME>
+    git checkout <BRANCHNAME>
+
+Replacing `<PULL-ID>` by the GitHub pull request ID (you can find it in the pull request URL) and `<BRANCHNAME>` by
+the name of the new local branch. If you have suggestions to enhance or fix the pull request, send your comments via
+the GitHub user interface, or add a comment to the JIRA ticket &mdash; if any.
+
+Once you are happy with the changes, you can check out the master branch, and merge the pull request. Remember
+to make sure the **branch has been rebase'd against master**, and also that all tests pass.
+
+    git checkout master
+    git merge --ff-only <BRANCHNAME>
+    git push origin master
+
+In case other commits happened after the pull request was submitted, the easiest option is for the you to
+rebase against the master branch. Only in the case where there are conflicts, then you must ask the user
+to rebase the pull request against the master branch, and squash his commit.
+
+    git checkout <BRANCHNAME>
+    git rebase master
+    # squash and amend the commit
+    git checkout master
+    git merge --ff-only <BRANCHNAME>
+    git push origin master
+
+### Stale Pull Requests
+
+You can automatically close a pull request when merging, by amending the commit message. Make sure to use the following
+syntax in your commit message.
+
+    OPENNLP-<JIRA-ID>: Merging branch <BRANCHNAME>
+    
+    This closes #<PULL-ID>
+
+Where `<JIRA-ID>` is the JIRA ticket ID, and `#<PULL-ID>` refers to the pull request ID. Once you push this commit,
+JIRA will index your git message and will add it as a comment in the ticket, and the ASF Infra bot should automatically
+close the pull request within minutes.
+
+Alternatively, the user who submitted the pull request can also close the pull request via GitHub's
+user interface. Or, as a final resort, any developer can use an empty commit to close it.
+
+    git commit --allow-empty -m "OPENNLP-<JIRA-ID>: This closes #<PULL-ID>"
+    git push
