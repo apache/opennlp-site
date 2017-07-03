@@ -1864,9 +1864,8 @@ String[] postags = <b class="hl-keyword">new</b> String[] { <b class="hl-string"
     <b class="hl-string"><i style="color:red">"."</i></b> };
 
 String[] lemmas = lemmatizer.lemmatize(tokens, postags);
-String[] decodedLemmas = lemmatizer.decodeLemmas(tokens, lemmas);
 		</pre><p>
-				The decodedLemmas array contains one lemma for each token in the
+				The lemmas array contains one lemma for each token in the
 				input array. The corresponding
 				tag and lemma can be found at the same index as the token has in the
 				input array.
@@ -1875,29 +1874,37 @@ String[] decodedLemmas = lemmatizer.decodeLemmas(tokens, lemmas);
 			<p>
 				The DictionaryLemmatizer is constructed
 				by passing the InputStream of a lemmatizer dictionary. Such dictionary
-				consists of a
-				text file containing, for each row, a word, its postag and the
-				corresponding lemma:
+				consists of a text file containing, for each row, a word, its postag and the
+				corresponding lemma, each column separated by a tab character.
 				</p><pre class="screen">
 		
-show    NN      show
-showcase        NN      showcase
-showcases       NNS     showcase
-showdown        NN      showdown
-showdowns       NNS     showdown
-shower  NN      shower
-showers NNS     shower
-showman NN      showman
-showmanship     NN      showmanship
-showmen NNS     showman
-showroom        NN      showroom
-showrooms       NNS     showroom
-shows   NNS     show
-showstopper     NN      showstopper
-showstoppers    NNS     showstopper
-shrapnel        NN      shrapnel
+show		NN	show
+showcase	NN	showcase
+showcases	NNS	showcase
+showdown	NN	showdown
+showdowns	NNS	showdown
+shower		NN	shower
+showers		NNS	shower
+showman		NN	showman
+showmanship	NN	showmanship
+showmen		NNS	showman
+showroom	NN	showroom
+showrooms	NNS	showroom
+shows		NNS	show
+shrapnel	NN	shrapnel
 		
 		</pre><p>
+				Alternatively, if a (word,postag) pair can output multiple lemmas, the
+				the lemmatizer dictionary would consists of a text file containing, for 
+				each row, a word, its postag and the corresponding lemmas separated by "#":
+				</p><pre class="screen">
+		
+muestras	NN	muestra
+cantaba		V	cantar
+fue		V	ir#ser
+entramos	V	entrar
+		
+					</pre><p>
 				First the dictionary must be loaded into memory from disk or another
 				source.
 				In the sample below it is loaded from disk.
@@ -1922,8 +1929,7 @@ DictionaryLemmatizer lemmatizer = <b class="hl-keyword">new</b> DictionaryLemmat
 			</p>
 			<p>
 				The following code shows how to find a lemma using a
-				DictionaryLemmatizer. There is no need to decode the
-				lemmas when using the DictionaryLemmatizer.
+				DictionaryLemmatizer.
 				</p><pre class="programlisting">
 		  
 String[] tokens = <b class="hl-keyword">new</b> String[]{<b class="hl-string"><i style="color:red">"Most"</i></b>, <b class="hl-string"><i style="color:red">"large"</i></b>, <b class="hl-string"><i style="color:red">"cities"</i></b>, <b class="hl-string"><i style="color:red">"in"</i></b>, <b class="hl-string"><i style="color:red">"the"</i></b>, <b class="hl-string"><i style="color:red">"US"</i></b>, <b class="hl-string"><i style="color:red">"had"</i></b>,
