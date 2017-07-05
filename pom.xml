@@ -29,6 +29,16 @@
   <name>Apache OpenNLP Web Site</name>
   <version>0.1-SNAPSHOT</version>
 
+  <properties>
+    <!-- Build Properties -->
+    <jbake-core.version>2.5.1</jbake-core.version>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.version>3.3.9</maven.version>
+    <pegdown.version>1.6.0</pegdown.version>
+    <asciidoctor.version>1.5.5</asciidoctor.version>
+    <freemarker.version>2.3.25-incubating</freemarker.version>
+  </properties>
+
   <build>
     <finalName>opennlp-site</finalName>
 
@@ -45,25 +55,25 @@
           <dependency>
             <groupId>org.jbake</groupId>
             <artifactId>jbake-core</artifactId>
-            <version>2.5.1</version>
+            <version>${jbake-core.version}</version>
           </dependency>
           <!-- for freemarker templates (.ftl) -->
           <dependency>
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
-            <version>2.3.25-incubating</version>
+            <version>${freemarker.version}</version>
           </dependency>
           <!-- for markdown parsing (.md) -->
           <dependency>
             <groupId>org.pegdown</groupId>
             <artifactId>pegdown</artifactId>
-            <version>1.6.0</version>
+            <version>${pegdown.version}</version>
           </dependency>
 
           <dependency>
             <groupId>org.asciidoctor</groupId>
             <artifactId>asciidoctorj</artifactId>
-            <version>1.5.5</version>
+            <version>${asciidoctor.version}</version>
           </dependency>
 
         </dependencies>
@@ -161,8 +171,6 @@
                         <include name="**/manual/opennlp.html"/>
                       </fileset>
                     </replaceregexp>
-
-
                   </sequential>
                 </ac:for>
  

@@ -20,4 +20,8 @@
 Welcome to the OpenNLP Site source code
 =======================================
 
+[![Build Status](https://api.travis-ci.org/apache/opennlp.svg?branch=master)](https://travis-ci.org/apache/opennlp-site)
+[![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/apache/opennlp/master/LICENSE)
+[![Twitter Follow](https://img.shields.io/twitter/follow/ApacheOpennlp.svg?style=social)](https://twitter.com/ApacheOpenNLP)
+
 `mvn clean package jbake:inline -Djbake.port=8080 -Djbake.listenAddress=0.0.0.0`
