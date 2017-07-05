@@ -20,4 +20,4 @@ before_install:
   - export M2_HOME=$PWD/apache-maven-3.3.9
   - export PATH=$M2_HOME/bin:$PATH
 
-install: mvn clean package jbake:inline -Djbake.port=8080 -Djbake.listenAddress=0.0.0.0
+install: mvn clean install
