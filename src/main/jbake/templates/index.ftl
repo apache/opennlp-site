@@ -33,7 +33,7 @@
     <div class="row">
         <div class="col-lg-4">
             <h2>About</h2>
-            <p>OpenNLP supports the most common NLP tasks, such as <i>tokenization</i>, <i>sentence segmentation</i>, <i>part-of-speech tagging</i>, <i>named entity extraction</i>, <i>chunking</i>, <i>parsing</i>, and <i>coreference resolution</i>.</p>
+            <p>OpenNLP supports the most common NLP tasks, such as <i>tokenization</i>, <i>sentence segmentation</i>, <i>part-of-speech tagging</i>, <i>named entity extraction</i>, <i>chunking</i>, <i>parsing</i>, <i>language detection</i> and <i>coreference resolution</i>.</p>
             <p>Find out more about it in our <a href="/docs/">manual</a>.</p>
         </div>
         <div class="col-lg-4">

@@ -22,7 +22,7 @@
 :jbake-status: published
 :idprefix:
 
-WARNING: This page contains the archieved documentation. Please refer to link:/docs/index.html[Apache OpenNLP Manual] for the current documentation.
+WARNING: This page contains the archived documentation. Please refer to link:/docs/index.html[Apache OpenNLP Manual] for the current documentation.
 
 There exists a manual and Javadoc API documentation for Apache OpenNLP. The manual
 explains how the various OpenNLP components can be used and trained.
