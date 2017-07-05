@@ -71,6 +71,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="/get-involved.html">Get Involved</a></li>
                         <li><a href="/source-code.html">Source Code</a></li>
+                        <li><a href="/using-git.html">Using Git</a></li>
                         <li><a href="/building.html">Building</a></li>
                         <li><a href="/code-conventions.html">Code Conventions</a></li>
                         <li><a href="/release.html">Release</a></li>
