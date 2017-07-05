@@ -1,0 +1,64 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.   
+////
+= Using Git
+:jbake-type: page
+:jbake-tags: maven
+:jbake-status: published
+:idprefix:
+
+There are several ways to set up Git for committers and contributors. Contributors can safely set up Git in any way they choose, but committers should take extra care since they can push new commits to the upstream/master at Apache and various policies there make backing out mistakes problematic.
+
+## One time setup
+
+- Create a Github account (if you do not have one already)
+- https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/[Configure your ssh key]
+- Configure your https://help.github.com/articles/setting-your-email-in-git/[user name and Apache e-mail in git]
+- Fork the opennlp repositories:
+    * https://github.com/apache/opennlp-sandbox
+    * https://github.com/apache/opennlp-addons
+    * https://github.com/apache/opennlp-site
+    * https://github.com/apache/opennlp
+- Enable 2FA for your Github account, then logout and login (if already enabled skip this step)
+- Enter your Github username for your Apache account under https://id.apache.org
+- Register here https://gitbox.apache.org/setup/
+ 
+The gitbox setup will confirm that everything is working, to confirm again check that you are listed as a member here: https://github.com/orgs/apache/teams/opennlp-committers/members.
+ 
+## Configuring the upstream remote
+
+    git remote add  upstream git@github.com:apache/opennlp.git
+ 
+The last part of the upstream remote url must match the repository name.
+ 
+Your repository should have two remotes, the upstream remote, and the default origin remote which is pointing to your forked version of the repository.
+ 
+## Merge a Pull Request via GitHub
+ 
+Please do not commit directly to the master branch. All changes are done via Pull Requests, and a Pull Request needs to get two positive reviews and no change requests until it https://git-scm.com/docs/git-merge#_fast_forward_merge[can be merged]. The PR can be merged via the Github UI as described below or manually. Please also note that we do not use merge commits, the merge should be done using https://git-scm.com/docs/git-merge#_fast_forward_merge[fast forward merging].
+ 
+To merge a PR via Github follow these steps:
+
+- Ensure the merge button is green (Travis CI build must have passed)
+- Select the option &ldquo;Rebase and merge&rdquo;, &ldquo;Squash and merge&rdquo; should only be used if the contributor is not providing a single squashed commit
+- Click on the merge button
+- Confirm the merge
+
+## Reject a Pull Request
+
+Close the PR on GitHub and leave a comment why it was rejected.
