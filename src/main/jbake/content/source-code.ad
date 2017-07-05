@@ -33,8 +33,8 @@ View the code, fork and send pull requests on Github:
 ## Apache Git Repository
 The Git repositories can be checked out with these commands:
 
-* `git clone https://git-wip-us.apache.org/repos/asf/opennlp.git`
-* `git clone https://git-wip-us.apache.org/repos/asf/opennlp-site.git`
-* `git clone https://git-wip-us.apache.org/repos/asf/opennlp-addons.git`
-* `git clone https://git-wip-us.apache.org/repos/asf/opennlp-sandbox.git`
+* `git clone https://github.com/apache/opennlp`
+* `git clone https://github.com/apache/opennlp-site.git`
+* `git clone https://github.com/apache/opennlp-addons.git`
+* `git clone https://github.com/apache/opennlp-sandbox.git`
 
