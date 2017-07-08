@@ -41,11 +41,35 @@ the opennlp-dev and incubator general list.
 - Release the staging repository. This will make the artifacts available in the Maven Central repository.
 To do this go to the http://repository.apache.org[repository server], log in, go to the staging area and release the staging repository linked to this release.
 - Upload artifacts to the distribution server. All release artifacts need to be copied to `/www/www.apache.org/dist/opennlp` on `people.apache.org`.
-- Update the download page. The download page should only offer the latest release. Old releases can be downloaded from the archive.
-- Deploy the documentation. The documentation is part of the website and need to be checked into subversion. Remove all old files from the documentation folder.
-Download the release, copy everything inside the doc folder to the documentation folder of our website and commit the changes.
-- Update the news page. Add a news item to the website.
-- Release the staged website.
+- On Opennlp-site github repo
+
+   -update the properties {opennlp.version} and {opennlp.next.version} in jbake.properties
+   -Add the following lines at the beginning of docs/legacy.ad
+  ----
+  ### Apache OpenNLP ${previous.release} documentation
+  * link:/docs/${previous.release}/manual/opennlp.html[Apache OpenNLP Manual]
+  * link:/docs/${previous.release}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
+  * link:/docs/${previous.release}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
+  * link:/docs/${previous.release}/apidocs/opennlp-brat-annotator/index.html[Apache OpenNLP BRAT Annotator Javadoc]
+  * link:/docs/${previous.release}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]
+  ----
+
+   -Add the following to main/pom.xml
+  ----
+  <artifactItem>
+    <groupId>org.apache.opennlp</groupId>
+    <artifactId>opennlp-distr</artifactId>
+    <version>${project.version}</version>
+    <overWrite>false</overWrite>
+    <type>zip</type>
+    <classifier>bin</classifier>
+    <outputDirectory>${project.build.directory}/distr/1.8.1</outputDirectory>
+  </artifactItem>
+  ----
+
+   -Add a news item in news/release-{xyz}.ad by copying the content from OpenNLP project opennlp-distr/src/README
+
+- Rebuild opennlp-site and redeploy the site (if Automatic Buildbot doesn't kick in)
 - Test and review the website. Test that all download links are working. Test that the documentation is updated and can be viewed.
 - Send out announcements.
 - Update Jira for the next release.
