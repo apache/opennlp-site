@@ -275,6 +275,16 @@
                   <outputDirectory>${project.build.directory}/distr/1.8.0</outputDirectory>
                 </artifactItem>
 
+                <artifactItem>
+                  <groupId>org.apache.opennlp</groupId>
+                  <artifactId>opennlp-distr</artifactId>
+                  <version>1.8.1</version>
+                  <overWrite>false</overWrite>
+                  <type>zip</type>
+                  <classifier>bin</classifier>
+                  <outputDirectory>${project.build.directory}/distr/1.8.1</outputDirectory>
+                </artifactItem>
+
               </artifactItems>
             </configuration>
           </execution>
