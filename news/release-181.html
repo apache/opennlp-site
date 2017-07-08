@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Documentation - Apache OpenNLP</title>
+    <title>Apache OpenNLP 1.8.1 released - Apache OpenNLP</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Apache OpenNLP  is a machine learning based toolkit for the processing of natural language text." />
@@ -170,149 +170,117 @@ body {
 </nav>
 
 <div class="container">
-    <h1 class="title">Documentation</h1>
+    <h1 class="title">Apache OpenNLP 1.8.1 released</h1>
 
     <div id="preamble">
 <div class="sectionbody">
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Warning</div>
-</td>
-<td class="content">
-This page contains the archived documentation. Please refer to <a href="/docs/index.html">Apache OpenNLP Manual</a> for the current documentation.
-</td>
-</tr>
-</table>
+<div class="paragraph">
+<p>The Apache OpenNLP team is pleased to announce the release of version 1.8.1 of Apache OpenNLP.</p>
 </div>
 <div class="paragraph">
-<p>There exists a manual and Javadoc API documentation for Apache OpenNLP. The manual
-explains how the various OpenNLP components can be used and trained.</p>
+<p>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.</p>
+</div>
+<div class="paragraph">
+<p>It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.</p>
+</div>
+<div class="paragraph">
+<p>The OpenNLP 1.8.1 binary and source distributions are available for download from our <a href="/download.html">download page</a>.</p>
+</div>
+<div class="paragraph">
+<p>The OpenNLP library is distributed by Maven Central as well. See the <a href="/maven-dependency.html">Maven Dependency</a> page for more details.</p>
+</div>
+<div class="paragraph">
+<p>Java 1.8 is required to run OpenNLP Maven 3.3.9 is required for building it building from the Source Distribution.</p>
+</div>
+<div class="paragraph">
+<p>To build everything execute the following command in the root folder: <code>mvn clean install</code></p>
+</div>
+<div class="paragraph">
+<p>The results of the build will be placed in: <code>opennlp-distr/target/apache-opennlp-1.8.1-bin.tar.gz</code> (or <code>.zip</code>)</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="apache_opennlp_1_8_0_documentation">Apache OpenNLP 1.8.0 documentation</h3>
+<h1 id="what_s_new_in_apache_opennlp_1_8_1" class="sect0">What&#8217;s new in Apache OpenNLP 1.8.1</h1>
+<div class="paragraph">
+<p>This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and many deprecated methods were removed. Java 1.8 is required.</p>
+</div>
+<div class="paragraph">
+<p>Additionally the release contains the following noteworthy changes:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="/docs/1.8.0/manual/opennlp.html">Apache OpenNLP Manual</a></p>
+<p>A new Language Detection Component</p>
 </li>
 <li>
-<p><a href="/docs/1.8.0/apidocs/opennlp-tools/index.html">Apache OpenNLP Tools Javadoc</a></p>
+<p>Support for Irish Sentence Bank formats</p>
 </li>
 <li>
-<p><a href="/docs/1.8.0/apidocs/opennlp-uima/index.html">Apache OpenNLP UIMA Javadoc</a></p>
+<p>Support to train the sentence detector and tokenizer on the UD corpus</p>
 </li>
 <li>
-<p><a href="/docs/1.8.0/apidocs/opennlp-brat-annotator/index.html">Apache OpenNLP BRAT Annotator Javadoc</a></p>
+<p>Evaluation tests now support ISO-639-3 language codes</p>
 </li>
 <li>
-<p><a href="/docs/1.8.0/apidocs/opennlp-morfologik-addon/index.html">Apache OpenNLP Morfologik Addon Javadoc</a></p>
+<p>Convenience methods to load models from a path</p>
+</li>
+<li>
+<p>Refactored the Data Indexer Code</p>
+</li>
+<li>
+<p>Optimized NGram creation loop to better leverage CPU cache</p>
+</li>
+<li>
+<p>Refactored BratNameSampleStream</p>
+</li>
+<li>
+<p>Remove deprecated code from util package</p>
+</li>
+<li>
+<p>Redesigned web site - <a href="https://opennlp.apache.org" class="bare">https://opennlp.apache.org</a></p>
+</li>
+<li>
+<p>New logo for the project</p>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>A detailed list of the issues related to this release can be found in the release notes.</p>
 </div>
-<div class="sect2">
-<h3 id="apache_opennlp_1_7_2_documentation">Apache OpenNLP 1.7.2 documentation</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="/docs/1.7.2/manual/opennlp.html">Apache OpenNLP Manual</a></p>
-</li>
-<li>
-<p><a href="/docs/1.7.2/apidocs/opennlp-tools/index.html">Apache OpenNLP Tools Javadoc</a></p>
-</li>
-<li>
-<p><a href="/docs/1.7.2/apidocs/opennlp-uima/index.html">Apache OpenNLP UIMA Javadoc</a></p>
-</li>
-<li>
-<p><a href="/docs/1.7.2/apidocs/opennlp-brat-annotator/index.html">Apache OpenNLP BRAT Annotator Javadoc</a></p>
-</li>
-<li>
-<p><a href="/docs/1.7.2/apidocs/opennlp-morfologik-addon/index.html">Apache OpenNLP Morfologik Addon Javadoc</a></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>Thanks again to all contributors and committers for their help.</p>
 </div>
-</div>
-<div class="sect2">
-<h3 id="apache_opennlp_1_7_1_documentation">Apache OpenNLP 1.7.1 documentation</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="/docs/1.7.1/manual/opennlp.html">Apache OpenNLP Manual</a></p>
-</li>
-<li>
-<p><a href="/docs/1.7.1/apidocs/opennlp-tools/index.html">Apache OpenNLP Tools Javadoc</a></p>
-</li>
-<li>
-<p><a href="/docs/1.7.1/apidocs/opennlp-uima/index.html">Apache OpenNLP UIMA Javadoc</a></p>
-</li>
-<li>
-<p><a href="/docs/1.7.1/apidocs/opennlp-brat-annotator/index.html">Apache OpenNLP BRAT Annotator Javadoc</a></p>
-</li>
-<li>
-<p><a href="/docs/1.7.1/apidocs/opennlp-morfologik-addon/index.html">Apache OpenNLP Morfologik Addon Javadoc</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="apache_opennlp_1_7_0_documentation">Apache OpenNLP 1.7.0 documentation</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="/docs/1.7.0/manual/opennlp.html">Apache OpenNLP Manual</a></p>
-</li>
-<li>
-<p><a href="/docs/1.7.0/apidocs/opennlp-tools/index.html">Apache OpenNLP Tools Javadoc</a></p>
-</li>
-<li>
-<p><a href="/docs/1.7.0/apidocs/opennlp-uima/index.html">Apache OpenNLP UIMA Javadoc</a></p>
-</li>
-<li>
-<p><a href="/docs/1.7.0/apidocs/opennlp-brat-annotator/index.html">Apache OpenNLP BRAT Annotator Javadoc</a></p>
-</li>
-<li>
-<p><a href="/docs/1.7.0/apidocs/opennlp-morfologik-addon/index.html">Apache OpenNLP Morfologik Addon Javadoc</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="apache_opennlp_1_6_0_documentation">Apache OpenNLP 1.6.0 documentation</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="/docs/1.6.0/manual/opennlp.html">Apache OpenNLP Manual</a></p>
-</li>
-<li>
-<p><a href="/docs/1.6.0/apidocs/opennlp-tools/index.html">Apache OpenNLP Tools Javadoc</a></p>
-</li>
-<li>
-<p><a href="/docs/1.6.0/apidocs/opennlp-uima/index.html">Apache OpenNLP UIMA Javadoc</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="apache_opennlp_1_5_3_documentation">Apache OpenNLP 1.5.3 documentation</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="/docs/1.5.3/manual/opennlp.html">Apache OpenNLP Manual</a></p>
-</li>
-<li>
-<p><a href="/docs/1.5.3/apidocs/opennlp-tools/index.html">Apache OpenNLP Tools Javadoc</a></p>
-</li>
-<li>
-<p><a href="/docs/1.5.3/apidocs/opennlp-uima/index.html">Apache OpenNLP UIMA Javadoc</a></p>
-</li>
-</ul>
-</div>
+<div class="paragraph">
+<p>--The Apache OpenNLP Team</p>
 </div>
 
+    <p><em>07 July 2017</em></p>
+    <div id="share"><!-- Google Plus -->
+<div class="g-plusone" data-size="medium"></div>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<!-- Twitter -->
+<a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- Facebook -->
+<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script></div>
 </div>
 
     <footer class='footer'>
