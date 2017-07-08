@@ -40,7 +40,7 @@ the opennlp-dev and incubator general list.
 
 - Release the staging repository. This will make the artifacts available in the Maven Central repository.
 To do this go to the http://repository.apache.org[repository server], log in, go to the staging area and release the staging repository linked to this release.
-- Upload artifacts to the distribution server. All release artifacts need to be copied to `/www/www.apache.org/dist/incubator/opennlp` on `people.apache.org`.
+- Upload artifacts to the distribution server. All release artifacts need to be copied to `/www/www.apache.org/dist/opennlp` on `people.apache.org`.
 - Update the download page. The download page should only offer the latest release. Old releases can be downloaded from the archive.
 - Deploy the documentation. The documentation is part of the website and need to be checked into subversion. Remove all old files from the documentation folder.
 Download the release, copy everything inside the doc folder to the documentation folder of our website and commit the changes.
