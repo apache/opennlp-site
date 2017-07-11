@@ -222,17 +222,45 @@ To do this go to the <a href="http://repository.apache.org">repository server</a
 <p>Upload artifacts to the distribution server. All release artifacts need to be copied to <code>/www/www.apache.org/dist/opennlp</code> on <code>people.apache.org</code>.</p>
 </li>
 <li>
-<p>Update the download page. The download page should only offer the latest release. Old releases can be downloaded from the archive.</p>
+<p>On Opennlp-site github repo</p>
+<div class="literalblock">
+<div class="content">
+<pre> -update the properties {opennlp.version} and {opennlp.next.version} in jbake.properties
+ -Add the following lines at the beginning of docs/legacy.ad
+----
+### Apache OpenNLP ${previous.release} documentation
+* link:/docs/${previous.release}/manual/opennlp.html[Apache OpenNLP Manual]
+* link:/docs/${previous.release}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
+* link:/docs/${previous.release}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
+* link:/docs/${previous.release}/apidocs/opennlp-brat-annotator/index.html[Apache OpenNLP BRAT Annotator Javadoc]
+* link:/docs/${previous.release}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]
+----</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> -Add the following to main/pom.xml
+----
+&lt;artifactItem&gt;
+  &lt;groupId&gt;org.apache.opennlp&lt;/groupId&gt;
+  &lt;artifactId&gt;opennlp-distr&lt;/artifactId&gt;
+  &lt;version&gt;${project.version}&lt;/version&gt;
+  &lt;overWrite&gt;false&lt;/overWrite&gt;
+  &lt;type&gt;zip&lt;/type&gt;
+  &lt;classifier&gt;bin&lt;/classifier&gt;
+  &lt;outputDirectory&gt;${project.build.directory}/distr/1.8.1&lt;/outputDirectory&gt;
+&lt;/artifactItem&gt;
+----</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>-Add a news item in news/release-{xyz}.ad by copying the content from OpenNLP project opennlp-distr/src/README</pre>
+</div>
+</div>
 </li>
 <li>
-<p>Deploy the documentation. The documentation is part of the website and need to be checked into subversion. Remove all old files from the documentation folder.
-Download the release, copy everything inside the doc folder to the documentation folder of our website and commit the changes.</p>
-</li>
-<li>
-<p>Update the news page. Add a news item to the website.</p>
-</li>
-<li>
-<p>Release the staged website.</p>
+<p>Rebuild opennlp-site and redeploy the site (if Automatic Buildbot doesn&#8217;t kick in)</p>
 </li>
 <li>
 <p>Test and review the website. Test that all download links are working. Test that the documentation is updated and can be viewed.</p>
