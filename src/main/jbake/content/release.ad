@@ -71,8 +71,8 @@ To do this go to the http://repository.apache.org[repository server], log in, go
 
 - Rebuild opennlp-site and redeploy the site (if Automatic Buildbot doesn't kick in)
 - Test and review the website. Test that all download links are working. Test that the documentation is updated and can be viewed.
-- Send out announcements.
-- Update Jira for the next release.
+- Send out announcements to announce@apache.org, dev@opennlp.apache.org, users@opennlp.apache.org
+- Close out the present release in Jira.
 
 It is suggested to use the wiki to plan all tasks for the release
 and to distribute them among the team.
