@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 language: java
 os: linux
 jdk: oraclejdk8
@@ -21,4 +22,9 @@ before_install:
   - export PATH=$M2_HOME/bin:$PATH
 
 install: mvn clean install
+=======
+branches:
+  only:
+  - master
+>>>>>>> 00bbb4117f10fad4e47631b6f40d935a0cf9b040
 

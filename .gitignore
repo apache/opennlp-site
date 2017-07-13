@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .settings
 .idea
 target
@@ -5,3 +6,6 @@ target
 .project
 *.log
 *.iml
+=======
+target
+>>>>>>> 00bbb4117f10fad4e47631b6f40d935a0cf9b040
