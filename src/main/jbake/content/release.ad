@@ -62,6 +62,7 @@ To do this go to the http://repository.apache.org[repository server], log in, go
   ----
 
    -Add the following to main/pom.xml
+  [source,xml,indent=0,subs=attributes+]
   ----
   <artifactItem>
     <groupId>org.apache.opennlp</groupId>
