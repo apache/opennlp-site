@@ -182,10 +182,10 @@ body {
 Your KEYS will then be present in: <a href="https://people.apache.org/keys/group/opennlp.asc" class="bare">https://people.apache.org/keys/group/opennlp.asc</a></p>
 </li>
 <li>
-<p>Check if you have your PGP keys password.</p>
+<p>Check if you have your PGP keys password</p>
 </li>
 <li>
-<p>Create a maven settings.xml to publish to repository.apache.org</p>
+<p>Create a maven <code>settings.xml</code> to publish to <code>repository.apache.org</code></p>
 </li>
 </ul>
 </div>
@@ -216,10 +216,10 @@ release of Apache OpenNLP.</p>
 <p>Make a release candidate</p>
 </li>
 <li>
-<p>Test the candidate accoding to the test plan and iterate until tests pass</p>
+<p>Test the candidate according to the test plan and iterate until tests pass</p>
 </li>
 <li>
-<p>Do the release vote on opennlp-dev and on general incubator</p>
+<p>Call the release vote on opennlp-dev and on general incubator</p>
 </li>
 </ul>
 </div>
@@ -235,34 +235,37 @@ the opennlp-dev and incubator general list.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Release the staging repository. This will make the artifacts available in the Maven Central repository.
-To do this go to the <a href="http://repository.apache.org">repository server</a>, log in, go to the staging area and release the staging repository linked to this release.</p>
+<p>Release the staging repository. This will make the artifacts available in the Maven Central repository
+To do this go to the <a href="http://repository.apache.org">repository server</a>, log in, go to the staging area and release the staging repository linked to this release</p>
 </li>
 <li>
-<p>Upload artifacts to the distribution server. All release artifacts need to be copied to <code>/www/www.apache.org/dist/opennlp</code> on <code>people.apache.org</code>.</p>
+<p>Upload artifacts to the distribution server. All release artifacts need to be copied to <code>/www/www.apache.org/dist/opennlp</code> on <code>people.apache.org</code></p>
 </li>
 <li>
-<p>On Opennlp-site github repo</p>
-<div class="literalblock">
+<p>On opennlp-site GitHub repository</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Update the properties <code>{opennlp.version}</code> and <code>{opennlp.next.version}</code> in <code>jbake.properties</code></p>
+</li>
+<li>
+<p>Add the following lines at the beginning of <code>docs/legacy.ad</code></p>
+<div class="listingblock">
 <div class="content">
-<pre> -update the properties {opennlp.version} and {opennlp.next.version} in jbake.properties
- -Add the following lines at the beginning of docs/legacy.ad
-----
-### Apache OpenNLP ${previous.release} documentation
+<pre>### Apache OpenNLP ${previous.release} documentation
 * link:/docs/${previous.release}/manual/opennlp.html[Apache OpenNLP Manual]
 * link:/docs/${previous.release}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
 * link:/docs/${previous.release}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
 * link:/docs/${previous.release}/apidocs/opennlp-brat-annotator/index.html[Apache OpenNLP BRAT Annotator Javadoc]
-* link:/docs/${previous.release}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]
-----</pre>
+* link:/docs/${previous.release}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]</pre>
 </div>
 </div>
-<div class="literalblock">
+</li>
+<li>
+<p>Add the following to main/pom.xml</p>
+<div class="listingblock">
 <div class="content">
-<pre> -Add the following to main/pom.xml
-[source,xml,indent=0,subs=attributes+]
-----
-&lt;artifactItem&gt;
+<pre class="prettyprint highlight"><code class="language-xml" data-lang="xml">&lt;artifactItem&gt;
   &lt;groupId&gt;org.apache.opennlp&lt;/groupId&gt;
   &lt;artifactId&gt;opennlp-distr&lt;/artifactId&gt;
   &lt;version&gt;${project.version}&lt;/version&gt;
@@ -270,27 +273,27 @@ To do this go to the <a href="http://repository.apache.org">repository server</a
   &lt;type&gt;zip&lt;/type&gt;
   &lt;classifier&gt;bin&lt;/classifier&gt;
   &lt;outputDirectory&gt;${project.build.directory}/distr/1.8.1&lt;/outputDirectory&gt;
-&lt;/artifactItem&gt;
-----</pre>
+&lt;/artifactItem&gt;</code></pre>
 </div>
 </div>
-<div class="literalblock">
-<div class="content">
-<pre>-Add a news item in news/release-{xyz}.ad by copying the content from OpenNLP project opennlp-distr/src/README</pre>
-</div>
+</li>
+<li>
+<p>Add a news item in <code>news/release-{xyz}.ad</code> by copying the content from OpenNLP project <code>opennlp-distr/src/README</code></p>
+</li>
+</ul>
 </div>
 </li>
 <li>
 <p>Rebuild opennlp-site and redeploy the site (if Automatic Buildbot doesn&#8217;t kick in)</p>
 </li>
 <li>
-<p>Test and review the website. Test that all download links are working. Test that the documentation is updated and can be viewed.</p>
+<p>Test and review the website. Test that all download links are working. Test that the documentation is updated and can be viewed</p>
 </li>
 <li>
 <p>Send out announcements to <a href="mailto:announce@apache.org">announce@apache.org</a>, <a href="mailto:dev@opennlp.apache.org">dev@opennlp.apache.org</a>, <a href="mailto:users@opennlp.apache.org">users@opennlp.apache.org</a></p>
 </li>
 <li>
-<p>Close out the present release in Jira.</p>
+<p>Close out the present release in Jira</p>
 </li>
 </ul>
 </div>
