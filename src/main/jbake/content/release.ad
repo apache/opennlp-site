@@ -27,6 +27,19 @@
 - Make sure you have your PGP key entered into https://id.apache.org/.
   Your KEYS will then be present in: https://people.apache.org/keys/group/opennlp.asc
 - Check if you have your PGP keys password
+- Add your PGP key to the KEYS file
+----
+Examples of adding your key to this file:
+ pgp -kxa <your name> and append it to this file.
+ (pgpk -ll <your name> && pgpk -xa <your name>) >> this file.
+ (gpg --list-sigs <your name>
+     && gpg --armor --export <your name>) >> this file.
+----
+- In a local temp folder, svn checkout the OpenNLP artifacts and update the KEYS file
+----
+svn co https://dist.apache.org/repos/dist/release/opennlp/
+svn commit -m"Added Key for <name>" KEYS
+----
 - Create a maven `settings.xml` to publish to `repository.apache.org`
 
 ## Step-by-Step
@@ -49,7 +62,13 @@ the opennlp-dev and incubator general list.
 
 * Release the staging repository. This will make the artifacts available in the Maven Central repository
 To do this go to the http://repository.apache.org[repository server], log in, go to the staging area and release the staging repository linked to this release
-* Upload artifacts to the distribution server. All release artifacts need to be copied to `/www/www.apache.org/dist/opennlp` on `people.apache.org`
+* Upload artifacts to the distribution server by following the steps below. All release artifacts need to be copied to `/www/www.apache.org/dist/opennlp` on `people.apache.org`
+** In a local temp folder, svn co https://dist.apache.org/repos/dist/release/opennlp
+** cd opennlp; mkdir opennlp-{xyz}; cd opennlp-{xyz}
+** wget -e robots=off –no-check-certificate -np -r https://repository.apache.org/content/groups/public/org/apache/opennlp/opennlp/{xyz}/
+** mv repository.apache.org/content/groups/public/org/apache/opennlp/opennlp/{xyz}/* .
+** rm -rf repository.apache.org
+** rm index.html
 * On opennlp-site GitHub repository
 ** Update the properties `{opennlp.version}` and `{opennlp.next.version}` in `jbake.properties`
 ** Add the following lines at the beginning of `docs/legacy.ad`
