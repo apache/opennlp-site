@@ -185,6 +185,35 @@ Your KEYS will then be present in: <a href="https://people.apache.org/keys/group
 <p>Check if you have your PGP keys password</p>
 </li>
 <li>
+<p>Add your PGP key to the KEYS file</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Examples of adding your key to this file:
+ pgp -kxa &lt;your name&gt; and append it to this file.
+ (pgpk -ll &lt;your name&gt; &amp;&amp; pgpk -xa &lt;your name&gt;) &gt;&gt; this file.
+ (gpg --list-sigs &lt;your name&gt;
+     &amp;&amp; gpg --armor --export &lt;your name&gt;) &gt;&gt; this file.</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In a local temp folder, svn checkout the OpenNLP artifacts and update the KEYS file</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>svn co https://dist.apache.org/repos/dist/release/opennlp/
+svn commit -m"Added Key for &lt;name&gt;" KEYS</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
 <p>Create a maven <code>settings.xml</code> to publish to <code>repository.apache.org</code></p>
 </li>
 </ul>
@@ -239,7 +268,29 @@ the opennlp-dev and incubator general list.</p>
 To do this go to the <a href="http://repository.apache.org">repository server</a>, log in, go to the staging area and release the staging repository linked to this release</p>
 </li>
 <li>
-<p>Upload artifacts to the distribution server. All release artifacts need to be copied to <code>/www/www.apache.org/dist/opennlp</code> on <code>people.apache.org</code></p>
+<p>Upload artifacts to the distribution server by following the steps below. All release artifacts need to be copied to <code>/www/www.apache.org/dist/opennlp</code> on <code>people.apache.org</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p>In a local temp folder, svn co <a href="https://dist.apache.org/repos/dist/release/opennlp" class="bare">https://dist.apache.org/repos/dist/release/opennlp</a></p>
+</li>
+<li>
+<p>cd opennlp; mkdir opennlp-{xyz}; cd opennlp-{xyz}</p>
+</li>
+<li>
+<p>wget -e robots=off –no-check-certificate -np -r <a href="https://repository.apache.org/content/groups/public/org/apache/opennlp/opennlp/{xyz}/" class="bare">https://repository.apache.org/content/groups/public/org/apache/opennlp/opennlp/{xyz}/</a></p>
+</li>
+<li>
+<p>mv repository.apache.org/content/groups/public/org/apache/opennlp/opennlp/{xyz}/* .</p>
+</li>
+<li>
+<p>rm -rf repository.apache.org</p>
+</li>
+<li>
+<p>rm index.html</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>On opennlp-site GitHub repository</p>
