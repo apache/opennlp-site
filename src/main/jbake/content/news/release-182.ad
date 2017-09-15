@@ -1,0 +1,58 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 1.8.2 released
+Apache OpenNLP
+2017-09-15
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of version 1.8.2 of Apache OpenNLP.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+The OpenNLP 1.8.2 binary and source distributions are available for download from our link:/download.html[download page].
+
+The OpenNLP library is distributed by Maven Central as well. See the link:/maven-dependency.html[Maven Dependency] page for more details.
+
+Java 8 is required. Maven 3.3.9 is required for building the Source Distribution.
+
+To build everything execute the following command in the root folder: `mvn clean install`
+
+The results of the build will be placed in: `opennlp-distr/target/apache-opennlp-1.8.2-bin.tar.gz` (or `.zip`)
+
+# What's new in Apache OpenNLP 1.8.2
+
+This release introduces some minor improvements and bug fixes. Java 1.8 is required.
+
+The release contains the following noteworthy changes:
+- The Leipzig format support was improved to extract data for langdetect model training
+- Maxents loglikelihood treshold can be configured by the user
+- Added data verification for the eval data
+- Fixed handling of xml parsers used through out the package
+
+A detailed list of the issues related to this release can be found in the release notes.
+
+Thanks again to all contributors and committers for their help.
+
+--The Apache OpenNLP Team
