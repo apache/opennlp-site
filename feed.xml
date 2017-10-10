@@ -24,8 +24,8 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Mon, 2 Oct 2017 09:01:26 +0000</pubDate>
-    <lastBuildDate>Mon, 2 Oct 2017 09:01:26 +0000</lastBuildDate>
+    <pubDate>Tue, 10 Oct 2017 02:03:43 +0000</pubDate>
+    <lastBuildDate>Tue, 10 Oct 2017 02:03:43 +0000</lastBuildDate>
 
     <item>
       <title>CVE-2017-12620 - Apache OpenNLP XXE vulnerability</title>
