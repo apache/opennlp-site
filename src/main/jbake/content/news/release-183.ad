@@ -44,7 +44,7 @@ Additionally the release contains the following noteworthy changes:
 - New experimental API for Word Vectors and support for Glove vector files
 - Code cleanups and addition of test cases
 - Java 9 module name is now set to org.apache.opennlp.tools
-- All Sample objects now implement Serializable to work better with solutions like Apache Flink
+- All Sample objects now implement Serializable to better work with distributed frameworks like Apache Flink
 
 A detailed list of the issues related to this release can be found in the release notes.
 
