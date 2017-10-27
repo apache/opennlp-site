@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Making a release - Apache OpenNLP</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Apache OpenNLP  is a machine learning based toolkit for the processing of natural language text." />
+    <meta name="author" content="The Apache OpenNLP Team" />
+    <meta name="keywords" content="java, natural language processing, nlp, apache, open source, web site" />
+    <meta name="generator" content="JBake"/>
+
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- The styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/prettify.css" rel="stylesheet">
+    <style type="text/css">
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height + 20px for padding */
+  margin: 0px;
+}
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 50px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+}
+
+.footer .text-muted {
+  margin: 0px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.jumbotron {
+  margin: 0px 0;
+  text-align: center;
+  background-color: transparent;
+  padding-top: 0px;
+}
+
+.jumbotron h1 {
+    line-height: 1;
+    font-weight: bold;
+}
+
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body onload="prettyPrint()">
+<span class="visible-lg">
+<a href="https://github.com/apache/opennlp"><img style="z-index: 9999; position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</span>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img alt="Brand" src="/img/opennlp-navbar-logo.png" class="img-responsive" width="100px" style="position: relative; top: -3px;">
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-download-alt"></span> Download <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+		                <li><a href="/download.html">OpenNLP Releases</a></li>
+		                <li><a href="/maven-dependency.html">Maven Dependency</a></li>
+		            </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flag"></span> General <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <li><a href="/news/">News</a></li>
+                        <li><a href="/mailing-lists.html">Mailing Lists</a></li>
+                        <li><a href="https://issues.apache.org/jira/browse/OPENNLP">Issue tracker</a></li>
+                        <li><a href="/books-tutorials-and-talks.html">Books, Tutorials and Talks</a></li>
+                        <li><a href="/powered-by-opennlp.html">Powered by Apache OpenNLP</a></li>
+                        
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span> Documentation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/docs/">Manual and Javadocs</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="https://cwiki.apache.org/OPENNLP">Wiki</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-console"></span> Development <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/get-involved.html">Get Involved</a></li>
+                        <li><a href="/source-code.html">Source Code</a></li>
+                        <li><a href="/using-git.html">Using Git</a></li>
+                        <li><a href="/building.html">Building</a></li>
+                        <li><a href="/code-conventions.html">Code Conventions</a></li>
+                        <li><a href="/release.html">Release</a></li>
+                        <li><a href="/team.html">Project Team</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-leaf"></span> ASF <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.apache.org/">The Apache Software Foundation</a></li>
+                        <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                        <li><a href="https://www.apache.org/security/">Security</a></li>
+                        <li><a href="https://www.apache.org/foundation/sponsorship.html">Become a Sponsor</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <h1 class="title">Making a release</h1>
+
+    <div class="sect1">
+<h2 id="one_time_setup">One time setup</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Make sure you have your PGP key entered into <a href="https://id.apache.org/" class="bare">https://id.apache.org/</a>.
+Your KEYS will then be present in: <a href="https://people.apache.org/keys/group/opennlp.asc" class="bare">https://people.apache.org/keys/group/opennlp.asc</a></p>
+</li>
+<li>
+<p>Check if you have your PGP keys password</p>
+</li>
+<li>
+<p>Add your PGP key to the KEYS file</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Examples of adding your key to this file:
+ pgp -kxa &lt;your name&gt; and append it to this file.
+ (pgpk -ll &lt;your name&gt; &amp;&amp; pgpk -xa &lt;your name&gt;) &gt;&gt; this file.
+ (gpg --list-sigs &lt;your name&gt;
+     &amp;&amp; gpg --armor --export &lt;your name&gt;) &gt;&gt; this file.</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>In a local temp folder, svn checkout the OpenNLP artifacts and update the KEYS file</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>svn co https://dist.apache.org/repos/dist/release/opennlp/
+svn commit -m"Added Key for &lt;name&gt;" KEYS</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Create a maven <code>settings.xml</code> to publish to <code>repository.apache.org</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="step_by_step">Step-by-Step</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following documents the steps which are necessary to make a
+release of Apache OpenNLP.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Release discussion and release planning on the mailing list</p>
+</li>
+<li>
+<p>Elect a release manager</p>
+</li>
+<li>
+<p>Prepare Jira for the release</p>
+</li>
+<li>
+<p>Crate an empty test plan for the release</p>
+</li>
+<li>
+<p>Make a release candidate</p>
+</li>
+<li>
+<p>Test the candidate according to the test plan and iterate until tests pass</p>
+</li>
+<li>
+<p>Call the release vote on opennlp-dev and on general incubator</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="releasing">Releasing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The release candidate can be released after a successful release vote on
+the opennlp-dev and incubator general list.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Release the staging repository. This will make the artifacts available in the Maven Central repository
+To do this go to the <a href="http://repository.apache.org">repository server</a>, log in, go to the staging area and release the staging repository linked to this release</p>
+</li>
+<li>
+<p>Upload artifacts to the distribution server by following the steps below. All release artifacts need to be copied to <code>/www/www.apache.org/dist/opennlp</code> on <code>people.apache.org</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p>In a local temp folder, svn co <a href="https://dist.apache.org/repos/dist/release/opennlp" class="bare">https://dist.apache.org/repos/dist/release/opennlp</a></p>
+</li>
+<li>
+<p>cd opennlp; mkdir opennlp-{xyz}; cd opennlp-{xyz}</p>
+</li>
+<li>
+<p>wget -e robots=off –no-check-certificate -np -r <a href="https://repository.apache.org/content/groups/public/org/apache/opennlp/opennlp/{xyz}/" class="bare">https://repository.apache.org/content/groups/public/org/apache/opennlp/opennlp/{xyz}/</a></p>
+</li>
+<li>
+<p>mv repository.apache.org/content/groups/public/org/apache/opennlp/opennlp/{xyz}/* .</p>
+</li>
+<li>
+<p>rm -rf repository.apache.org</p>
+</li>
+<li>
+<p>rm index.html</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>On opennlp-site GitHub repository</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Update the properties <code>{opennlp.version}</code> and <code>{opennlp.next.version}</code> in <code>jbake.properties</code></p>
+</li>
+<li>
+<p>Add the following lines at the beginning of <code>docs/legacy.ad</code></p>
+<div class="listingblock">
+<div class="content">
+<pre>### Apache OpenNLP ${previous.release} documentation
+* link:/docs/${previous.release}/manual/opennlp.html[Apache OpenNLP Manual]
+* link:/docs/${previous.release}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
+* link:/docs/${previous.release}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
+* link:/docs/${previous.release}/apidocs/opennlp-brat-annotator/index.html[Apache OpenNLP BRAT Annotator Javadoc]
+* link:/docs/${previous.release}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add the following to main/pom.xml</p>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-xml" data-lang="xml">&lt;artifactItem&gt;
+  &lt;groupId&gt;org.apache.opennlp&lt;/groupId&gt;
+  &lt;artifactId&gt;opennlp-distr&lt;/artifactId&gt;
+  &lt;version&gt;${project.version}&lt;/version&gt;
+  &lt;overWrite&gt;false&lt;/overWrite&gt;
+  &lt;type&gt;zip&lt;/type&gt;
+  &lt;classifier&gt;bin&lt;/classifier&gt;
+  &lt;outputDirectory&gt;${project.build.directory}/distr/1.8.1&lt;/outputDirectory&gt;
+&lt;/artifactItem&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add a news item in <code>news/release-{xyz}.ad</code> by copying the content from OpenNLP project <code>opennlp-distr/src/README</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Rebuild opennlp-site and redeploy the site (if Automatic Buildbot doesn&#8217;t kick in)</p>
+</li>
+<li>
+<p>Test and review the website. Test that all download links are working. Test that the documentation is updated and can be viewed</p>
+</li>
+<li>
+<p>Send out announcements to <a href="mailto:announce@apache.org">announce@apache.org</a>, <a href="mailto:dev@opennlp.apache.org">dev@opennlp.apache.org</a>, <a href="mailto:users@opennlp.apache.org">users@opennlp.apache.org</a></p>
+</li>
+<li>
+<p>Close out the present release in Jira</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>It is suggested to use the wiki to plan all tasks for the release
+and to distribute them among the team.</p>
+</div>
+</div>
+</div>
+
+</div>
+
+    <footer class='footer'>
+        <div class="container">
+            <p class="text-muted">Copyright &copy; 2017  The Apache Software Foundation, Licensed under the
+            <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>  <br>
+            Apache OpenNLP, OpenNLP, Apache, the Apache feather logo, and the Apache OpenNLP project logo are
+            trademarks of The Apache Software Foundation. -
+            <a href="/privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/prettify.js"></script>
+    
+    <script type="text/javascript">
+
+      var link = $('a[href="' + this.location.pathname + '"]');
+      if (link != undefined)
+    	  link.parents('li,ul').addClass('active');
+	
+	</script>
+</body>
+</html>
