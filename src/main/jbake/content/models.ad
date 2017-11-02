@@ -1,0 +1,72 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.   
+////
+= Models Download
+:jbake-type: page
+:jbake-tags: models
+:jbake-status: published
+:idprefix:
+
+
+Use the links in the table below to download the pre-trained models for the Apache OpenNLP.
+
+Note: All models are zip compressed (like a jar file), they *must not* be uncompressed.
+
+[options="header"]
+|===
+| Component | Language | Compatibility | Description | README and Reports | File | Signatures
+
+| Language Detector
+| 103
+| >= 1.8.3
+| Detects 103 languages in ISO 693-3 standard. Works well with longer texts that have at least 2 sentences or more from the same language.
+| https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/README.txt[README]
+https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.report.txt[Effectiveness]
+ https://www.apache.org/dyn/closer.cgi/opennlp/models/langdetect/1.8.3/langdetect-183.bin.misclassified.txt[Misclassified]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/langdetect/1.8.3/langdetect-183.bin[langdetect-183.bin]
+|https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.md5[md5]
+https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.sha1[sha1]
+https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.asc[asc]
+|===
+
+# SourceForge Models
+
+The models on Sourceforge for 1.5.0 are http://opennlp.sourceforge.net/models-1.5/[found here]
+and are fully compatible with Apache OpenNLP {opennlp_version}.
+
+The models can be used for testing or getting started, please train your own models for all other use cases.
+
+## Verifying Signatures
+The md5, sha1 and asc files are signature files and can be used to verify the integrity of the
+downloaded distribution package.
+
+Use the following commands to verify the integrity:
+
+* gpg --print-md MD5 fileName.zip
+* gpg --print-md SHA1 fileName.tar.gz
+* gpg --verify fileName.tar.gz.asc
+
+It might be necessary to import the https://www.apache.org/dist/opennlp/KEYS[KEYS file] to verify the integrity
+of the asc files.
+
+That can easily be done with:
+
+* gpg --import KEYS
+
+More information about release signing and verifying signatures can
+be found https://www.apache.org/dev/release-signing.html[here].

@@ -40,6 +40,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-download-alt"></span> Download <b class="caret"></b></a>
                     <ul class="dropdown-menu">
 		                <li><a href="/download.html">OpenNLP Releases</a></li>
+                        <li><a href="/models.html">OpenNLP Models</a></li>
 		                <li><a href="/maven-dependency.html">Maven Dependency</a></li>
 		            </ul>
                 </li>
