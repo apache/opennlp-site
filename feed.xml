@@ -24,9 +24,45 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Fri, 27 Oct 2017 12:51:17 +0000</pubDate>
-    <lastBuildDate>Fri, 27 Oct 2017 12:51:17 +0000</lastBuildDate>
+    <pubDate>Thu, 2 Nov 2017 10:51:28 +0000</pubDate>
+    <lastBuildDate>Thu, 2 Nov 2017 10:51:28 +0000</lastBuildDate>
 
+    <item>
+      <title>Language Detector Model for Apache OpenNLP released</title>
+      <link>https://opennlp.apache.org/news/model-langdetect-183.html</link>
+      <pubDate>Thu, 2 Nov 2017 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/model-langdetect-183.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;TThe Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Language Detector Model 1.8.3 for Apache OpenNLP 1.8.3.
+The Language Detector Model can detect 103 languages and outputs ISO 639-3 codes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Apache OpenNLP model and reports are available for download from our model download page:
+&lt;a href=&quot;http://opennlp.apache.org/models.html&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/models.html&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is the first release of the Language Detector Model. It is compatible with Apache OpenNLP 1.8.3 or better.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It is important to note that this model is trained for and works well with longer texts that have at least 2 sentences or more from the same language.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;More information about this release can be found in the README.txt at:
+&lt;a href=&quot;https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/README.txt&quot; class=&quot;bare&quot;&gt;https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/README.txt&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Details about this model effectiveness can be found in the following report:
+&lt;a href=&quot;https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.report.txt&quot; class=&quot;bare&quot;&gt;https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.report.txt&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Apache OpenNLP 1.8.3 released</title>
       <link>https://opennlp.apache.org/news/release-183.html</link>
