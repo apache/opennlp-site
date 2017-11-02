@@ -75,8 +75,8 @@ More information about release signing and verifying signatures can
 be found https://www.apache.org/dev/release-signing.html[here].
 
 ## Models
-The models over at SourceForge for 1.5.0 can be http://opennlp.sourceforge.net/models-1.5/[found here]
-and are fully compatible with Apache OpenNLP {opennlp_version}.
+
+The models for Apache OpenNLP are link:/models.html[found here].
 
 The models can be used for testing or getting started, please train your own models for all other use cases.
 
