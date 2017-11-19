@@ -47,10 +47,8 @@ the project as a committer from the https://incubator.apache.org/guides/ppmc.htm
 * https://issues.apache.org/jira/browse/OPENNLP-941[OPENNLP-941]: Add eval support to detokenizer
 * https://issues.apache.org/jira/browse/OPENNLP-912[OPENNLP-912]: Add a rule based sentence detector
 * https://issues.apache.org/jira/browse/OPENNLP-892[OPENNLP-892]: Add a Entity-Relationship Extraction component
-* https://issues.apache.org/jira/browse/OPENNLP-788[OPENNLP-788]: Add a language detection component
 * https://issues.apache.org/jira/browse/OPENNLP-780[OPENNLP-780]: Add formats support for NKJP
 * https://issues.apache.org/jira/browse/OPENNLP-712[OPENNLP-712]: Creating a date time recognizer
-* https://issues.apache.org/jira/browse/OPENNLP-652[OPENNLP-652]: Add 20Newsgroups format support to the doccat component
 * https://issues.apache.org/jira/browse/OPENNLP-565[OPENNLP-565]: Add MASC format support
 * https://issues.apache.org/jira/browse/OPENNLP-547[OPENNLP-547]: Add a dependency parser component
 * https://issues.apache.org/jira/browse/OPENNLP-546[OPENNLP-546]: Add TokenizerPTB
