@@ -24,9 +24,80 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Mon, 4 Dec 2017 21:24:35 +0000</pubDate>
-    <lastBuildDate>Mon, 4 Dec 2017 21:24:35 +0000</lastBuildDate>
+    <pubDate>Mon, 25 Dec 2017 21:03:42 +0000</pubDate>
+    <lastBuildDate>Mon, 25 Dec 2017 21:03:42 +0000</lastBuildDate>
 
+    <item>
+      <title>Apache OpenNLP 1.8.4 released</title>
+      <link>https://opennlp.apache.org/news/release-184.html</link>
+      <pubDate>Sun, 24 Dec 2017 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-184.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 1.8.4.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Apache OpenNLP 1.8.4 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_8_4&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.4&lt;/h1&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release introduces new features, improvements and bug fixes. Java 1.8 and Maven 3.3.9 are required.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Additionally the release contains the following changes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Remove Tokenizer param from Doccat trainer CLI&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add annotator notes to BratAnnotator&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add 20Newsgroups format support to the doccat component&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Removed WordVector toArray methods&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Removed deprecated leipzig doccat format support&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add filename to overlapping annotation exception in NameSample&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Resolved concurrency issue in POS tagger&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Brat Annotation Service does not serialize results appropriately&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A detailed list of the issues related to this release can be found in the release notes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For a complete list of fixed bugs and improvements please see the README.html file included in the distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Language Detector Model for Apache OpenNLP released</title>
       <link>https://opennlp.apache.org/news/model-langdetect-183.html</link>
