@@ -1,0 +1,57 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 1.8.4 released
+Apache OpenNLP
+2017-12-24
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 1.8.4.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+Apache OpenNLP 1.8.4 binary and source distributions are available for download from our download page: link:/download.html[download page]
+
+The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: link:/maven-dependency.html[Maven Dependency]
+
+# What's new in Apache OpenNLP 1.8.4
+
+This release introduces new features, improvements and bug fixes. Java 1.8 and Maven 3.3.9 are required.
+
+Additionally the release contains the following changes:
+
+- Remove Tokenizer param from Doccat trainer CLI
+- Add annotator notes to BratAnnotator
+- Add 20Newsgroups format support to the doccat component
+- Removed WordVector toArray methods
+- Removed deprecated leipzig doccat format support
+- Add filename to overlapping annotation exception in NameSample
+- Resolved concurrency issue in POS tagger
+- Brat Annotation Service does not serialize results appropriately
+
+A detailed list of the issues related to this release can be found in the release notes.
+
+For a complete list of fixed bugs and improvements please see the README.html file included in the distribution.
+
+--The Apache OpenNLP Team
