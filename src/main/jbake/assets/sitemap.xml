@@ -1,0 +1,2507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://opennlp.apache.org/</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/download.html</loc>
+  <lastmod>2017-12-25T21:04:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/models.html</loc>
+  <lastmod>2017-12-25T21:04:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/maven-dependency.html</loc>
+  <lastmod>2017-12-25T21:04:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/</loc>
+  <lastmod>2017-12-25T21:04:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/mailing-lists.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/books-tutorials-and-talks.html</loc>
+  <lastmod>2017-12-27T21:10:39+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/powered-by-opennlp.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/</loc>
+  <lastmod>2017-12-25T21:04:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/faq.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/get-involved.html</loc>
+  <lastmod>2017-11-19T19:45:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/source-code.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/using-git.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/building.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/code-conventions.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/release.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/team.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/privacy-policy.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-184.html</loc>
+  <lastmod>2017-12-25T21:04:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/model-langdetect-183.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-183.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/cve-2017-12620.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-182.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-181.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-180.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-172.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-171.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-170.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-160.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-153.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/news-2012-02-15.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/news-2011-12-22.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/news-2011-05-02.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-152.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/news-2011-01-29.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/news-2010-12-24.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/news-2010-11-23.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/news-2010-11-18.html</loc>
+  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/manual/opennlp.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/index.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-uima/index.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-brat-annotator/index.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-morfologik-addon/index.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/legacy.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/manual/opennlp.html</loc>
+  <lastmod>2017-05-21T22:58:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/opennlp/tools/util/TrainingParameters.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/code-formatter/eclipse-opennlp.importorder</loc>
+  <lastmod>2017-05-21T14:57:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/overview-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/overview-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/allclasses-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-uima/overview-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-uima/overview-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-uima/allclasses-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-brat-annotator/opennlp/bratann/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-brat-annotator/allclasses-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-morfologik-addon/overview-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-morfologik-addon/overview-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-morfologik-addon/allclasses-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/index.html</loc>
+  <lastmod>2017-12-25T21:04:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.3/manual/opennlp.html</loc>
+  <lastmod>2017-10-27T12:51:52+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.3/apidocs/opennlp-tools/index.html</loc>
+  <lastmod>2017-10-27T12:51:52+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.3/apidocs/opennlp-uima/index.html</loc>
+  <lastmod>2017-10-27T12:51:52+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.3/apidocs/opennlp-brat-annotator/index.html</loc>
+  <lastmod>2017-10-27T12:51:52+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.3/apidocs/opennlp-morfologik-addon/index.html</loc>
+  <lastmod>2017-10-27T12:51:52+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.2/manual/opennlp.html</loc>
+  <lastmod>2017-09-16T16:48:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.2/apidocs/opennlp-tools/index.html</loc>
+  <lastmod>2017-09-16T16:48:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.2/apidocs/opennlp-uima/index.html</loc>
+  <lastmod>2017-09-16T16:48:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.2/apidocs/opennlp-brat-annotator/index.html</loc>
+  <lastmod>2017-09-16T16:48:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.2/apidocs/opennlp-morfologik-addon/index.html</loc>
+  <lastmod>2017-09-16T16:48:14+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.1/manual/opennlp.html</loc>
+  <lastmod>2017-07-08T13:19:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.1/apidocs/opennlp-tools/index.html</loc>
+  <lastmod>2017-07-08T13:19:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.1/apidocs/opennlp-uima/index.html</loc>
+  <lastmod>2017-07-08T13:19:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.1/apidocs/opennlp-brat-annotator/index.html</loc>
+  <lastmod>2017-07-08T13:19:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.1/apidocs/opennlp-morfologik-addon/index.html</loc>
+  <lastmod>2017-07-08T13:19:47+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.0/manual/opennlp.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.0/apidocs/opennlp-tools/index.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.0/apidocs/opennlp-uima/index.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.0/apidocs/opennlp-brat-annotator/index.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.0/apidocs/opennlp-morfologik-addon/index.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/index.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-uima/index.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-brat-annotator/index.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-morfologik-addon/index.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.1/manual/opennlp.html</loc>
+  <lastmod>2017-05-21T22:58:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.1/apidocs/opennlp-tools/index.html</loc>
+  <lastmod>2017-05-21T14:57:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.1/apidocs/opennlp-uima/index.html</loc>
+  <lastmod>2017-05-21T14:57:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.1/apidocs/opennlp-brat-annotator/index.html</loc>
+  <lastmod>2017-05-21T14:57:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.1/apidocs/opennlp-morfologik-addon/index.html</loc>
+  <lastmod>2017-05-21T14:57:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.0/manual/opennlp.html</loc>
+  <lastmod>2017-05-21T22:58:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.0/apidocs/opennlp-tools/index.html</loc>
+  <lastmod>2017-07-05T21:28:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.0/apidocs/opennlp-uima/index.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.0/apidocs/opennlp-brat-annotator/index.html</loc>
+  <lastmod>2017-07-05T21:28:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.0/apidocs/opennlp-morfologik-addon/index.html</loc>
+  <lastmod>2017-07-05T21:28:55+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.6.0/manual/opennlp.html</loc>
+  <lastmod>2017-05-21T22:58:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.6.0/apidocs/opennlp-tools/index.html</loc>
+  <lastmod>2017-05-21T14:57:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.6.0/apidocs/opennlp-uima/index.html</loc>
+  <lastmod>2017-05-21T14:57:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.5.3/manual/opennlp.html</loc>
+  <lastmod>2017-05-21T22:58:22+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.5.3/apidocs/opennlp-tools/index.html</loc>
+  <lastmod>2017-05-21T14:57:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.5.3/apidocs/opennlp-uima/index.html</loc>
+  <lastmod>2017-05-21T14:57:04+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/overview-summary.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/opennlp/tools/util/package-summary.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/opennlp/tools/util/package-tree.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/deprecated-list.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/index-all.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/help-doc.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/opennlp/tools/util/StringUtil.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/opennlp/tools/util/Version.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/index.html?opennlp/tools/util/TrainingParameters.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/allclasses-noframe.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.7.2/apidocs/opennlp-tools/constant-values.html</loc>
+  <lastmod>2017-07-05T21:28:56+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/overview-tree.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/deprecated-list.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/index-all.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/help-doc.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/index.html?overview-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/allclasses-noframe.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/dictionary/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/dictionary/serializer/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/entitylinker/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/convert/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/frenchtreebank/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/irishsentencebank/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/leipzig/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/letsmt/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/moses/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/muc/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/nkjp/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ontonotes/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/languagemodel/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/io/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/quasinewton/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/naivebayes/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/perceptron/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/namefind/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ngram/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/chunking/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/lang/en/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/lang/es/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/treeinsert/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/postag/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/sentdetect/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/sentdetect/lang/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/sentdetect/lang/th/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/stemmer/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/stemmer/snowball/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/lang/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/lang/en/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/eval/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/ext/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/java/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/model/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/normalizer/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/wordvector/package-summary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/dictionary/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/dictionary/serializer/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/entitylinker/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/convert/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/frenchtreebank/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/irishsentencebank/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/leipzig/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/letsmt/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/moses/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/muc/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/nkjp/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ontonotes/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/languagemodel/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/io/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/quasinewton/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/naivebayes/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/perceptron/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/namefind/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ngram/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/chunking/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/lang/en/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/lang/es/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/treeinsert/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/postag/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/sentdetect/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/sentdetect/lang/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/sentdetect/lang/th/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/stemmer/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/stemmer/snowball/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/lang/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/lang/en/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/eval/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/ext/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/java/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/model/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/normalizer/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/wordvector/package-frame.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/AbstractBottomUpParser.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/AbstractContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/AbstractDataIndexer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/AbstractEventModelSequenceTrainer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/AbstractEventStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/AbstractEventTrainer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/AbstractModel.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/AbstractModel.ModelType.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/AbstractModelReader.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/AbstractModelWriter.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/AbstractObjectStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/AbstractParserEventStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/AbstractSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/AbstractSequenceTrainer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/convert/AbstractToSentenceSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/AbstractTrainer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/AdaptiveFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/ADChunkSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/ADChunkSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/AdditionalContextFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/ADNameSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/ADNameSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/ADPOSSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/ADPOSSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/ADSentenceSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/ADSentenceSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/ADSentenceStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/ADSentenceStream.Sentence.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/ADSentenceStream.SentenceParser.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ad/ADTokenSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/normalizer/AggregateCharSequenceNormalizer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/AggregatedFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/lang/es/AncoraSpanishHeadRules.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/lang/es/AncoraSpanishHeadRules.HeadRulesSerializer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/AnnotationConfiguration.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/AnnotatorNoteAnnotation.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/quasinewton/ArrayMath.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/model/ArtifactProvider.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/model/ArtifactSerializer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/ArtifactToSerializerMapper.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/treeinsert/AttachContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/AttributeAnnotation.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/dictionary/serializer/Attributes.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/BagOfWordsFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/entitylinker/BaseLink.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/model/BaseModel.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/BaseToolFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/BasicContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/BeamSearch.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/BeamSearchContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/BigramNameFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/namefind/BilouCodec.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/namefind/BilouNameFinderSequenceValidator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/BinaryFileDataReader.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/io/BinaryGISModelReader.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/io/BinaryGISModelWriter.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/naivebayes/BinaryNaiveBayesModelReader.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/naivebayes/BinaryNaiveBayesModelWriter.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/perceptron/BinaryPerceptronModelReader.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/perceptron/BinaryPerceptronModelWriter.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/io/BinaryQNModelReader.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/io/BinaryQNModelWriter.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/namefind/BioCodec.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/BioNLP2004NameSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/BioNLP2004NameSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/BratAnnotation.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/BratAnnotationStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/BratDocument.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/BratDocumentParser.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/BratDocumentStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/BratNameSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/BratNameSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/BrownBigramFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/BrownCluster.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/BrownCluster.BrownClusterSerializer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/BrownTokenClasses.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/BrownTokenClassFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/BrownTokenFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/chunking/BuildContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/treeinsert/BuildContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/model/ByteArraySerializer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/Cache.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/CachedFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/CharacterNgramFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/normalizer/CharSequenceNormalizer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/chunking/CheckContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/treeinsert/CheckContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/ChunkContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/Chunker.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/ChunkerContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/ChunkerCrossValidator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/ChunkerEvaluationMonitor.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/ChunkerEvaluator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/ChunkerEventStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/ChunkerFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/ChunkerME.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/ChunkerModel.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/model/ChunkerModelSerializer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ChunkerSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/ChunkSample.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/ChunkSampleSequenceStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/ChunkSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/ChunkSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/CollectionObjectStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/ComparableEvent.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/ComparablePredicate.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/postag/ConfigurablePOSContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/Conll02NameSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/Conll02NameSampleStream.LANGUAGE.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/Conll02NameSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/Conll03NameSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/Conll03NameSampleStream.LANGUAGE.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/Conll03NameSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/ConlluLemmaSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/ConlluLemmaSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/ConlluPOSSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/ConlluPOSSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/ConlluSentence.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/ConlluSentenceSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/ConlluSentenceSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/ConlluStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/ConlluTagset.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/ConlluTokenSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/ConlluTokenSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/conllu/ConlluWordLine.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ConllXPOSSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ConllXPOSSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ConllXSentenceSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ConllXTokenSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/Cons.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/frenchtreebank/ConstitParseSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/frenchtreebank/ConstitParseSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/Constituent.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/Context.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/ContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/eval/CrossValidationPartitioner.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/eval/CrossValidationPartitioner.TrainingSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/CustomFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/DataIndexer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/DataIndexerFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/DataReader.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/DataStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/DefaultChunkerContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/chunker/DefaultChunkerSequenceValidator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/sentdetect/DefaultEndOfSentenceScanner.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/DefaultLanguageDetectorContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/DefaultLemmatizerContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/DefaultLemmatizerSequenceValidator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/namefind/DefaultNameContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/postag/DefaultPOSContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/postag/DefaultPOSSequenceValidator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/sentdetect/DefaultSDContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/DefaultTokenContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/DetokenizationDictionary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/DetokenizationDictionary.Operation.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/Detokenizer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/Detokenizer.DetokenizationOperation.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/DetokenizerSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/letsmt/DetokenizeSentenceSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/dictionary/Dictionary.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/DictionaryDetokenizer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/dictionary/serializer/DictionaryEntryPersistor.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/DictionaryFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/DictionaryLemmatizer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/namefind/DictionaryNameFinder.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/model/DictionarySerializer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/DirectorySampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/DoccatCrossValidator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/DoccatEvaluationMonitor.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/DoccatFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/DoccatModel.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/DocumentBeginFeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/DocumentCategorizer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/DocumentCategorizerEvaluator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/DocumentCategorizerEventStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/DocumentCategorizerME.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/namefind/DocumentNameFinder.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/DocumentSample.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/DocumentSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/DocumentSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/ontonotes/DocumentToLineStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/DynamicEvalParameters.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/normalizer/EmojiCharSequenceNormalizer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/sentdetect/EmptyLinePreprocessorStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/sentdetect/EndOfSentenceScanner.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/entitylinker/EntityLinker.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/entitylinker/EntityLinkerFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/entitylinker/EntityLinkerProperties.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/dictionary/serializer/Entry.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/dictionary/serializer/EntryInserter.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/EvalitaNameSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/EvalitaNameSampleStream.LANGUAGE.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/EvalitaNameSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/EvalParameters.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/eval/EvaluationMonitor.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/eval/Evaluator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/Event.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/brat/EventAnnotation.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/EventModelSequenceTrainer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/EventTraceStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/EventTrainer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/java/Experimental.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/ext/ExtensionLoader.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/ext/ExtensionNotLoadedException.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/ext/ExtensionServiceKeys.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/sentdetect/lang/Factory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/tokenize/lang/Factory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/doccat/FeatureGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/FeatureGeneratorResourceProvider.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/FeatureGeneratorUtil.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/FileEventStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/convert/FileToByteArraySampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/convert/FileToStringSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/FilterObjectStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/eval/FMeasure.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/quasinewton/Function.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/GapLabeler.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/GeneratorFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/GenericModelReader.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/model/GenericModelSerializer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/GenericModelWriter.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/GISModel.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/io/GISModelReader.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/io/GISModelWriter.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/GISTrainer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/wordvector/Glove.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/model/HashSumEventStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/HeadRules.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/lang/en/HeadRules.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/parser/lang/en/HeadRules.HeadRulesSerializer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/dictionary/Index.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/InputStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/featuregen/InSpanGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/InsufficientTrainingDataException.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/util/InvalidFormatException.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/irishsentencebank/IrishSentenceBankDocument.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/irishsentencebank/IrishSentenceBankDocument.IrishSentenceBankFlex.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/irishsentencebank/IrishSentenceBankDocument.IrishSentenceBankSentence.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/irishsentencebank/IrishSentenceBankSentenceStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/irishsentencebank/IrishSentenceBankTokenSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/stemmer/snowball/irishStemmer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/Language.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/LanguageDetector.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/LanguageDetectorContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/LanguageDetectorCrossValidator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/LanguageDetectorEvaluationMonitor.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/LanguageDetectorEvaluator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/LanguageDetectorEventStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/LanguageDetectorFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/LanguageDetectorME.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/LanguageDetectorModel.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/LanguageDetectorSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/LanguageDetectorSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/languagemodel/LanguageModel.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/langdetect/LanguageSample.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/LanguageSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/leipzig/LeipzigLanguageSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/leipzig/LeipzigLanguageSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/LemmaSample.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/LemmaSampleEventStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/LemmaSampleSequenceStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/LemmaSampleStream.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/Lemmatizer.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/LemmatizerContextGenerator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/LemmatizerEvaluationMonitor.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/LemmatizerEvaluator.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/LemmatizerFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/LemmatizerME.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/lemmatizer/LemmatizerModel.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/LemmatizerSampleStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/letsmt/LetsmtDocument.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/letsmt/LetsmtDocument.LetsmtDocumentHandler.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/letsmt/LetsmtDocument.LetsmtSentence.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/formats/letsmt/LetsmtSentenceStreamFactory.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/quasinewton/LineSearch.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/maxent/quasinewton/LineSearch.LineSearchResult.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/entitylinker/LinkedSpan.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/docs/1.8.4/apidocs/opennlp-tools/opennlp/tools/ml/naivebayes/LogProbabilities.html</loc>
+  <lastmod>2017-12-26T15:02:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+</urlset>
