@@ -175,19 +175,43 @@ body {
     <h1 class="title">Making a release</h1>
 
     <div class="sect1">
-<h2 id="one_time_setup">One time setup</h2>
+<h2 id="release_preparation">Release Preparation</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
+<p>Elect a release manager.</p>
+</li>
+<li>
+<p>Create a ticket for a new release in JIRA. If you do not have permission to do so just ask to be given permissions on the mailing list.</p>
+</li>
+<li>
+<p>Review all of the JIRA issues associated with the release. All issues should be resolved and closed.</p>
+</li>
+<li>
+<p>Any issues assigned to the release that are not complete should be assigned to the next release. Any critical or blocker issues should be resolved on the mailing list. Discuss any issues that you are unsure of on the mailing list.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="steps_for_the_release_manager">Steps for the Release Manager</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following steps need only to be performed once.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
 <p>Make sure you have your PGP key entered into <a href="https://id.apache.org/" class="bare">https://id.apache.org/</a>.
-Your KEYS will then be present in: <a href="https://people.apache.org/keys/group/opennlp.asc" class="bare">https://people.apache.org/keys/group/opennlp.asc</a></p>
+Your KEYS will then be present in <a href="https://people.apache.org/keys/group/opennlp.asc" class="bare">https://people.apache.org/keys/group/opennlp.asc</a>.</p>
 </li>
 <li>
-<p>Check if you have your PGP keys password</p>
+<p>Make sure you have your PGP keys password.</p>
 </li>
 <li>
-<p>Add your PGP key to the KEYS file</p>
+<p>Add your PGP key to the KEYS file:</p>
 </li>
 </ul>
 </div>
@@ -216,93 +240,172 @@ svn commit -m"Added Key for &lt;name&gt;" KEYS</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>Create a maven <code>settings.xml</code> to publish to <code>repository.apache.org</code></p>
+<p>Create a maven <code>settings.xml</code> to publish to <code>repository.apache.org</code>. An example configuration:</p>
 </li>
 </ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;server&gt;
+  &lt;id&gt;apache.releases.https&lt;/id&gt;
+  &lt;username&gt;Your Apache Username&lt;/username&gt;
+  &lt;password&gt;Your Apache Password&lt;/password&gt;
+&lt;/server&gt;</pre>
+</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="step_by_step">Step-by-Step</h2>
+<h2 id="release_steps">Release Steps</h2>
 <div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Checkout the Apache OpenNLP master branch: <code>git clone <a href="mailto:git@github.com">git@github.com</a>:apache/opennlp.git</code></p>
+</li>
+<li>
+<p>Execute a complete test (it can take several hours): <code>mvn test -DOPENNLP_DATA_DIR=/path/to/opennlp-test-data/ -Peval-tests</code></p>
+</li>
+<li>
+<p>Do a trial build: <code>mvn package -Papache-release</code></p>
+</li>
+<li>
+<p>Prepare the release: <code>mvn release:prepare</code> Answer the questions appropriately. The tag name format should be <strong>opennlp-x.y.z</strong>.
+This command creates and pushes two new commits to the repository to reflect the version changes. It also tags the release.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="successful_maven_release_preparation">Successful Maven Release Preparation</h3>
+<div class="sect3">
+<h4 id="perform_the_release">Perform the Release</h4>
 <div class="paragraph">
-<p>The following documents the steps which are necessary to make a
-release of Apache OpenNLP.</p>
+<p>Perform the release: <code>mvn release:perform</code></p>
+</div>
+<div class="paragraph">
+<p>This creates a staged repository at <a href="http://repository.apache.org" class="bare">http://repository.apache.org</a>.
+Check the staged repository and if all looks well, close the staging repository but do <strong>not</strong> promote or release it at this time.
+The build results are in <code>opennlp/target/checkout/target</code>. Do not modify or delete these files.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="check_the_release_artifacts">Check the Release Artifacts</h4>
+<div class="paragraph">
+<p>Perform basic checks against the release binary:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Release discussion and release planning on the mailing list</p>
+<p>Check signature of generated artifacts.</p>
 </li>
 <li>
-<p>Elect a release manager</p>
-</li>
-<li>
-<p>Prepare Jira for the release</p>
-</li>
-<li>
-<p>Crate an empty test plan for the release</p>
-</li>
-<li>
-<p>Make a release candidate</p>
-</li>
-<li>
-<p>Test the candidate according to the test plan and iterate until tests pass</p>
-</li>
-<li>
-<p>Call the release vote on opennlp-dev and on general incubator</p>
+<p>Check presence and appropriateness of <code>LICENSE</code>, <code>NOTICE</code>, and <code>README</code> files.</p>
 </li>
 </ul>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="releasing">Releasing</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The release candidate can be released after a successful release vote on
-the opennlp-dev and incubator general list.</p>
-</div>
+<div class="sect3">
+<h4 id="create_a_vote_thread">Create a VOTE Thread</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Release the staging repository. This will make the artifacts available in the Maven Central repository
+<p>Notify the developer mailing list of a new version vote. Be sure to replace all values in <code>[]</code> with the appropriate values.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Message Subject: [VOTE] Apache OpenNLP [version] Release Candidate</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Hi folks,
+
+I have posted a [Nth] release candidate for the Apache OpenNLP [version] release and it is ready for testing.
+
+The distributables can be downloaded from:
+https://repository.apache.org/content/repositories/orgapacheopennlp-[REPO_NUM]/org/apache/opennlp/opennlp-distr/[VERSION]/
+
+The release was made from the Apache OpenNLP [VERSION] tag at:
+https://github.com/apache/opennlp/tree/opennlp-[VERSION]
+
+To use it in a maven build set the version for opennlp-tools or opennlp-uima to [VERSION] and add the following URL to your settings.xml file:
+https://repository.apache.org/content/repositories/orgapacheopennlp-[REPO_NUM]
+
+The release was made using the OpenNLP release process, documented on the website:
+https://opennlp.apache.org/release.html
+
+Please vote on releasing these packages as Apache OpenNLP [VERSION]. The vote is open for at least the next 72 hours.
+
+Only votes from OpenNLP PMC are binding, but everyone is welcome to check the release candidate and vote.
+The vote passes if at least three binding +1 votes are cast.
+
+[ ] +1 Release the packages as Apache OpenNLP [VERSION]
+[ ] -1 Do not release the packages because...
+
+Thanks!</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="after_a_successful_vote">After a Successful Vote</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The vote is successful if at least 3 +1 votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
+Acknowledge the voting results on the mailing list in the VOTE thread.</p>
+</div>
+<div class="sect2">
+<h3 id="release_nexus_staging_repository">Release Nexus Staging Repository</h3>
+<div class="paragraph">
+<p>Release the staging repository. This will make the artifacts available in the Maven Central repository.
 To do this go to the <a href="http://repository.apache.org">repository server</a>, log in, go to the staging area and release the staging repository linked to this release</p>
-</li>
-<li>
-<p>Upload artifacts to the distribution server by following the steps below. All release artifacts need to be copied to <code>/www/www.apache.org/dist/opennlp</code> on <code>people.apache.org</code></p>
-<div class="ulist">
-<ul>
-<li>
-<p>In a local temp folder, svn co <a href="https://dist.apache.org/repos/dist/release/opennlp" class="bare">https://dist.apache.org/repos/dist/release/opennlp</a></p>
-</li>
-<li>
-<p>cd opennlp; mkdir opennlp-{xyz}; cd opennlp-{xyz}</p>
-</li>
-<li>
-<p>wget -e robots=off –no-check-certificate -np -r <a href="https://repository.apache.org/content/groups/public/org/apache/opennlp/opennlp/{xyz}/" class="bare">https://repository.apache.org/content/groups/public/org/apache/opennlp/opennlp/{xyz}/</a></p>
-</li>
-<li>
-<p>mv repository.apache.org/content/groups/public/org/apache/opennlp/opennlp/{xyz}/* .</p>
-</li>
-<li>
-<p>rm -rf repository.apache.org</p>
-</li>
-<li>
-<p>rm index.html</p>
-</li>
-</ul>
 </div>
-</li>
-<li>
-<p>On opennlp-site GitHub repository</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Update the properties <code>{opennlp.version}</code> and <code>{opennlp.next.version}</code> in <code>jbake.properties</code></p>
-</li>
-<li>
-<p>Add the following lines at the beginning of <code>docs/legacy.ad</code></p>
+</div>
+<div class="sect2">
+<h3 id="commit_distribution_to_svn">Commit Distribution to SVN</h3>
+<div class="paragraph">
+<p>Commit the distribution via SVN to <a href="https://dist.apache.org/repos/dist/release" class="bare">https://dist.apache.org/repos/dist/release</a>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>svn co https://dist.apache.org/repos/dist/release/opennlp/ dist
+# check if the KEYS file contains your key, if not, update it
+# copy opennlp/target/checkout/target/apache-opennlp* to dist/opennlp-&lt;VERSION&gt;
+svn commit --username &lt;username&gt;</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="update_the_website">Update the Website</h3>
+<div class="paragraph">
+<p>Update the website once the new version appears in the Apache download mirrors (keep checking <a href="http://www.apache.org/dyn/closer.cgi/opennlp" class="bare">http://www.apache.org/dyn/closer.cgi/opennlp</a> until you see something):</p>
+</div>
+<div class="sect3">
+<h4 id="add_new_artifact_item">Add New Artifact Item</h4>
+<div class="paragraph">
+<p>Add a new artifactItem in the pom.xml for the new OpenNLP release. (This automatically pulls in the details and javadocs for the new version when the site is built.):</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-xml" data-lang="xml">&lt;artifactItem&gt;
+  &lt;groupId&gt;org.apache.opennlp&lt;/groupId&gt;
+  &lt;artifactId&gt;opennlp-distr&lt;/artifactId&gt;
+  [version]${project.version}&lt;/version&gt;
+  &lt;overWrite&gt;false&lt;/overWrite&gt;
+  &lt;type&gt;zip&lt;/type&gt;
+  &lt;classifier&gt;bin&lt;/classifier&gt;
+  &lt;outputDirectory&gt;${project.build.directory}/distr/1.8.1&lt;/outputDirectory&gt;
+&lt;/artifactItem&gt;</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="update_documentation_links">Update Documentation Links</h4>
+<div class="paragraph">
+<p>Move the last version&#8217;s links to the documentation to the Legacy Documentation (<a href="https://opennlp.apache.org/docs/legacy.html" class="bare">https://opennlp.apache.org/docs/legacy.html</a>) page. Add the following lines at the beginning of <code>docs/legacy.ad</code>:</p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre>### Apache OpenNLP ${previous.release} documentation
@@ -313,28 +416,43 @@ To do this go to the <a href="http://repository.apache.org">repository server</a
 * link:/docs/${previous.release}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]</pre>
 </div>
 </div>
-</li>
-<li>
-<p>Add the following to main/pom.xml</p>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code class="language-xml" data-lang="xml">&lt;artifactItem&gt;
-  &lt;groupId&gt;org.apache.opennlp&lt;/groupId&gt;
-  &lt;artifactId&gt;opennlp-distr&lt;/artifactId&gt;
-  &lt;version&gt;${project.version}&lt;/version&gt;
-  &lt;overWrite&gt;false&lt;/overWrite&gt;
-  &lt;type&gt;zip&lt;/type&gt;
-  &lt;classifier&gt;bin&lt;/classifier&gt;
-  &lt;outputDirectory&gt;${project.build.directory}/distr/1.8.1&lt;/outputDirectory&gt;
-&lt;/artifactItem&gt;</code></pre>
 </div>
-</div>
-</li>
+<div class="sect3">
+<h4 id="update_doap_opennlp_rdf">Update doap_opennlp.rdf</h4>
+<div class="ulist">
+<ul>
 <li>
-<p>Add a news item in <code>news/release-{xyz}.ad</code> by copying the content from OpenNLP project <code>opennlp-distr/src/README</code></p>
+<p>Update the <code>doap_opennlp.rdf</code> file to reflect the new version.</p>
 </li>
 </ul>
 </div>
+</div>
+<div class="sect3">
+<h4 id="update_properties">Update Properties</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Update the properties <code>opennlp.version</code> and <code>opennlp.next.version</code> in <code>jbake.properties</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="add_news_item">Add News Item</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Add a news item in <code>news/release-{xyz}.ad</code> by copying the content from OpenNLP project <code>opennlp-distr/src/README</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="commit_website_changes">Commit Website Changes.</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Commit the website changes.</p>
 </li>
 <li>
 <p>Rebuild opennlp-site and redeploy the site (if Automatic Buildbot doesn&#8217;t kick in)</p>
@@ -342,17 +460,50 @@ To do this go to the <a href="http://repository.apache.org">repository server</a
 <li>
 <p>Test and review the website. Test that all download links are working. Test that the documentation is updated and can be viewed</p>
 </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="post_release_steps">Post-Release Steps</h3>
+<div class="ulist">
+<ul>
 <li>
-<p>Send out announcements to <a href="mailto:announce@apache.org">announce@apache.org</a>, <a href="mailto:dev@opennlp.apache.org">dev@opennlp.apache.org</a>, <a href="mailto:users@opennlp.apache.org">users@opennlp.apache.org</a></p>
+<p>Log the new version at <a href="https://reporter.apache.org/addrelease.html?opennlp" class="bare">https://reporter.apache.org/addrelease.html?opennlp</a>.</p>
 </li>
 <li>
-<p>Close out the present release in Jira</p>
+<p>Announce the new version on the OpenNLP Twitter.</p>
+</li>
+<li>
+<p>Close the present release ticket in JIRA.</p>
+</li>
+<li>
+<p>Send announcement email to <a href="mailto:announce@apache.org">announce@apache.org</a>, <a href="mailto:dev@opennlp.apache.org">dev@opennlp.apache.org</a>, <a href="mailto:users@opennlp.apache.org">users@opennlp.apache.org</a>. This needs to be done from your @apache.org email address or the email will bounce from the announce list. Gmail forwarding can help here and is a snap to set up (<a href="http://gmailblog.blogspot.com/2009/07/send-mail-from-another-address-without.html" class="bare">http://gmailblog.blogspot.com/2009/07/send-mail-from-another-address-without.html</a>). It&#8217;s even easier then the instructions there as it will recognize your email address and default to Apache settings. It is important to include a description of what OpenNLP is as well as a link to the updated DOAP within the release announcement, this is so others know what OpenNLP is.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>It is suggested to use the wiki to plan all tasks for the release
-and to distribute them among the team.</p>
+<div class="listingblock">
+<div class="content">
+<pre>Title: [ANNOUNCE] OpenNLP &lt;version&gt; released
+TO: announce@apache.org, users@opennlp.apache.org, dev@opennlp.apache.org
+
+The Apache OpenNLP team is pleased to announce the release of version &lt;version&gt; of Apache OpenNLP. The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text. It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, and parsing.
+The OpenNLP &lt;version&gt; binary and source distributions are available for download from our download page: http://opennlp.apache.org/cgi-bin/download.cgi
+The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: http://opennlp.apache.org/maven-dependency.html
+
+**  TODO UPDATE THIS &gt;&gt;
+This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and deprecated methods were removed. Now Java 1.8 and Maven 3.3.9 are required.
+Additionally the release contains the following noteworthy changes:
+- change 1
+- change 2
+...
+&lt;&lt;  TODO UPDATE THIS **
+A detailed list of the issues related to this release can be found in the release
+notes.
+For a complete list of fixed bugs and improvements please see the RELEASE_NOTES file included in the distribution.
+--The Apache OpenNLP Team</pre>
+</div>
+</div>
 </div>
 </div>
 </div>
