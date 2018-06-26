@@ -219,3 +219,13 @@ notes.
 For a complete list of fixed bugs and improvements please see the RELEASE_NOTES file included in the distribution.
 --The Apache OpenNLP Team
 ----
+
+## After an Unsuccessful Vote
+
+The release vote may fail due to an issue discovered in the release candidate. If the vote fails the release should be canceled by:
+
+- Sending an email to dev@opennlp.apache.org on the VOTE thread notifying of the vote's cancellation.
+- Dropping the staging repository at https://repository.apache.org/.
+- Renaming the `opennlp-x.y.x` tag to `opennlp-x.y.z-RC1`.
+
+A new release candidate can now be prepared. When complete, a new VOTE thread can be started as described in the steps above.
