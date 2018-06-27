@@ -507,6 +507,30 @@ For a complete list of fixed bugs and improvements please see the RELEASE_NOTES 
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="after_an_unsuccessful_vote">After an Unsuccessful Vote</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The release vote may fail due to an issue discovered in the release candidate. If the vote fails the release should be canceled by:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Sending an email to <a href="mailto:dev@opennlp.apache.org">dev@opennlp.apache.org</a> on the VOTE thread notifying of the vote&#8217;s cancellation.</p>
+</li>
+<li>
+<p>Dropping the staging repository at <a href="https://repository.apache.org/" class="bare">https://repository.apache.org/</a>.</p>
+</li>
+<li>
+<p>Renaming the <code>opennlp-x.y.x</code> tag to <code>opennlp-x.y.z-RC1</code>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A new release candidate can now be prepared. When complete, a new VOTE thread can be started as described in the steps above.</p>
+</div>
+</div>
+</div>
 
 </div>
 
