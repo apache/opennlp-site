@@ -16,7 +16,7 @@
    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
    KIND, either express or implied.  See the License for the
    specific language governing permissions and limitations
-   under the License.    
+   under the License.
 -->
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -145,7 +145,7 @@
                   </dirset>
                   <sequential>
                     <echo>Copy @{folder} docs</echo>
-                    
+
                     <copy todir="target/opennlp-site/docs">
                         <fileset dir="@{folder}" casesensitive="yes">
                             <include name="**/docs/**/*"/>
@@ -173,7 +173,7 @@
                     </replaceregexp>
                   </sequential>
                 </ac:for>
- 
+
               </target>
             </configuration>
             <goals>
@@ -214,7 +214,7 @@
             </goals>
             <configuration>
               <artifactItems>
-                
+
                 <artifactItem>
                   <groupId>org.apache.opennlp</groupId>
                   <artifactId>opennlp-distr</artifactId>
@@ -314,6 +314,17 @@
                   <classifier>bin</classifier>
                   <outputDirectory>${project.build.directory}/distr/1.8.4</outputDirectory>
                 </artifactItem>
+
+                <artifactItem>
+                  <groupId>org.apache.opennlp</groupId>
+                  <artifactId>opennlp-distr</artifactId>
+                  <version>1.9.0</version>
+                  <overWrite>false</overWrite>
+                  <type>zip</type>
+                  <classifier>bin</classifier>
+                  <outputDirectory>${project.build.directory}/distr/1.9.0</outputDirectory>
+                </artifactItem>
+
               </artifactItems>
             </configuration>
           </execution>
@@ -324,4 +335,3 @@
   </build>
 
 </project>
-
