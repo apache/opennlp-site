@@ -143,6 +143,15 @@ svn commit --username <username>
 
 Update the website once the new version appears in the Apache download mirrors (keep checking http://www.apache.org/dyn/closer.cgi/opennlp until you see something):
 
+#### Update jbake.properties
+
+Update the `jbake.properties` file to include the new version numbers:
+
+```
+opennlp.version=
+opennlp.next.version=
+```
+
 #### Add New Artifact Item
 
 Add a new artifactItem in the pom.xml for the new OpenNLP release. (This automatically pulls in the details and javadocs for the new version when the site is built.):
