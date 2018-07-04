@@ -24,8 +24,8 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Tue, 3 Jul 2018 12:34:43 +0000</pubDate>
-    <lastBuildDate>Tue, 3 Jul 2018 12:34:43 +0000</lastBuildDate>
+    <pubDate>Wed, 4 Jul 2018 13:43:14 +0000</pubDate>
+    <lastBuildDate>Wed, 4 Jul 2018 13:43:14 +0000</lastBuildDate>
 
     <item>
       <title>Apache OpenNLP 1.9.0 released</title>
@@ -83,10 +83,13 @@
 &lt;p&gt;Update Penn Treebank URL&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Explain the new format of feature generator XML config&amp;lt;&lt;/p&gt;
+&lt;p&gt;Explain the new format of feature generator XML config&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Unify code to sum up input context features&amp;lt;&lt;/p&gt;
+&lt;p&gt;Unify code to sum up input context features&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;FeatureGeneratorUtil can recognize Japanese Hiragana and Katakana letters&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
