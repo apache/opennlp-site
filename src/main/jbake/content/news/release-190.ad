@@ -48,8 +48,9 @@ Additionally the release contains the following changes:
 - BRAT Annotator service Fails to start
 - Token model creation fails without at least one &lt;SPLIT&gt; tag
 - Update Penn Treebank URL
-- Explain the new format of feature generator XML config<
-- Unify code to sum up input context features<
+- Explain the new format of feature generator XML config
+- Unify code to sum up input context features
+- FeatureGeneratorUtil can recognize Japanese Hiragana and Katakana letters
 
 A detailed list of the issues related to this release can be found in the release notes.
 
