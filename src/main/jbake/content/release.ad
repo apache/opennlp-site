@@ -204,29 +204,32 @@ Move the last version's links to the documentation to the Legacy Documentation (
 
 - Log the new version at https://reporter.apache.org/addrelease.html?opennlp.
 - Announce the new version on the OpenNLP Twitter.
+- Announce the new version on the Apache OpenNLP blog at https://blogs.apache.org/opennlp/.
 - Close the present release ticket in JIRA.
 - Send announcement email to announce@apache.org, dev@opennlp.apache.org, users@opennlp.apache.org. This needs to be done from your @apache.org email address or the email will bounce from the announce list. Gmail forwarding can help here and is a snap to set up (http://gmailblog.blogspot.com/2009/07/send-mail-from-another-address-without.html). It's even easier then the instructions there as it will recognize your email address and default to Apache settings. It is important to include a description of what OpenNLP is as well as a link to the updated DOAP within the release announcement, this is so others know what OpenNLP is.
 
 ----
-
 Title: [ANNOUNCE] OpenNLP <version> released
 TO: announce@apache.org, users@opennlp.apache.org, dev@opennlp.apache.org
+----
 
+Message body:
+
+----
 The Apache OpenNLP team is pleased to announce the release of version <version> of Apache OpenNLP. The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text. It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, and parsing.
-The OpenNLP <version> binary and source distributions are available for download from our download page: http://opennlp.apache.org/cgi-bin/download.cgi
+The OpenNLP <version> binary and source distributions are available for download from our download page: https://opennlp.apache.org/download.html
 The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: http://opennlp.apache.org/maven-dependency.html
 
+Changes in this version:
+
 **  TODO UPDATE THIS >>
-This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and deprecated methods were removed. Now Java 1.8 and Maven 3.3.9 are required.
-Additionally the release contains the following noteworthy changes:
 - change 1
 - change 2
-...
 <<  TODO UPDATE THIS **
-A detailed list of the issues related to this release can be found in the release
-notes.
+
 For a complete list of fixed bugs and improvements please see the RELEASE_NOTES file included in the distribution.
---The Apache OpenNLP Team
+
+The Apache OpenNLP Team
 ----
 
 ## After an Unsuccessful Vote
