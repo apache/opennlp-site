@@ -139,6 +139,12 @@ svn co https://dist.apache.org/repos/dist/release/opennlp/ dist
 svn commit --username <username>
 ----
 
+### Archive Old Release(s)
+
+To reduce the load on the ASF mirrors, projects are required to delete old releases (see http://www.apache.org/legal/release-policy.html#when-to-archive).
+
+Remove the old releases from SVN under https://dist.apache.org/repos/dist/release/opennlp/.
+
 ### Update the Website
 
 Update the website once the new version appears in the Apache download mirrors (keep checking http://www.apache.org/dyn/closer.cgi/opennlp until you see something):
