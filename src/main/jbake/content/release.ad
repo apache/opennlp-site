@@ -192,10 +192,6 @@ Move the last version's links to the documentation to the Legacy Documentation (
 
 - Update the `doap_opennlp.rdf` file to reflect the new version.
 
-#### Update Properties
-
-- Update the properties `opennlp.version` and `opennlp.next.version` in `jbake.properties`.
-
 #### Add News Item
 
 - Add a news item in `news/release-{xyz}.ad` by copying the content from OpenNLP project `opennlp-distr/src/README`.
