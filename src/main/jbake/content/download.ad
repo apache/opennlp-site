@@ -28,7 +28,7 @@ Apache OpenNLP {opennlp_version} is now available for download.
 
 [options="header"]
 |===
-|File | Signatures
+|.tar.gz | .zip
 
 |https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.tar.gz[apache-opennlp-{opennlp_version}-bin.tar.gz]
 https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.tar.gz.sha256[sha256]
