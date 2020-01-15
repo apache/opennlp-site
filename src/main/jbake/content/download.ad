@@ -14,7 +14,7 @@
    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
    KIND, either express or implied.  See the License for the
    specific language governing permissions and limitations
-   under the License.   
+   under the License.
 ////
 = Download
 :jbake-type: page
@@ -31,19 +31,19 @@ Apache OpenNLP {opennlp_version} is now available for download.
 |.tar.gz | .zip
 
 |https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.tar.gz[apache-opennlp-{opennlp_version}-bin.tar.gz]
-https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.tar.gz.sha256[sha256]
+https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.tar.gz.sha512[sha512]
 https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.tar.gz.asc[asc]
 
 |https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.zip[apache-opennlp-{opennlp_version}-bin.zip]
-https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.zip.sha256[sha256]
+https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.zip.sha512[sha512]
 https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.zip.asc[asc]
 
 |https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.tar.gz[apache-opennlp-{opennlp_version}-src.tar.gz]
-https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.tar.gz.sha256[sha256]
+https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.tar.gz.sha512[sha512]
 https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.tar.gz.asc[asc]
 
 |https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.zip[apache-opennlp-{opennlp_version}-src.zip]
-https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.zip.sha256[sha256]
+https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.zip.sha512[sha512]
 https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.zip.asc[asc]
 |===
 
@@ -51,12 +51,12 @@ Note: Please note that the tar.gz archive contain file names longer than 100 cha
 been created using GNU tar extensions. It must be untarred with a GNU compatible version of tar.
 
 ### Verifying Signatures
-The sha256 and asc files are signature files and can be used to verify the integrity of the
+The sha512 and asc files are signature files and can be used to verify the integrity of the
 downloaded distribution package.
 
 Use the following commands to verify the integrity:
 
-* gpg --print-md sha256 fileName.tar.gz
+* gpg --print-md sha512 fileName.tar.gz
 * gpg --verify fileName.tar.gz.asc
 
 It might be necessary to import the https://www.apache.org/dist/opennlp/KEYS[KEYS file] to verify the integrity
