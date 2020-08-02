@@ -1,0 +1,51 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 1.9.3 released
+Apache OpenNLP
+2020-07-31
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 1.9.3.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+Apache OpenNLP 1.9.3 binary and source distributions are available for download from our download page: link:/download.html[download page]
+
+The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: link:/maven-dependency.html[Maven Dependency]
+
+# What's new in Apache OpenNLP 1.9.3
+
+- Resolved issues building on Java 11.
+- Usingstrict math for calculations for consistent evaluations.
+- Implement Serializable in langdetect and normalize.
+- Fixed issue where language detector fails to predict language on long input texts.
+- Documentation improvements.
+- Add support for Catalan and Indonesian stemmers.
+
+A detailed list of the issues related to this release can be found in the release notes.
+
+For a complete list of fixed bugs and improvements please see the README.html file included in the distribution.
+
+--The Apache OpenNLP Team
