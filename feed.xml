@@ -24,9 +24,68 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Wed, 15 Jan 2020 20:24:53 +0000</pubDate>
-    <lastBuildDate>Wed, 15 Jan 2020 20:24:53 +0000</lastBuildDate>
+    <pubDate>Sun, 2 Aug 2020 11:33:09 +0000</pubDate>
+    <lastBuildDate>Sun, 2 Aug 2020 11:33:09 +0000</lastBuildDate>
 
+    <item>
+      <title>Apache OpenNLP 1.9.3 released</title>
+      <link>https://opennlp.apache.org/news/release-193.html</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-193.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 1.9.3.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Apache OpenNLP 1.9.3 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_9_3&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.3&lt;/h1&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Resolved issues building on Java 11.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Usingstrict math for calculations for consistent evaluations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Implement Serializable in langdetect and normalize.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed issue where language detector fails to predict language on long input texts.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Documentation improvements.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add support for Catalan and Indonesian stemmers.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A detailed list of the issues related to this release can be found in the release notes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For a complete list of fixed bugs and improvements please see the README.html file included in the distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Apache OpenNLP 1.9.2 released</title>
       <link>https://opennlp.apache.org/news/release-192.html</link>
