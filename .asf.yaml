@@ -1,0 +1,9 @@
+github:
+  description: "Website sources for the Apache OpenNLP website"
+  homepage: https://opennlp.apache.org/
+  labels:
+    - apache
+    - opennlp
+    - jbake
+    - website
+
