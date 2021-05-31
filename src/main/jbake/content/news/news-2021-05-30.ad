@@ -14,7 +14,7 @@
    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
    KIND, either express or implied.  See the License for the
    specific language governing permissions and limitations
-   under the License.   
+   under the License.
 ////
 = OpenNLP Pre-trained Models Available
 2021-05-30
@@ -26,4 +26,6 @@
 
 == OpenNLP Pre-trained Models Available
 
-Pre-trained sentence, parts of speech, and token models are now available for English, French, Italian, German, and Dutch. These models were trained on the Universal Dependency corpus and are intended to provide usable models under the Apache 2.0 license. See the models README for more information on the models including how each was created and evaluated.
+Pre-trained sentence, parts of speech, and token models are now available for English, French, Italian, German, and Dutch.
+These models were trained on Universal Dependencies and are intended to provide usable models under the Apache 2.0 license.
+See the models' README for more information on the models including how each was created and evaluated.
