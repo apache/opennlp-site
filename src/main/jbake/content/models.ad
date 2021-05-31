@@ -22,17 +22,16 @@
 :jbake-status: published
 :idprefix:
 
-
 Use the links in the table below to download the pre-trained models for the Apache OpenNLP.
 
 Note: All models are zip compressed (like a jar file), they *must not* be uncompressed.
 
 [options="header"]
-|===
+|======
 | Component | Language | Compatibility | Description | README and Reports | File | Signatures
 
 | Language Detector
-| 103
+| Detects 103 languages
 | >= 1.8.3
 | Detects 103 languages in ISO 693-3 standard. Works well with longer texts that have at least 2 sentences or more from the same language.
 | https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/README.txt[README]
@@ -42,17 +41,161 @@ https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.r
 |https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.md5[md5]
 https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.sha1[sha1]
 https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.asc[asc]
-|===
 
-# SourceForge Models
+| Sentence
+| fr
+| >= 1.0.0
+| Sentence detection model for French
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-1.0-1.9.3fr-ud-ftb-sentence-1.0-1.9.3.bin[opennlp-1.0-1.9.3fr-ud-ftb-sentence-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-1.0-1.9.3fr-ud-ftb-sentence-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-1.0-1.9.3fr-ud-ftb-sentence-1.0-1.9.3.bin.asc[asc]
 
-The models on Sourceforge for 1.5.0 are http://opennlp.sourceforge.net/models-1.5/[found here]
-and are fully compatible with Apache OpenNLP {opennlp_version}.
+| Sentence
+| de
+| >= 1.0.0
+| Sentence detection model for German
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-de-ud-gsd-sentence-1.0-1.9.3.bin[opennlp-de-ud-gsd-sentence-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-de-ud-gsd-sentence-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-de-ud-gsd-sentence-1.0-1.9.3.bin.asc[asc]
 
-The models can be used for testing or getting started, please train your own models for all other use cases.
+| Sentence
+| en
+| >= 1.0.0
+| Sentence detection model for English
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-sentence-1.0-1.9.3.bin[opennlp-en-ud-ewt-sentence-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-sentence-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-sentence-1.0-1.9.3.bin.asc[asc]
+
+| Sentence
+| it
+| >= 1.0.0
+| Sentence detection model for Italian
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-it-ud-vit-sentence-1.0-1.9.3.bin[opennlp-it-ud-vit-sentence-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-it-ud-vit-sentence-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-it-ud-vit-sentence-1.0-1.9.3.bin.asc[asc]
+
+| Sentence
+| nl
+| >= 1.0.0
+| Sentence detection model for Dutch
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-nl-ud-alpino-sentence-1.0-1.9.3.bin[opennlp-nl-ud-alpino-sentence-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-nl-ud-alpino-sentence-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-nl-ud-alpino-sentence-1.0-1.9.3.bin.asc[asc]
+
+| Parts of Speech
+| de
+| >= 1.0.0
+| Parts of speech model for German
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-de-ud-gsd-pos-1.0-1.9.3.bin[opennlp-de-ud-gsd-pos-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-de-ud-gsd-pos-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-de-ud-gsd-pos-1.0-1.9.3.bin.asc[asc]
+
+| Parts of Speech
+| en
+| >= 1.0.0
+| Parts of speech model for English
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-pos-1.0-1.9.3.bin[opennlp-en-ud-ewt-pos-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-pos-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-pos-1.0-1.9.3.bin.asc[asc]
+
+| Parts of Speech
+| fr
+| >= 1.0.0
+| Parts of speech model for French
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-fr-ud-ftb-pos-1.0-1.9.3.bin[opennlp-fr-ud-ftb-pos-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-fr-ud-ftb-pos-1.0-1.9.3.bin.md5[md5]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-fr-ud-ftb-pos-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-fr-ud-ftb-pos-1.0-1.9.3.bin.asc[asc]
+
+| Parts of Speech
+| it
+| >= 1.0.0
+| Parts of speech model for Italian
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-it-ud-vit-pos-1.0-1.9.3.bin[opennlp-it-ud-vit-pos-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-it-ud-vit-pos-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-it-ud-vit-pos-1.0-1.9.3.bin.asc[asc]
+
+| Parts of Speech
+| nl
+| >= 1.0.0
+| Parts of speech model for Dutch
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-nl-ud-alpino-pos-1.0-1.9.3.bin[opennlp-nl-ud-alpino-pos-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-nl-ud-alpino-pos-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-nl-ud-alpino-pos-1.0-1.9.3.bin.asc[asc]
+
+| Tokens
+| de
+| >= 1.0.0
+| Tokenizer model for German
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-de-ud-gsd-tokens-1.0-1.9.3.bin[opennlp-de-ud-gsd-tokens-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-de-ud-gsd-tokens-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-de-ud-gsd-tokens-1.0-1.9.3.bin.asc[asc]
+
+| Tokens
+| en
+| >= 1.0.0
+| Tokenizer model for English
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin[opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin.asc[asc]
+
+| Tokens
+| fr
+| >= 1.0.0
+| Tokenizer model for French
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin[opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin.asc[asc]
+
+| Tokens
+| it
+| >= 1.0.0
+| Tokenizer model for Italian
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-it-ud-vit-tokens-1.0-1.9.3.bin[opennlp-it-ud-vit-tokens-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-it-ud-vit-tokens-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-it-ud-vit-tokens-1.0-1.9.3.bin.asc[asc]
+
+| Tokens
+| nl
+| >= 1.0.0
+| Tokenizer model for Dutch
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
+https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-nl-ud-alpino-tokens-1.0-1.9.3.bin[opennlp-nl-ud-alpino-tokens-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-nl-ud-alpino-tokens-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-nl-ud-alpino-tokens-1.0-1.9.3.bin.asc[asc]
+|======
 
 ## Verifying Signatures
-The md5, sha1 and asc files are signature files and can be used to verify the integrity of the
+The md5, sha1, sha512, and asc files are signature files and can be used to verify the integrity of the
 downloaded distribution package.
 
 Use the following commands to verify the integrity:
@@ -70,3 +213,11 @@ That can easily be done with:
 
 More information about release signing and verifying signatures can
 be found https://www.apache.org/dev/release-signing.html[here].
+
+# SourceForge Models
+
+The models on Sourceforge for 1.5.0 are http://opennlp.sourceforge.net/models-1.5/[found here]
+and are fully compatible with Apache OpenNLP {opennlp_version}.
+
+The models can be used for testing or getting started, please train your own models for all other use cases.
+
