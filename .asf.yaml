@@ -7,3 +7,5 @@ github:
     - jbake
     - website
 
+publish:
+  whoami: asf-site
