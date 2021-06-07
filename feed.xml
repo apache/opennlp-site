@@ -24,9 +24,27 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Tue, 1 Jun 2021 12:27:16 +0000</pubDate>
-    <lastBuildDate>Tue, 1 Jun 2021 12:27:16 +0000</lastBuildDate>
+    <pubDate>Mon, 7 Jun 2021 19:15:44 +0000</pubDate>
+    <lastBuildDate>Mon, 7 Jun 2021 19:15:44 +0000</lastBuildDate>
 
+    <item>
+      <title>OpenNLP Pre-trained Models Available</title>
+      <link>https://opennlp.apache.org/news/news-2021-05-30.html</link>
+      <pubDate>Mon, 7 Jun 2021 19:14:36 +0000</pubDate>
+      <guid isPermaLink="false">news/news-2021-05-30.html</guid>
+      	<description>
+	&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;opennlp_pre_trained_models_available&quot;&gt;OpenNLP Pre-trained Models Available&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Pre-trained sentence, parts of speech, and token models are now available for English, French, Italian, German, and Dutch.
+These models were trained on Universal Dependencies and are intended to provide usable models under the Apache 2.0 license.
+See the models&apos; README for more information on the models including how each was created and evaluated.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Apache OpenNLP 1.9.3 released</title>
       <link>https://opennlp.apache.org/news/release-193.html</link>
@@ -1164,30 +1182,6 @@ validators.&lt;/p&gt;
 	</description>
     </item>
     <item>
-      <title>First release of 1.5.1-incubating is ready!</title>
-      <link>https://opennlp.apache.org/news/news-2011-05-02.html</link>
-      <pubDate>Mon, 28 Nov 2011 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">news/news-2011-05-02.html</guid>
-      	<description>
-	&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;First release of opennlp-1.5.1-incubating ready for primetime.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Voting started on opennlp-dev list voting +1 (5-binding and 2-non-binding).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Voting carried over to general list voting +1 (1-binding and 1-non-binding).&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Recorded no 0 votes or -1 votes.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
       <title>Apache OpenNLP 1.5.2 Incubating released</title>
       <link>https://opennlp.apache.org/news/release-152.html</link>
       <pubDate>Mon, 28 Nov 2011 00:00:00 +0000</pubDate>
@@ -1261,6 +1255,30 @@ file included in the distribution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>First release of 1.5.1-incubating is ready!</title>
+      <link>https://opennlp.apache.org/news/news-2011-05-02.html</link>
+      <pubDate>Mon, 28 Nov 2011 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/news-2011-05-02.html</guid>
+      	<description>
+	&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;First release of opennlp-1.5.1-incubating ready for primetime.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Voting started on opennlp-dev list voting +1 (5-binding and 2-non-binding).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Voting carried over to general list voting +1 (1-binding and 1-non-binding).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Recorded no 0 votes or -1 votes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
 	</description>
     </item>
