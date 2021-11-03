@@ -139,7 +139,7 @@ svn co https://dist.apache.org/repos/dist/release/opennlp/ dist
 svn commit --username <username>
 ----
 
-### Archive Old Release(s)
+### Delete Old Release(s)
 
 To reduce the load on the ASF mirrors, projects are required to delete old releases (see http://www.apache.org/legal/release-policy.html#when-to-archive).
 
@@ -190,7 +190,7 @@ Move the last version's links to the documentation to the Legacy Documentation (
 
 #### Update doap_opennlp.rdf
 
-- Update the `doap_opennlp.rdf` file to reflect the new version.
+- Update the `doap_opennlp.rdf` file to reflect the new version number and release date.
 
 #### Add News Item
 
