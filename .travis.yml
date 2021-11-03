@@ -21,3 +21,4 @@ before_install:
   - export PATH=$M2_HOME/bin:$PATH
 
 install: mvn clean install
+
