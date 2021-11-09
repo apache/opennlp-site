@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Apache OpenNLP Code Conventions - Apache OpenNLP</title>
+    <title>Apache OpenNLP 1.9.4 released - Apache OpenNLP</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Apache OpenNLP  is a machine learning based toolkit for the processing of natural language text." />
@@ -172,86 +172,81 @@ body {
 </nav>
 
 <div class="container">
-    <h1 class="title">Apache OpenNLP Code Conventions</h1>
+    <h1 class="title">Apache OpenNLP 1.9.4 released</h1>
 
     <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Apache OpenNLP code should follow our code conventions. All code which
-is contributed to the project should adhere to these guidelines.</p>
+<p>The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 1.9.4.</p>
 </div>
+<div class="paragraph">
+<p>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.</p>
+</div>
+<div class="paragraph">
+<p>It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.</p>
+</div>
+<div class="paragraph">
+<p>Apache OpenNLP 1.9.4 binary and source distributions are available for download from our download page: <a href="/download.html">download page</a></p>
+</div>
+<div class="paragraph">
+<p>The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: <a href="/maven-dependency.html">Maven Dependency</a></p>
+</div>
+</div>
+</div>
+<h1 id="whats_new_in_apache_opennlp_1_9_4" class="sect0">What&#8217;s new in Apache OpenNLP 1.9.4</h1>
 <div class="ulist">
 <ul>
 <li>
-<p>Use 2 spaces for indentation. No tabs!</p>
+<p>Refactorings to improve code quality and performance.</p>
 </li>
 <li>
-<p>Place open braces on the same line as the declaration, for example:</p>
+<p>Fix Parser top k parses doesn&#8217;t show "top" (highest probability) parses.</p>
+</li>
+<li>
+<p>Use LinkedHashMap for deterministic iteration order.</p>
+</li>
+<li>
+<p>Fixed spelling errors in the documentation.</p>
 </li>
 </ul>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">public class Foo extends Bar {
-  public static void main(String args[]) {
-    try {
-      for (int i = 0; i &lt; args.length; i++) {
-        System.out.println(Integer.parseInt(args[i]));
-      }
-    }
-    catch(NumberFormatException e) {
-      e.printStackTrace();
-    }
-  }
-}</code></pre>
+<div class="paragraph">
+<p>A detailed list of the issues related to this release can be found in the release notes.</p>
 </div>
+<div class="paragraph">
+<p>For a complete list of fixed bugs and improvements please see the README.html file included in the distribution.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Wrap lines longer than 80 to 100 characters. For wrapped lines use an indent of 4 characters.</p>
-</li>
-<li>
-<p>Within a class or interface, definitions should be ordered as follows:</p>
-</li>
-<li>
-<p>Inner classses</p>
-</li>
-<li>
-<p>Class (static) variables</p>
-</li>
-<li>
-<p>Instance variables</p>
-</li>
-<li>
-<p>Constructors</p>
-</li>
-<li>
-<p>Methods</p>
-</li>
-<li>
-<p>Do not use package imports (for example import org.apache.opennlp.*)</p>
-</li>
-<li>
-<p>For other cases, we try to follow
-<a href="http://www.oracle.com/technetwork/java/codeconv-138413.html">Java code conventions</a> as much as possible.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<h1 id="formatter_and_style_files" class="sect0">Formatter and Style files</h1>
-<div class="ulist">
-<ul>
-<li>
-<p>A code formatter file for Eclipse can be found <a href="code-formatter/OpenNLP-Eclipse-Formatter.xml">here</a> and the import order file <a href="code-formatter/eclipse-opennlp.importorder">here</a>.</p>
-</li>
-<li>
-<p>A code formatter file for IntelliJ can be found <a href="code-formatter/OpenNLP-IntelliJ-Formatter.xml">here</a>.</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>--The Apache OpenNLP Team</p>
 </div>
 
+    <p><em>03 November 2021</em></p>
+    <div id="share"><!-- Google Plus -->
+<div class="g-plusone" data-size="medium"></div>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<!-- Twitter -->
+<a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- Facebook -->
+<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script></div>
 </div>
 
     <footer class='footer'>
