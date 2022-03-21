@@ -22,18 +22,47 @@
 :jbake-status: published
 :idprefix:
 
-
 The Apache OpenNLP project is developed by volunteers and is always looking for new contributors
 to work on all parts of the project. Every contribution is welcome and needed to make it better.
-A contribution can be anything from a small documentation typo fix to a new component.
+A contribution can be anything from a small documentation typo fix to a new component. We especially welcome contributions from first-time users.
 
-Before you start to contribute we suggest to join the user and development mailing lists.
+To get started, please first join the Apache OpenNLP mailing lists:
 
-A contribution is always done through https://issues.apache.org/jira/browse/OPENNLP[Apache OpenNLP JIRA].
-Please https://issues.apache.org/jira/secure/CreateIssue.jspa?pid=12311215&issuetype=4[create a JIRA issue]
-which describes the change and attach a patch to it.
-Every received patch will be reviewed and then either be committed or we give appropriate feedback
-to change it.
+[cols="3,3,3,3,3"]
+|===
+|Mailing List |Purpose |Subscribe |Unsubscribe |Archives
+
+|Users Mailing List
+|This list is the general users mailing list and is for posting most, if not all, relevant questions. If you are trying to decide which list, opennlp-dev or opennlp-users, post here first. Someone will kindly suggest you post to opennlp-dev if it is more appropriate there.
+|mailto:users-subscribe@users.apache.org[Subscribe]
+|mailto:users-unsubscribe@users.apache.org[Unsubscribe]
+|http://mail-archives.apache.org/mod_mbox/opennlp-users/[Archives]
+
+|Developers Mailing List
+|This list is for development discussions, patch suggestions, and current issues posted
+to the issue tracker for the project.
+|mailto:dev-subscribe@users.apache.org[Subscribe]
+|mailto:dev-unsubscribe@users.apache.org[Unsubscribe]
+|http://mail-archives.apache.org/mod_mbox/opennlp-dev/[Archives]
+
+|Commits Mailing List
+|This list follows changes to the project. This list is _not_ for questions. This list is used by svn to post changes to the project. If you have questions about any content here, post them to the opennlp-dev list above.
+|mailto:commits-subscribe@users.apache.org[Subscribe]
+|mailto:commits-unsubscribe@users.apache.org[Unsubscribe]
+|http://mail-archives.apache.org/mod_mbox/opennlp-commits/[Archives]
+
+|Issues Mailing List
+|This list follows changes and posts to JIRA, the projects bug tracking system.  If you have any
+issues please post them to the JIRA pages and not to this list. This list is mainly for developers to keep track of changes and issues to be resolved; however, any changes should be posted to the JIRA pages and _not_ _directly_ to this mailing list.
+|mailto:issues-subscribe@users.apache.org[Subscribe]
+|mailto:issues-unsubscribe@users.apache.org[Unsubscribe]
+|http://mail-archives.apache.org/mod_mbox/opennlp-issues/[Archives]
+|===
+
+## Making a Contribution
+
+* Create a new issue in the https://issues.apache.org/jira/browse/OPENNLP[Apache OpenNLP JIRA]. Please describe the problem or improvement in the body of the issue. For larger issues, please first contact the developer mailing list and describe the problem.
+* Next, create a pull request in https://github.com/apache/opennlp/pulls[GitHub].
 
 Bigger contributions can eventually only be accepted when an
 https://www.apache.org/licenses/icla.txt[ICLA], https://www.apache.org/licenses/cla-corporate.txt[CCLA]
@@ -42,22 +71,7 @@ or https://www.apache.org/licenses/software-grant.txt[software grant] is on file
 Contributors who have a history of successful participation are invited to join
 the project as a committer from the https://incubator.apache.org/guides/ppmc.html[PPMC].
 
-## Contributions wanted
+## Open Tasks
 
-* https://issues.apache.org/jira/browse/OPENNLP-941[OPENNLP-941]: Add eval support to detokenizer
-* https://issues.apache.org/jira/browse/OPENNLP-912[OPENNLP-912]: Add a rule based sentence detector
-* https://issues.apache.org/jira/browse/OPENNLP-892[OPENNLP-892]: Add a Entity-Relationship Extraction component
-* https://issues.apache.org/jira/browse/OPENNLP-780[OPENNLP-780]: Add formats support for NKJP
-* https://issues.apache.org/jira/browse/OPENNLP-712[OPENNLP-712]: Creating a date time recognizer
-* https://issues.apache.org/jira/browse/OPENNLP-565[OPENNLP-565]: Add MASC format support
-* https://issues.apache.org/jira/browse/OPENNLP-547[OPENNLP-547]: Add a dependency parser component
-* https://issues.apache.org/jira/browse/OPENNLP-546[OPENNLP-546]: Add TokenizerPTB
-* https://issues.apache.org/jira/browse/OPENNLP-244[OPENNLP-244]: Write documentation for the BIONLP converter
-* https://issues.apache.org/jira/browse/OPENNLP-217[OPENNLP-217]: Add Detokenizer Dictionary section
-* https://issues.apache.org/jira/browse/OPENNLP-216[OPENNLP-216]: Add Detokenizer API section
-* https://issues.apache.org/jira/browse/OPENNLP-198[OPENNLP-198]: Develop a demonstration web app for our website 
-* https://issues.apache.org/jira/browse/OPENNLP-108[OPENNLP-108]: Write the OpenNLP White Paper
-* https://issues.apache.org/jira/browse/OPENNLP-49[OPENNLP-49]: Write documentation for the uima integration
-* https://issues.apache.org/jira/browse/OPENNLP-47[OPENNLP-47]: Rewrite the CONLL06 documentation based on the tutorial
-* https://issues.apache.org/jira/browse/OPENNLP-32[OPENNLP-32]: Write more documentation for the parser
+Please see the https://issues.apache.org/jira/browse/OPENNLP[Apache OpenNLP JIRA] for a list of tasks. If you would like to work on a task, please email the developers mailing list and request to do so. You will then be assigned the issue in JIRA.
 
