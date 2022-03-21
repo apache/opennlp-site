@@ -30,25 +30,25 @@
 |This list is the general users mailing list and is for posting most, if not all, relevant questions. If you are trying to decide which list, opennlp-dev or opennlp-users, post here first. Someone will kindly suggest you post to opennlp-dev if it is more appropriate there.
 |mailto:users-subscribe@users.apache.org[Subscribe]
 |mailto:users-unsubscribe@users.apache.org[Unsubscribe]
-|http://mail-archives.apache.org/mod_mbox/opennlp-users/[Archives]
+|link:++https://lists.apache.org/list.html?users@opennlp.apache.org++[Archives]
 
 |Developers Mailing List
 |This list is for development discussions, patch suggestions, and current issues posted
 to the issue tracker for the project.
 |mailto:dev-subscribe@users.apache.org[Subscribe]
 |mailto:dev-unsubscribe@users.apache.org[Unsubscribe]
-|http://mail-archives.apache.org/mod_mbox/opennlp-dev/[Archives]
+|link:++https://lists.apache.org/list.html?dev@opennlp.apache.org++[Archives]
 
 |Commits Mailing List
 |This list follows changes to the project. This list is _not_ for questions. This list is used by svn to post changes to the project. If you have questions about any content here, post them to the opennlp-dev list above.
 |mailto:commits-subscribe@users.apache.org[Subscribe]
 |mailto:commits-unsubscribe@users.apache.org[Unsubscribe]
-|http://mail-archives.apache.org/mod_mbox/opennlp-commits/[Archives]
+|link:++https://lists.apache.org/list.html?commits@opennlp.apache.org++[Archives]
 
 |Issues Mailing List
 |This list follows changes and posts to JIRA, the projects bug tracking system.  If you have any
 issues please post them to the JIRA pages and not to this list. This list is mainly for developers to keep track of changes and issues to be resolved; however, any changes should be posted to the JIRA pages and _not_ _directly_ to this mailing list.
 |mailto:issues-subscribe@users.apache.org[Subscribe]
 |mailto:issues-unsubscribe@users.apache.org[Unsubscribe]
-|http://mail-archives.apache.org/mod_mbox/opennlp-issues/[Archives]
+|link:++https://lists.apache.org/list.html?issues@opennlp.apache.org++[Archives]
 |===
