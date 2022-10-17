@@ -43,6 +43,19 @@ To use the OpenNLP Tools define the following dependency:
 </dependency>
 ----
 
+## OpenNLP DL Dependency
+
+To use the OpenNLP DL define the following dependency:
+
+[source,xml,indent=0,subs=attributes+]
+----
+<dependency>
+  <groupId>org.apache.opennlp</groupId>
+  <artifactId>opennlp-dl</artifactId>
+  <version>{opennlp_version}</version>
+</dependency>
+----
+
 ## OpenNLP UIMA Annotators Dependency
 
 To use the OpenNLP UIMA Annotators define the following dependency:
