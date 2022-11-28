@@ -136,7 +136,7 @@ Commit the distribution via SVN to https://dist.apache.org/repos/dist/release:
 svn co https://dist.apache.org/repos/dist/release/opennlp/ dist
 # check if the KEYS file contains your key, if not, update it
 # copy opennlp/target/checkout/target/apache-opennlp* to dist/opennlp-<VERSION>
-svn commit --username <username>
+svn commit --username <username> -m "Adding OpenNLP <version>"
 ----
 
 ### Delete Old Release(s)
