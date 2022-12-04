@@ -20,7 +20,7 @@
 Welcome to OpenNLP Site Source Code
 ====================================
 
-[![Build Status](https://api.travis-ci.org/apache/opennlp-site.svg?branch=master)](https://travis-ci.org/apache/opennlp-site)
+[![Build Status](https://github.com/apache/opennlp/workflows/Java%20CI/badge.svg)](https://github.com/apache/opennlp-site/actions)
 [![GitHub license](https://img.shields.io/badge/license-Apache%202-blue.svg)](https://raw.githubusercontent.com/apache/opennlp/master/LICENSE)
 [![Twitter Follow](https://img.shields.io/twitter/follow/ApacheOpennlp.svg?style=social)](https://twitter.com/ApacheOpenNLP)
 
