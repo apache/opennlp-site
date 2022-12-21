@@ -61,7 +61,7 @@ svn commit -m"Added Key for <name>" KEYS
 
 ## Release Steps
 
-- Checkout the Apache OpenNLP master branch: `git clone git@github.com:apache/opennlp.git`
+- Checkout the Apache OpenNLP main branch: `git clone git@github.com:apache/opennlp.git`
 - Execute a complete test (it can take several hours): `mvn test -DOPENNLP_DATA_DIR=/path/to/opennlp-test-data/ -Peval-tests`
 - Do a trial build: `mvn package -Papache-release`
 - Prepare the release: `mvn release:prepare` Answer the questions appropriately. The tag name format should be *opennlp-x.y.z*.
