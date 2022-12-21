@@ -22,7 +22,7 @@
 :jbake-status: published
 :idprefix:
 
-There are several ways to set up Git for committers and contributors. Contributors can safely set up Git in any way they choose, but committers should take extra care since they can push new commits to the upstream/master at Apache and various policies there make backing out mistakes problematic.
+There are several ways to set up Git for committers and contributors. Contributors can safely set up Git in any way they choose, but committers should take extra care since they can push new commits to the upstream/main at Apache and various policies there make backing out mistakes problematic.
 
 ## One time setup
 
@@ -50,7 +50,7 @@ Your repository should have two remotes, the upstream remote, and the default or
  
 ## Merge a Pull Request via GitHub
  
-Please do not commit directly to the master branch. All changes are done via Pull Requests, and a Pull Request needs to get two positive reviews and no change requests until it https://git-scm.com/docs/git-merge#_fast_forward_merge[can be merged]. The PR can be merged via the Github UI as described below or manually. Please also note that we do not use merge commits, the merge should be done using https://git-scm.com/docs/git-merge#_fast_forward_merge[fast forward merging].
+Please do not commit directly to the main branch. All changes are done via Pull Requests, and a Pull Request needs to get two positive reviews and no change requests until it https://git-scm.com/docs/git-merge#_fast_forward_merge[can be merged]. The PR can be merged via the Github UI as described below or manually. Please also note that we do not use merge commits, the merge should be done using https://git-scm.com/docs/git-merge#_fast_forward_merge[fast forward merging].
  
 To merge a PR via Github follow these steps:
 
