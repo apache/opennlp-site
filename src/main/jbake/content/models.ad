@@ -169,9 +169,9 @@ https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud
 | Tokenizer model for French
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/README[README]
 https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.0/opennlp-training-eval-logs-1.0-1.9.3.zip[Evaluation Logs]
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin[opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin]
-|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin.sha512[sha512]
-https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-en-ud-ewt-tokens-1.0-1.9.3.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-fr-ud-ftb-tokens-1.0-1.9.3.bin[opennlp-fr-ud-ftb-tokens-1.0-1.9.3.bin]
+|https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-fr-ud-ftb-tokens-1.0-1.9.3.bin.sha512[sha512]
+https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.0/opennlp-fr-ud-ftb-tokens-1.0-1.9.3.bin.asc[asc]
 
 | Tokens
 | it
