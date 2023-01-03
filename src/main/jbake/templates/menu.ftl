@@ -77,6 +77,7 @@
                         <li><a href="/building.html">Building</a></li>
                         <li><a href="/code-conventions.html">Code Conventions</a></li>
                         <li><a href="/release.html">Release</a></li>
+                        <li><a href="/release-model.html">Release Models</a></li>
                         <li><a href="/team.html">Project Team</a></li>
                     </ul>
                 </li>

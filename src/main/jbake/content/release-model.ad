@@ -1,0 +1,255 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Making a model release
+:jbake-type: page
+:jbake-tags: building
+:jbake-status: published
+:idprefix:
+
+## Release Preparation
+
+- Elect a release manager.
+- Create a ticket for a new model release in JIRA. If you do not have permission to do so just ask to be given permissions on the mailing list.
+
+## Steps for the Release Manager
+
+The following steps need only to be performed once.
+
+- Make sure you have your PGP key added to https://dist.apache.org/repos/dist/release/opennlp/KEYS via SVN
+  If the key isn't contained in this file, add your PGP key to the KEYS file:
+----
+Examples of adding your key to this file:
+ pgp -kxa <your name> and append it to this file.
+ (pgpk -ll <your name> && pgpk -xa <your name>) >> this file.
+ (gpg --list-sigs <your name>
+     && gpg --armor --export <your name>) >> this file.
+----
+- In a local temp folder, svn checkout the OpenNLP artifacts and update the KEYS file
+----
+svn co https://dist.apache.org/repos/dist/release/opennlp/
+svn commit -m "Added Key for <name>" KEYS
+----
+
+- Make sure you have your PGP key's password.
+
+## Release Steps
+
+- Train the models
+- Make sure to save the evaluation log for every model (adhere to the naming conventions, see below).
+- ZIP the evaluation logs.
+
+### Successful Model Release Preparation
+
+#### Perform the Model Release
+
+- Create sha512 checksums
+
+----
+# cd to model location
+for f in *; do   sha512sum "$f" > "$f.sha512"; done
+----
+
+- Create PGP signatures, see https://infra.apache.org/release-signing.html[for details].
+If you have multiple keys on your system, you might need to use `-u` to select the signing key.
+
+----
+# cd to model location
+# create asc signatures for model files
+for f in *.bin; do
+gpg --armor --output $f.asc --detach-sig $f
+done
+
+# create asc signature for evaluation logs
+for f in *.zip; do
+gpg --armor --output $f.asc --detach-sig $f
+done
+----
+
+- Add README, NOTICE, LICENSE and CHANGES (if any)
+
+- Create a folder in `dist/dev/models` in SVN
+
+----
+svn co https://dist.apache.org/repos/dist/dev/opennlp/ dist-dev
+# check if the KEYS file contains your key, if not, update it
+# copy the models and signatures to dist-dev/models/<MODEL_TYPE>-<MODEL_VERSION>
+svn commit --username <username> -m "Adding Release Candidate for OpenNLP Models <version>"
+----
+
+Check the dist/dev folder and if all looks well, open a VOTE but do *not* move the files to dist/release at this time.
+
+Make sure to adhere to the model naming conventions.
+
+#### Model Naming Conventions
+
+- The filenames of each model signify the model language, type, https://universaldependencies.org/[Universal Dependency training data used], and version numbers.
+- The filename format is `opennlp-[iso-language-code]-ud-[corpus]-[model-type]-[model-version]-[opennlp-version-used-for-training].bin`.
+- The evaluation logs must be zipped and adhere to the following format: `opennlp-training-eval-logs-[model-version]-[opennlp-version-used-for-training].zip`. It contains the evaluation logs for trained models.
+- For example, the model file `opennlp-de-ud-gsd-pos-1.0-1.9.3` is German language, trained on the UD GSD corpus, and is a parts-of-speech model. It is version 1.0 of the model, and it was trained using OpenNLP 1.9.3.
+
+
+**Note:** If other training data is used, the abbreviation `ud` needs to be adjusted!
+
+#### Check the Model Release Artifacts
+
+Perform basic checks against the release binary:
+
+- Check signature of generated artifacts.
+- Check presence and appropriateness of `LICENSE`, `NOTICE`, and `README` files.
+
+#### Create a VOTE Thread
+
+- Notify the developer mailing list of a new model vote. Be sure to replace all values in `[]` with the appropriate values.
+
+Message Subject: [VOTE] Apache OpenNLP Models [version] Release Candidate
+
+----
+Hi folks,
+
+I have posted a [Nth] release candidate for the Apache OpenNLP Models [UMODEL_VERSION] release and it is ready for testing.
+
+The models can be downloaded from: https://dist.apache.org/repos/dist/dev/opennlp/<MODEL_TYPE>-<MODEL_VERSION>
+
+The evaluation logs can be downloaded from https://dist.apache.org/repos/dist/dev/opennlp/<MODEL_TYPE>-<MODEL_VERSION>/opennlp-training-eval-logs-<MODEL_VERSION>-<OPENNLP_VERSION>.zip
+
+The models were trained with Apache OpenNLP [VERSION] tag.
+
+The release was made using the OpenNLP release process, documented on the website:
+https://opennlp.apache.org/release-model.html
+
+Please vote on releasing these models as Apache OpenNLP Models [MODEL_VERSION]. The vote is open for at least the next 72 hours.
+
+Only votes from OpenNLP PMC are binding, but everyone is welcome to check the model release candidate and vote.
+The vote passes if at least three binding +1 votes are cast.
+
+[ ] +1 Release the models as Apache OpenNLP Models [MODEL_VERSION]
+[ ] +0 meh, don't care
+[ ] -1 Do not release the models because of ${showstopper}
+
+Thanks!
+----
+
+## After a Successful Vote
+
+The vote is successful if at least 3 +1 votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
+Acknowledge the voting results on the mailing list in the VOTE thread.
+
+### Commit Distribution to SVN
+
+Commit the distribution via SVN to https://dist.apache.org/repos/dist/release:
+
+----
+svn co https://dist.apache.org/repos/dist/release/opennlp/ dist
+# check if the KEYS file contains your key, if not, update it
+# move the files from dev/models/<MODEL_TYPE>-<MODEL_VERSION> to dist/models/<MODEL_TYPE>-<MODEL_VERSION>
+svn commit --username <username> -m "Adding OpenNLP Models <version>"
+----
+
+### Delete Old Model Release(s)
+
+To reduce the load on the ASF mirrors, projects are required to delete old releases (see https://www.apache.org/legal/release-policy.html#when-to-archive).
+
+Remove the old model release from SVN under https://dist.apache.org/repos/dist/release/opennlp/models/. They are still contained in the archives.
+
+### Update the Website
+
+Update the  https://opennlp.apache.org/models.html[website] once the new version appears in the Apache download mirrors (keep checking https://www.apache.org/dyn/closer.cgi/opennlp/models/ until you see something).
+
+#### Add News Item
+
+- Add a news item in `news/model-{model-type}-{xyz}.ad` by copying the adjusted content:
+
+----
+= <MODEL_TYPE> Models for Apache OpenNLP released
+Apache OpenNLP
+2022-01-03
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+The Apache OpenNLP team is pleased to announce the release of <MODEL_TYPE>-<MODEL_VERSION> for Apache OpenNLP <OPENNLP_VERSION>.
+The models can <ADD_SUMMARY_HERE>
+
+Apache OpenNLP model and reports are available for download from our model download page:
+https://opennlp.apache.org/models.html
+
+The models are compatible with Apache OpenNLP <OPENNLP_VERSION>.
+
+More information about this release can be found in the README.txt at:
+https://dist.apache.org/repos/dist/dev/opennlp/<MODEL_TYPE>-<MODEL_VERSION>/README.txt
+
+Details about this model effectiveness can be found in the following report:
+https://dist.apache.org/repos/dist/dev/opennlp/<MODEL_TYPE>-<MODEL_VERSION>/opennlp-training-eval-logs-<MODEL_VERSION>-<OPENNLP_VERSION>.zip
+
+--The Apache OpenNLP Team
+----
+
+#### Commit Website Changes.
+
+- Commit the website changes.
+- Rebuild opennlp-site and wait for site redeploy
+- Test and review the website. Test that all download links are working.
+
+### Post-Release Steps
+
+- Log the new version at https://reporter.apache.org/addrelease.html?opennlp.
+- Announce the new models on the OpenNLP Twitter.
+- Announce the new models on the Apache OpenNLP blog at https://blogs.apache.org/opennlp/.
+- Close the present release ticket in JIRA.
+- Send announcement email to announce@apache.org, dev@opennlp.apache.org, users@opennlp.apache.org.
+This needs to be done from your @apache.org email address or the email will bounce from the announce list.
+----
+Title: [ANNOUNCE] OpenNLP Models <version> released
+TO: announce@apache.org, users@opennlp.apache.org, dev@opennlp.apache.org
+----
+
+Message body:
+
+----
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+The Apache OpenNLP team is pleased to announce the release of <MODEL_TYPE>-<MODEL_VERSION> for Apache OpenNLP <OPENNLP_VERSION>.
+The models can <ADD_SUMMARY_HERE>
+
+Apache OpenNLP model and reports are available for download from our model download page:
+https://opennlp.apache.org/models.html
+
+The models are compatible with Apache OpenNLP <OPENNLP_VERSION>.
+
+More information about this release can be found in the README.txt at:
+https://dist.apache.org/repos/dist/dev/opennlp/<MODEL_TYPE>-<MODEL_VERSION>/README.txt
+
+Details about this model effectiveness can be found in the following report:
+https://dist.apache.org/repos/dist/dev/opennlp/<MODEL_TYPE>-<MODEL_VERSION>/opennlp-training-eval-logs-<MODEL_VERSION>-<OPENNLP_VERSION>.zip
+
+--The Apache OpenNLP Team
+----
+
+## After an Unsuccessful Vote
+
+The model release vote may fail due to an issue discovered in the release candidate. If the vote fails the model release candidate should be canceled by:
+
+- Sending an email to dev@opennlp.apache.org on the VOTE thread notifying of the vote's cancellation.
+- Dropping the dist/dev model area in SVN
+
+A new model release candidate can now be prepared. When complete, a new VOTE thread can be started as described in the steps above.
