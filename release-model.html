@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Making a release - Apache OpenNLP</title>
+    <title>Making a model release - Apache OpenNLP</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Apache OpenNLP  is a machine learning based toolkit for the processing of natural language text." />
@@ -173,7 +173,7 @@ body {
 </nav>
 
 <div class="container">
-    <h1 class="title">Making a release</h1>
+    <h1 class="title">Making a model release</h1>
 
     <div class="sect1">
 <h2 id="release_preparation">Release Preparation</h2>
@@ -184,13 +184,7 @@ body {
 <p>Elect a release manager.</p>
 </li>
 <li>
-<p>Create a ticket for a new release in JIRA. If you do not have permission to do so just ask to be given permissions on the mailing list.</p>
-</li>
-<li>
-<p>Review all of the JIRA issues associated with the release. All issues should be resolved and closed.</p>
-</li>
-<li>
-<p>Any issues assigned to the release that are not complete should be assigned to the next release. Any critical or blocker issues should be resolved on the mailing list. Discuss any issues that you are unsure of on the mailing list.</p>
+<p>Create a ticket for a new model release in JIRA. If you do not have permission to do so just ask to be given permissions on the mailing list.</p>
 </li>
 </ul>
 </div>
@@ -205,14 +199,8 @@ body {
 <div class="ulist">
 <ul>
 <li>
-<p>Make sure you have your PGP key entered into <a href="https://id.apache.org/" class="bare">https://id.apache.org/</a>.
-Your KEYS will then be present in <a href="https://people.apache.org/keys/group/opennlp.asc" class="bare">https://people.apache.org/keys/group/opennlp.asc</a>.</p>
-</li>
-<li>
-<p>Make sure you have your PGP keys password.</p>
-</li>
-<li>
-<p>Add your PGP key to the KEYS file:</p>
+<p>Make sure you have your PGP key added to <a href="https://dist.apache.org/repos/dist/release/opennlp/KEYS" class="bare">https://dist.apache.org/repos/dist/release/opennlp/KEYS</a> via SVN
+If the key isn&#8217;t contained in this file, add your PGP key to the KEYS file:</p>
 </li>
 </ul>
 </div>
@@ -235,24 +223,15 @@ Your KEYS will then be present in <a href="https://people.apache.org/keys/group/
 <div class="listingblock">
 <div class="content">
 <pre>svn co https://dist.apache.org/repos/dist/release/opennlp/
-svn commit -m"Added Key for &lt;name&gt;" KEYS</pre>
+svn commit -m "Added Key for &lt;name&gt;" KEYS</pre>
 </div>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Create a maven <code>settings.xml</code> to publish to <code>repository.apache.org</code>. An example configuration:</p>
+<p>Make sure you have your PGP key&#8217;s password.</p>
 </li>
 </ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;server&gt;
-  &lt;id&gt;apache.releases.https&lt;/id&gt;
-  &lt;username&gt;Your Apache Username&lt;/username&gt;
-  &lt;password&gt;Your Apache Password&lt;/password&gt;
-&lt;/server&gt;</pre>
-</div>
 </div>
 </div>
 </div>
@@ -262,35 +241,104 @@ svn commit -m"Added Key for &lt;name&gt;" KEYS</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>Checkout the Apache OpenNLP main branch: <code>git clone <a href="mailto:git@github.com">git@github.com</a>:apache/opennlp.git</code></p>
+<p>Train the models</p>
 </li>
 <li>
-<p>Execute a complete test (it can take several hours): <code>mvn test -DOPENNLP_DATA_DIR=/path/to/opennlp-test-data/ -Peval-tests</code></p>
+<p>Make sure to save the evaluation log for every model (adhere to the naming conventions, see below).</p>
 </li>
 <li>
-<p>Do a trial build: <code>mvn package -Papache-release</code></p>
-</li>
-<li>
-<p>Prepare the release: <code>mvn release:prepare</code> Answer the questions appropriately. The tag name format should be <strong>opennlp-x.y.z</strong>.
-This command creates and pushes two new commits to the repository to reflect the version changes. It also tags the release.</p>
+<p>ZIP the evaluation logs.</p>
 </li>
 </ul>
 </div>
 <div class="sect2">
-<h3 id="successful_maven_release_preparation">Successful Maven Release Preparation</h3>
+<h3 id="successful_model_release_preparation">Successful Model Release Preparation</h3>
 <div class="sect3">
-<h4 id="perform_the_release">Perform the Release</h4>
-<div class="paragraph">
-<p>Perform the release: <code>mvn release:perform</code></p>
+<h4 id="perform_the_model_release">Perform the Model Release</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Create sha512 checksums</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre># cd to model location
+for f in *; do   sha512sum "$f" &gt; "$f.sha512"; done</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Create PGP signatures, see <a href="https://infra.apache.org/release-signing.html">for details</a>.
+If you have multiple keys on your system, you might need to use <code>-u</code> to select the signing key.</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre># cd to model location
+# create asc signatures for model files
+for f in *.bin; do
+gpg --armor --output $f.asc --detach-sig $f
+done
+
+# create asc signature for evaluation logs
+for f in *.zip; do
+gpg --armor --output $f.asc --detach-sig $f
+done</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Add README, NOTICE, LICENSE and CHANGES (if any)</p>
+</li>
+<li>
+<p>Create a folder in <code>dist/dev/models</code> in SVN</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>svn co https://dist.apache.org/repos/dist/dev/opennlp/ dist-dev
+# check if the KEYS file contains your key, if not, update it
+# copy the models and signatures to dist-dev/models/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt;
+svn commit --username &lt;username&gt; -m "Adding Release Candidate for OpenNLP Models &lt;version&gt;"</pre>
+</div>
 </div>
 <div class="paragraph">
-<p>This creates a staged repository at <a href="http://repository.apache.org" class="bare">http://repository.apache.org</a>.
-Check the staged repository and if all looks well, close the staging repository but do <strong>not</strong> promote or release it at this time.
-The build results are in <code>opennlp/target/checkout/target</code>. Do not modify or delete these files.</p>
+<p>Check the dist/dev folder and if all looks well, open a VOTE but do <strong>not</strong> move the files to dist/release at this time.</p>
+</div>
+<div class="paragraph">
+<p>Make sure to adhere to the model naming conventions.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="check_the_release_artifacts">Check the Release Artifacts</h4>
+<h4 id="model_naming_conventions">Model Naming Conventions</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>The filenames of each model signify the model language, type, <a href="https://universaldependencies.org/">Universal Dependency training data used</a>, and version numbers.</p>
+</li>
+<li>
+<p>The filename format is <code>opennlp-[iso-language-code]-ud-[corpus]-[model-type]-[model-version]-[opennlp-version-used-for-training].bin</code>.</p>
+</li>
+<li>
+<p>The evaluation logs must be zipped and adhere to the following format: <code>opennlp-training-eval-logs-[model-version]-[opennlp-version-used-for-training].zip</code>. It contains the evaluation logs for trained models.</p>
+</li>
+<li>
+<p>For example, the model file <code>opennlp-de-ud-gsd-pos-1.0-1.9.3</code> is German language, trained on the UD GSD corpus, and is a parts-of-speech model. It is version 1.0 of the model, and it was trained using OpenNLP 1.9.3.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Note:</strong> If other training data is used, the abbreviation <code>ud</code> needs to be adjusted!</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="check_the_model_release_artifacts">Check the Model Release Artifacts</h4>
 <div class="paragraph">
 <p>Perform basic checks against the release binary:</p>
 </div>
@@ -310,38 +358,36 @@ The build results are in <code>opennlp/target/checkout/target</code>. Do not mod
 <div class="ulist">
 <ul>
 <li>
-<p>Notify the developer mailing list of a new version vote. Be sure to replace all values in <code>[]</code> with the appropriate values.</p>
+<p>Notify the developer mailing list of a new model vote. Be sure to replace all values in <code>[]</code> with the appropriate values.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Message Subject: [VOTE] Apache OpenNLP [version] Release Candidate</p>
+<p>Message Subject: [VOTE] Apache OpenNLP Models [version] Release Candidate</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre>Hi folks,
 
-I have posted a [Nth] release candidate for the Apache OpenNLP [version] release and it is ready for testing.
+I have posted a [Nth] release candidate for the Apache OpenNLP Models [UMODEL_VERSION] release and it is ready for testing.
 
-The distributables can be downloaded from:
-https://repository.apache.org/content/repositories/orgapacheopennlp-[REPO_NUM]/org/apache/opennlp/opennlp-distr/[VERSION]/
+The models can be downloaded from: https://dist.apache.org/repos/dist/dev/opennlp/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt;
 
-The release was made from the Apache OpenNLP [VERSION] tag at:
-https://github.com/apache/opennlp/tree/opennlp-[VERSION]
+The evaluation logs can be downloaded from https://dist.apache.org/repos/dist/dev/opennlp/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt;/opennlp-training-eval-logs-&lt;MODEL_VERSION&gt;-&lt;OPENNLP_VERSION&gt;.zip
 
-To use it in a maven build set the version for opennlp-tools or opennlp-uima to [VERSION] and add the following URL to your settings.xml file:
-https://repository.apache.org/content/repositories/orgapacheopennlp-[REPO_NUM]
+The models were trained with Apache OpenNLP [VERSION] tag.
 
 The release was made using the OpenNLP release process, documented on the website:
-https://opennlp.apache.org/release.html
+https://opennlp.apache.org/release-model.html
 
-Please vote on releasing these packages as Apache OpenNLP [VERSION]. The vote is open for at least the next 72 hours.
+Please vote on releasing these models as Apache OpenNLP Models [MODEL_VERSION]. The vote is open for at least the next 72 hours.
 
-Only votes from OpenNLP PMC are binding, but everyone is welcome to check the release candidate and vote.
+Only votes from OpenNLP PMC are binding, but everyone is welcome to check the model release candidate and vote.
 The vote passes if at least three binding +1 votes are cast.
 
-[ ] +1 Release the packages as Apache OpenNLP [VERSION]
-[ ] -1 Do not release the packages because...
+[ ] +1 Release the models as Apache OpenNLP Models [MODEL_VERSION]
+[ ] +0 meh, don't care
+[ ] -1 Do not release the models because of ${showstopper}
 
 Thanks!</pre>
 </div>
@@ -358,13 +404,6 @@ Thanks!</pre>
 Acknowledge the voting results on the mailing list in the VOTE thread.</p>
 </div>
 <div class="sect2">
-<h3 id="release_nexus_staging_repository">Release Nexus Staging Repository</h3>
-<div class="paragraph">
-<p>Release the staging repository. This will make the artifacts available in the Maven Central repository.
-To do this go to the <a href="http://repository.apache.org">repository server</a>, log in, go to the staging area and release the staging repository linked to this release</p>
-</div>
-</div>
-<div class="sect2">
 <h3 id="commit_distribution_to_svn">Commit Distribution to SVN</h3>
 <div class="paragraph">
 <p>Commit the distribution via SVN to <a href="https://dist.apache.org/repos/dist/release" class="bare">https://dist.apache.org/repos/dist/release</a>:</p>
@@ -373,90 +412,63 @@ To do this go to the <a href="http://repository.apache.org">repository server</a
 <div class="content">
 <pre>svn co https://dist.apache.org/repos/dist/release/opennlp/ dist
 # check if the KEYS file contains your key, if not, update it
-# copy opennlp/target/checkout/target/apache-opennlp* to dist/opennlp-&lt;VERSION&gt;
-svn commit --username &lt;username&gt; -m "Adding OpenNLP &lt;version&gt;"</pre>
+# move the files from dev/models/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt; to dist/models/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt;
+svn commit --username &lt;username&gt; -m "Adding OpenNLP Models &lt;version&gt;"</pre>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="delete_old_releases">Delete Old Release(s)</h3>
+<h3 id="delete_old_model_releases">Delete Old Model Release(s)</h3>
 <div class="paragraph">
-<p>To reduce the load on the ASF mirrors, projects are required to delete old releases (see <a href="http://www.apache.org/legal/release-policy.html#when-to-archive" class="bare">http://www.apache.org/legal/release-policy.html#when-to-archive</a>).</p>
+<p>To reduce the load on the ASF mirrors, projects are required to delete old releases (see <a href="https://www.apache.org/legal/release-policy.html#when-to-archive" class="bare">https://www.apache.org/legal/release-policy.html#when-to-archive</a>).</p>
 </div>
 <div class="paragraph">
-<p>Remove the old releases from SVN under <a href="https://dist.apache.org/repos/dist/release/opennlp/" class="bare">https://dist.apache.org/repos/dist/release/opennlp/</a>.</p>
+<p>Remove the old model release from SVN under <a href="https://dist.apache.org/repos/dist/release/opennlp/models/" class="bare">https://dist.apache.org/repos/dist/release/opennlp/models/</a>. They are still contained in the archives.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="update_the_website">Update the Website</h3>
 <div class="paragraph">
-<p>Update the website once the new version appears in the Apache download mirrors (keep checking <a href="http://www.apache.org/dyn/closer.cgi/opennlp" class="bare">http://www.apache.org/dyn/closer.cgi/opennlp</a> until you see something):</p>
-</div>
-<div class="sect3">
-<h4 id="update_jbake_properties">Update jbake.properties</h4>
-<div class="paragraph">
-<p>Update the <code>jbake.properties</code> file to include the new version numbers:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>opennlp.version=
-opennlp.next.version=</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="add_new_artifact_item">Add New Artifact Item</h4>
-<div class="paragraph">
-<p>Add a new artifactItem in the pom.xml for the new OpenNLP release. (This automatically pulls in the details and javadocs for the new version when the site is built.):</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="xml">&lt;artifactItem&gt;
-  &lt;groupId&gt;org.apache.opennlp&lt;/groupId&gt;
-  &lt;artifactId&gt;opennlp-distr&lt;/artifactId&gt;
-  [version]${project.version}&lt;/version&gt;
-  &lt;overWrite&gt;false&lt;/overWrite&gt;
-  &lt;type&gt;zip&lt;/type&gt;
-  &lt;classifier&gt;bin&lt;/classifier&gt;
-  &lt;outputDirectory&gt;${project.build.directory}/distr/1.8.1&lt;/outputDirectory&gt;
-&lt;/artifactItem&gt;</code></pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="update_documentation_links">Update Documentation Links</h4>
-<div class="paragraph">
-<p>Move the last version&#8217;s links to the documentation to the Legacy Documentation (<a href="https://opennlp.apache.org/docs/legacy.html" class="bare">https://opennlp.apache.org/docs/legacy.html</a>) page. Add the following lines at the beginning of <code>docs/legacy.ad</code>:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>### Apache OpenNLP ${previous.release} documentation
-* link:/docs/${previous.release}/manual/opennlp.html[Apache OpenNLP Manual]
-* link:/docs/${previous.release}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
-* link:/docs/${previous.release}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
-* link:/docs/${previous.release}/apidocs/opennlp-brat-annotator/index.html[Apache OpenNLP BRAT Annotator Javadoc]
-* link:/docs/${previous.release}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="update_doap_opennlp_rdf">Update doap_opennlp.rdf</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>Update the <code>doap_opennlp.rdf</code> file to reflect the new version number and release date.</p>
-</li>
-</ul>
-</div>
+<p>Update the  <a href="https://opennlp.apache.org/models.html">website</a> once the new version appears in the Apache download mirrors (keep checking <a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/" class="bare">https://www.apache.org/dyn/closer.cgi/opennlp/models/</a> until you see something).</p>
 </div>
 <div class="sect3">
 <h4 id="add_news_item">Add News Item</h4>
 <div class="ulist">
 <ul>
 <li>
-<p>Add a news item in <code>news/release-{xyz}.ad</code> by copying the content from OpenNLP project <code>opennlp-distr/src/README</code>.</p>
+<p>Add a news item in <code>news/model-{model-type}-{xyz}.ad</code> by copying the adjusted content:</p>
 </li>
 </ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>= &lt;MODEL_TYPE&gt; Models for Apache OpenNLP released
+Apache OpenNLP
+2022-01-03
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+The Apache OpenNLP team is pleased to announce the release of &lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt; for Apache OpenNLP &lt;OPENNLP_VERSION&gt;.
+The models can &lt;ADD_SUMMARY_HERE&gt;
+
+Apache OpenNLP model and reports are available for download from our model download page:
+https://opennlp.apache.org/models.html
+
+The models are compatible with Apache OpenNLP &lt;OPENNLP_VERSION&gt;.
+
+More information about this release can be found in the README.txt at:
+https://dist.apache.org/repos/dist/dev/opennlp/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt;/README.txt
+
+Details about this model effectiveness can be found in the following report:
+https://dist.apache.org/repos/dist/dev/opennlp/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt;/opennlp-training-eval-logs-&lt;MODEL_VERSION&gt;-&lt;OPENNLP_VERSION&gt;.zip
+
+--The Apache OpenNLP Team</pre>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -467,10 +479,10 @@ opennlp.next.version=</code></pre>
 <p>Commit the website changes.</p>
 </li>
 <li>
-<p>Rebuild opennlp-site and redeploy the site (if Automatic Buildbot doesn&#8217;t kick in)</p>
+<p>Rebuild opennlp-site and wait for site redeploy</p>
 </li>
 <li>
-<p>Test and review the website. Test that all download links are working. Test that the documentation is updated and can be viewed</p>
+<p>Test and review the website. Test that all download links are working.</p>
 </li>
 </ul>
 </div>
@@ -484,22 +496,23 @@ opennlp.next.version=</code></pre>
 <p>Log the new version at <a href="https://reporter.apache.org/addrelease.html?opennlp" class="bare">https://reporter.apache.org/addrelease.html?opennlp</a>.</p>
 </li>
 <li>
-<p>Announce the new version on the OpenNLP Twitter.</p>
+<p>Announce the new models on the OpenNLP Twitter.</p>
 </li>
 <li>
-<p>Announce the new version on the Apache OpenNLP blog at <a href="https://blogs.apache.org/opennlp/" class="bare">https://blogs.apache.org/opennlp/</a>.</p>
+<p>Announce the new models on the Apache OpenNLP blog at <a href="https://blogs.apache.org/opennlp/" class="bare">https://blogs.apache.org/opennlp/</a>.</p>
 </li>
 <li>
 <p>Close the present release ticket in JIRA.</p>
 </li>
 <li>
-<p>Send announcement email to <a href="mailto:announce@apache.org">announce@apache.org</a>, <a href="mailto:dev@opennlp.apache.org">dev@opennlp.apache.org</a>, <a href="mailto:users@opennlp.apache.org">users@opennlp.apache.org</a>. This needs to be done from your @apache.org email address or the email will bounce from the announce list. Gmail forwarding can help here and is a snap to set up (<a href="http://gmailblog.blogspot.com/2009/07/send-mail-from-another-address-without.html" class="bare">http://gmailblog.blogspot.com/2009/07/send-mail-from-another-address-without.html</a>). It&#8217;s even easier then the instructions there as it will recognize your email address and default to Apache settings. It is important to include a description of what OpenNLP is as well as a link to the updated DOAP within the release announcement, this is so others know what OpenNLP is.</p>
+<p>Send announcement email to <a href="mailto:announce@apache.org">announce@apache.org</a>, <a href="mailto:dev@opennlp.apache.org">dev@opennlp.apache.org</a>, <a href="mailto:users@opennlp.apache.org">users@opennlp.apache.org</a>.
+This needs to be done from your @apache.org email address or the email will bounce from the announce list.</p>
 </li>
 </ul>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>Title: [ANNOUNCE] OpenNLP &lt;version&gt; released
+<pre>Title: [ANNOUNCE] OpenNLP Models &lt;version&gt; released
 TO: announce@apache.org, users@opennlp.apache.org, dev@opennlp.apache.org</pre>
 </div>
 </div>
@@ -508,20 +521,23 @@ TO: announce@apache.org, users@opennlp.apache.org, dev@opennlp.apache.org</pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>The Apache OpenNLP team is pleased to announce the release of version &lt;version&gt; of Apache OpenNLP. The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text. It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, and parsing.
-The OpenNLP &lt;version&gt; binary and source distributions are available for download from our download page: https://opennlp.apache.org/download.html
-The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: http://opennlp.apache.org/maven-dependency.html
+<pre>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
 
-Changes in this version:
+The Apache OpenNLP team is pleased to announce the release of &lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt; for Apache OpenNLP &lt;OPENNLP_VERSION&gt;.
+The models can &lt;ADD_SUMMARY_HERE&gt;
 
-**  TODO UPDATE THIS &gt;&gt;
-- change 1
-- change 2
-&lt;&lt;  TODO UPDATE THIS **
+Apache OpenNLP model and reports are available for download from our model download page:
+https://opennlp.apache.org/models.html
 
-For a complete list of fixed bugs and improvements please see the RELEASE_NOTES file included in the distribution.
+The models are compatible with Apache OpenNLP &lt;OPENNLP_VERSION&gt;.
 
-The Apache OpenNLP Team</pre>
+More information about this release can be found in the README.txt at:
+https://dist.apache.org/repos/dist/dev/opennlp/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt;/README.txt
+
+Details about this model effectiveness can be found in the following report:
+https://dist.apache.org/repos/dist/dev/opennlp/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt;/opennlp-training-eval-logs-&lt;MODEL_VERSION&gt;-&lt;OPENNLP_VERSION&gt;.zip
+
+--The Apache OpenNLP Team</pre>
 </div>
 </div>
 </div>
@@ -531,7 +547,7 @@ The Apache OpenNLP Team</pre>
 <h2 id="after_an_unsuccessful_vote">After an Unsuccessful Vote</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The release vote may fail due to an issue discovered in the release candidate. If the vote fails the release should be canceled by:</p>
+<p>The model release vote may fail due to an issue discovered in the release candidate. If the vote fails the model release candidate should be canceled by:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -539,15 +555,12 @@ The Apache OpenNLP Team</pre>
 <p>Sending an email to <a href="mailto:dev@opennlp.apache.org">dev@opennlp.apache.org</a> on the VOTE thread notifying of the vote&#8217;s cancellation.</p>
 </li>
 <li>
-<p>Dropping the staging repository at <a href="https://repository.apache.org/" class="bare">https://repository.apache.org/</a>.</p>
-</li>
-<li>
-<p>Renaming the <code>opennlp-x.y.x</code> tag to <code>opennlp-x.y.z-RC1</code>.</p>
+<p>Dropping the dist/dev model area in SVN</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>A new release candidate can now be prepared. When complete, a new VOTE thread can be started as described in the steps above.</p>
+<p>A new model release candidate can now be prepared. When complete, a new VOTE thread can be started as described in the steps above.</p>
 </div>
 </div>
 </div>
