@@ -44,7 +44,7 @@ removed. Now Java 1.7 is required.
 
 Additionally the release contains the following noteworthy changes:
 
-- Added evalutation support to the parser and doccat components
+- Added evaluation support to the parser and doccat components
 - Added support to Evalita 07/09, Brat and OntoNotes corpus formats
 - Now L-BFGS is stable
 - Added Snowball to the Stemmer package

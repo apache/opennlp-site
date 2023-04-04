@@ -47,7 +47,7 @@ public class Foo extends Bar {
 
 * Wrap lines longer than 80 to 100 characters. For wrapped lines use an indent of 4 characters.
 * Within a class or interface, definitions should be ordered as follows:
-    * Inner classses
+    * Inner classes
     * Class (static) variables
     * Instance variables
     * Constructors
