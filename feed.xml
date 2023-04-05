@@ -24,8 +24,8 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Wed, 15 Mar 2023 09:21:53 +0000</pubDate>
-    <lastBuildDate>Wed, 15 Mar 2023 09:21:53 +0000</lastBuildDate>
+    <pubDate>Wed, 5 Apr 2023 13:18:05 +0000</pubDate>
+    <lastBuildDate>Wed, 5 Apr 2023 13:18:05 +0000</lastBuildDate>
 
     <item>
       <title>Apache OpenNLP 2.1.1 released</title>
@@ -294,7 +294,7 @@ See the models&apos; README for more information on the models including how eac
 &lt;p&gt;Resolved issues building on Java 11.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Usingstrict math for calculations for consistent evaluations.&lt;/p&gt;
+&lt;p&gt;Using strict math for calculations for consistent evaluations.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Implement Serializable in langdetect and normalize.&lt;/p&gt;
@@ -789,7 +789,7 @@ This issue was discovered by ﻿Nishil Shah of Salesforce.&lt;/p&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The release contains the following noteworthy changes:
 - The Leipzig format support was improved to extract data for langdetect model training
-- Maxents loglikelihood treshold can be configured by the user
+- Maxents loglikelihood threshold can be configured by the user
 - Added data verification for the eval data
 - Fixed handling of xml parsers used through out the package&lt;/p&gt;
 &lt;/div&gt;
@@ -1254,7 +1254,7 @@ removed. Now Java 1.7 is required.&lt;/p&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Added evalutation support to the parser and doccat components&lt;/p&gt;
+&lt;p&gt;Added evaluation support to the parser and doccat components&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Added support to Evalita 07/09, Brat and OntoNotes corpus formats&lt;/p&gt;
@@ -1392,7 +1392,7 @@ validators.&lt;/p&gt;
 &lt;p&gt;OpenNLP is moving forward with new features, fixes and advancements for the New Year.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Merry Chistmas &amp;amp; Happy New Year! Again&amp;#8230;&amp;#8203; yes, it has been another year.&lt;/p&gt;
+&lt;p&gt;Merry Christmas &amp;amp; Happy New Year! Again&amp;#8230;&amp;#8203; yes, it has been another year.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
