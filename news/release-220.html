@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Apache OpenNLP 2.2.0 released - Apache OpenNLP</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Apache OpenNLP  is a machine learning based toolkit for the processing of natural language text." />
+    <meta name="author" content="The Apache OpenNLP Team" />
+    <meta name="keywords" content="java, natural language processing, nlp, apache, open source, web site" />
+    <meta name="generator" content="JBake"/>
+
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- The styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/asciidoctor.css" rel="stylesheet">
+    <link href="/css/prettify.css" rel="stylesheet">
+    <style type="text/css">
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height + 20px for padding */
+  margin: 0px;
+}
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 50px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #f5f5f5;
+}
+
+.footer .text-muted {
+  margin: 0px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.jumbotron {
+  margin: 0px 0;
+  text-align: center;
+  background-color: transparent;
+  padding-top: 0px;
+}
+
+.jumbotron h1 {
+    line-height: 1;
+    font-weight: bold;
+}
+
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body onload="prettyPrint()">
+<span class="visible-lg">
+<a href="https://github.com/apache/opennlp"><img style="z-index: 9999; position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+</span>
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img alt="Brand" src="/img/opennlp-navbar-logo.png" class="img-responsive" width="100px" style="position: relative; top: -3px;">
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-download-alt"></span> Download <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+		                <li><a href="/download.html">OpenNLP Releases</a></li>
+                        <li><a href="/models.html">OpenNLP Models</a></li>
+		                <li><a href="/maven-dependency.html">Maven Dependency</a></li>
+		            </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flag"></span> General <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <li><a href="/news/">News</a></li>
+			<li><a href="https://blogs.apache.org/opennlp/">Blog</a></li>
+                        <li><a href="/mailing-lists.html">Mailing Lists</a></li>
+                        <li><a href="https://issues.apache.org/jira/browse/OPENNLP">Issue tracker</a></li>
+                        <li><a href="/books-tutorials-and-talks.html">Books, Tutorials and Talks</a></li>
+                        <li><a href="/powered-by-opennlp.html">Powered by Apache OpenNLP</a></li>
+                        
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span> Documentation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/docs/">Manual and Javadocs</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="https://cwiki.apache.org/OPENNLP">Wiki</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-console"></span> Development <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/get-involved.html">Get Involved</a></li>
+                        <li><a href="/source-code.html">Source Code</a></li>
+                        <li><a href="/using-git.html">Using Git</a></li>
+                        <li><a href="/building.html">Building</a></li>
+                        <li><a href="/code-conventions.html">Code Conventions</a></li>
+                        <li><a href="/release.html">Release</a></li>
+                        <li><a href="/release-model.html">Release Models</a></li>
+                        <li><a href="/team.html">Project Team</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-leaf"></span> ASF <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.apache.org/">The Apache Software Foundation</a></li>
+                        <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+                        <li><a href="https://www.apache.org/security/">Security</a></li>
+                        <li><a href="https://www.apache.org/foundation/sponsorship.html">Become a Sponsor</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <h1 class="title">Apache OpenNLP 2.2.0 released</h1>
+
+    <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.2.0.</p>
+</div>
+<div class="paragraph">
+<p>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.</p>
+</div>
+<div class="paragraph">
+<p>It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.</p>
+</div>
+<div class="paragraph">
+<p>Apache OpenNLP 2.2.0 binary and source distributions are available for download from our download page: <a href="/download.html">download page</a></p>
+</div>
+<div class="paragraph">
+<p>The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: <a href="/maven-dependency.html">Maven Dependency</a></p>
+</div>
+</div>
+</div>
+<h1 id="whats_new_in_apache_opennlp_2_2_0" class="sect0">What&#8217;s new in Apache OpenNLP 2.2.0</h1>
+<div class="paragraph">
+<p>This version contains improvements to logging by introducing SLF4J to replace logging using System.out. ONNX Runtime support for sentence-transformers was also introduced. This version also includes fixes for stemming, documentation, and unit tests.</p>
+</div>
+<div class="paragraph">
+<p>For a full list please see the list of items addressed in <a href="https://issues.apache.org/jira/browse/OPENNLP-1483?jql=project%20%3D%20OPENNLP%20AND%20status%20in%20(Resolved%2C%20Closed)%20AND%20fixVersion%20%3D%202.2.0">Jira</a>.</p>
+</div>
+<div class="paragraph">
+<p>--The Apache OpenNLP Team</p>
+</div>
+
+    <p><em>22 April 2023</em></p>
+    <div id="share"><!-- Google Plus -->
+<div class="g-plusone" data-size="medium"></div>
+<script type="text/javascript">
+  window.___gcfg = {lang: 'en-GB'};
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<!-- Twitter -->
+<a href="https://twitter.com/share" class="twitter-share-button" data-dnt="true">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- Facebook -->
+<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="true"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script></div>
+</div>
+
+    <footer class='footer'>
+        <div class="container">
+            <p class="text-muted">Copyright &copy; 2017  The Apache Software Foundation, Licensed under the
+            <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>  <br>
+            Apache OpenNLP, OpenNLP, Apache, the Apache feather logo, and the Apache OpenNLP project logo are
+            trademarks of The Apache Software Foundation. -
+            <a href="/privacy-policy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/prettify.js"></script>
+    
+    <script type="text/javascript">
+
+      var link = $('a[href="' + this.location.pathname + '"]');
+      if (link != undefined)
+    	  link.parents('li,ul').addClass('active');
+	
+	</script>
+
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        /* We explicitly disable cookie tracking to avoid privacy issues */
+        _paq.push(['disableCookies']);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//analytics.apache.org/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '33']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+</body>
+</html>
