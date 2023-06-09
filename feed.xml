@@ -24,8 +24,8 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Thu, 8 Jun 2023 22:17:55 +0000</pubDate>
-    <lastBuildDate>Thu, 8 Jun 2023 22:17:55 +0000</lastBuildDate>
+    <pubDate>Fri, 9 Jun 2023 15:12:15 +0000</pubDate>
+    <lastBuildDate>Fri, 9 Jun 2023 15:12:15 +0000</lastBuildDate>
 
     <item>
       <title>Apache OpenNLP 2.2.0 released</title>
@@ -644,17 +644,17 @@ See the models&apos; README for more information on the models including how eac
 The Language Detector Model can detect 103 languages and outputs ISO 639-3 codes.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP model and reports are available for download from our model download page:
-&lt;a href=&quot;http://opennlp.apache.org/models.html&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/models.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP model and reports are available for download from our
+&lt;a href=&quot;https://opennlp.apache.org/models.html&quot;&gt;model download page&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This is the first release of the Language Detector Model. It is compatible with Apache OpenNLP 1.8.3 or better.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;It is important to note that this model is trained for and works well with longer texts that have at least 2 sentences or more from the same language.&lt;/p&gt;
+&lt;p&gt;It is important to note that this model is trained for and works well with longer texts that have at least two sentences or more from the same language.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;More information about this release can be found in the README.txt at:
+&lt;p&gt;More information about this release can be found in the &lt;em&gt;README.txt&lt;/em&gt; at:
 &lt;a href=&quot;https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/README.txt&quot; class=&quot;bare&quot;&gt;https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/README.txt&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -1049,10 +1049,10 @@ This issue was discovered by ﻿Nishil Shah of Salesforce.&lt;/p&gt;
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The OpenNLP 1.7.2 binary and source distributions are available for download from our download page: &lt;a href=&quot;http://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The OpenNLP 1.7.2 binary and source distributions are available for download from our download page: &lt;a href=&quot;https://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;https://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;http://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;https://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;https://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1123,10 +1123,10 @@ notes.&lt;/pre&gt;
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The OpenNLP 1.7.1 binary and source distributions are available for download from our download page: &lt;a href=&quot;http://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The OpenNLP 1.7.1 binary and source distributions are available for download from our download page: &lt;a href=&quot;https://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;https://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;http://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;https://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;https://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1197,16 +1197,16 @@ For a complete list of fixed bugs and improvements please see the RELEASE_NOTES 
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The OpenNLP 1.7.0 binary and source distributions are available for download from our download page: &lt;a href=&quot;http://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The OpenNLP 1.7.0 binary and source distributions are available for download from our download page: &lt;a href=&quot;https://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;https://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;http://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;https://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;https://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and deprecated methods were removed. Now Java 1.8 and Maven 3.3.9 are required.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Additionally the release contains the following noteworthy changes:&lt;/p&gt;
+&lt;p&gt;Additionally, the release contains the following noteworthy changes:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
@@ -1274,11 +1274,11 @@ named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP 1.6.0 binary and source distributions are available for download from our download page:
-&lt;a href=&quot;http://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;https://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details:
-&lt;a href=&quot;http://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;https://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces many new features, improvements and bug fixes. The API
@@ -1353,11 +1353,11 @@ named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP 1.5.3 binary and source distributions are available for download from our download page:
-&lt;a href=&quot;http://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://opennlp.apache.org/cgi-bin/download.cgi&quot; class=&quot;bare&quot;&gt;https://opennlp.apache.org/cgi-bin/download.cgi&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details:
-&lt;a href=&quot;http://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;http://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;https://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release contains a couple of new features, improvements and bug fixes. The CLI
@@ -1454,12 +1454,12 @@ and coreference resolution.&lt;/p&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP 1.5.2-incubating binary and source distributions are available for download
 from our download page:
-&lt;a href=&quot;http://incubator.apache.org/opennlp/download.cgi&quot; class=&quot;bare&quot;&gt;http://incubator.apache.org/opennlp/download.cgi&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://incubator.apache.org/opennlp/download.cgi&quot; class=&quot;bare&quot;&gt;https://incubator.apache.org/opennlp/download.cgi&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well.
 See the Maven Dependency page for more details:
-&lt;a href=&quot;http://incubator.apache.org/opennlp/maven-dependency.html&quot; class=&quot;bare&quot;&gt;http://incubator.apache.org/opennlp/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://incubator.apache.org/opennlp/maven-dependency.html&quot; class=&quot;bare&quot;&gt;https://incubator.apache.org/opennlp/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release contains a couple of new features, improvements and bug fixes.
