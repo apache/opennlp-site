@@ -23,13 +23,13 @@
 :idprefix:
 
 This list contains common questions asked in link:mailing-lists.html[mailing lists] and
-https://stackoverflow.com/questions/tagged/opennlp[forums].
+https://stackoverflow.com/questions/tagged/opennlp[forums,window=_blank].
 
 ++++
 <dl>
 
   <dt>Where can I download the models used in OpenNLP?</dt>
-  <dd>They are hosted at <a href="https://opennlp.sourceforge.net/models-1.5/">SourceForge</a>.</dd>
+  <dd>They are hosted at <a href="https://opennlp.sourceforge.net/models-1.5/" target="_blank">SourceForge</a>.</dd>
 
   <dt></dt>
   <dd></dd>
@@ -53,15 +53,15 @@ information about model compatibility.</dd>
   <dt><strong>Is there a commercial license for OpenNLP?</strong></dt>
   <dd>OpenNLP is licensed under the business-friendly Apache software license,
 version 2.0. You can read the license
-<a href="https://www.apache.org/licenses/LICENSE-2.0">here</a>
-or <a href="https://en.wikipedia.org/wiki/Apache_License">its Wikipedia page</a>
+<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">here</a>
+or <a href="https://en.wikipedia.org/wiki/Apache_License" target="_blank">its Wikipedia page</a>
 for more information.</dd>
 
   <dt><strong>How can I start contributing to this project?</strong></dt>
   <dd>Have a look at our <a href="/get-involved.html">Getting Involved</a> page.
 We have a list of issues needing help there, as well as instructions to get started
 contributing to OpenNLP. You may also consider making a
-<a href="https://www.apache.org/foundation/contributing.html">donation to the Apache Software Foundation</a>.</dd>
+<a href="https://www.apache.org/foundation/contributing.html" target="_blank">donation to the Apache Software Foundation</a>.</dd>
 
 </dl>
 ++++

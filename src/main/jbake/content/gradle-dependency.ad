@@ -16,7 +16,7 @@
    specific language governing permissions and limitations
    under the License.   
 ////
-= Maven Integration
+= Gradle Integration
 :jbake-type: page
 :jbake-tags: maven
 :jbake-status: published
@@ -25,90 +25,79 @@
 Apache OpenNLP is also distributed via the Maven Central Repository.
 The maven artifacts are located https://repo1.maven.org/maven2/org/apache/opennlp/[here].
 The Apache OpenNLP project publishes the library, javadoc and source code jars.
-To use OpenNLP in your https://maven.apache.org[Maven,window=_blank] project, specify exactly one of the following dependencies,
+To use OpenNLP in your https://gradle.org[Gradle,window=_blank] project, specify exactly one of the following dependencies,
 all transient dependencies are resolved automatically.
 
 == Latest Release
 === OpenNLP Tools Dependency
+
 To use the OpenNLP Tools define the following dependency:
 
-[source,xml,indent=0,subs=attributes+]
+[source,indent=0,subs=attributes+]
 ----
-<dependency>
-  <groupId>org.apache.opennlp</groupId>
-  <artifactId>opennlp-tools</artifactId>
-  <version>{opennlp_version}</version>
-</dependency>
+dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '{opennlp_version}'
+}
 ----
 
 === OpenNLP DL Dependency
+
 To use the OpenNLP DL define the following dependency:
 
-[source,xml,indent=0,subs=attributes+]
+[source,indent=0,subs=attributes+]
 ----
-<dependency>
-  <groupId>org.apache.opennlp</groupId>
-  <artifactId>opennlp-dl</artifactId>
-  <version>{opennlp_version}</version>
-</dependency>
+dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-dl', version: '{opennlp_version}'
+}
 ----
 
 === OpenNLP UIMA Annotators Dependency
+
 To use the OpenNLP UIMA Annotators define the following dependency:
 
-[source,xml,indent=0,subs=attributes+]
+[source,indent=0,subs=attributes+]
 ----
-<dependency>
-  <groupId>org.apache.opennlp</groupId>
-  <artifactId>opennlp-uima</artifactId>
-  <version>{opennlp_version}</version>
-</dependency>
+dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-uima', version: '{opennlp_version}'
+}
 ----
 
 === OpenNLP Morfologik AddOn Dependency
+
 To use the OpenNLP Morfologik-Addon define the following dependency:
 
-[source,xml,indent=0,subs=attributes+]
+[source,indent=0,subs=attributes+]
 ----
-<dependency>
-  <groupId>org.apache.opennlp</groupId>
-  <artifactId>opennlp-morfologik-addon</artifactId>
-  <version>{opennlp_version}</version>
-</dependency>
+dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-morfologik-addon', version: '{opennlp_version}'
+}
 ----
 
 === OpenNLP Brat Annotator Dependency
+
 To use the OpenNLP UIMA Annotators define the following dependency:
 
-[source,xml,indent=0,subs=attributes+]
+[source,indent=0,subs=attributes+]
 ----
-<dependency>
-  <groupId>org.apache.opennlp</groupId>
-  <artifactId>opennlp-brat-annotator</artifactId>
-  <version>{opennlp_version}</version>
-</dependency>
+dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-brat-annotator', version: '{opennlp_version}'
+}
 ----
 
+== SNAPSHOTS
 === OpenNLP Tools SNAPSHOT Dependency
+
 To use the current version of the _main_ branch define the following dependency:
 
-[source,xml,indent=0,subs=attributes+]
 ----
-<dependency>
-  <groupId>org.apache.opennlp</groupId>
-  <artifactId>opennlp-tools</artifactId>
-  <version>{opennlp_next_version}</version>
-</dependency>
+dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '2.2.1-SNAPSHOT'
+}
 ----
 
-NOTE: The `SNAPSHOT` dependency requires the following Maven repository:
+NOTE: The `SNAPSHOT` dependency requires the following Maven repository in your Gradle project:
 
-[source,xml,indent=0,subs=attributes+]
+[source,indent=0,subs=attributes+]
 ----
-<repositories>
-  <repository>
-    <id>apache opennlp snapshot</id>
-    <url>https://repository.apache.org/content/repositories/snapshots/</url>
-  </repository>
-</repositories>
+  https://repository.apache.org/content/repositories/snapshots/
 ----

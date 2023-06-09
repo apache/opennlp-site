@@ -41,7 +41,8 @@
                     <ul class="dropdown-menu">
 		                <li><a href="/download.html">OpenNLP Releases</a></li>
                         <li><a href="/models.html">OpenNLP Models</a></li>
-		                <li><a href="/maven-dependency.html">Maven Dependency</a></li>
+		                <li><a href="/maven-dependency.html">Maven Integration</a></li>
+		                <li><a href="/gradle-dependency.html">Gradle Integration</a></li>
 		            </ul>
                 </li>
 

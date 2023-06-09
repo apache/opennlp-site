@@ -26,6 +26,10 @@
 
 Apache OpenNLP {opennlp_version} is now available for download.
 
+NOTE: Please note that the _tar.gz_ archive contain file names longer than 100 characters and has
+been created using https://www.gnu.org/software/tar/[GNU tar,window=_blank] extensions.
+It must be untarred with a GNU compatible version of tar.
+
 [options="header"]
 |===
 |.tar.gz | .zip
@@ -46,9 +50,6 @@ https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{op
 https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.zip.sha512[sha512]
 https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.zip.asc[asc]
 |===
-
-Note: Please note that the tar.gz archive contain file names longer than 100 characters and has
-been created using GNU tar extensions. It must be untarred with a GNU compatible version of tar.
 
 ### Verifying Signatures
 The sha512 and asc files are signature files and can be used to verify the integrity of the
