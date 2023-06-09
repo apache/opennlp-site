@@ -35,11 +35,11 @@ and coreference resolution.
 
 The OpenNLP 1.5.2-incubating binary and source distributions are available for download
 from our download page:
-<http://incubator.apache.org/opennlp/download.cgi>
+<https://incubator.apache.org/opennlp/download.cgi>
 
 The OpenNLP library is distributed by Maven Central as well.
 See the Maven Dependency page for more details:
-<http://incubator.apache.org/opennlp/maven-dependency.html>
+<https://incubator.apache.org/opennlp/maven-dependency.html>
 
 This release contains a couple of new features, improvements and bug fixes.
 The maxent trainer can now run in multiple threads to utilize

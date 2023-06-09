@@ -24,18 +24,18 @@
 
 ## Last Official
 
-## Prerequisites
+### Prerequisites
 
  - If you have an IDE installed such as https://netbeans.org/[NetBeans] or https://www.eclipse.org/[Eclipse] installed,
  it will make your development easier.  However, follow on for the brave.
 
- - At least http://www.oracle.com/technetwork/java/javase/overview/index.html[JDK 11] is required to compile and run
+ - At least https://www.oracle.com/technetwork/java/javase/overview/index.html[JDK 11] is required to compile and run
   the object code.
 
  - At least https://maven.apache.org/[Apache Maven 3.3.9] is required to build the source
  files and assemble the project.
 
-## Build Procedure
+### Build Procedure
 
 OpenNLP can either be build from the distributed sources or from
 a subversion checkout. These build instructions document how
@@ -69,5 +69,6 @@ For example type: ``mvn clean install -Dmaven.test.skip=true``
 No tests will be executed.
 
 It might happen from time to time that the build fails,
-if so please report a broken build on the opennlp-dev mailing
-list. The build should always work for everyone.
+if so please report a broken build on the _opennlp-dev_
+mailto:dev-subscribe@opennlp.apache.org[mailing
+list]. The build should always work for everyone.

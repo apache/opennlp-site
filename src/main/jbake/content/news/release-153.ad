@@ -32,10 +32,10 @@ It supports the most common NLP tasks, such as tokenization, sentence segmentati
 named entity extraction, chunking, parsing, and coreference resolution.
 
 The OpenNLP 1.5.3 binary and source distributions are available for download from our download page:
-<http://opennlp.apache.org/cgi-bin/download.cgi>
+<https://opennlp.apache.org/cgi-bin/download.cgi>
 
 The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details:
-<http://opennlp.apache.org/maven-dependency.html>
+<https://opennlp.apache.org/maven-dependency.html>
 
 This release contains a couple of new features, improvements and bug fixes. The CLI
 has been improved for a better consistency. Now the tools supports extensions that

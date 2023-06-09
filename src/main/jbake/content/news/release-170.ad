@@ -31,13 +31,13 @@ The Apache OpenNLP library is a machine learning based toolkit for the processin
 
 It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
 
-The OpenNLP 1.7.0 binary and source distributions are available for download from our download page: <http://opennlp.apache.org/cgi-bin/download.cgi>
+The OpenNLP 1.7.0 binary and source distributions are available for download from our download page: <https://opennlp.apache.org/cgi-bin/download.cgi>
 
-The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: <http://opennlp.apache.org/maven-dependency.html>
+The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: <https://opennlp.apache.org/maven-dependency.html>
 
 This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and deprecated methods were removed. Now Java 1.8 and Maven 3.3.9 are required.
 
-Additionally the release contains the following noteworthy changes:
+Additionally, the release contains the following noteworthy changes:
 
 - OpenNLP is up to 50% faster at analyzing content
 - A lot of deprecated code has been removed

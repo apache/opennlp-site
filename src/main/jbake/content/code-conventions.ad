@@ -26,7 +26,7 @@
 The Apache OpenNLP code should follow our code conventions. All code which
 is contributed to the project should adhere to these guidelines. 
 
-* Use 2 spaces for indentation. No tabs!
+* Use _2_ spaces for indentation. _No_ tabs!
 * Place open braces on the same line as the declaration, for example:
 
 [source,java]
@@ -53,10 +53,11 @@ public class Foo extends Bar {
     * Constructors
     * Methods
 
-* Do not use package imports (for example import org.apache.opennlp.*)
+* Do _not_ use package imports, for example:
+  ** `import org.apache.opennlp.*`
 * For other cases, we try to follow
-  http://www.oracle.com/technetwork/java/codeconv-138413.html[Java code conventions] as much as possible.
+  https://www.oracle.com/java/technologies/cc-java-programming-language.html[Java code conventions] as much as possible.
   
-# Formatter and Style files
+## Formatter and Style files
 * A code formatter file for Eclipse can be found link:code-formatter/OpenNLP-Eclipse-Formatter.xml[here] and the import order file link:code-formatter/eclipse-opennlp.importorder[here].
 * A code formatter file for IntelliJ can be found link:code-formatter/OpenNLP-IntelliJ-Formatter.xml[here].

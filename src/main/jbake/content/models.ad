@@ -214,10 +214,10 @@ That can easily be done with:
 More information about release signing and verifying signatures can
 be found https://www.apache.org/dev/release-signing.html[here].
 
-# SourceForge Models
+## SourceForge Models
 
-The models on Sourceforge for 1.5.0 are http://opennlp.sourceforge.net/models-1.5/[found here]
+The models on Sourceforge for 1.5.0 are https://opennlp.sourceforge.net/models-1.5/[found here]
 and are fully compatible with Apache OpenNLP {opennlp_version}.
 
-The models can be used for testing or getting started, please train your own models for all other use cases.
+The models can be used for testing or getting started. Please train your own models for all other use cases.
 

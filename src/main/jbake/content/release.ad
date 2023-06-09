@@ -73,7 +73,7 @@ This command creates and pushes two new commits to the repository to reflect the
 
 Perform the release: `mvn release:perform`
 
-This creates a staged repository at http://repository.apache.org.
+This creates a staged repository at https://repository.apache.org.
 Check the staged repository and if all looks well, close the staging repository but do *not* promote or release it at this time.
 The build results are in `opennlp/target/checkout/target`. Do not modify or delete these files.
 
@@ -126,7 +126,7 @@ Acknowledge the voting results on the mailing list in the VOTE thread.
 ### Release Nexus Staging Repository
 
 Release the staging repository. This will make the artifacts available in the Maven Central repository.
-To do this go to the http://repository.apache.org[repository server], log in, go to the staging area and release the staging repository linked to this release
+To do this go to the https://repository.apache.org[repository server], log in, go to the staging area and release the staging repository linked to this release
 
 ### Commit Distribution to SVN
 
@@ -141,13 +141,13 @@ svn commit --username <username> -m "Adding OpenNLP <version>"
 
 ### Delete Old Release(s)
 
-To reduce the load on the ASF mirrors, projects are required to delete old releases (see http://www.apache.org/legal/release-policy.html#when-to-archive).
+To reduce the load on the ASF mirrors, projects are required to delete old releases (see https://www.apache.org/legal/release-policy.html#when-to-archive).
 
 Remove the old releases from SVN under https://dist.apache.org/repos/dist/release/opennlp/.
 
 ### Update the Website
 
-Update the website once the new version appears in the Apache download mirrors (keep checking http://www.apache.org/dyn/closer.cgi/opennlp until you see something):
+Update the website once the new version appears in the Apache download mirrors (keep checking https://www.apache.org/dyn/closer.cgi/opennlp until you see something):
 
 #### Update jbake.properties
 
@@ -208,7 +208,7 @@ Move the last version's links to the documentation to the Legacy Documentation (
 - Announce the new version on the OpenNLP Twitter.
 - Announce the new version on the Apache OpenNLP blog at https://blogs.apache.org/opennlp/.
 - Close the present release ticket in JIRA.
-- Send announcement email to announce@apache.org, dev@opennlp.apache.org, users@opennlp.apache.org. This needs to be done from your @apache.org email address or the email will bounce from the announce list. Gmail forwarding can help here and is a snap to set up (http://gmailblog.blogspot.com/2009/07/send-mail-from-another-address-without.html). It's even easier then the instructions there as it will recognize your email address and default to Apache settings. It is important to include a description of what OpenNLP is as well as a link to the updated DOAP within the release announcement, this is so others know what OpenNLP is.
+- Send announcement email to announce@apache.org, dev@opennlp.apache.org, users@opennlp.apache.org. This needs to be done from your @apache.org email address or the email will bounce from the announce list. Gmail forwarding can help here and is a snap to set up (https://gmailblog.blogspot.com/2009/07/send-mail-from-another-address-without.html). It's even easier than the instructions there as it will recognize your email address and default to Apache settings. It is important to include a description of what OpenNLP is as well as a link to the updated DOAP within the release announcement, this is so others know what OpenNLP is.
 
 ----
 Title: [ANNOUNCE] OpenNLP <version> released
@@ -220,7 +220,7 @@ Message body:
 ----
 The Apache OpenNLP team is pleased to announce the release of version <version> of Apache OpenNLP. The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text. It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, and parsing.
 The OpenNLP <version> binary and source distributions are available for download from our download page: https://opennlp.apache.org/download.html
-The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: http://opennlp.apache.org/maven-dependency.html
+The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: https://opennlp.apache.org/maven-dependency.html
 
 Changes in this version:
 

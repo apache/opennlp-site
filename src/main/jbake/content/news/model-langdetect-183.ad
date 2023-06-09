@@ -30,14 +30,14 @@ TThe Apache OpenNLP library is a machine learning based toolkit for the processi
 The Apache OpenNLP team is pleased to announce the release of Language Detector Model 1.8.3 for Apache OpenNLP 1.8.3.
 The Language Detector Model can detect 103 languages and outputs ISO 639-3 codes.
 
-Apache OpenNLP model and reports are available for download from our model download page: 
-http://opennlp.apache.org/models.html
+Apache OpenNLP model and reports are available for download from our
+https://opennlp.apache.org/models.html[model download page]
 
 This is the first release of the Language Detector Model. It is compatible with Apache OpenNLP 1.8.3 or better.
 
-It is important to note that this model is trained for and works well with longer texts that have at least 2 sentences or more from the same language.
+It is important to note that this model is trained for and works well with longer texts that have at least two sentences or more from the same language.
 
-More information about this release can be found in the README.txt at:
+More information about this release can be found in the _README.txt_ at:
 https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/README.txt
 
 Details about this model effectiveness can be found in the following report:
