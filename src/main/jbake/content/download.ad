@@ -26,7 +26,7 @@
 
 Apache OpenNLP {opennlp_version} is now available for download.
 
-NOTE: Please note that the _tar.gz_ archive contain file names longer than 100 characters and has
+IMPORTANT: Please note that the _tar.gz_ archive contains file names longer than 100 characters and has
 been created using https://www.gnu.org/software/tar/[GNU tar,window=_blank] extensions.
 It must be untarred with a GNU compatible version of tar.
 
@@ -57,24 +57,24 @@ downloaded distribution package.
 
 Use the following commands to verify the integrity:
 
-* gpg --print-md sha512 fileName.tar.gz
-* gpg --verify fileName.tar.gz.asc
+* `gpg --print-md sha512 fileName.tar.gz`
+* `gpg --verify fileName.tar.gz.asc`
 
 It might be necessary to import the https://www.apache.org/dist/opennlp/KEYS[KEYS file] to verify the integrity
 of the asc files.
 
 That can easily be done with:
 
-* gpg --import KEYS
+* `gpg --import KEYS`
 
 More information about release signing and verifying signatures can
 be found https://www.apache.org/dev/release-signing.html[here].
 
 ## Models
 
-The models for Apache OpenNLP are link:/models.html[found here].
+The models for Apache OpenNLP are found link:/models.html[here].
 
-The models can be used for testing or getting started, please train your own models for all other use cases.
+NOTE: The models can be used for testing or getting started, please train your own models for all other use cases.
 
 ## Archive
 

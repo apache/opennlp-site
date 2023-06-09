@@ -51,9 +51,9 @@
                     <ul class="dropdown-menu">
                         
                         <li><a href="/news/">News</a></li>
-			<li><a href="https://blogs.apache.org/opennlp/">Blog</a></li>
+			            <li><a href="https://blogsarchive.apache.org/#opennlp" target="_blank">Blog</a></li>
                         <li><a href="/mailing-lists.html">Mailing Lists</a></li>
-                        <li><a href="https://issues.apache.org/jira/browse/OPENNLP">Issue tracker</a></li>
+                        <li><a href="https://issues.apache.org/jira/browse/OPENNLP" target="_blank">Issue tracker</a></li>
                         <li><a href="/books-tutorials-and-talks.html">Books, Tutorials and Talks</a></li>
                         <li><a href="/powered-by-opennlp.html">Powered by Apache OpenNLP</a></li>
                         
@@ -65,7 +65,7 @@
                     <ul class="dropdown-menu">
                         <li><a href="/docs/">Manual and Javadocs</a></li>
                         <li><a href="/faq.html">FAQ</a></li>
-                        <li><a href="https://cwiki.apache.org/OPENNLP">Wiki</a></li>
+                        <li><a href="https://cwiki.apache.org/OPENNLP" target="_blank">Wiki</a></li>
                     </ul>
                 </li>
 
