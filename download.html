@@ -125,9 +125,9 @@ body {
                     <ul class="dropdown-menu">
                         
                         <li><a href="/news/">News</a></li>
-			<li><a href="https://blogs.apache.org/opennlp/">Blog</a></li>
+			            <li><a href="https://blogsarchive.apache.org/#opennlp" target="_blank">Blog</a></li>
                         <li><a href="/mailing-lists.html">Mailing Lists</a></li>
-                        <li><a href="https://issues.apache.org/jira/browse/OPENNLP">Issue tracker</a></li>
+                        <li><a href="https://issues.apache.org/jira/browse/OPENNLP" target="_blank">Issue tracker</a></li>
                         <li><a href="/books-tutorials-and-talks.html">Books, Tutorials and Talks</a></li>
                         <li><a href="/powered-by-opennlp.html">Powered by Apache OpenNLP</a></li>
                         
@@ -139,7 +139,7 @@ body {
                     <ul class="dropdown-menu">
                         <li><a href="/docs/">Manual and Javadocs</a></li>
                         <li><a href="/faq.html">FAQ</a></li>
-                        <li><a href="https://cwiki.apache.org/OPENNLP">Wiki</a></li>
+                        <li><a href="https://cwiki.apache.org/OPENNLP" target="_blank">Wiki</a></li>
                     </ul>
                 </li>
 
@@ -182,14 +182,14 @@ body {
 <div class="paragraph">
 <p>Apache OpenNLP 2.2.0 is now available for download.</p>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<div class="title">Note</div>
+<div class="title">Important</div>
 </td>
 <td class="content">
-Please note that the <em>tar.gz</em> archive contain file names longer than 100 characters and has
+Please note that the <em>tar.gz</em> archive contains file names longer than 100 characters and has
 been created using <a href="https://www.gnu.org/software/tar/" target="_blank" rel="noopener">GNU tar</a> extensions.
 It must be untarred with a GNU compatible version of tar.
 </td>
@@ -238,10 +238,10 @@ downloaded distribution package.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>gpg --print-md sha512 fileName.tar.gz</p>
+<p><code>gpg --print-md sha512 fileName.tar.gz</code></p>
 </li>
 <li>
-<p>gpg --verify fileName.tar.gz.asc</p>
+<p><code>gpg --verify fileName.tar.gz.asc</code></p>
 </li>
 </ul>
 </div>
@@ -255,7 +255,7 @@ of the asc files.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>gpg --import KEYS</p>
+<p><code>gpg --import KEYS</code></p>
 </li>
 </ul>
 </div>
@@ -270,10 +270,19 @@ be found <a href="https://www.apache.org/dev/release-signing.html">here</a>.</p>
 <h2 id="models">Models</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The models for Apache OpenNLP are <a href="/models.html">found here</a>.</p>
+<p>The models for Apache OpenNLP are found <a href="/models.html">here</a>.</p>
 </div>
-<div class="paragraph">
-<p>The models can be used for testing or getting started, please train your own models for all other use cases.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The models can be used for testing or getting started, please train your own models for all other use cases.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
