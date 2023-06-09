@@ -35,6 +35,8 @@ The OpenNLP 1.7.0 binary and source distributions are available for download fro
 
 The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: <https://opennlp.apache.org/maven-dependency.html>
 
+== What is new in Apache OpenNLP 1.7.0
+
 This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and deprecated methods were removed. Now Java 1.8 and Maven 3.3.9 are required.
 
 Additionally, the release contains the following noteworthy changes:
@@ -45,12 +47,11 @@ Additionally, the release contains the following noteworthy changes:
 - There is a new brat annotation service
 - Documentation was improved and extended
 - A Naive Bayesian Classifier implementation was added
-- Morofologik addon is now included
+- Morfologik addon is now included
 - Added a language model component
 - Added a CLI to the lemmatizer component.
 - Added a supervised statistical lemmatizer.
-- The lemmatizer component API has been entirely rewritten. The changes in
-  the previously existing Dictionary-based lemmatizer are not backward compatible.
+- The lemmatizer component API has been entirely rewritten. The changes in the previously existing Dictionary-based lemmatizer are not backward compatible.
 
 A detailed list of the issues related to this release can be found in the release
 notes.

@@ -25,7 +25,7 @@
 There exists a manual and Javadoc API documentation for Apache OpenNLP. The manual
 explains how the various OpenNLP components can be used and trained.
 
-### Apache OpenNLP {opennlp_version} documentation
+== Apache OpenNLP {opennlp_version} documentation
 
 * link:/docs/{opennlp_version}/manual/opennlp.html[Apache OpenNLP Manual]
 * link:/docs/{opennlp_version}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]

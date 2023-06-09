@@ -36,11 +36,11 @@ Apache OpenNLP 1.8.3 binary and source distributions are available for download 
 The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: link:/maven-dependency.html[Maven Dependency]
 
 
-# What's new in Apache OpenNLP 1.8.3
+== What's new in Apache OpenNLP 1.8.3
 
 This release introduces new features, improvements and bug fixes. Java 1.8 and Maven 3.3.9 are required.
 
-Additionally the release contains the following noteworthy changes:
+Additionally, the release contains the following noteworthy changes:
 - New experimental API for Word Vectors and support for Glove vector files
 - Code cleanups and addition of test cases
 - Java 9 module name is now set to org.apache.opennlp.tools

@@ -28,16 +28,16 @@ There are several ways to set up Git for committers and contributors. Contributo
 
 - Create a Github account or use an existing one
 - Enable 2FA for the Github account, then logout and login
-- https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/[Configure your ssh key]
-- Enter your Github username for your Apache account under https://id.apache.org
-- Register here https://gitbox.apache.org/setup/
-- The gitbox setup will confirm that everything is working, to confirm again check that you are listed as a member here: https://github.com/orgs/apache/teams/opennlp-committers/members.
+- https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/[Configure your ssh key,window=_blank]
+- Enter your Github username for your Apache account under https://id.apache.org[window=_blank]
+- Register here https://gitbox.apache.org/setup/[window=_blank]
+- The gitbox setup will confirm that everything is working, to confirm again check that you are listed as a member here: https://github.com/orgs/apache/teams/opennlp-committers/members[window=_blank].
 - Fork the OpenNLP repositories:
-    * https://github.com/apache/opennlp-sandbox
-    * https://github.com/apache/opennlp-addons
-    * https://github.com/apache/opennlp-site
-    * https://github.com/apache/opennlp
-- Configure your https://help.github.com/articles/setting-your-email-in-git/[user name and Apache e-mail in git]
+    * https://github.com/apache/opennlp-sandbox[window=_blank]
+    * https://github.com/apache/opennlp-addons[window=_blank]
+    * https://github.com/apache/opennlp-site[window=_blank]
+    * https://github.com/apache/opennlp[window=_blank]
+- Configure your https://help.github.com/articles/setting-your-email-in-git/[user name and Apache e-mail in git,window=_blank]
 
 
 ## Configuring the upstream remote
@@ -50,7 +50,7 @@ Your repository should have two remotes, the upstream remote, and the default or
  
 ## Merge a Pull Request via GitHub
  
-Please do not commit directly to the main branch. All changes are done via Pull Requests, and a Pull Request needs to get two positive reviews and no change requests until it https://git-scm.com/docs/git-merge#_fast_forward_merge[can be merged]. The PR can be merged via the Github UI as described below or manually. Please also note that we do not use merge commits, the merge should be done using https://git-scm.com/docs/git-merge#_fast_forward_merge[fast forward merging].
+Please do not commit directly to the main branch. All changes are done via Pull Requests, and a Pull Request needs to get two positive reviews and no change requests until it https://git-scm.com/docs/git-merge#_fast_forward_merge[can be merged,window=_blank]. The PR can be merged via the Github UI as described below or manually. Please also note that we do not use merge commits, the merge should be done using https://git-scm.com/docs/git-merge#_fast_forward_merge[fast forward merging,window=_blank].
  
 To merge a PR via Github follow these steps:
 

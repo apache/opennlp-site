@@ -35,9 +35,8 @@
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <maven.version>3.3.9</maven.version>
-    <pegdown.version>1.6.0</pegdown.version>
-    <asciidoctor.version>2.5.2</asciidoctor.version>
-    <freemarker.version>2.3.25-incubating</freemarker.version>
+    <asciidoctor.version>2.5.10</asciidoctor.version>
+    <freemarker.version>2.3.32</freemarker.version>
   </properties>
 
   <build>
@@ -46,6 +45,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.10.1</version>
         <configuration>
             <source>1.8</source>
             <target>1.8</target>
@@ -58,7 +58,6 @@
 
         <!-- dependencies -->
         <dependencies>
-
           <!-- optional : a jbake version -->
           <dependency>
             <groupId>org.jbake</groupId>
@@ -71,17 +70,17 @@
             <artifactId>freemarker</artifactId>
             <version>${freemarker.version}</version>
           </dependency>
-          <!-- for markdown parsing (.md) -->
-          <dependency>
-            <groupId>org.pegdown</groupId>
-            <artifactId>pegdown</artifactId>
-            <version>${pegdown.version}</version>
-          </dependency>
-
+          <!-- for ascii doc format (.ad) -->
           <dependency>
             <groupId>org.asciidoctor</groupId>
             <artifactId>asciidoctorj</artifactId>
             <version>${asciidoctor.version}</version>
+          </dependency>
+          <!-- Overriding orientdb, required to work on Apple Silicon (M1,..) -->
+          <dependency>
+            <groupId>com.orientechnologies</groupId>
+            <artifactId>orientdb-core</artifactId>
+            <version>3.1.16</version>
           </dependency>
 
         </dependencies>

@@ -41,11 +41,11 @@ To build everything execute the following command in the root folder: `mvn clean
 
 The results of the build will be placed in: `opennlp-distr/target/apache-opennlp-1.8.1-bin.tar.gz` (or `.zip`)
 
-# What's new in Apache OpenNLP 1.8.1
+== What's new in Apache OpenNLP 1.8.1
 
 This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and many deprecated methods were removed. Java 1.8 is required.
 
-Additionally the release contains the following noteworthy changes:
+Additionally, the release contains the following noteworthy changes:
 
 - A new Language Detection Component
 - Support for Irish Sentence Bank formats

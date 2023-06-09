@@ -47,14 +47,13 @@ To build everything execute the following command in the root folder:
 The results of the build will be placed  in:
     opennlp-distr/target/apache-opennlp-1.7.2-bin.tar-gz (or .zip)
 
-What is new in Apache OpenNLP 1.7.2
----------------------------------------
+== What is new in Apache OpenNLP 1.7.2
 
 This release introduces many new features, improvements and bug fixes. The API
 has been improved for a better consistency and 1.4 deprecated methods were
 removed. Now Java 1.8 is required.
 
-Additionally the release contains the following noteworthy changes:
+Additionally, the release contains the following noteworthy changes:
 
 - Name Finder evaluation can now show a confusion matrix
 - The default evaluation output contains more details

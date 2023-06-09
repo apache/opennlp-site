@@ -35,7 +35,7 @@ Apache OpenNLP 1.9.3 binary and source distributions are available for download 
 
 The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: link:/maven-dependency.html[Maven Dependency]
 
-# What's new in Apache OpenNLP 1.9.3
+== What's new in Apache OpenNLP 1.9.3
 
 - Resolved issues building on Java 11.
 - Using strict math for calculations for consistent evaluations.

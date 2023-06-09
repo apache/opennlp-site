@@ -24,10 +24,8 @@
 
 Apache OpenNLP is also distributed via the Maven Central Repository and
 the maven artifacts are located https://repo1.maven.org/maven2/org/apache/opennlp/[here].
-
 The Apache OpenNLP project publishes the library, javadoc and source code jars.
-
-To use OpenNLP in your project specify exactly one of the following dependencies,
+To use OpenNLP in your project, specify exactly one of the following dependencies,
 all transient dependencies are resolved automatically.
 
 ## OpenNLP Tools Dependency

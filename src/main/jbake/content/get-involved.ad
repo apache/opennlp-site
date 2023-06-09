@@ -61,17 +61,17 @@ issues please post them to the JIRA pages and not to this list. This list is mai
 
 ## Making a Contribution
 
-* Create a new issue in the https://issues.apache.org/jira/browse/OPENNLP[Apache OpenNLP JIRA]. Please describe the problem or improvement in the body of the issue. For larger issues, please first contact the developer mailing list and describe the problem.
-* Next, create a pull request in https://github.com/apache/opennlp/pulls[GitHub].
+* Create a new issue in the Apache OpenNLP https://issues.apache.org/jira/browse/OPENNLP[JIRA,window=_blank]. Please describe the problem or improvement in the body of the issue. For larger issues, please first contact the developer mailing list and describe the problem.
+* Next, create a pull request in https://github.com/apache/opennlp/pulls[GitHub,window=_blank].
 
 Bigger contributions can eventually only be accepted when an
-https://www.apache.org/licenses/icla.txt[ICLA], https://www.apache.org/licenses/cla-corporate.txt[CCLA]
-or https://www.apache.org/licenses/software-grant.txt[software grant] is on file.
+https://apache.org/licenses/icla.pdf[ICLA,window=_blank], https://www.apache.org/licenses/cla-corporate.txt[CCLA,window=_blank]
+or https://www.apache.org/licenses/software-grant.txt[software grant,window=_blank] is on file.
 
 Contributors who have a history of successful participation are invited to join
 the project as a committer from the https://incubator.apache.org/guides/ppmc.html[PPMC].
 
 ## Open Tasks
 
-Please see the Apache OpenNLP https://issues.apache.org/jira/browse/OPENNLP[JIRA] for a list of tasks. If you would like to work on a task, please email the developers mailing list and request to do so. You will then be assigned the issue in JIRA.
+Please see the Apache OpenNLP https://issues.apache.org/jira/browse/OPENNLP[JIRA,window=_blank] for a list of tasks. If you would like to work on a task, please email the developers mailing list and request to do so. You will then be assigned the issue in JIRA.
 

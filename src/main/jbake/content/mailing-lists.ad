@@ -46,7 +46,7 @@ to the issue tracker for the project.
 |link:++https://lists.apache.org/list.html?commits@opennlp.apache.org++[Archives]
 
 |Issues Mailing List
-|This list follows changes and posts to JIRA, the projects bug tracking system.  If you have any
+|This list follows changes and posts to https://issues.apache.org/jira/browse/OPENNLP[JIRA], the projects bug tracking system.  If you have any
 issues please post them to the JIRA pages and not to this list. This list is mainly for developers to keep track of changes and issues to be resolved; however, any changes should be posted to the JIRA pages and _not_ _directly_ to this mailing list.
 |mailto:issues-subscribe@opennlp.apache.org[Subscribe]
 |mailto:issues-unsubscribe@opennlp.apache.org[Unsubscribe]

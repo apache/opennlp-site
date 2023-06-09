@@ -35,11 +35,11 @@ Apache OpenNLP 1.9.0 binary and source distributions are available for download 
 
 The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: link:/maven-dependency.html[Maven Dependency]
 
-# What's new in Apache OpenNLP 1.9.0
+== What's new in Apache OpenNLP 1.9.0
 
 This release introduces new features, improvements and bug fixes. Java 1.8 and Maven 3.3.9 are required.
 
-Additionally the release contains the following changes:
+Additionally, the release contains the following changes:
 
 - Brat Document Parser should support name type filters
 - Brat format support fails on multi fragment annotations

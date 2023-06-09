@@ -29,6 +29,7 @@ is contributed to the project should adhere to these guidelines.
 * Use _2_ spaces for indentation. _No_ tabs!
 * Place open braces on the same line as the declaration, for example:
 
++
 [source,java]
 ----
 public class Foo extends Bar {
@@ -36,7 +37,7 @@ public class Foo extends Bar {
     try {
       for (int i = 0; i < args.length; i++) {
         System.out.println(Integer.parseInt(args[i]));
-      }		        
+      }
     }
     catch(NumberFormatException e) {
       e.printStackTrace();
@@ -54,10 +55,11 @@ public class Foo extends Bar {
     * Methods
 
 * Do _not_ use package imports, for example:
-  ** `import org.apache.opennlp.*`
++
+`import org.apache.opennlp.*`
 * For other cases, we try to follow
-  https://www.oracle.com/java/technologies/cc-java-programming-language.html[Java code conventions] as much as possible.
+  https://www.oracle.com/java/technologies/cc-java-programming-language.html[Java code conventions,window=_blank] as much as possible.
   
 ## Formatter and Style files
-* A code formatter file for Eclipse can be found link:code-formatter/OpenNLP-Eclipse-Formatter.xml[here] and the import order file link:code-formatter/eclipse-opennlp.importorder[here].
-* A code formatter file for IntelliJ can be found link:code-formatter/OpenNLP-IntelliJ-Formatter.xml[here].
+* A code formatter file for Eclipse can be found link:code-formatter/OpenNLP-Eclipse-Formatter.xml[here,window=read-later] and the import order file link:code-formatter/eclipse-opennlp.importorder[here,window=read-later].
+* A code formatter file for IntelliJ can be found link:code-formatter/OpenNLP-IntelliJ-Formatter.xml[here,window=read-later].

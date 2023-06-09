@@ -26,13 +26,13 @@
 
 ### Prerequisites
 
- - If you have an IDE installed such as https://netbeans.org/[NetBeans] or https://www.eclipse.org/[Eclipse] installed,
+ - If you have an IDE installed such as https://netbeans.org/[NetBeans,window=_blank] or https://www.eclipse.org/[Eclipse,window=_blank] installed,
  it will make your development easier.  However, follow on for the brave.
 
- - At least https://www.oracle.com/technetwork/java/javase/overview/index.html[JDK 11] is required to compile and run
+ - At least https://www.oracle.com/technetwork/java/javase/overview/index.html[JDK 11,window=_blank] is required to compile and run
   the object code.
 
- - At least https://maven.apache.org/[Apache Maven 3.3.9] is required to build the source
+ - At least https://maven.apache.org/[Apache Maven 3.3.9,window=_blank] is required to build the source
  files and assemble the project.
 
 ### Build Procedure

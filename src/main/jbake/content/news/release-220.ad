@@ -35,7 +35,7 @@ Apache OpenNLP 2.2.0 binary and source distributions are available for download 
 
 The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: link:/maven-dependency.html[Maven Dependency]
 
-# What's new in Apache OpenNLP 2.2.0
+== What's new in Apache OpenNLP 2.2.0
 
 This version contains improvements to logging by introducing SLF4J to replace logging using System.out. ONNX Runtime support for sentence-transformers was also introduced. This version also includes fixes for stemming, documentation, and unit tests.
 

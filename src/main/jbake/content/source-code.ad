@@ -25,10 +25,10 @@
 ## GitHub Mirror Access
 View the code, fork and send pull requests on Github:
 
-* https://github.com/apache/opennlp[Github opennlp]
-* https://github.com/apache/opennlp-site[Github opennlp-site]
-* https://github.com/apache/opennlp-addons[Github opennlp-addons]
-* https://github.com/apache/opennlp-sandbox[Github opennlp-sandbox]
+* https://github.com/apache/opennlp[Github opennlp,window=_blank]
+* https://github.com/apache/opennlp-site[Github opennlp-site,window=_blank]
+* https://github.com/apache/opennlp-addons[Github opennlp-addons,window=_blank]
+* https://github.com/apache/opennlp-sandbox[Github opennlp-sandbox,window=_blank]
 
 ## Apache Git Repository
 The Git repositories can be checked out with these commands:

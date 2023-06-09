@@ -25,8 +25,8 @@
 ## Release Preparation
 
 - Elect a release manager.
-- Create a ticket for a new release in JIRA. If you do not have permission to do so just ask to be given permissions on the mailing list.
-- Review all of the JIRA issues associated with the release. All issues should be resolved and closed.
+- Create a ticket for a new release in https://issues.apache.org/jira/browse/OPENNLP[JIRA]. If you do not have permission to do so just ask to be given permissions on the mailing list.
+- Review all of the https://issues.apache.org/jira/browse/OPENNLP[JIRA] issues associated with the release. All issues should be resolved and closed.
 - Any issues assigned to the release that are not complete should be assigned to the next release. Any critical or blocker issues should be resolved on the mailing list. Discuss any issues that you are unsure of on the mailing list.
 
 ## Steps for the Release Manager
@@ -37,6 +37,7 @@ The following steps need only to be performed once.
   Your KEYS will then be present in https://people.apache.org/keys/group/opennlp.asc.
 - Make sure you have your PGP keys password.
 - Add your PGP key to the KEYS file:
++
 ----
 Examples of adding your key to this file:
  pgp -kxa <your name> and append it to this file.
@@ -45,12 +46,13 @@ Examples of adding your key to this file:
      && gpg --armor --export <your name>) >> this file.
 ----
 - In a local temp folder, svn checkout the OpenNLP artifacts and update the KEYS file
++
 ----
 svn co https://dist.apache.org/repos/dist/release/opennlp/
 svn commit -m"Added Key for <name>" KEYS
 ----
 - Create a maven `settings.xml` to publish to `repository.apache.org`. An example configuration:
-
++
 ----
 <server>
   <id>apache.releases.https</id>
@@ -120,7 +122,7 @@ Thanks!
 
 ## After a Successful Vote
 
-The vote is successful if at least 3 +1 votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
+The vote is successful if at least 3 _+1_ votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
 Acknowledge the voting results on the mailing list in the VOTE thread.
 
 ### Release Nexus Staging Repository
@@ -207,7 +209,7 @@ Move the last version's links to the documentation to the Legacy Documentation (
 - Log the new version at https://reporter.apache.org/addrelease.html?opennlp.
 - Announce the new version on the OpenNLP Twitter.
 - Announce the new version on the Apache OpenNLP blog at https://blogs.apache.org/opennlp/.
-- Close the present release ticket in JIRA.
+- Close the present release ticket in https://issues.apache.org/jira/browse/OPENNLP[JIRA].
 - Send announcement email to announce@apache.org, dev@opennlp.apache.org, users@opennlp.apache.org. This needs to be done from your @apache.org email address or the email will bounce from the announce list. Gmail forwarding can help here and is a snap to set up (https://gmailblog.blogspot.com/2009/07/send-mail-from-another-address-without.html). It's even easier than the instructions there as it will recognize your email address and default to Apache settings. It is important to include a description of what OpenNLP is as well as a link to the updated DOAP within the release announcement, this is so others know what OpenNLP is.
 
 ----

@@ -25,14 +25,15 @@
 ## Release Preparation
 
 - Elect a release manager.
-- Create a ticket for a new model release in JIRA. If you do not have permission to do so just ask to be given permissions on the mailing list.
+- Create a ticket for a new model release in https://issues.apache.org/jira/browse/OPENNLP[JIRA,window=_blank]. If you do not have permission to do so just ask to be given permissions on the mailing list.
 
 ## Steps for the Release Manager
 
 The following steps need only to be performed once.
 
-- Make sure you have your PGP key added to https://dist.apache.org/repos/dist/release/opennlp/KEYS via SVN
+- Make sure you have your PGP key added to https://dist.apache.org/repos/dist/release/opennlp/KEYS[window=_blank] via SVN
   If the key isn't contained in this file, add your PGP key to the KEYS file:
++
 ----
 Examples of adding your key to this file:
  pgp -kxa <your name> and append it to this file.
@@ -41,6 +42,7 @@ Examples of adding your key to this file:
      && gpg --armor --export <your name>) >> this file.
 ----
 - In a local temp folder, svn checkout the OpenNLP artifacts and update the KEYS file
++
 ----
 svn co https://dist.apache.org/repos/dist/release/opennlp/
 svn commit -m "Added Key for <name>" KEYS
@@ -59,15 +61,14 @@ svn commit -m "Added Key for <name>" KEYS
 #### Perform the Model Release
 
 - Create sha512 checksums
-
++
 ----
 # cd to model location
 for f in *; do   sha512sum "$f" > "$f.sha512"; done
 ----
-
-- Create PGP signatures, see https://infra.apache.org/release-signing.html[for details].
+- Create PGP signatures, see https://infra.apache.org/release-signing.html[for details,window=_blank].
 If you have multiple keys on your system, you might need to use `-u` to select the signing key.
-
++
 ----
 # cd to model location
 # create asc signatures for model files
@@ -80,11 +81,9 @@ for f in *.zip; do
 gpg --armor --output $f.asc --detach-sig $f
 done
 ----
-
 - Add README, NOTICE, LICENSE and CHANGES (if any)
-
 - Create a folder in `dist/dev/models` in SVN
-
++
 ----
 svn co https://dist.apache.org/repos/dist/dev/opennlp/ dist-dev
 # check if the KEYS file contains your key, if not, update it
@@ -98,13 +97,13 @@ Make sure to adhere to the model naming conventions.
 
 #### Model Naming Conventions
 
-- The filenames of each model signify the model language, type, https://universaldependencies.org/[Universal Dependency training data used], and version numbers.
+- The filenames of each model signify the model language, type, https://universaldependencies.org/[Universal Dependency training data,window=_blank] used, and version numbers.
 - The filename format is `opennlp-[iso-language-code]-ud-[corpus]-[model-type]-[model-version]-[opennlp-version-used-for-training].bin`.
 - The evaluation logs must be zipped and adhere to the following format: `opennlp-training-eval-logs-[model-version]-[opennlp-version-used-for-training].zip`. It contains the evaluation logs for trained models.
 - For example, the model file `opennlp-de-ud-gsd-pos-1.0-1.9.3` is German language, trained on the UD GSD corpus, and is a parts-of-speech model. It is version 1.0 of the model, and it was trained using OpenNLP 1.9.3.
 
 
-**Note:** If other training data is used, the abbreviation `ud` needs to be adjusted!
+NOTE: If other training data is used, the abbreviation `ud` needs to be adjusted!
 
 #### Check the Model Release Artifacts
 
@@ -116,9 +115,9 @@ Perform basic checks against the release binary:
 #### Create a VOTE Thread
 
 - Notify the developer mailing list of a new model vote. Be sure to replace all values in `[]` with the appropriate values.
-
-Message Subject: [VOTE] Apache OpenNLP Models [version] Release Candidate
-
++
+_Message Subject: [VOTE] Apache OpenNLP Models [version] Release Candidate_
++
 ----
 Hi folks,
 
@@ -147,7 +146,7 @@ Thanks!
 
 ## After a Successful Vote
 
-The vote is successful if at least 3 +1 votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
+The vote is successful if at least 3 _+1_ votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
 Acknowledge the voting results on the mailing list in the VOTE thread.
 
 ### Commit Distribution to SVN
@@ -169,12 +168,12 @@ Remove the old model release from SVN under https://dist.apache.org/repos/dist/r
 
 ### Update the Website
 
-Update the  https://opennlp.apache.org/models.html[website] once the new version appears in the Apache download mirrors (keep checking https://www.apache.org/dyn/closer.cgi/opennlp/models/ until you see something).
+Update the  https://opennlp.apache.org/models.html[website,window=_blank] once the new version appears in the Apache download mirrors (keep checking https://www.apache.org/dyn/closer.cgi/opennlp/models/[window=_blank] until you see something).
 
 #### Add News Item
 
 - Add a news item in `news/model-{model-type}-{xyz}.ad` by copying the adjusted content:
-
++
 ----
 = <MODEL_TYPE> Models for Apache OpenNLP released
 Apache OpenNLP
@@ -212,19 +211,19 @@ https://dist.apache.org/repos/dist/dev/opennlp/<MODEL_TYPE>-<MODEL_VERSION>/open
 
 ### Post-Release Steps
 
-- Log the new version at https://reporter.apache.org/addrelease.html?opennlp.
+- Log the new version at https://reporter.apache.org/addrelease.html?opennlp[window=_blank].
 - Announce the new models on the OpenNLP Twitter.
-- Announce the new models on the Apache OpenNLP blog at https://blogs.apache.org/opennlp/.
-- Close the present release ticket in JIRA.
+- Close the present release ticket in https://issues.apache.org/jira/browse/OPENNLP[JIRA,window=_blank].
 - Send announcement email to announce@apache.org, dev@opennlp.apache.org, users@opennlp.apache.org.
 This needs to be done from your @apache.org email address or the email will bounce from the announce list.
++
 ----
 Title: [ANNOUNCE] OpenNLP Models <version> released
 TO: announce@apache.org, users@opennlp.apache.org, dev@opennlp.apache.org
 ----
-
++
 Message body:
-
++
 ----
 The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
 

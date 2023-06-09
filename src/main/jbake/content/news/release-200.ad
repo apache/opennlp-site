@@ -35,7 +35,7 @@ Apache OpenNLP 2.0.0 binary and source distributions are available for download 
 
 The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: link:/maven-dependency.html[Maven Dependency]
 
-# What's new in Apache OpenNLP 2.0.0
+== What's new in Apache OpenNLP 2.0.0
 
 - Adds ability to download models from within Apache OpenNLP
 - Now builds using Java 11
@@ -49,6 +49,6 @@ The OpenNLP library is distributed by Maven Central as well. See the Maven Depen
 
 A detailed list of the issues related to this release can be found in the release notes.
 
-For a complete list of fixed bugs and improvements please see the README.html file included in the distribution.
+For a complete list of fixed bugs and improvements please see the _README.html_ file included in the distribution.
 
 --The Apache OpenNLP Team

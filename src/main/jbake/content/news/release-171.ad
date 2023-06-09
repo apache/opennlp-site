@@ -37,8 +37,8 @@ The OpenNLP library is distributed by Maven Central as well. See the Maven Depen
 
 == Requirements
 
-Java 1.8 is required to run OpenNLP
-Maven 3.3.9 is required for building it
+Java 1.8 is required to run OpenNLP.
+Maven 3.3.9 is required for building it.
 
 == Building from the Source Distribution
 
@@ -46,15 +46,15 @@ To build everything execute the following command in the root folder:
 
    mvn clean install
 
-The results of the build will be placed  in:
-   opennlp-distr/target/apache-opennlp-1.7.1-bin.tar-gz (or .zip)
+The results of the build will be placed in:
+_opennlp-distr/target/apache-opennlp-1.7.1-bin.tar.gz_
+(or _.zip_)
 
-What is new in Apache OpenNLP 1.7.1
----------------------------------------
+== What is new in Apache OpenNLP 1.7.1
 
 This release introduces many new features, improvements and bug fixes. 
 
-Additionally the release contains the following noteworthy changes:
+Additionally, the release contains the following noteworthy changes:
 
 - Travis CI Integration
 - Added support to LETSMT format
