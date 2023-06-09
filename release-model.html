@@ -184,7 +184,7 @@ body {
 <p>Elect a release manager.</p>
 </li>
 <li>
-<p>Create a ticket for a new model release in JIRA. If you do not have permission to do so just ask to be given permissions on the mailing list.</p>
+<p>Create a ticket for a new model release in <a href="https://issues.apache.org/jira/browse/OPENNLP" target="_blank" rel="noopener">JIRA</a>. If you do not have permission to do so just ask to be given permissions on the mailing list.</p>
 </li>
 </ul>
 </div>
@@ -199,11 +199,8 @@ body {
 <div class="ulist">
 <ul>
 <li>
-<p>Make sure you have your PGP key added to <a href="https://dist.apache.org/repos/dist/release/opennlp/KEYS" class="bare">https://dist.apache.org/repos/dist/release/opennlp/KEYS</a> via SVN
+<p>Make sure you have your PGP key added to <a href="https://dist.apache.org/repos/dist/release/opennlp/KEYS" class="bare" target="_blank" rel="noopener">https://dist.apache.org/repos/dist/release/opennlp/KEYS</a> via SVN
 If the key isn&#8217;t contained in this file, add your PGP key to the KEYS file:</p>
-</li>
-</ul>
-</div>
 <div class="listingblock">
 <div class="content">
 <pre>Examples of adding your key to this file:
@@ -213,21 +210,16 @@ If the key isn&#8217;t contained in this file, add your PGP key to the KEYS file
      &amp;&amp; gpg --armor --export &lt;your name&gt;) &gt;&gt; this file.</pre>
 </div>
 </div>
-<div class="ulist">
-<ul>
+</li>
 <li>
 <p>In a local temp folder, svn checkout the OpenNLP artifacts and update the KEYS file</p>
-</li>
-</ul>
-</div>
 <div class="listingblock">
 <div class="content">
 <pre>svn co https://dist.apache.org/repos/dist/release/opennlp/
 svn commit -m "Added Key for &lt;name&gt;" KEYS</pre>
 </div>
 </div>
-<div class="ulist">
-<ul>
+</li>
 <li>
 <p>Make sure you have your PGP key&#8217;s password.</p>
 </li>
@@ -259,23 +251,16 @@ svn commit -m "Added Key for &lt;name&gt;" KEYS</pre>
 <ul>
 <li>
 <p>Create sha512 checksums</p>
-</li>
-</ul>
-</div>
 <div class="listingblock">
 <div class="content">
 <pre># cd to model location
 for f in *; do   sha512sum "$f" &gt; "$f.sha512"; done</pre>
 </div>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Create PGP signatures, see <a href="https://infra.apache.org/release-signing.html">for details</a>.
-If you have multiple keys on your system, you might need to use <code>-u</code> to select the signing key.</p>
 </li>
-</ul>
-</div>
+<li>
+<p>Create PGP signatures, see <a href="https://infra.apache.org/release-signing.html" target="_blank" rel="noopener">for details</a>.
+If you have multiple keys on your system, you might need to use <code>-u</code> to select the signing key.</p>
 <div class="listingblock">
 <div class="content">
 <pre># cd to model location
@@ -290,16 +275,12 @@ gpg --armor --output $f.asc --detach-sig $f
 done</pre>
 </div>
 </div>
-<div class="ulist">
-<ul>
+</li>
 <li>
 <p>Add README, NOTICE, LICENSE and CHANGES (if any)</p>
 </li>
 <li>
 <p>Create a folder in <code>dist/dev/models</code> in SVN</p>
-</li>
-</ul>
-</div>
 <div class="listingblock">
 <div class="content">
 <pre>svn co https://dist.apache.org/repos/dist/dev/opennlp/ dist-dev
@@ -307,6 +288,9 @@ done</pre>
 # copy the models and signatures to dist-dev/models/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt;
 svn commit --username &lt;username&gt; -m "Adding Release Candidate for OpenNLP Models &lt;version&gt;"</pre>
 </div>
+</div>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>Check the dist/dev folder and if all looks well, open a VOTE but do <strong>not</strong> move the files to dist/release at this time.</p>
@@ -320,7 +304,7 @@ svn commit --username &lt;username&gt; -m "Adding Release Candidate for OpenNLP 
 <div class="ulist">
 <ul>
 <li>
-<p>The filenames of each model signify the model language, type, <a href="https://universaldependencies.org/">Universal Dependency training data used</a>, and version numbers.</p>
+<p>The filenames of each model signify the model language, type, <a href="https://universaldependencies.org/" target="_blank" rel="noopener">Universal Dependency training data</a> used, and version numbers.</p>
 </li>
 <li>
 <p>The filename format is <code>opennlp-[iso-language-code]-ud-[corpus]-[model-type]-[model-version]-[opennlp-version-used-for-training].bin</code>.</p>
@@ -333,8 +317,17 @@ svn commit --username &lt;username&gt; -m "Adding Release Candidate for OpenNLP 
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p><strong>Note:</strong> If other training data is used, the abbreviation <code>ud</code> needs to be adjusted!</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+If other training data is used, the abbreviation <code>ud</code> needs to be adjusted!
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect3">
@@ -359,11 +352,8 @@ svn commit --username &lt;username&gt; -m "Adding Release Candidate for OpenNLP 
 <ul>
 <li>
 <p>Notify the developer mailing list of a new model vote. Be sure to replace all values in <code>[]</code> with the appropriate values.</p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
-<p>Message Subject: [VOTE] Apache OpenNLP Models [version] Release Candidate</p>
+<p><em>Message Subject: [VOTE] Apache OpenNLP Models [version] Release Candidate</em></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -392,6 +382,9 @@ The vote passes if at least three binding +1 votes are cast.
 Thanks!</pre>
 </div>
 </div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -400,7 +393,7 @@ Thanks!</pre>
 <h2 id="after_a_successful_vote">After a Successful Vote</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The vote is successful if at least 3 +1 votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
+<p>The vote is successful if at least 3 <em>+1</em> votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
 Acknowledge the voting results on the mailing list in the VOTE thread.</p>
 </div>
 <div class="sect2">
@@ -429,7 +422,7 @@ svn commit --username &lt;username&gt; -m "Adding OpenNLP Models &lt;version&gt;
 <div class="sect2">
 <h3 id="update_the_website">Update the Website</h3>
 <div class="paragraph">
-<p>Update the  <a href="https://opennlp.apache.org/models.html">website</a> once the new version appears in the Apache download mirrors (keep checking <a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/" class="bare">https://www.apache.org/dyn/closer.cgi/opennlp/models/</a> until you see something).</p>
+<p>Update the  <a href="https://opennlp.apache.org/models.html" target="_blank" rel="noopener">website</a> once the new version appears in the Apache download mirrors (keep checking <a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/" class="bare" target="_blank" rel="noopener">https://www.apache.org/dyn/closer.cgi/opennlp/models/</a> until you see something).</p>
 </div>
 <div class="sect3">
 <h4 id="add_news_item">Add News Item</h4>
@@ -437,9 +430,6 @@ svn commit --username &lt;username&gt; -m "Adding OpenNLP Models &lt;version&gt;
 <ul>
 <li>
 <p>Add a news item in <code>news/model-{model-type}-{xyz}.ad</code> by copying the adjusted content:</p>
-</li>
-</ul>
-</div>
 <div class="listingblock">
 <div class="content">
 <pre>= &lt;MODEL_TYPE&gt; Models for Apache OpenNLP released
@@ -470,6 +460,9 @@ https://dist.apache.org/repos/dist/dev/opennlp/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERS
 --The Apache OpenNLP Team</pre>
 </div>
 </div>
+</li>
+</ul>
+</div>
 </div>
 <div class="sect3">
 <h4 id="commit_website_changes">Commit Website Changes.</h4>
@@ -493,23 +486,17 @@ https://dist.apache.org/repos/dist/dev/opennlp/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERS
 <div class="ulist">
 <ul>
 <li>
-<p>Log the new version at <a href="https://reporter.apache.org/addrelease.html?opennlp" class="bare">https://reporter.apache.org/addrelease.html?opennlp</a>.</p>
+<p>Log the new version at <a href="https://reporter.apache.org/addrelease.html?opennlp" class="bare" target="_blank" rel="noopener">https://reporter.apache.org/addrelease.html?opennlp</a>.</p>
 </li>
 <li>
 <p>Announce the new models on the OpenNLP Twitter.</p>
 </li>
 <li>
-<p>Announce the new models on the Apache OpenNLP blog at <a href="https://blogs.apache.org/opennlp/" class="bare">https://blogs.apache.org/opennlp/</a>.</p>
-</li>
-<li>
-<p>Close the present release ticket in JIRA.</p>
+<p>Close the present release ticket in <a href="https://issues.apache.org/jira/browse/OPENNLP" target="_blank" rel="noopener">JIRA</a>.</p>
 </li>
 <li>
 <p>Send announcement email to <a href="mailto:announce@apache.org">announce@apache.org</a>, <a href="mailto:dev@opennlp.apache.org">dev@opennlp.apache.org</a>, <a href="mailto:users@opennlp.apache.org">users@opennlp.apache.org</a>.
 This needs to be done from your @apache.org email address or the email will bounce from the announce list.</p>
-</li>
-</ul>
-</div>
 <div class="listingblock">
 <div class="content">
 <pre>Title: [ANNOUNCE] OpenNLP Models &lt;version&gt; released
@@ -539,6 +526,9 @@ https://dist.apache.org/repos/dist/dev/opennlp/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERS
 
 --The Apache OpenNLP Team</pre>
 </div>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>

@@ -184,10 +184,10 @@ body {
 <p>Elect a release manager.</p>
 </li>
 <li>
-<p>Create a ticket for a new release in JIRA. If you do not have permission to do so just ask to be given permissions on the mailing list.</p>
+<p>Create a ticket for a new release in <a href="https://issues.apache.org/jira/browse/OPENNLP">JIRA</a>. If you do not have permission to do so just ask to be given permissions on the mailing list.</p>
 </li>
 <li>
-<p>Review all of the JIRA issues associated with the release. All issues should be resolved and closed.</p>
+<p>Review all of the <a href="https://issues.apache.org/jira/browse/OPENNLP">JIRA</a> issues associated with the release. All issues should be resolved and closed.</p>
 </li>
 <li>
 <p>Any issues assigned to the release that are not complete should be assigned to the next release. Any critical or blocker issues should be resolved on the mailing list. Discuss any issues that you are unsure of on the mailing list.</p>
@@ -213,9 +213,6 @@ Your KEYS will then be present in <a href="https://people.apache.org/keys/group/
 </li>
 <li>
 <p>Add your PGP key to the KEYS file:</p>
-</li>
-</ul>
-</div>
 <div class="listingblock">
 <div class="content">
 <pre>Examples of adding your key to this file:
@@ -225,26 +222,18 @@ Your KEYS will then be present in <a href="https://people.apache.org/keys/group/
      &amp;&amp; gpg --armor --export &lt;your name&gt;) &gt;&gt; this file.</pre>
 </div>
 </div>
-<div class="ulist">
-<ul>
+</li>
 <li>
 <p>In a local temp folder, svn checkout the OpenNLP artifacts and update the KEYS file</p>
-</li>
-</ul>
-</div>
 <div class="listingblock">
 <div class="content">
 <pre>svn co https://dist.apache.org/repos/dist/release/opennlp/
 svn commit -m"Added Key for &lt;name&gt;" KEYS</pre>
 </div>
 </div>
-<div class="ulist">
-<ul>
+</li>
 <li>
 <p>Create a maven <code>settings.xml</code> to publish to <code>repository.apache.org</code>. An example configuration:</p>
-</li>
-</ul>
-</div>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;server&gt;
@@ -253,6 +242,9 @@ svn commit -m"Added Key for &lt;name&gt;" KEYS</pre>
   &lt;password&gt;Your Apache Password&lt;/password&gt;
 &lt;/server&gt;</pre>
 </div>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -354,7 +346,7 @@ Thanks!</pre>
 <h2 id="after_a_successful_vote">After a Successful Vote</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The vote is successful if at least 3 +1 votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
+<p>The vote is successful if at least 3 <em>+1</em> votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
 Acknowledge the voting results on the mailing list in the VOTE thread.</p>
 </div>
 <div class="sect2">
@@ -490,7 +482,7 @@ opennlp.next.version=</code></pre>
 <p>Announce the new version on the Apache OpenNLP blog at <a href="https://blogs.apache.org/opennlp/" class="bare">https://blogs.apache.org/opennlp/</a>.</p>
 </li>
 <li>
-<p>Close the present release ticket in JIRA.</p>
+<p>Close the present release ticket in <a href="https://issues.apache.org/jira/browse/OPENNLP">JIRA</a>.</p>
 </li>
 <li>
 <p>Send announcement email to <a href="mailto:announce@apache.org">announce@apache.org</a>, <a href="mailto:dev@opennlp.apache.org">dev@opennlp.apache.org</a>, <a href="mailto:users@opennlp.apache.org">users@opennlp.apache.org</a>. This needs to be done from your @apache.org email address or the email will bounce from the announce list. Gmail forwarding can help here and is a snap to set up (<a href="https://gmailblog.blogspot.com/2009/07/send-mail-from-another-address-without.html" class="bare">https://gmailblog.blogspot.com/2009/07/send-mail-from-another-address-without.html</a>). It&#8217;s even easier than the instructions there as it will recognize your email address and default to Apache settings. It is important to include a description of what OpenNLP is as well as a link to the updated DOAP within the release announcement, this is so others know what OpenNLP is.</p>

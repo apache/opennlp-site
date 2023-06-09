@@ -24,8 +24,8 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Fri, 9 Jun 2023 15:12:15 +0000</pubDate>
-    <lastBuildDate>Fri, 9 Jun 2023 15:12:15 +0000</lastBuildDate>
+    <pubDate>Fri, 9 Jun 2023 17:15:13 +0000</pubDate>
+    <lastBuildDate>Fri, 9 Jun 2023 17:15:13 +0000</lastBuildDate>
 
     <item>
       <title>Apache OpenNLP 2.2.0 released</title>
@@ -52,7 +52,9 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_2_2_0&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.2.0&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_2_2_0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.2.0&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This version contains improvements to logging by introducing SLF4J to replace logging using System.out. ONNX Runtime support for sentence-transformers was also introduced. This version also includes fixes for stemming, documentation, and unit tests.&lt;/p&gt;
 &lt;/div&gt;
@@ -61,6 +63,8 @@
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 	</description>
     </item>
@@ -89,7 +93,9 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_2_1_1&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.1.1&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_2_1_1&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.1.1&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This version contains improvements to unit tests, code quality, JavaDocs, and a few minor fixes.&lt;/p&gt;
 &lt;/div&gt;
@@ -98,6 +104,8 @@
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 	</description>
     </item>
@@ -126,7 +134,9 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_2_1_0&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.1.0&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_2_1_0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.1.0&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -158,6 +168,8 @@
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 	</description>
     </item>
     <item>
@@ -185,7 +197,9 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_2_0_0&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.0.0&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_2_0_0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.0.0&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -221,10 +235,12 @@
 &lt;p&gt;A detailed list of the issues related to this release can be found in the release notes.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;For a complete list of fixed bugs and improvements please see the README.html file included in the distribution.&lt;/p&gt;
+&lt;p&gt;For a complete list of fixed bugs and improvements please see the &lt;em&gt;README.html&lt;/em&gt; file included in the distribution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 	</description>
     </item>
@@ -253,7 +269,9 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_9_4&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.4&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_1_9_4&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.4&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -278,6 +296,8 @@
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 	</description>
     </item>
@@ -324,7 +344,9 @@ See the models&apos; README for more information on the models including how eac
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_9_3&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.3&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_1_9_3&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.3&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -356,6 +378,8 @@ See the models&apos; README for more information on the models including how eac
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 	</description>
     </item>
     <item>
@@ -383,7 +407,9 @@ See the models&apos; README for more information on the models including how eac
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_9_2&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.2&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_1_9_2&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.2&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -408,6 +434,8 @@ See the models&apos; README for more information on the models including how eac
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 	</description>
     </item>
@@ -436,7 +464,9 @@ See the models&apos; README for more information on the models including how eac
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_9_1&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.1&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_1_9_1&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.1&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -480,6 +510,8 @@ See the models&apos; README for more information on the models including how eac
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 	</description>
     </item>
     <item>
@@ -507,12 +539,14 @@ See the models&apos; README for more information on the models including how eac
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_9_0&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.0&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_1_9_0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.9.0&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces new features, improvements and bug fixes. Java 1.8 and Maven 3.3.9 are required.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Additionally the release contains the following changes:&lt;/p&gt;
+&lt;p&gt;Additionally, the release contains the following changes:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
@@ -557,6 +591,8 @@ See the models&apos; README for more information on the models including how eac
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 	</description>
     </item>
     <item>
@@ -584,12 +620,14 @@ See the models&apos; README for more information on the models including how eac
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_8_4&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.4&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_1_8_4&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.4&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces new features, improvements and bug fixes. Java 1.8 and Maven 3.3.9 are required.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Additionally the release contains the following changes:&lt;/p&gt;
+&lt;p&gt;Additionally, the release contains the following changes:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
@@ -627,6 +665,8 @@ See the models&apos; README for more information on the models including how eac
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 	</description>
     </item>
@@ -691,12 +731,14 @@ The Language Detector Model can detect 103 languages and outputs ISO 639-3 codes
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_8_3&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.3&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_1_8_3&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.3&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces new features, improvements and bug fixes. Java 1.8 and Maven 3.3.9 are required.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Additionally the release contains the following noteworthy changes:
+&lt;p&gt;Additionally, the release contains the following noteworthy changes:
 - New experimental API for Word Vectors and support for Glove vector files
 - Code cleanups and addition of test cases
 - Java 9 module name is now set to org.apache.opennlp.tools
@@ -710,6 +752,8 @@ The Language Detector Model can detect 103 languages and outputs ISO 639-3 codes
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 	</description>
     </item>
@@ -819,7 +863,9 @@ This issue was discovered by ﻿Nishil Shah of Salesforce.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_8_2&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.2&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_1_8_2&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.2&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces some minor improvements and bug fixes. Java 1.8 is required.&lt;/p&gt;
 &lt;/div&gt;
@@ -838,6 +884,8 @@ This issue was discovered by ﻿Nishil Shah of Salesforce.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 	</description>
     </item>
@@ -875,12 +923,14 @@ This issue was discovered by ﻿Nishil Shah of Salesforce.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_8_1&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.1&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_1_8_1&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.1&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and many deprecated methods were removed. Java 1.8 is required.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Additionally the release contains the following noteworthy changes:&lt;/p&gt;
+&lt;p&gt;Additionally, the release contains the following noteworthy changes:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
@@ -928,6 +978,8 @@ This issue was discovered by ﻿Nishil Shah of Salesforce.&lt;/p&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 	</description>
     </item>
     <item>
@@ -964,12 +1016,14 @@ This issue was discovered by ﻿Nishil Shah of Salesforce.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;h1 id=&quot;whats_new_in_apache_opennlp_1_8_0&quot; class=&quot;sect0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.0&lt;/h1&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_1_8_0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 1.8.0&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and many deprecated methods were removed. Java 1.8 is required.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Additionally the release contains the following noteworthy changes:&lt;/p&gt;
+&lt;p&gt;Additionally, the release contains the following noteworthy changes:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
@@ -1029,6 +1083,8 @@ This issue was discovered by ﻿Nishil Shah of Salesforce.&lt;/p&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 	</description>
     </item>
     <item>
@@ -1076,30 +1132,53 @@ Maven 3.3.9 is required for building it&lt;/p&gt;
 &lt;p&gt;The results of the build will be placed  in:
     opennlp-distr/target/apache-opennlp-1.7.2-bin.tar-gz (or .zip)&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;what_is_new_in_apache_opennlp_1_7_2&quot;&gt;What is new in Apache OpenNLP 1.7.2&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;What is new in Apache OpenNLP 1.7.2&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;This release introduces many new features, improvements and bug fixes. The API
+&lt;p&gt;This release introduces many new features, improvements and bug fixes. The API
 has been improved for a better consistency and 1.4 deprecated methods were
-removed. Now Java 1.8 is required.
-
-Additionally the release contains the following noteworthy changes:
-
-- Name Finder evaluation can now show a confusion matrix
-- The default evaluation output contains more details
-- Added a Language Model CLI tool
-- Add Moses format support
-- More refactoring and cleanup, specially in Machine Learning package and Dictionary
-- Removed deprecated trainers from UIMA integration
-- Fixed potential localization issues and added maven plugin to prevent it (ForbiddenAPI)
-- Fixed issues with the BRAT corpus reader
-- Deprecated GIS class, will be removed in a future 1.8.x release
-
-A detailed list of the issues related to this release can be found in the release
-notes.&lt;/pre&gt;
+removed. Now Java 1.8 is required.&lt;/p&gt;
 &lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Additionally, the release contains the following noteworthy changes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Name Finder evaluation can now show a confusion matrix&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The default evaluation output contains more details&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added a Language Model CLI tool&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add Moses format support&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;More refactoring and cleanup, specially in Machine Learning package and Dictionary&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Removed deprecated trainers from UIMA integration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed potential localization issues and added maven plugin to prevent it (ForbiddenAPI)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed issues with the BRAT corpus reader&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Deprecated GIS class, will be removed in a future 1.8.x release&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A detailed list of the issues related to this release can be found in the release
+notes.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1134,8 +1213,8 @@ notes.&lt;/pre&gt;
 &lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Java 1.8 is required to run OpenNLP
-Maven 3.3.9 is required for building it&lt;/p&gt;
+&lt;p&gt;Java 1.8 is required to run OpenNLP.
+Maven 3.3.9 is required for building it.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1151,31 +1230,51 @@ Maven 3.3.9 is required for building it&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The results of the build will be placed  in:
-   opennlp-distr/target/apache-opennlp-1.7.1-bin.tar-gz (or .zip)&lt;/p&gt;
+&lt;p&gt;The results of the build will be placed in:
+&lt;em&gt;opennlp-distr/target/apache-opennlp-1.7.1-bin.tar.gz&lt;/em&gt;
+(or &lt;em&gt;.zip&lt;/em&gt;)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;what_is_new_in_apache_opennlp_1_7_1&quot;&gt;What is new in Apache OpenNLP 1.7.1&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release introduces many new features, improvements and bug fixes.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;What is new in Apache OpenNLP 1.7.1&lt;/p&gt;
+&lt;p&gt;Additionally, the release contains the following noteworthy changes:&lt;/p&gt;
 &lt;/div&gt;
-&lt;div class=&quot;listingblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;pre&gt;This release introduces many new features, improvements and bug fixes.
-
-Additionally the release contains the following noteworthy changes:
-
-- Travis CI Integration
-- Added support to LETSMT format
-- All stdout can be disabled during training via verbose parameter
-- Improved and extended evaluation tests
-- Refactoring and cleanup of code base
-- Code fully migrated to Java 8
-- Added an improved GitHub README page
-
-For a complete list of fixed bugs and improvements please see the RELEASE_NOTES file included in the distribution.
-
-
---The Apache OpenNLP Team&lt;/pre&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Travis CI Integration&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added support to LETSMT format&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;All stdout can be disabled during training via verbose parameter&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved and extended evaluation tests&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Refactoring and cleanup of code base&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Code fully migrated to Java 8&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added an improved GitHub README page&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For a complete list of fixed bugs and improvements please see the RELEASE_NOTES file included in the distribution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1187,7 +1286,9 @@ For a complete list of fixed bugs and improvements please see the RELEASE_NOTES 
       <pubDate>Sat, 31 Dec 2016 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">news/release-170.html</guid>
       	<description>
-	&lt;div class=&quot;paragraph&quot;&gt;
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The Apache OpenNLP team is pleased to announce the release of version 1.7.0 of Apache OpenNLP.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
@@ -1202,6 +1303,11 @@ For a complete list of fixed bugs and improvements please see the RELEASE_NOTES 
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;https://opennlp.apache.org/maven-dependency.html&quot; class=&quot;bare&quot;&gt;https://opennlp.apache.org/maven-dependency.html&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;what_is_new_in_apache_opennlp_1_7_0&quot;&gt;What is new in Apache OpenNLP 1.7.0&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;This release introduces many new features, improvements and bug fixes. The API has been improved for a better consistency and deprecated methods were removed. Now Java 1.8 and Maven 3.3.9 are required.&lt;/p&gt;
 &lt;/div&gt;
@@ -1229,7 +1335,7 @@ For a complete list of fixed bugs and improvements please see the RELEASE_NOTES 
 &lt;p&gt;A Naive Bayesian Classifier implementation was added&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Morofologik addon is now included&lt;/p&gt;
+&lt;p&gt;Morfologik addon is now included&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Added a language model component&lt;/p&gt;
@@ -1241,8 +1347,7 @@ For a complete list of fixed bugs and improvements please see the RELEASE_NOTES 
 &lt;p&gt;Added a supervised statistical lemmatizer.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;The lemmatizer component API has been entirely rewritten. The changes in
-the previously existing Dictionary-based lemmatizer are not backward compatible.&lt;/p&gt;
+&lt;p&gt;The lemmatizer component API has been entirely rewritten. The changes in the previously existing Dictionary-based lemmatizer are not backward compatible.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
@@ -1255,6 +1360,8 @@ notes.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 	</description>
     </item>
