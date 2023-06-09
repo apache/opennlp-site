@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Maven Dependency - Apache OpenNLP</title>
+    <title>Maven Integration - Apache OpenNLP</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Apache OpenNLP  is a machine learning based toolkit for the processing of natural language text." />
@@ -115,7 +115,8 @@ body {
                     <ul class="dropdown-menu">
 		                <li><a href="/download.html">OpenNLP Releases</a></li>
                         <li><a href="/models.html">OpenNLP Models</a></li>
-		                <li><a href="/maven-dependency.html">Maven Dependency</a></li>
+		                <li><a href="/maven-dependency.html">Maven Integration</a></li>
+		                <li><a href="/gradle-dependency.html">Gradle Integration</a></li>
 		            </ul>
                 </li>
 
@@ -173,22 +174,24 @@ body {
 </nav>
 
 <div class="container">
-    <h1 class="title">Maven Dependency</h1>
+    <h1 class="title">Maven Integration</h1>
 
     <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Apache OpenNLP is also distributed via the Maven Central Repository and
-the maven artifacts are located <a href="https://repo1.maven.org/maven2/org/apache/opennlp/">here</a>.
+<p>Apache OpenNLP is also distributed via the Maven Central Repository.
+The maven artifacts are located <a href="https://repo1.maven.org/maven2/org/apache/opennlp/">here</a>.
 The Apache OpenNLP project publishes the library, javadoc and source code jars.
-To use OpenNLP in your project, specify exactly one of the following dependencies,
+To use OpenNLP in your <a href="https://maven.apache.org" target="_blank" rel="noopener">Maven</a> project, specify exactly one of the following dependencies,
 all transient dependencies are resolved automatically.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="opennlp_tools_dependency">OpenNLP Tools Dependency</h2>
+<h2 id="latest_release">Latest Release</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="opennlp_tools_dependency">OpenNLP Tools Dependency</h3>
 <div class="paragraph">
 <p>To use the OpenNLP Tools define the following dependency:</p>
 </div>
@@ -202,10 +205,8 @@ all transient dependencies are resolved automatically.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="opennlp_dl_dependency">OpenNLP DL Dependency</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="opennlp_dl_dependency">OpenNLP DL Dependency</h3>
 <div class="paragraph">
 <p>To use the OpenNLP DL define the following dependency:</p>
 </div>
@@ -219,10 +220,8 @@ all transient dependencies are resolved automatically.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="opennlp_uima_annotators_dependency">OpenNLP UIMA Annotators Dependency</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="opennlp_uima_annotators_dependency">OpenNLP UIMA Annotators Dependency</h3>
 <div class="paragraph">
 <p>To use the OpenNLP UIMA Annotators define the following dependency:</p>
 </div>
@@ -236,10 +235,8 @@ all transient dependencies are resolved automatically.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="opennlp_morfologik_addon_dependency">OpenNLP Morfologik AddOn Dependency</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="opennlp_morfologik_addon_dependency">OpenNLP Morfologik AddOn Dependency</h3>
 <div class="paragraph">
 <p>To use the OpenNLP Morfologik-Addon define the following dependency:</p>
 </div>
@@ -253,10 +250,8 @@ all transient dependencies are resolved automatically.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="opennlp_brat_annotator_dependency">OpenNLP Brat Annotator Dependency</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="opennlp_brat_annotator_dependency">OpenNLP Brat Annotator Dependency</h3>
 <div class="paragraph">
 <p>To use the OpenNLP UIMA Annotators define the following dependency:</p>
 </div>
@@ -270,12 +265,10 @@ all transient dependencies are resolved automatically.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="sect1">
-<h2 id="opennlp_tools_snapshot_dependency">OpenNLP Tools SNAPSHOT Dependency</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="opennlp_tools_snapshot_dependency">OpenNLP Tools SNAPSHOT Dependency</h3>
 <div class="paragraph">
-<p>To use the current trunk version define the following dependency:</p>
+<p>To use the current version of the <em>main</em> branch define the following dependency:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -286,8 +279,17 @@ all transient dependencies are resolved automatically.</p>
 &lt;/dependency&gt;</code></pre>
 </div>
 </div>
-<div class="paragraph">
-<p>The SNAPSHOT dependency requires the following repository:</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The <code>SNAPSHOT</code> dependency requires the following Maven repository:
+</td>
+</tr>
+</table>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -297,6 +299,7 @@ all transient dependencies are resolved automatically.</p>
     &lt;url&gt;https://repository.apache.org/content/repositories/snapshots/&lt;/url&gt;
   &lt;/repository&gt;
 &lt;/repositories&gt;</code></pre>
+</div>
 </div>
 </div>
 </div>

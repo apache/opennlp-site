@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Apache OpenNLP Code Conventions - Apache OpenNLP</title>
+    <title>Gradle Integration - Apache OpenNLP</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Apache OpenNLP  is a machine learning based toolkit for the processing of natural language text." />
@@ -174,85 +174,121 @@ body {
 </nav>
 
 <div class="container">
-    <h1 class="title">Apache OpenNLP Code Conventions</h1>
+    <h1 class="title">Gradle Integration</h1>
 
     <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Apache OpenNLP code should follow our code conventions. All code which
-is contributed to the project should adhere to these guidelines.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Use <em>2</em> spaces for indentation. <em>No</em> tabs!</p>
-</li>
-<li>
-<p>Place open braces on the same line as the declaration, for example:</p>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="java">public class Foo extends Bar {
-  public static void main(String args[]) {
-    try {
-      for (int i = 0; i &lt; args.length; i++) {
-        System.out.println(Integer.parseInt(args[i]));
-      }
-    }
-    catch(NumberFormatException e) {
-      e.printStackTrace();
-    }
-  }
-}</code></pre>
-</div>
-</div>
-</li>
-<li>
-<p>Wrap lines longer than 80 to 100 characters. For wrapped lines use an indent of 4 characters.</p>
-</li>
-<li>
-<p>Within a class or interface, definitions should be ordered as follows:</p>
-</li>
-<li>
-<p>Inner classes</p>
-</li>
-<li>
-<p>Class (static) variables</p>
-</li>
-<li>
-<p>Instance variables</p>
-</li>
-<li>
-<p>Constructors</p>
-</li>
-<li>
-<p>Methods</p>
-</li>
-<li>
-<p>Do <em>not</em> use package imports, for example:</p>
-<div class="paragraph">
-<p><code>import org.apache.opennlp.*</code></p>
-</div>
-</li>
-<li>
-<p>For other cases, we try to follow
-<a href="https://www.oracle.com/java/technologies/cc-java-programming-language.html" target="_blank" rel="noopener">Java code conventions</a> as much as possible.</p>
-</li>
-</ul>
+<p>Apache OpenNLP is also distributed via the Maven Central Repository.
+The maven artifacts are located <a href="https://repo1.maven.org/maven2/org/apache/opennlp/">here</a>.
+The Apache OpenNLP project publishes the library, javadoc and source code jars.
+To use OpenNLP in your <a href="https://gradle.org" target="_blank" rel="noopener">Gradle</a> project, specify exactly one of the following dependencies,
+all transient dependencies are resolved automatically.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="formatter_and_style_files">Formatter and Style files</h2>
+<h2 id="latest_release">Latest Release</h2>
 <div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>A code formatter file for Eclipse can be found <a href="code-formatter/OpenNLP-Eclipse-Formatter.xml" target="read-later">here</a> and the import order file <a href="code-formatter/eclipse-opennlp.importorder" target="read-later">here</a>.</p>
-</li>
-<li>
-<p>A code formatter file for IntelliJ can be found <a href="code-formatter/OpenNLP-IntelliJ-Formatter.xml" target="read-later">here</a>.</p>
-</li>
-</ul>
+<div class="sect2">
+<h3 id="opennlp_tools_dependency">OpenNLP Tools Dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP Tools define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '2.2.0'
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="opennlp_dl_dependency">OpenNLP DL Dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP DL define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-dl', version: '2.2.0'
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="opennlp_uima_annotators_dependency">OpenNLP UIMA Annotators Dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP UIMA Annotators define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-uima', version: '2.2.0'
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="opennlp_morfologik_addon_dependency">OpenNLP Morfologik AddOn Dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP Morfologik-Addon define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-morfologik-addon', version: '2.2.0'
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="opennlp_brat_annotator_dependency">OpenNLP Brat Annotator Dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP UIMA Annotators define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-brat-annotator', version: '2.2.0'
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="snapshots">SNAPSHOTS</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="opennlp_tools_snapshot_dependency">OpenNLP Tools SNAPSHOT Dependency</h3>
+<div class="paragraph">
+<p>To use the current version of the <em>main</em> branch define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '2.2.1-SNAPSHOT'
+}</pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+The <code>SNAPSHOT</code> dependency requires the following Maven repository in your Gradle project:
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>https://repository.apache.org/content/repositories/snapshots/</code></pre>
+</div>
+</div>
 </div>
 </div>
 </div>
