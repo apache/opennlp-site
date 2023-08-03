@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"opennlp.bratann","l":"NameFinderResource.NameAnn"},{"p":"opennlp.bratann","l":"NameFinderAnnService"},{"p":"opennlp.bratann","l":"NameFinderResource"}];updateSearchResults();
