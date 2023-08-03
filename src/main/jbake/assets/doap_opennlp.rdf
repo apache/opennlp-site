@@ -27,8 +27,8 @@
     <name>Apache OpenNLP</name>
     <homepage rdf:resource="http://opennlp.apache.org" />
     <asfext:pmc rdf:resource="http://opennlp.apache.org" />
-    <shortdesc>Apache OpenNLP library software is a machine learning based toolkit for the processing of natural language text..</shortdesc>
-    <description>Apache OpenNLP software supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution. These tasks are usually required to build more advanced text processing services. OpenNLP also includes maximum entropy and perceptron based machine learning..</description>
+    <shortdesc>Apache OpenNLP library software is a machine learning based toolkit for the processing of natural language text.</shortdesc>
+    <description>Apache OpenNLP software supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution. These tasks are usually required to build more advanced text processing services. OpenNLP also includes maximum entropy and perceptron based machine learning.</description>
     <bug-database rdf:resource="https://issues.apache.org/jira/browse/OPENNLP" />
     <mailing-list rdf:resource="http://opennlp.apache.org/mailing-lists.html" />
     <download-page rdf:resource="http://opennlp.apache.org/download.html" />
@@ -37,8 +37,8 @@
     <release>
       <Version>
         <name>Apache OpenNLP</name>
-        <created>2023-04-22</created>
-        <revision>2.2.0</revision>
+        <created>2023-07-31</created>
+        <revision>2.3.0</revision>
       </Version>
     </release>
     <repository>
