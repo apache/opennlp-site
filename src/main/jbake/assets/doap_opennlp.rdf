@@ -46,10 +46,6 @@
         <location rdf:resource="https://github.com/apache/opennlp.git"/>
         <browse rdf:resource="https://github.com/apache/opennlp"/>
       </GitRepository>
-      <SVNRepository>
-        <location rdf:resource="http://svn.apache.org/repos/asf/opennlp"/>
-        <browse rdf:resource="http://svn.apache.org/viewvc/opennlp"/>
-      </SVNRepository>
     </repository>
     <maintainer>
       <foaf:Person>
