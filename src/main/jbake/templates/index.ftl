@@ -42,6 +42,11 @@
             <p>Learn more about how you can <a href="/get-involved.html">get involved</a>.</p>
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <p><a class="acevent" data-format="square" data-mode="dark" data-width="480"></a></p>
+        </div>
+    </div>
 
 </div>
 
