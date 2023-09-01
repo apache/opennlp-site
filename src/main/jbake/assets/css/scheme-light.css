@@ -1,0 +1,17 @@
+@media (prefers-color-scheme: light) {
+    body {
+        color: #222;
+        background: #fff;
+    }
+    a {
+        color: #0033cc;
+    }
+    .footer {
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 50px;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        background-color: #f5f5f5;
+    }
+}
