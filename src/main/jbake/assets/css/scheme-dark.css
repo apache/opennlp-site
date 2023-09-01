@@ -1,0 +1,85 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background: #222;
+    }
+    a {
+        color: #A09fff;
+    }
+    .navbar {
+        color: #eee;
+        background: #222;
+    }
+    .navbar-default {
+        border-color: #222;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #eee;
+    }
+    .footer {
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 50px;
+        border-top: 1px solid #f59523;
+    }
+    .navbar-default .navbar-nav > li > a {
+        color: #eee;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .active > a:hover  {
+        color: #eee;
+        background-color: #e56b28;
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:focus,
+    .navbar-default .navbar-nav > .open > a:hover {
+        color: #eee;
+        background-color: #832779;
+    }
+    .navbar-nav > li > .dropdown-menu {
+        color: #eee;
+        background-color: #444;
+    }
+    .dropdown-menu > li > a {
+        color: #eee;
+        background-color: #444;
+    }
+    .dropdown-menu > .active > a,
+    .dropdown-menu > .active > a:focus,
+    .dropdown-menu > .active > a:hover {
+        color: #eee;
+        background-color: #e56b28;
+    }
+    .admonitionblock > table td.icon .title {
+        color: #f59523;
+    }
+    .admonitionblock > table td.content {
+        color: #eee;
+    }
+    table {
+        border: dashed 1px #e56b28;
+    }
+    table.tableblock.grid-all {
+        border-top: dashed 1px #e56b28;
+        border-bottom: dashed 1px #e56b28;
+    }
+    .tableblock {
+        color: #eee;
+        background-color: #444;
+    }
+    .tableblock > a {
+        color: #f59523;
+    }
+    .content pre,
+    .content pre > code,
+    .com, .tag, .pln, .str, .pun, .kwd,
+    .listingblock > .content pre > code {
+        color: #eee;
+        background-color: #444;
+    }
+    *:not(pre) > code {
+        color: #f59523;
+        background-color: #444;
+    }
+}

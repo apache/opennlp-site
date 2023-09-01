@@ -1,0 +1,30 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height + 20px for padding */
+    margin: 0px;
+}
+
+.footer .text-muted {
+    margin: 0px 0;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.jumbotron {
+    margin: 0px 0;
+    text-align: center;
+    background-color: transparent;
+    padding-top: 0px;
+}
+
+.jumbotron h1 {
+    line-height: 1;
+    font-weight: bold;
+}
