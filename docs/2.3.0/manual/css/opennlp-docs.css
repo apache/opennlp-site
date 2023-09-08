@@ -16,57 +16,109 @@
  */
 
 body {
- margin-top: 1em;
- margin-bottom: 1em;
- margin-left: 16%;
- margin-right: 8%
-}
-
-h1, h2, h3, h4, div.toc {
- color: #006699;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 16%;
+    margin-right: 8%
 }
 
 div.legalnotice {
- max-width: 450px;
+    max-width: 450px;
 }
 
-pre.programlisting, pre.screen, pre.literallayout {
-  border: 1px dashed #006699;
-  background-color: #EEE;
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background: #222;
+    }
+    a {
+        color: #A09fff;
+    }
+    h1, h2, h3, h4, div.toc {
+        color: #A09fff;
+    }
+    pre.programlisting, pre.screen, pre.literallayout  {
+        color: #eee;
+        background: #444;
+    }
+    /*
+     * Java syntax highlighting with eclipse default colors
+     * and default font-style
+     */
+    pre.programlisting .hl-keyword {
+        color: #e56b28;
+        font-weight: bold;
+    }
+
+    /* Seems to be broken, override red inline style of hl-string */
+    pre.programlisting .hl-string, pre.programlisting b.hl-string i[style]{
+        color: #f59523 !important;
+    }
+
+    pre.programlisting .hl-tag {
+        color: #3F7F7F;
+    }
+
+    pre.programlisting .hl-comment {
+        color: #3F5F5F;
+        font-style: italic;
+    }
+
+    pre.programlisting .hl-multiline-comment {
+        color: #3F5FBF;
+        font-style: italic;
+    }
+
+    pre.programlisting .hl-value {
+        color: #2A00FF;
+    }
+
+    pre.programlisting .hl-attribute {
+        color: #7F007F;
+    }
 }
 
-/* 
- * Java syntax highlighting with eclipse default colors
- * and default font-style
- */
-pre.programlisting .hl-keyword {
-  color: #7F0055;
-  font-weight: bold; 
-}
+@media (prefers-color-scheme: light) {
+    h1, h2, h3, h4, div.toc {
+        color: #006699;
+    }
+    pre.programlisting, pre.screen, pre.literallayout {
+        border: 1px dashed #006699;
+        background-color: #EEE;
+    }
+    /*
+     * Java syntax highlighting with eclipse default colors
+     * and default font-style
+     */
+    pre.programlisting .hl-keyword {
+        color: #7F0055;
+        font-weight: bold;
+    }
 
-/* Seems to be broken, override red inline style of hl-string */
-pre.programlisting .hl-string, pre.programlisting b.hl-string i[style]{
-  color: #2A00FF !important;
-}
+    /* Seems to be broken, override red inline style of hl-string */
+    pre.programlisting .hl-string, pre.programlisting b.hl-string i[style]{
+        color: #2A00FF !important;
+    }
 
-pre.programlisting .hl-tag {
-  color: #3F7F7F;
-}
+    pre.programlisting .hl-tag {
+        color: #3F7F7F;
+    }
 
-pre.programlisting .hl-comment {
-  color: #3F5F5F;
-  font-style: italic;
-}
+    pre.programlisting .hl-comment {
+        color: #3F5F5F;
+        font-style: italic;
+    }
 
-pre.programlisting .hl-multiline-comment {
-  color: #3F5FBF;
-  font-style: italic;
-}
+    pre.programlisting .hl-multiline-comment {
+        color: #3F5FBF;
+        font-style: italic;
+    }
 
-pre.programlisting .hl-value {
-  color: #2A00FF;
-}
+    pre.programlisting .hl-value {
+        color: #2A00FF;
+    }
 
-pre.programlisting .hl-attribute {
-  color: #7F007F;
+    pre.programlisting .hl-attribute {
+        color: #7F007F;
+    }
 }
