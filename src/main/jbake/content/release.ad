@@ -173,6 +173,9 @@ I have posted a [Nth] release candidate for the Apache OpenNLP [version] release
 
 <Add a summary to highlight notable changes>
 
+Thank you to everyone who contributed to this release, including all of our users and the people who submitted bug reports, c
+ontributed code or documentation enhancements.
+
 The release was made using the OpenNLP release process, documented on the website:
 https://opennlp.apache.org/release.html
 
@@ -222,13 +225,32 @@ Please VOTE
 
 Thanks!
 
->>Your-Name<<
+<Your-Name>
 ----
 
 ## After a Successful Vote
 
 The vote is successful if at least 3 _+1_ votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
-Acknowledge the voting results on the mailing list in the VOTE thread.
+Acknowledge the voting results on the mailing list in the VOTE thread by sending a mail.
+
+Message Subject: [RESULT] [VOTE] Apache OpenNLP [version]
+
+----
+Hi folks,
+
+this vote passes with the following +1 being cast:
+
+- PMC Name Y (binding)
+- PMC Name X (binding)
+- User Name Z
+- PMC Name YY (binding)
+- User Name ZZ
+
+Thanks to all voters. I'll proceed with the steps.
+
+<Your-Name>
+
+----
 
 ### Release Nexus Staging Repository
 
