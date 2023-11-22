@@ -191,7 +191,7 @@ Your KEYS will then be present in <a href="https://people.apache.org/keys/group/
 <div class="listingblock">
 <div class="content">
 <pre>svn co https://dist.apache.org/repos/dist/release/opennlp/
-svn commit -m"Added Key for &lt;name&gt;" KEYS</pre>
+svn commit -m "Added Key for &lt;name&gt;" KEYS</pre>
 </div>
 </div>
 </li>
@@ -199,11 +199,50 @@ svn commit -m"Added Key for &lt;name&gt;" KEYS</pre>
 <p>Create a maven <code>settings.xml</code> to publish to <code>repository.apache.org</code>. An example configuration:</p>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;server&gt;
-  &lt;id&gt;apache.releases.https&lt;/id&gt;
-  &lt;username&gt;Your Apache Username&lt;/username&gt;
-  &lt;password&gt;Your Apache Password&lt;/password&gt;
-&lt;/server&gt;</pre>
+<pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd"
+          xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+    &lt;servers&gt;
+        &lt;server&gt;
+            &lt;id&gt;apache.snapshots.https&lt;/id&gt;
+            &lt;username&gt;your-asf-ldap&lt;/username&gt;
+            &lt;password&gt;your-asf-ldap-password&lt;/password&gt;
+        &lt;/server&gt;
+        &lt;server&gt;
+            &lt;id&gt;apache.releases.https&lt;/id&gt;
+            &lt;username&gt;your-asf-ldap&lt;/username&gt;
+            &lt;password&gt;your-asf-ldap-password&lt;/password&gt;
+        &lt;/server&gt;
+        &lt;server&gt;
+            &lt;id&gt;apache.dist.https&lt;/id&gt;
+            &lt;username&gt;your-asf-ldap&lt;/username&gt;
+            &lt;password&gt;your-asf-ldap-password&lt;/password&gt;
+        &lt;/server&gt;
+    &lt;/servers&gt;
+    &lt;profiles&gt;
+        &lt;profile&gt;
+            &lt;id&gt;apache-gpg&lt;/id&gt;
+            &lt;properties&gt;
+                &lt;gpg.keyname&gt;your-gpg-code-signing-key-fingerprint&lt;/gpg.keyname&gt;
+            &lt;/properties&gt;
+            &lt;repositories&gt;
+                &lt;repository&gt;
+                    &lt;id&gt;apache.dist.https&lt;/id&gt;
+                    &lt;url&gt;https://dist.apache.org/repos/dist&lt;/url&gt;
+                &lt;/repository&gt;
+            &lt;/repositories&gt;
+        &lt;/profile&gt;
+    &lt;/profiles&gt;
+&lt;/settings&gt;</pre>
+</div>
+</div>
+</li>
+<li>
+<p>In case you are running on a headless system, it might be necessary to set the following export before starting with the release preparation.</p>
+<div class="listingblock">
+<div class="content">
+<pre>export GPG_TTY=$(tty)</pre>
 </div>
 </div>
 </li>
@@ -220,14 +259,23 @@ svn commit -m"Added Key for &lt;name&gt;" KEYS</pre>
 <p>Checkout the Apache OpenNLP main branch: <code>git clone <a href="mailto:git@github.com">git@github.com</a>:apache/opennlp.git</code></p>
 </li>
 <li>
-<p>Execute a complete test (it can take several hours): <code>mvn test -DOPENNLP_DATA_DIR=/path/to/opennlp-test-data/ -Peval-tests</code></p>
+<p>(Optional) Execute a complete test (it can take several hours): <code>mvn test -DOPENNLP_DATA_DIR=/path/to/opennlp-test-data/ -Peval-tests</code></p>
 </li>
 <li>
-<p>Do a trial build: <code>mvn package -Papache-release</code></p>
+<p>Check the current results of the eval build on the ASF Jenkins CI: <a href="https://ci-builds.apache.org/job/OpenNLP/job/eval-tests/" class="bare">https://ci-builds.apache.org/job/OpenNLP/job/eval-tests/</a></p>
 </li>
 <li>
-<p>Prepare the release: <code>mvn release:prepare</code> Answer the questions appropriately. The tag name format should be <strong>opennlp-x.y.z</strong>.
-This command creates and pushes two new commits to the repository to reflect the version changes. It also tags the release.</p>
+<p>Do a trial build: <code>mvn package -Papache-release,apache-gpg</code></p>
+</li>
+<li>
+<p>Switch to a new branch with a format like <strong>rel-opennlp-x.y.z.</strong>.</p>
+</li>
+<li>
+<p>Prepare the release: <code>mvn release:prepare -Papache-gpg</code> Answer the questions appropriately. The tag name format should be <strong>opennlp-x.y.z</strong>.
+This command creates and pushes two new commits to the repository to reflect the version changes. It also tags the release and pushes the branch.</p>
+</li>
+<li>
+<p>Start an eval build for the tag via <a href="https://ci-builds.apache.org/job/OpenNLP/job/eval-tests-releases/" class="bare">https://ci-builds.apache.org/job/OpenNLP/job/eval-tests-releases/</a> (build can take several hours)</p>
 </li>
 </ul>
 </div>
@@ -235,13 +283,40 @@ This command creates and pushes two new commits to the repository to reflect the
 <h3 id="successful_maven_release_preparation">Successful Maven Release Preparation</h3>
 <div class="sect3">
 <h4 id="perform_the_release">Perform the Release</h4>
-<div class="paragraph">
-<p>Perform the release: <code>mvn release:perform</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Perform the release: <code>mvn release:perform -Papache-gpg</code></p>
+</li>
+<li>
+<p>This creates a staged repository at <a href="https://repository.apache.org/#stagingRepositories" class="bare">https://repository.apache.org/#stagingRepositories</a></p>
+</li>
+<li>
+<p>Check the staged repository and if all looks well, close the staging repository but do <strong>not</strong> promote or release it at this time.</p>
+</li>
+<li>
+<p>The build results are in <code>opennlp/target/checkout/target</code>. Do not modify or delete these files.</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p>This creates a staged repository at <a href="https://repository.apache.org" class="bare">https://repository.apache.org</a>.
-Check the staged repository and if all looks well, close the staging repository but do <strong>not</strong> promote or release it at this time.
-The build results are in <code>opennlp/target/checkout/target</code>. Do not modify or delete these files.</p>
+<div class="sect4">
+<h5 id="put_the_artifacts_to_distdev">Put the artifacts to dist/dev</h5>
+<div class="ulist">
+<ul>
+<li>
+<p>Next, checkout the svn dist dev space from <a href="https://dist.apache.org/repos/dist/dev/opennlp/" class="bare">https://dist.apache.org/repos/dist/dev/opennlp/</a></p>
+</li>
+<li>
+<p>Create a new folder <code>opennlp-x.y.z</code>.</p>
+</li>
+<li>
+<p>Add the files from <code>opennlp/target/checkout/target</code> to this folder.</p>
+</li>
+<li>
+<p>Commit the change set to the dist area. Check that the files are present in <a href="https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z" class="bare">https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z</a></p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -252,7 +327,33 @@ The build results are in <code>opennlp/target/checkout/target</code>. Do not mod
 <div class="ulist">
 <ul>
 <li>
-<p>Check signature of generated artifacts.</p>
+<p>Check signature of generated artifacts. This can be done like that:</p>
+<div class="listingblock">
+<div class="content">
+<pre>#!/bin/bash
+
+mkdir /tmp/test
+cd /tmp/test
+curl -s -O https://dist.apache.org/repos/dist/release/opennlp/KEYS
+curl -s -O https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z/apache-opennlp-x.y.z-src.tar.gz
+curl -s -O https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z/apache-opennlp-x.y.z-src.tar.gz.asc
+
+echo "
+list keys
+"
+gpg --homedir . --list-keys
+
+echo "
+import KEYS file
+"
+gpg --homedir . --import KEYS
+
+echo "
+verify signature
+"
+gpg --homedir . --output  apache-opennlp-x.y.z-src.tar.gz --decrypt apache-opennlp-x.y.z-src.tar.gz.asc</pre>
+</div>
+</div>
 </li>
 <li>
 <p>Check presence and appropriateness of <code>LICENSE</code>, <code>NOTICE</code>, and <code>README</code> files.</p>
@@ -278,27 +379,58 @@ The build results are in <code>opennlp/target/checkout/target</code>. Do not mod
 
 I have posted a [Nth] release candidate for the Apache OpenNLP [version] release and it is ready for testing.
 
-The distributables can be downloaded from:
-https://repository.apache.org/content/repositories/orgapacheopennlp-[REPO_NUM]/org/apache/opennlp/opennlp-distr/[VERSION]/
-
-The release was made from the Apache OpenNLP [VERSION] tag at:
-https://github.com/apache/opennlp/tree/opennlp-[VERSION]
-
-To use it in a maven build set the version for opennlp-tools or opennlp-uima to [VERSION] and add the following URL to your settings.xml file:
-https://repository.apache.org/content/repositories/orgapacheopennlp-[REPO_NUM]
+&lt;Add a summary to highlight notable changes&gt;
 
 The release was made using the OpenNLP release process, documented on the website:
 https://opennlp.apache.org/release.html
 
-Please vote on releasing these packages as Apache OpenNLP [VERSION]. The vote is open for at least the next 72 hours.
+Maven Repo:
+https://repository.apache.org/content/repositories/orgapacheopennlp-XXXX
 
-Only votes from OpenNLP PMC are binding, but everyone is welcome to check the release candidate and vote.
+&lt;repositories&gt;
+&lt;repository&gt;
+&lt;id&gt;opennlp-y.x.z-rc1&lt;/id&gt;
+&lt;name&gt;Testing OpenNLP x.y.z release candidate&lt;/name&gt;
+&lt;url&gt;
+https://repository.apache.org/content/repositories/orgapacheopennlp-XXXX
+&lt;/url&gt;
+&lt;/repository&gt;
+&lt;/repositories&gt;
+
+Binaries &amp; Source:
+
+https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z
+
+Tag:
+
+https://github.com/apache/opennlp/releases/tag/opennlp-x.y.z
+
+Release notes:
+
+&lt;Add link to the Jira release notes&gt;
+
+The results of the eval tests for the aforementioned tag can be found
+here: https://ci-builds.apache.org/job/OpenNLP/job/eval-tests-releases/&lt;add-link-to-build&gt;
+
+Reminder: The up-2-date KEYS file for signature verification can be
+found here: https://dist.apache.org/repos/dist/release/opennlp/KEYS
+
+Please vote on releasing these packages as Apache OpenNLP x.y.z The
+vote is open for at least the next 72 hours.
+
+Only votes from OpenNLP PMC are binding, but everyone is welcome to
+check the release candidate and vote.
 The vote passes if at least three binding +1 votes are cast.
 
-[ ] +1 Release the packages as Apache OpenNLP [VERSION]
-[ ] -1 Do not release the packages because...
+Please VOTE
 
-Thanks!</pre>
+[+1] go ship it
+[+0] meh, don't care
+[-1] stop, there is a ${showstopper}
+
+Thanks!
+
+&gt;&gt;Your-Name&lt;&lt;</pre>
 </div>
 </div>
 </div>
@@ -328,7 +460,7 @@ To do this go to the <a href="https://repository.apache.org">repository server</
 <div class="content">
 <pre>svn co https://dist.apache.org/repos/dist/release/opennlp/ dist
 # check if the KEYS file contains your key, if not, update it
-# copy opennlp/target/checkout/target/apache-opennlp* to dist/opennlp-&lt;VERSION&gt;
+# copy from the dist/dev area to to dist/opennlp-&lt;VERSION&gt;
 svn commit --username &lt;username&gt; -m "Adding OpenNLP &lt;version&gt;"</pre>
 </div>
 </div>
