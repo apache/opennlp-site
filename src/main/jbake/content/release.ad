@@ -266,7 +266,7 @@ Merge the release branch into `main`.
 Move the distribution from dist/dev to dist/release via SVN
 
 ----
-svn mv https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z https://dist.apache.org/repos/dist/release/opennlp/opennlp-x.y.z
+svn mv https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z https://dist.apache.org/repos/dist/release/opennlp/opennlp-x.y.z -m "Release OpenNLP x.y.z"
 ----
 
 This will make the release artifacts available on dist.apache.org and the artifacts will start replicating.
