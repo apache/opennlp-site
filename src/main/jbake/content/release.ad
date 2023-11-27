@@ -263,14 +263,13 @@ Merge the release branch into `main`.
 
 ### Commit Distribution to SVN
 
-Commit the distribution via SVN to https://dist.apache.org/repos/dist/release:
+Move the distribution from dist/dev to dist/release via SVN
 
 ----
-svn co https://dist.apache.org/repos/dist/release/opennlp/ dist
-# check if the KEYS file contains your key, if not, update it
-# copy from the dist/dev area to to dist/opennlp-<VERSION>
-svn commit --username <username> -m "Adding OpenNLP <version>"
+svn mv https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z https://dist.apache.org/repos/dist/release/opennlp/opennlp-x.y.z
 ----
+
+This will make the release artifacts available on dist.apache.org and the artifacts will start replicating.
 
 ### Delete Old Release(s)
 
