@@ -483,15 +483,15 @@ To do this go to the <a href="https://repository.apache.org">repository server</
 <div class="sect2">
 <h3 id="commit_distribution_to_svn">Commit Distribution to SVN</h3>
 <div class="paragraph">
-<p>Commit the distribution via SVN to <a href="https://dist.apache.org/repos/dist/release" class="bare">https://dist.apache.org/repos/dist/release</a>:</p>
+<p>Move the distribution from dist/dev to dist/release via SVN</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>svn co https://dist.apache.org/repos/dist/release/opennlp/ dist
-# check if the KEYS file contains your key, if not, update it
-# copy from the dist/dev area to to dist/opennlp-&lt;VERSION&gt;
-svn commit --username &lt;username&gt; -m "Adding OpenNLP &lt;version&gt;"</pre>
+<pre>svn mv https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z https://dist.apache.org/repos/dist/release/opennlp/opennlp-x.y.z</pre>
 </div>
+</div>
+<div class="paragraph">
+<p>This will make the release artifacts available on dist.apache.org and the artifacts will start replicating.</p>
 </div>
 </div>
 <div class="sect2">
