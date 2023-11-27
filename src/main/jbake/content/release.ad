@@ -320,6 +320,10 @@ Move the last version's links to the documentation to the Legacy Documentation (
 * link:/docs/${previous.release}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]
 ----
 
+#### Update main.yml
+
+- Update the `main.yml` in `.gitlab` to force a check on the docs for this new version.
+
 #### Update doap_opennlp.rdf
 
 - Update the `doap_opennlp.rdf` file to reflect the new version number and release date.
