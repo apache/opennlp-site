@@ -33,10 +33,9 @@
 
 The following steps need only to be performed once.
 
-- Make sure you have your PGP key entered into https://id.apache.org/.
-  Your KEYS will then be present in https://people.apache.org/keys/group/opennlp.asc.
+- Make sure you have your PGP fingerprint added into https://id.apache.org/
 - Make sure you have your PGP keys password.
-- Add your PGP key to the KEYS file:
+- Add your PGP key to the KEYS file
 +
 ----
 Examples of adding your key to this file:
@@ -46,6 +45,7 @@ Examples of adding your key to this file:
      && gpg --armor --export <your name>) >> this file.
 ----
 - In a local temp folder, svn checkout the OpenNLP artifacts and update the KEYS file
+- Note: This can only be done by a PMC member. If you are a committer acting as a release manager, ask a PMC member to add your key.
 +
 ----
 svn co https://dist.apache.org/repos/dist/release/opennlp/
