@@ -26,6 +26,7 @@ The Apache OpenNLP project is developed by volunteers and is always looking for 
 to work on all parts of the project. Every contribution is welcome and needed to make it better.
 A contribution can be anything from a small documentation typo fix to a new component. We especially welcome contributions from first-time users.
 
+== Mailing Lists
 To get started, please first join the Apache OpenNLP mailing lists:
 
 [cols="3,3,3,3,3"]
@@ -59,7 +60,16 @@ issues please post them to the JIRA pages and not to this list. This list is mai
 |link:++https://lists.apache.org/list.html?issues@opennlp.apache.org++[Archives]
 |===
 
-## Making a Contribution
+== Slack Channel
+Another way of contacting OpenNLP committers and PMC members is the _#opennlp_ Slack channel.
+This is a great place to meet and get guidance on contributions.
+
+Further details on using the ASF Slack channels and associated expectations can be found at the related https://infra.apache.org/slack.html[ASF infra page].
+
+=== Note
+The ASF Slack requires an _@apache.org_ email address to join as a full member. Users without an _@apache.org_ email address have to be invited.
+
+== Making a Contribution
 
 * Create a new issue in the Apache OpenNLP https://issues.apache.org/jira/browse/OPENNLP[JIRA,window=_blank]. Please describe the problem or improvement in the body of the issue. For larger issues, please first contact the developer mailing list and describe the problem.
 * Next, create a pull request in https://github.com/apache/opennlp/pulls[GitHub,window=_blank].
@@ -71,7 +81,7 @@ or https://www.apache.org/licenses/software-grant.txt[software grant,window=_bla
 Contributors who have a history of successful participation are invited to join
 the project as a committer from the https://incubator.apache.org/guides/ppmc.html[PPMC].
 
-## Open Tasks
+== Open Tasks
 
 Please see the Apache OpenNLP https://issues.apache.org/jira/browse/OPENNLP[JIRA,window=_blank] for a list of tasks. If you would like to work on a task, please email the developers mailing list and request to do so. You will then be assigned the issue in JIRA.
 
