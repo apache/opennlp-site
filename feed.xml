@@ -24,9 +24,56 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Fri, 29 Dec 2023 12:36:05 +0000</pubDate>
-    <lastBuildDate>Fri, 29 Dec 2023 12:36:05 +0000</lastBuildDate>
+    <pubDate>Sun, 4 Feb 2024 13:29:55 +0000</pubDate>
+    <lastBuildDate>Sun, 4 Feb 2024 13:29:55 +0000</lastBuildDate>
 
+    <item>
+      <title>Apache OpenNLP 2.3.2 released</title>
+      <link>https://opennlp.apache.org/news/release-232.html</link>
+      <pubDate>Sun, 4 Feb 2024 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-232.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.3.2.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Apache OpenNLP 2.3.2 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_2_3_2&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.3.2&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In this release we fixed several bugs and upgraded some dependencies. In addition, we added abbreviation dictionaries for several languages.
+Moreover, we addressed a memory issue (OPENNLP-421) which occurs for large dictionaries due to String interning. Several new configuration
+options have been added to choose a strategy. Details can be found in the related Jira / PR.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We switched the default onnx runtime dependency in opennlp-dl to the cpu variant. If you need to use the GPU accelerated version of onxx,
+you can use the newly added module opennlp-dl-gpu. Moreover, we fixed the CLI on the Windows plattform.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For a full list of improvements, please see the list of items addressed in &lt;a href=&quot;https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&amp;amp;version=12353945&quot;&gt;Jira&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Apache OpenNLP 2.3.1 released</title>
       <link>https://opennlp.apache.org/news/release-231.html</link>
