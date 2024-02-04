@@ -1,0 +1,49 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 2.3.2 released
+Apache OpenNLP
+2024-02-04
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.3.2.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+Apache OpenNLP 2.3.2 binary and source distributions are available for download from our download page: link:/download.html[download page]
+
+The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: link:/maven-dependency.html[Maven Dependency]
+
+== What's new in Apache OpenNLP 2.3.2
+
+In this release we fixed several bugs and upgraded some dependencies. In addition, we added abbreviation dictionaries for several languages.
+Moreover, we addressed a memory issue (OPENNLP-421) which occurs for large dictionaries due to String interning. Several new configuration
+options have been added to choose a strategy. Details can be found in the related Jira / PR.
+
+We switched the default onnx runtime dependency in opennlp-dl to the cpu variant. If you need to use the GPU accelerated version of onxx,
+you can use the newly added module opennlp-dl-gpu. Moreover, we fixed the CLI on the Windows plattform.
+
+For a full list of improvements, please see the list of items addressed in link:https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&version=12353945[Jira].
+
+--The Apache OpenNLP Team
