@@ -63,3 +63,4 @@ jobs:
           [ -d target/opennlp-site/docs/2.3.1 ] && echo 'docs for 2.3.1 exists'
           [ -d target/opennlp-site/docs/2.3.2 ] && echo 'docs for 2.3.2 exists'
           [ -d target/opennlp-site/docs/2.3.3 ] && echo 'docs for 2.3.3 exists'
+          [ -d target/opennlp-site/docs/2.4.0 ] && echo 'docs for 2.3.3 exists'
