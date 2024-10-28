@@ -25,8 +25,6 @@ Apache OpenNLP
 :category: news
 :idprefix:
 
-== OpenNLP Pre-trained Models Available
-
 Pre-trained sentence, parts of speech, and token models are now available for English, French, Italian, German, and Dutch.
 These models were trained on Universal Dependencies and are intended to provide usable models under the Apache 2.0 license.
 See the models' README for more information on the models including how each was created and evaluated.

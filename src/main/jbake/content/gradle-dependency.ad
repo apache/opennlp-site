@@ -21,6 +21,8 @@
 :jbake-tags: maven
 :jbake-status: published
 :idprefix:
+:toc: preamble
+:toc-title: Content
 
 Apache OpenNLP is also distributed via the Maven Central Repository.
 The maven artifacts are located https://repo1.maven.org/maven2/org/apache/opennlp/[here].
@@ -95,7 +97,7 @@ dependencies {
 }
 ----
 
-NOTE: The `SNAPSHOT` dependency requires the following Maven repository in your Gradle project:
+NOTE: All `SNAPSHOT` dependencies require the following Maven repository:
 
 [source,indent=0,subs=attributes+]
 ----

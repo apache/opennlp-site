@@ -71,6 +71,14 @@
     .tableblock > a {
         color: #f59523;
     }
+    #toctitle {
+        color: #eee;
+        background: #222;
+    }
+    #toc > ul > li > a, #toc > ul > li > ul > li > a {
+        color: #f59523;
+        background: #222;
+    }
     .content pre,
     .content pre > code,
     .com, .tag, .pln, .str, .pun, .kwd,
