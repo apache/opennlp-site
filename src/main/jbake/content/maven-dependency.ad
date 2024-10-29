@@ -21,6 +21,8 @@
 :jbake-tags: maven
 :jbake-status: published
 :idprefix:
+:toc: preamble
+:toc-title: Content
 
 Apache OpenNLP is also distributed via the Maven Central Repository.
 The maven artifacts are located https://repo1.maven.org/maven2/org/apache/opennlp/[here].
@@ -89,6 +91,7 @@ To use the OpenNLP UIMA Annotators define the following dependency:
 </dependency>
 ----
 
+== SNAPSHOTS
 === OpenNLP Tools SNAPSHOT Dependency
 To use the current version of the _main_ branch define the following dependency:
 
@@ -101,7 +104,7 @@ To use the current version of the _main_ branch define the following dependency:
 </dependency>
 ----
 
-NOTE: The `SNAPSHOT` dependency requires the following Maven repository:
+NOTE: All `SNAPSHOT` dependencies require the following Maven repository:
 
 [source,xml,indent=0,subs=attributes+]
 ----
