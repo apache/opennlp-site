@@ -27,7 +27,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="dark light">
-    <meta name="description" content="Apache OpenNLP  is a machine learning based toolkit for the processing of natural language text." />
+    <meta name="description" content="Apache OpenNLP is a machine learning based toolkit for the processing of natural language text." />
     <meta name="author" content="The Apache OpenNLP Team" />
     <meta name="keywords" content="java, natural language processing, nlp, apache, open source, web site" />
     <meta name="generator" content="JBake"/>
@@ -65,7 +65,7 @@
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="/js/html5shiv.js"></script>
+      <script src="/js/html5shiv.min.js"></script>
     <![endif]-->
 </head>
 <body onload="prettyPrint()">
