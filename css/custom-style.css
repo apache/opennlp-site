@@ -28,3 +28,10 @@ body {
     line-height: 1;
     font-weight: bold;
 }
+
+#toc > ul {
+    padding-inline-start: 0;
+}
+#toc > ul > li > ul {
+    padding-inline-start: 1em;
+}

@@ -24,9 +24,45 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Tue, 29 Oct 2024 04:32:39 +0000</pubDate>
-    <lastBuildDate>Tue, 29 Oct 2024 04:32:39 +0000</lastBuildDate>
+    <pubDate>Tue, 29 Oct 2024 04:34:28 +0000</pubDate>
+    <lastBuildDate>Tue, 29 Oct 2024 04:34:28 +0000</lastBuildDate>
 
+    <item>
+      <title>New OpenNLP Pre-trained Models released</title>
+      <link>https://opennlp.apache.org/news/news-2024-10-28.html</link>
+      <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/news-2024-10-28.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;New pre-trained sentence, parts of speech, and token models for 18 (Indo-European) languages are now available for:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Bulgarian, Czech, Croatian, Danish, Estonian, Finnish, Latvian, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, and Ukrainian.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The existing sentence, parts of speech, and token models for these 5 languages:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Dutch, English, French, German, and Italian&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;were re-trained. The French models are now based on a GSD treebank, as the previously used FTB treebank &lt;a href=&quot;https://universaldependencies.org/fr/index.html&quot;&gt;is not maintained&lt;/a&gt; and has therefore been discontinued by the &lt;a href=&quot;https://universaldependencies.org&quot;&gt;Universal Dependencies&lt;/a&gt; (UD) project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;All  models were trained with OpenNLP 2.4.0 based on the UD release &lt;a href=&quot;https://hdl.handle.net/11234/1-5502&quot;&gt;2.14&lt;/a&gt; and are intended to provide usable models under the Apache 2.0 license.
+These models are available as JAR artifacts via Maven Central, or directly as plain, binary files via our &lt;a href=&quot;/models.html&quot;&gt;models page&lt;/a&gt;.
+See the models&apos; README for more information on the models including how each was created and evaluated.&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Apache OpenNLP 2.4.0 released</title>
       <link>https://opennlp.apache.org/news/release-240.html</link>
@@ -525,15 +561,10 @@ Moreover, it switches the ONNX runtime for the &apos;opennlp-dl&apos; component 
       <pubDate>Sun, 30 May 2021 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">news/news-2021-05-30.html</guid>
       	<description>
-	&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;opennlp_pre_trained_models_available&quot;&gt;OpenNLP Pre-trained Models Available&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
+	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Pre-trained sentence, parts of speech, and token models are now available for English, French, Italian, German, and Dutch.
 These models were trained on Universal Dependencies and are intended to provide usable models under the Apache 2.0 license.
 See the models&apos; README for more information on the models including how each was created and evaluated.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;/div&gt;
 	</description>
     </item>
