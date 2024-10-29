@@ -30,7 +30,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://www.apachecon.com/event-images/snippet.js"></script>
-    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/jquery-3.7.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/prettify.js"></script>
     
