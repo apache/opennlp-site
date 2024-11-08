@@ -138,7 +138,30 @@
 <div class="container">
     <h1 class="title">Making a model release</h1>
 
-    <div class="sect1">
+    <div id="toc" class="toc">
+<div id="toctitle">Content</div>
+<ul class="sectlevel1">
+<li><a href="#release_preparation">Release Preparation</a></li>
+<li><a href="#steps_for_the_release_manager">Steps for the Release Manager</a></li>
+<li><a href="#release_steps">Release Steps</a>
+<ul class="sectlevel2">
+<li><a href="#perform_the_model_release">Perform the Model Release</a></li>
+<li><a href="#check_the_model_release_artifacts">Check the Model Release Artifacts</a></li>
+<li><a href="#create_a_vote_thread">Create a VOTE Thread</a></li>
+</ul>
+</li>
+<li><a href="#after_a_successful_vote">After a Successful Vote</a>
+<ul class="sectlevel2">
+<li><a href="#commit_distribution_to_svn">Commit Distribution to SVN</a></li>
+<li><a href="#delete_old_model_releases">Delete Old Model Release(s)</a></li>
+<li><a href="#update_the_website">Update the Website</a></li>
+<li><a href="#post_release_steps">Post-Release Steps</a></li>
+</ul>
+</li>
+<li><a href="#after_an_unsuccessful_vote">After an Unsuccessful Vote</a></li>
+</ul>
+</div>
+<div class="sect1">
 <h2 id="release_preparation">Release Preparation</h2>
 <div class="sectionbody">
 <div class="ulist">
@@ -207,9 +230,7 @@ svn commit -m "Added Key for &lt;name&gt;" KEYS</pre>
 </ul>
 </div>
 <div class="sect2">
-<h3 id="successful_model_release_preparation">Successful Model Release Preparation</h3>
-<div class="sect3">
-<h4 id="perform_the_model_release">Perform the Model Release</h4>
+<h3 id="perform_the_model_release">Perform the Model Release</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -261,7 +282,6 @@ svn commit --username &lt;username&gt; -m "Adding Release Candidate for OpenNLP 
 <div class="paragraph">
 <p>Make sure to adhere to the model naming conventions.</p>
 </div>
-</div>
 <div class="sect3">
 <h4 id="model_naming_conventions">Model Naming Conventions</h4>
 <div class="ulist">
@@ -270,13 +290,16 @@ svn commit --username &lt;username&gt; -m "Adding Release Candidate for OpenNLP 
 <p>The filenames of each model signify the model language, type, <a href="https://universaldependencies.org/" target="_blank" rel="noopener">Universal Dependency training data</a> used, and version numbers.</p>
 </li>
 <li>
-<p>The filename format is <code>opennlp-[iso-language-code]-ud-[corpus]-[model-type]-[model-version]-[opennlp-version-used-for-training].bin</code>.</p>
+<p>The filename format is<br>
+<code>opennlp-[iso-language-code]-ud-[corpus]-[model-type]-[model-version]-[opennlp-version-used-for-training].bin</code>.</p>
 </li>
 <li>
-<p>The evaluation logs must be zipped and adhere to the following format: <code>opennlp-training-eval-logs-[model-version]-[opennlp-version-used-for-training].zip</code>. It contains the evaluation logs for trained models.</p>
+<p>The evaluation logs must be zipped and adhere to the following format:<br>
+<code>opennlp-training-eval-logs-[model-version]-[opennlp-version-used-for-training].zip</code>. It contains the evaluation logs for trained models.</p>
 </li>
 <li>
-<p>For example, the model file <code>opennlp-de-ud-gsd-pos-1.0-1.9.3</code> is German language, trained on the UD GSD corpus, and is a parts-of-speech model. It is version 1.0 of the model, and it was trained using OpenNLP 1.9.3.</p>
+<p>For example, the model file <code>opennlp-de-ud-gsd-pos-1.1-2.4.0</code> is German language, trained on the UD GSD corpus, and is a parts-of-speech model.
+It is version 1.1 of the model, and it was trained using OpenNLP 2.4.0.</p>
 </li>
 </ul>
 </div>
@@ -293,8 +316,9 @@ If other training data is used, the abbreviation <code>ud</code> needs to be adj
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="check_the_model_release_artifacts">Check the Model Release Artifacts</h4>
+</div>
+<div class="sect2">
+<h3 id="check_the_model_release_artifacts">Check the Model Release Artifacts</h3>
 <div class="paragraph">
 <p>Perform basic checks against the release binary:</p>
 </div>
@@ -309,8 +333,8 @@ If other training data is used, the abbreviation <code>ud</code> needs to be adj
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="create_a_vote_thread">Create a VOTE Thread</h4>
+<div class="sect2">
+<h3 id="create_a_vote_thread">Create a VOTE Thread</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -347,7 +371,6 @@ Thanks!</pre>
 </div>
 </li>
 </ul>
-</div>
 </div>
 </div>
 </div>
@@ -397,7 +420,7 @@ svn commit --username &lt;username&gt; -m "Adding OpenNLP Models &lt;version&gt;
 <div class="content">
 <pre>= &lt;MODEL_TYPE&gt; Models for Apache OpenNLP released
 Apache OpenNLP
-2022-01-03
+2024-11-01
 :jbake-type: post
 :jbake-tags: community
 :jbake-status: published

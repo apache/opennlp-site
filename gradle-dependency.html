@@ -154,10 +154,11 @@ all transient dependencies are resolved automatically.</p>
 <li><a href="#latest_release">Latest Release</a>
 <ul class="sectlevel2">
 <li><a href="#opennlp_tools_dependency">OpenNLP Tools Dependency</a></li>
+<li><a href="#opennlp_tools_models_dependency">OpenNLP Tools Models Dependency</a></li>
 <li><a href="#opennlp_dl_dependency">OpenNLP DL Dependency</a></li>
+<li><a href="#opennlp_dl_gpu_dependency">OpenNLP DL GPU Dependency</a></li>
 <li><a href="#opennlp_uima_annotators_dependency">OpenNLP UIMA Annotators Dependency</a></li>
 <li><a href="#opennlp_morfologik_addon_dependency">OpenNLP Morfologik AddOn Dependency</a></li>
-<li><a href="#opennlp_brat_annotator_dependency">OpenNLP Brat Annotator Dependency</a></li>
 </ul>
 </li>
 <li><a href="#snapshots">SNAPSHOTS</a>
@@ -185,6 +186,19 @@ all transient dependencies are resolved automatically.</p>
 </div>
 </div>
 <div class="sect2">
+<h3 id="opennlp_tools_models_dependency">OpenNLP Tools Models Dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP Tools Models define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-tools-models', version: '2.4.0'
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="opennlp_dl_dependency">OpenNLP DL Dependency</h3>
 <div class="paragraph">
 <p>To use the OpenNLP DL define the following dependency:</p>
@@ -193,6 +207,19 @@ all transient dependencies are resolved automatically.</p>
 <div class="content">
 <pre class="prettyprint highlight"><code>dependencies {
   implementation group: 'org.apache.opennlp', name: 'opennlp-dl', version: '2.4.0'
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="opennlp_dl_gpu_dependency">OpenNLP DL GPU Dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP DL GPU define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-dl-gpu', version: '2.4.0'
 }</code></pre>
 </div>
 </div>
@@ -223,19 +250,6 @@ all transient dependencies are resolved automatically.</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="opennlp_brat_annotator_dependency">OpenNLP Brat Annotator Dependency</h3>
-<div class="paragraph">
-<p>To use the OpenNLP UIMA Annotators define the following dependency:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>dependencies {
-  implementation group: 'org.apache.opennlp', name: 'opennlp-brat-annotator', version: '2.4.0'
-}</code></pre>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
@@ -249,7 +263,7 @@ all transient dependencies are resolved automatically.</p>
 <div class="listingblock">
 <div class="content">
 <pre>dependencies {
-  implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '2.2.1-SNAPSHOT'
+  implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '2.5.1-SNAPSHOT'
 }</pre>
 </div>
 </div>

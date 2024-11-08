@@ -138,7 +138,34 @@
 <div class="container">
     <h1 class="title">Making a release</h1>
 
-    <div class="sect1">
+    <div id="toc" class="toc">
+<div id="toctitle">Content</div>
+<ul class="sectlevel1">
+<li><a href="#release_preparation">Release Preparation</a></li>
+<li><a href="#steps_for_the_release_manager">Steps for the Release Manager</a></li>
+<li><a href="#release_steps">Release Steps</a>
+<ul class="sectlevel2">
+<li><a href="#maven_release_preparation">Maven Release Preparation</a></li>
+<li><a href="#perform_the_release">Perform the Release</a></li>
+<li><a href="#put_the_artifacts_to_distdev">Put the artifacts to dist/dev</a></li>
+<li><a href="#check_the_release_artifacts">Check the Release Artifacts</a></li>
+<li><a href="#create_a_vote_thread">Create a VOTE Thread</a></li>
+</ul>
+</li>
+<li><a href="#after_a_successful_vote">After a Successful Vote</a>
+<ul class="sectlevel2">
+<li><a href="#release_nexus_staging_repository">Release Nexus Staging Repository</a></li>
+<li><a href="#merge_the_release_branch">Merge the Release Branch</a></li>
+<li><a href="#commit_distribution_to_svn">Commit Distribution to SVN</a></li>
+<li><a href="#delete_old_releases">Delete Old Release(s)</a></li>
+<li><a href="#update_the_website">Update the Website</a></li>
+<li><a href="#post_release_steps">Post-Release Steps</a></li>
+</ul>
+</li>
+<li><a href="#after_an_unsuccessful_vote">After an Unsuccessful Vote</a></li>
+</ul>
+</div>
+<div class="sect1">
 <h2 id="release_preparation">Release Preparation</h2>
 <div class="sectionbody">
 <div class="ulist">
@@ -255,64 +282,76 @@ svn commit -m "Added Key for &lt;name&gt;" KEYS</pre>
 <div class="sect1">
 <h2 id="release_steps">Release Steps</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="maven_release_preparation">Maven Release Preparation</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Checkout the Apache OpenNLP main branch: <code>git clone <a href="mailto:git@github.com">git@github.com</a>:apache/opennlp.git</code></p>
+<p>Checkout the Apache OpenNLP main branch:<br>
+<code>git clone <a href="mailto:git@github.com">git@github.com</a>:apache/opennlp.git</code></p>
 </li>
 <li>
-<p>(Optional) Execute a complete test (it can take several hours): <code>mvn test -DOPENNLP_DATA_DIR=/path/to/opennlp-test-data/ -Peval-tests</code></p>
+<p>(Optional) Execute a complete test (it can take several hours):<br>
+<code>mvn test -DOPENNLP_DATA_DIR=/path/to/opennlp-test-data/ -Peval-tests</code></p>
 </li>
 <li>
-<p>Check the current results of the eval build on the ASF Jenkins CI: <a href="https://ci-builds.apache.org/job/OpenNLP/job/eval-tests/" class="bare">https://ci-builds.apache.org/job/OpenNLP/job/eval-tests/</a></p>
+<p>Check the current results of the eval build on the ASF Jenkins CI:<br>
+<a href="https://ci-builds.apache.org/job/OpenNLP/job/eval-tests/" class="bare">https://ci-builds.apache.org/job/OpenNLP/job/eval-tests/</a></p>
 </li>
 <li>
-<p>Do a trial build: <code>mvn package -Papache-release,apache-gpg</code></p>
+<p>Do a trial build:<br>
+<code>mvn package -Papache-release,apache-gpg</code></p>
 </li>
 <li>
 <p>Switch to a new branch with a format like <strong>rel-opennlp-x.y.z.</strong>.</p>
 </li>
 <li>
-<p>Prepare the release: <code>mvn release:prepare -Papache-gpg</code> Answer the questions appropriately. The tag name format should be <strong>opennlp-x.y.z</strong>.
-This command creates and pushes two new commits to the repository to reflect the version changes. It also tags the release and pushes the branch.</p>
+<p>Prepare the release:<br>
+<code>mvn release:prepare -Papache-release,apache-gpg</code> and answer the questions appropriately.<br>
+The tag name format should be <strong>opennlp-x.y.z</strong>. This command creates and pushes two new commits to the repository to reflect the version changes. It also tags the release and pushes the branch.</p>
 </li>
 <li>
-<p>Start an eval build for the tag via <a href="https://ci-builds.apache.org/job/OpenNLP/job/eval-tests-releases/" class="bare">https://ci-builds.apache.org/job/OpenNLP/job/eval-tests-releases/</a> (build can take several hours)</p>
+<p>Start an eval build for the tag via<br>
+<a href="https://ci-builds.apache.org/job/OpenNLP/job/eval-tests-releases/" class="bare">https://ci-builds.apache.org/job/OpenNLP/job/eval-tests-releases/</a> (build can take several hours)</p>
 </li>
 </ul>
 </div>
+</div>
 <div class="sect2">
-<h3 id="successful_maven_release_preparation">Successful Maven Release Preparation</h3>
-<div class="sect3">
-<h4 id="perform_the_release">Perform the Release</h4>
+<h3 id="perform_the_release">Perform the Release</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Perform the release: <code>mvn release:perform -Papache-gpg</code></p>
+<p>Perform the release:<br>
+<code>mvn release:perform -Papache-release,apache-gpg</code></p>
 </li>
 <li>
 <p>This creates a staged repository at <a href="https://repository.apache.org/#stagingRepositories" class="bare">https://repository.apache.org/#stagingRepositories</a></p>
 </li>
 <li>
-<p>Check the staged repository and if all looks well, close the staging repository but do <strong>not</strong> promote or release it at this time.</p>
+<p>Check the staged repository and if all looks well.</p>
+</li>
+<li>
+<p>Close the staging repository but do <strong>not</strong> promote or release it at this time.</p>
 </li>
 <li>
 <p>The build results are in <code>opennlp/target/checkout/target</code>. Do not modify or delete these files.</p>
 </li>
 </ul>
 </div>
-<div class="sect4">
-<h5 id="put_the_artifacts_to_distdev">Put the artifacts to dist/dev</h5>
+</div>
+<div class="sect2">
+<h3 id="put_the_artifacts_to_distdev">Put the artifacts to dist/dev</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>Next, checkout the svn dist dev space from <a href="https://dist.apache.org/repos/dist/dev/opennlp/" class="bare">https://dist.apache.org/repos/dist/dev/opennlp/</a></p>
+<p>Next, checkout the <strong>svn</strong> dist dev space from <a href="https://dist.apache.org/repos/dist/dev/opennlp/" class="bare">https://dist.apache.org/repos/dist/dev/opennlp/</a></p>
 </li>
 <li>
 <p>Create a new folder <code>opennlp-x.y.z</code>.</p>
 </li>
 <li>
-<p>Add the files from <code>opennlp/target/checkout/target</code> to this folder.</p>
+<p>Add all <code>&#42;-src.&#42;</code> and <code>&#42;-bin.&#42;</code> files from <code>opennlp/opennlp-distr/target</code> to newly created folder.</p>
 </li>
 <li>
 <p>Commit the change set to the dist area. Check that the files are present in <a href="https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z" class="bare">https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z</a></p>
@@ -320,9 +359,8 @@ This command creates and pushes two new commits to the repository to reflect the
 </ul>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="check_the_release_artifacts">Check the Release Artifacts</h4>
+<div class="sect2">
+<h3 id="check_the_release_artifacts">Check the Release Artifacts</h3>
 <div class="paragraph">
 <p>Perform basic checks against the release binary:</p>
 </div>
@@ -363,8 +401,8 @@ gpg --homedir . --output  apache-opennlp-x.y.z-src.tar.gz --decrypt apache-openn
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="create_a_vote_thread">Create a VOTE Thread</h4>
+<div class="sect2">
+<h3 id="create_a_vote_thread">Create a VOTE Thread</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -436,7 +474,6 @@ Please VOTE
 Thanks!
 
 &lt;Your-Name&gt;</pre>
-</div>
 </div>
 </div>
 </div>
@@ -548,11 +585,12 @@ opennlp.next.version=</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>### Apache OpenNLP ${previous.release} documentation
+<pre>=== Apache OpenNLP ${previous.release} documentation
 * link:/docs/${previous.release}/manual/opennlp.html[Apache OpenNLP Manual]
 * link:/docs/${previous.release}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
+* link:/docs/${previous.release}/apidocs/opennlp-tools-models/index.html[Apache OpenNLP Tools Models Javadoc]
+* link:/docs/${previous.release}/apidocs/opennlp-dl/index.html[Apache OpenNLP DL Javadoc]
 * link:/docs/${previous.release}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
-* link:/docs/${previous.release}/apidocs/opennlp-brat-annotator/index.html[Apache OpenNLP BRAT Annotator Javadoc]
 * link:/docs/${previous.release}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]</pre>
 </div>
 </div>
