@@ -42,6 +42,17 @@ dependencies {
 }
 ----
 
+=== OpenNLP Tools Models Dependency
+
+To use the OpenNLP Tools Models define the following dependency:
+
+[source,indent=0,subs=attributes+]
+----
+dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-tools-models', version: '{opennlp_version}'
+}
+----
+
 === OpenNLP DL Dependency
 
 To use the OpenNLP DL define the following dependency:
@@ -50,6 +61,17 @@ To use the OpenNLP DL define the following dependency:
 ----
 dependencies {
   implementation group: 'org.apache.opennlp', name: 'opennlp-dl', version: '{opennlp_version}'
+}
+----
+
+=== OpenNLP DL GPU Dependency
+
+To use the OpenNLP DL GPU define the following dependency:
+
+[source,indent=0,subs=attributes+]
+----
+dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-dl-gpu', version: '{opennlp_version}'
 }
 ----
 
@@ -75,17 +97,6 @@ dependencies {
 }
 ----
 
-=== OpenNLP Brat Annotator Dependency
-
-To use the OpenNLP UIMA Annotators define the following dependency:
-
-[source,indent=0,subs=attributes+]
-----
-dependencies {
-  implementation group: 'org.apache.opennlp', name: 'opennlp-brat-annotator', version: '{opennlp_version}'
-}
-----
-
 == SNAPSHOTS
 === OpenNLP Tools SNAPSHOT Dependency
 
@@ -93,7 +104,7 @@ To use the current version of the _main_ branch define the following dependency:
 
 ----
 dependencies {
-  implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '2.2.1-SNAPSHOT'
+  implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '2.5.1-SNAPSHOT'
 }
 ----
 

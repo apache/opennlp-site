@@ -21,15 +21,17 @@
 :jbake-tags: maven
 :jbake-status: published
 :idprefix:
+:toc:
+:toc-title: Content
 
-## Release Preparation
+== Release Preparation
 
 - Elect a release manager.
 - Create a ticket for a new release in https://issues.apache.org/jira/browse/OPENNLP[JIRA]. If you do not have permission to do so just ask to be given permissions on the mailing list.
 - Review all of the https://issues.apache.org/jira/browse/OPENNLP[JIRA] issues associated with the release. All issues should be resolved and closed.
 - Any issues assigned to the release that are not complete should be assigned to the next release. Any critical or blocker issues should be resolved on the mailing list. Discuss any issues that you are unsure of on the mailing list.
 
-## Steps for the Release Manager
+== Steps for the Release Manager
 
 The following steps need only to be performed once.
 
@@ -98,36 +100,42 @@ svn commit -m "Added Key for <name>" KEYS
 export GPG_TTY=$(tty)
 ----
 
+== Release Steps
 
+=== Maven Release Preparation
 
-## Release Steps
-
-- Checkout the Apache OpenNLP main branch: `git clone git@github.com:apache/opennlp.git`
-- (Optional) Execute a complete test (it can take several hours): `mvn test -DOPENNLP_DATA_DIR=/path/to/opennlp-test-data/ -Peval-tests`
-- Check the current results of the eval build on the ASF Jenkins CI: https://ci-builds.apache.org/job/OpenNLP/job/eval-tests/
-- Do a trial build: `mvn package -Papache-release,apache-gpg`
+- Checkout the Apache OpenNLP main branch: +
+  `git clone git@github.com:apache/opennlp.git`
+- (Optional) Execute a complete test (it can take several hours): +
+  `mvn test -DOPENNLP_DATA_DIR=/path/to/opennlp-test-data/ -Peval-tests`
+- Check the current results of the eval build on the ASF Jenkins CI: +
+  https://ci-builds.apache.org/job/OpenNLP/job/eval-tests/
+- Do a trial build: +
+  `mvn package -Papache-release,apache-gpg`
 - Switch to a new branch with a format like *rel-opennlp-x.y.z.*.
-- Prepare the release: `mvn release:prepare -Papache-gpg` Answer the questions appropriately. The tag name format should be *opennlp-x.y.z*.
-This command creates and pushes two new commits to the repository to reflect the version changes. It also tags the release and pushes the branch.
-- Start an eval build for the tag via https://ci-builds.apache.org/job/OpenNLP/job/eval-tests-releases/ (build can take several hours)
+- Prepare the release: +
+  `mvn release:prepare -Papache-release,apache-gpg` and answer the questions appropriately. +
+  The tag name format should be *opennlp-x.y.z*. This command creates and pushes two new commits to the repository to reflect the version changes. It also tags the release and pushes the branch.
+- Start an eval build for the tag via +
+  https://ci-builds.apache.org/job/OpenNLP/job/eval-tests-releases/ (build can take several hours)
 
-### Successful Maven Release Preparation
+=== Perform the Release
 
-#### Perform the Release
-
-- Perform the release: `mvn release:perform -Papache-gpg`
+- Perform the release: +
+  `mvn release:perform -Papache-release,apache-gpg`
 - This creates a staged repository at https://repository.apache.org/#stagingRepositories
-- Check the staged repository and if all looks well, close the staging repository but do *not* promote or release it at this time.
+- Check the staged repository and if all looks well.
+- Close the staging repository but do *not* promote or release it at this time.
 - The build results are in `opennlp/target/checkout/target`. Do not modify or delete these files.
 
-##### Put the artifacts to dist/dev
+=== Put the artifacts to dist/dev
 
-- Next, checkout the svn dist dev space from https://dist.apache.org/repos/dist/dev/opennlp/
+- Next, checkout the *svn* dist dev space from https://dist.apache.org/repos/dist/dev/opennlp/
 - Create a new folder `opennlp-x.y.z`.
-- Add the files from `opennlp/target/checkout/target` to this folder.
+- Add all `&#42;-src.&#42;` and `&#42;-bin.&#42;` files from `opennlp/opennlp-distr/target` to newly created folder.
 - Commit the change set to the dist area. Check that the files are present in https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z
 
-#### Check the Release Artifacts
+=== Check the Release Artifacts
 
 Perform basic checks against the release binary:
 
@@ -160,7 +168,7 @@ gpg --homedir . --output  apache-opennlp-x.y.z-src.tar.gz --decrypt apache-openn
 
 - Check presence and appropriateness of `LICENSE`, `NOTICE`, and `README` files.
 
-#### Create a VOTE Thread
+=== Create a VOTE Thread
 
 - Notify the developer mailing list of a new version vote. Be sure to replace all values in `[]` with the appropriate values.
 
@@ -228,7 +236,7 @@ Thanks!
 <Your-Name>
 ----
 
-## After a Successful Vote
+== After a Successful Vote
 
 The vote is successful if at least 3 _+1_ votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
 Acknowledge the voting results on the mailing list in the VOTE thread by sending a mail.
@@ -252,16 +260,16 @@ Thanks to all voters. I'll proceed with the steps.
 
 ----
 
-### Release Nexus Staging Repository
+=== Release Nexus Staging Repository
 
 Release the staging repository. This will make the artifacts available in the Maven Central repository.
 To do this go to the https://repository.apache.org[repository server], log in, go to the staging area and release the staging repository linked to this release
 
-### Merge the Release Branch
+=== Merge the Release Branch
 
 Merge the release branch into `main`.
 
-### Commit Distribution to SVN
+=== Commit Distribution to SVN
 
 Move the distribution from dist/dev to dist/release via SVN
 
@@ -271,17 +279,17 @@ svn mv https://dist.apache.org/repos/dist/dev/opennlp/opennlp-x.y.z https://dist
 
 This will make the release artifacts available on dist.apache.org and the artifacts will start replicating.
 
-### Delete Old Release(s)
+=== Delete Old Release(s)
 
 To reduce the load on the ASF mirrors, projects are required to delete old releases (see https://www.apache.org/legal/release-policy.html#when-to-archive).
 
 Remove the old releases from SVN under https://dist.apache.org/repos/dist/release/opennlp/.
 
-### Update the Website
+=== Update the Website
 
 Update the website once the new version appears in the Apache download mirrors (keep checking https://www.apache.org/dyn/closer.cgi/opennlp until you see something):
 
-#### Update jbake.properties
+==== Update jbake.properties
 
 Update the `jbake.properties` file to include the new version numbers:
 
@@ -290,7 +298,7 @@ opennlp.version=
 opennlp.next.version=
 ```
 
-#### Add New Artifact Item
+==== Add New Artifact Item
 
 Add a new artifactItem in the pom.xml for the new OpenNLP release. (This automatically pulls in the details and javadocs for the new version when the site is built.):
 
@@ -307,38 +315,39 @@ Add a new artifactItem in the pom.xml for the new OpenNLP release. (This automat
 </artifactItem>
 ----
 
-#### Update Documentation Links
+==== Update Documentation Links
 
 Move the last version's links to the documentation to the Legacy Documentation (https://opennlp.apache.org/docs/legacy.html) page. Add the following lines at the beginning of `docs/legacy.ad`:
 
 ----
-### Apache OpenNLP ${previous.release} documentation
+=== Apache OpenNLP ${previous.release} documentation
 * link:/docs/${previous.release}/manual/opennlp.html[Apache OpenNLP Manual]
 * link:/docs/${previous.release}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
+* link:/docs/${previous.release}/apidocs/opennlp-tools-models/index.html[Apache OpenNLP Tools Models Javadoc]
+* link:/docs/${previous.release}/apidocs/opennlp-dl/index.html[Apache OpenNLP DL Javadoc]
 * link:/docs/${previous.release}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
-* link:/docs/${previous.release}/apidocs/opennlp-brat-annotator/index.html[Apache OpenNLP BRAT Annotator Javadoc]
 * link:/docs/${previous.release}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]
 ----
 
-#### Update main.yml
+==== Update main.yml
 
 - Update the `main.yml` in `.github` to force a check on the docs for this new version.
 
-#### Update doap_opennlp.rdf
+==== Update doap_opennlp.rdf
 
 - Update the `doap_opennlp.rdf` file to reflect the new version number and release date.
 
-#### Add News Item
+==== Add News Item
 
 - Add a news item in `news/release-{xyz}.ad` by copying the content from OpenNLP project `opennlp-distr/src/README`.
 
-#### Commit Website Changes.
+==== Commit Website Changes.
 
 - Commit the website changes.
 - Rebuild opennlp-site and redeploy the site (if Automatic Buildbot doesn't kick in)
 - Test and review the website. Test that all download links are working. Test that the documentation is updated and can be viewed
 
-### Post-Release Steps
+=== Post-Release Steps
 
 - Log the new version at https://reporter.apache.org/addrelease.html?opennlp.
 - Announce the new version on the OpenNLP Twitter.
@@ -370,7 +379,7 @@ For a complete list of fixed bugs and improvements please see the RELEASE_NOTES 
 The Apache OpenNLP Team
 ----
 
-## After an Unsuccessful Vote
+== After an Unsuccessful Vote
 
 The release vote may fail due to an issue discovered in the release candidate. If the vote fails the release should be canceled by:
 

@@ -21,13 +21,15 @@
 :jbake-tags: building
 :jbake-status: published
 :idprefix:
+:toc:
+:toc-title: Content
 
-## Release Preparation
+== Release Preparation
 
 - Elect a release manager.
 - Create a ticket for a new model release in https://issues.apache.org/jira/browse/OPENNLP[JIRA,window=_blank]. If you do not have permission to do so just ask to be given permissions on the mailing list.
 
-## Steps for the Release Manager
+== Steps for the Release Manager
 
 The following steps need only to be performed once.
 
@@ -50,15 +52,13 @@ svn commit -m "Added Key for <name>" KEYS
 
 - Make sure you have your PGP key's password.
 
-## Release Steps
+== Release Steps
 
 - Train the models
 - Make sure to save the evaluation log for every model (adhere to the naming conventions, see below).
 - ZIP the evaluation logs.
 
-### Successful Model Release Preparation
-
-#### Perform the Model Release
+=== Perform the Model Release
 
 - Create sha512 checksums
 +
@@ -95,24 +95,26 @@ Check the dist/dev folder and if all looks well, open a VOTE but do *not* move t
 
 Make sure to adhere to the model naming conventions.
 
-#### Model Naming Conventions
+==== Model Naming Conventions
 
 - The filenames of each model signify the model language, type, https://universaldependencies.org/[Universal Dependency training data,window=_blank] used, and version numbers.
-- The filename format is `opennlp-[iso-language-code]-ud-[corpus]-[model-type]-[model-version]-[opennlp-version-used-for-training].bin`.
-- The evaluation logs must be zipped and adhere to the following format: `opennlp-training-eval-logs-[model-version]-[opennlp-version-used-for-training].zip`. It contains the evaluation logs for trained models.
-- For example, the model file `opennlp-de-ud-gsd-pos-1.0-1.9.3` is German language, trained on the UD GSD corpus, and is a parts-of-speech model. It is version 1.0 of the model, and it was trained using OpenNLP 1.9.3.
-
+- The filename format is +
+  `opennlp-[iso-language-code]-ud-[corpus]-[model-type]-[model-version]-[opennlp-version-used-for-training].bin`.
+- The evaluation logs must be zipped and adhere to the following format: +
+  `opennlp-training-eval-logs-[model-version]-[opennlp-version-used-for-training].zip`. It contains the evaluation logs for trained models.
+- For example, the model file `opennlp-de-ud-gsd-pos-1.1-2.4.0` is German language, trained on the UD GSD corpus, and is a parts-of-speech model.
+  It is version 1.1 of the model, and it was trained using OpenNLP 2.4.0.
 
 NOTE: If other training data is used, the abbreviation `ud` needs to be adjusted!
 
-#### Check the Model Release Artifacts
+=== Check the Model Release Artifacts
 
 Perform basic checks against the release binary:
 
 - Check signature of generated artifacts.
 - Check presence and appropriateness of `LICENSE`, `NOTICE`, and `README` files.
 
-#### Create a VOTE Thread
+=== Create a VOTE Thread
 
 - Notify the developer mailing list of a new model vote. Be sure to replace all values in `[]` with the appropriate values.
 +
@@ -144,12 +146,12 @@ The vote passes if at least three binding +1 votes are cast.
 Thanks!
 ----
 
-## After a Successful Vote
+== After a Successful Vote
 
 The vote is successful if at least 3 _+1_ votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
 Acknowledge the voting results on the mailing list in the VOTE thread.
 
-### Commit Distribution to SVN
+=== Commit Distribution to SVN
 
 Commit the distribution via SVN to https://dist.apache.org/repos/dist/release:
 
@@ -160,24 +162,24 @@ svn co https://dist.apache.org/repos/dist/release/opennlp/ dist
 svn commit --username <username> -m "Adding OpenNLP Models <version>"
 ----
 
-### Delete Old Model Release(s)
+=== Delete Old Model Release(s)
 
 To reduce the load on the ASF mirrors, projects are required to delete old releases (see https://www.apache.org/legal/release-policy.html#when-to-archive).
 
 Remove the old model release from SVN under https://dist.apache.org/repos/dist/release/opennlp/models/. They are still contained in the archives.
 
-### Update the Website
+=== Update the Website
 
 Update the  https://opennlp.apache.org/models.html[website,window=_blank] once the new version appears in the Apache download mirrors (keep checking https://www.apache.org/dyn/closer.cgi/opennlp/models/[window=_blank] until you see something).
 
-#### Add News Item
+==== Add News Item
 
 - Add a news item in `news/model-{model-type}-{xyz}.ad` by copying the adjusted content:
 +
 ----
 = <MODEL_TYPE> Models for Apache OpenNLP released
 Apache OpenNLP
-2022-01-03
+2024-11-01
 :jbake-type: post
 :jbake-tags: community
 :jbake-status: published
@@ -203,13 +205,13 @@ https://dist.apache.org/repos/dist/dev/opennlp/<MODEL_TYPE>-<MODEL_VERSION>/open
 --The Apache OpenNLP Team
 ----
 
-#### Commit Website Changes.
+==== Commit Website Changes.
 
 - Commit the website changes.
 - Rebuild opennlp-site and wait for site redeploy
 - Test and review the website. Test that all download links are working.
 
-### Post-Release Steps
+=== Post-Release Steps
 
 - Log the new version at https://reporter.apache.org/addrelease.html?opennlp[window=_blank].
 - Announce the new models on the OpenNLP Twitter.
@@ -244,7 +246,7 @@ https://dist.apache.org/repos/dist/dev/opennlp/<MODEL_TYPE>-<MODEL_VERSION>/open
 --The Apache OpenNLP Team
 ----
 
-## After an Unsuccessful Vote
+== After an Unsuccessful Vote
 
 The model release vote may fail due to an issue discovered in the release candidate. If the vote fails the model release candidate should be canceled by:
 
