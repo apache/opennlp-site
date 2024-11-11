@@ -1,0 +1,50 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 2.5.0 released
+Apache OpenNLP
+2025-11-11
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.5.0.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+Apache OpenNLP 2.5.0 binary and source distributions are available for download from our download page: link:/download.html[download page]
+
+The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: link:/maven-dependency.html[Maven Dependency]
+
+== What's new in Apache OpenNLP 2.5.0
+
+In total, this release tackles 62 issues and brings several dependency updates, bug fixes, substantial additions and some corrections for the API!
+OpenNLP version 2.5.0 supports thread-safe sentence detection, tokenization and POS-tagging (see: OPENNLP-936). With this release, there is the possibility to disable the POS tag mapper (see: OPENNLP-1600) to achieve a custom mapping.
+
+Furthermore, it relies on opennlp-models in version 1.1 which got substantially extended by models for 18 new languages (see: OPENNLP-1615) as listed on the link:/models.html[Model page].
+The OpenNLP Brat Annotator component has been moved to the OpenNLP sandbox repository due to limited quality and usability concerns (see: OPENNLP-1634). Thereby, several compile and runtime dependencies could be dropped (Jackson, Jersey, etc.) and are thus no longer shipped with the "bin" artifacts.
+
+Thank you to everyone who contributed to this release, including all of our users and the people who submitted bug reports, contributed code or documentation enhancements.
+
+For a full list of improvements, please see the full list found in link:https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&version=12354554[Jira].
+
+--The Apache OpenNLP Team
