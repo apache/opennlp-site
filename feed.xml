@@ -24,13 +24,13 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Mon, 11 Nov 2024 12:36:57 +0000</pubDate>
-    <lastBuildDate>Mon, 11 Nov 2024 12:36:57 +0000</lastBuildDate>
+    <pubDate>Mon, 11 Nov 2024 12:48:32 +0000</pubDate>
+    <lastBuildDate>Mon, 11 Nov 2024 12:48:32 +0000</lastBuildDate>
 
     <item>
       <title>Apache OpenNLP 2.5.0 released</title>
       <link>https://opennlp.apache.org/news/release-250.html</link>
-      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">news/release-250.html</guid>
       	<description>
 	&lt;div id=&quot;preamble&quot;&gt;
