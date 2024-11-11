@@ -24,9 +24,58 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Mon, 11 Nov 2024 11:00:29 +0000</pubDate>
-    <lastBuildDate>Mon, 11 Nov 2024 11:00:29 +0000</lastBuildDate>
+    <pubDate>Mon, 11 Nov 2024 12:36:57 +0000</pubDate>
+    <lastBuildDate>Mon, 11 Nov 2024 12:36:57 +0000</lastBuildDate>
 
+    <item>
+      <title>Apache OpenNLP 2.5.0 released</title>
+      <link>https://opennlp.apache.org/news/release-250.html</link>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-250.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.5.0.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Apache OpenNLP 2.5.0 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_2_5_0&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.5.0&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In total, this release tackles 62 issues and brings several dependency updates, bug fixes, substantial additions and some corrections for the API!
+OpenNLP version 2.5.0 supports thread-safe sentence detection, tokenization and POS-tagging (see: OPENNLP-936). With this release, there is the possibility to disable the POS tag mapper (see: OPENNLP-1600) to achieve a custom mapping.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Furthermore, it relies on opennlp-models in version 1.1 which got substantially extended by models for 18 new languages (see: OPENNLP-1615) as listed on the &lt;a href=&quot;/models.html&quot;&gt;Model page&lt;/a&gt;.
+The OpenNLP Brat Annotator component has been moved to the OpenNLP sandbox repository due to limited quality and usability concerns (see: OPENNLP-1634). Thereby, several compile and runtime dependencies could be dropped (Jackson, Jersey, etc.) and are thus no longer shipped with the &quot;bin&quot; artifacts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thank you to everyone who contributed to this release, including all of our users and the people who submitted bug reports, contributed code or documentation enhancements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For a full list of improvements, please see the full list found in &lt;a href=&quot;https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&amp;amp;version=12354554&quot;&gt;Jira&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>New OpenNLP Pre-trained Models released</title>
       <link>https://opennlp.apache.org/news/news-2024-10-28.html</link>
