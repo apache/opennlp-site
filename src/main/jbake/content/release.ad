@@ -311,7 +311,7 @@ Add a new artifactItem in the pom.xml for the new OpenNLP release. (This automat
   <overWrite>false</overWrite>
   <type>zip</type>
   <classifier>bin</classifier>
-  <outputDirectory>${project.build.directory}/distr/1.8.1</outputDirectory>
+  <outputDirectory>${project.build.directory}/distr/x.y.z</outputDirectory>
 </artifactItem>
 ----
 
@@ -350,8 +350,6 @@ Move the last version's links to the documentation to the Legacy Documentation (
 === Post-Release Steps
 
 - Log the new version at https://reporter.apache.org/addrelease.html?opennlp.
-- Announce the new version on the OpenNLP Twitter.
-- Announce the new version on the Apache OpenNLP blog at https://blogs.apache.org/opennlp/.
 - Close the present release ticket in https://issues.apache.org/jira/browse/OPENNLP[JIRA].
 - Send announcement email to announce@apache.org, dev@opennlp.apache.org, users@opennlp.apache.org. This needs to be done from your @apache.org email address or the email will bounce from the announce list. Gmail forwarding can help here and is a snap to set up (https://gmailblog.blogspot.com/2009/07/send-mail-from-another-address-without.html). It's even easier than the instructions there as it will recognize your email address and default to Apache settings. It is important to include a description of what OpenNLP is as well as a link to the updated DOAP within the release announcement, this is so others know what OpenNLP is.
 
