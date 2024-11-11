@@ -35,3 +35,13 @@ body {
 #toc > ul > li > ul {
     padding-inline-start: 1em;
 }
+
+div.qlist.qanda > ol {
+    margin-left: 0;
+    padding-inline-start: 0;
+}
+
+div.qlist.qanda > ol > li {
+    list-style: none;
+    padding-top: .75em;
+}

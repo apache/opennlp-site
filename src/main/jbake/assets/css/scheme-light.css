@@ -14,4 +14,8 @@
         border-bottom: 1px solid #e5e5e5;
         background-color: #f5f5f5;
     }
+    div.qlist.qanda > ol > li > p:nth-child(1) > em {
+        color: #832779;
+        font-size: 1.2em;
+    }
 }
