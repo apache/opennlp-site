@@ -24,7 +24,7 @@
 
       <div class="row-fluid marketing">
         <div class="span9">
-          <h2>News</h2>
+          <h1>News</h1>
           <ul>
           	<#list posts as post>
           		<#if (post.status == "published") && (post.category??) && (post.category == "news")>
