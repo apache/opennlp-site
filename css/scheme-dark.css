@@ -79,6 +79,11 @@
         color: #f59523;
         background: #222;
     }
+    div.qlist.qanda > ol > li > p:nth-child(1) > em {
+        color: #f59523;
+        background: #222;
+        font-size: 1.2em;
+    }
     .content pre,
     .content pre > code,
     .com, .tag, .pln, .str, .pun, .kwd,

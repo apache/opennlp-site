@@ -140,46 +140,54 @@
 
     <div class="paragraph">
 <p>This list contains common questions asked in <a href="mailing-lists.html">mailing lists</a> and
-<a href="https://stackoverflow.com/questions/tagged/opennlp" target="_blank" rel="noopener">forums</a>.</p>
+<a href="https://stackoverflow.com/questions/tagged/opennlp" class="external" target="_blank" rel="noopener">forums</a>.</p>
 </div>
-<dl>
-
-  <dt>Where can I download the models used in OpenNLP?</dt>
-  <dd>They are hosted at <a href="https://opennlp.sourceforge.net/models-1.5/" target="_blank">SourceForge</a>.</dd>
-
-  <dt></dt>
-  <dd></dd>
-
-  <dt>How to train a Named Entity Recognition (NER) model?</dt>
-  <dd>To train the name finder model you need training data that contains the entities you would
-  like to detect.
+<div class="qlist qanda">
+<ol>
+<li>
+<p><em>Where can I download the pre-trained models used in OpenNLP?</em></p>
+<p>Models for 23 languages are available at the project&#8217;s <a href="/models.html">Models download</a> page or
+bundled in JAR files distributed via <strong>Maven Central</strong>
+(<a href="https://central.sonatype.com/search?q=opennlp+models+sentdetect" class="external" target="_blank" rel="noopener">Sentence-Detector</a>,
+<a href="https://central.sonatype.com/search?q=opennlp+models+tokenizer" class="external" target="_blank" rel="noopener">Tokenization</a>,
+<a href="https://central.sonatype.com/search?q=opennlp+models+pos" class="external" target="_blank" rel="noopener">POS Tagging</a>).</p>
+</li>
+<li>
+<p><em>How to train a Named Entity Recognition (NER) model?</em></p>
+<p>To train the name finder model you need training data that contains the entities you would like to detect.
 Have a look at our manual, in special the sections under the
-<a href="/docs/2.2.0/manual/opennlp.html#tools.namefind.training">Name Finder Training API</a>.
-At the beginning of that section you can see how the data has to be marked up. Please note you that you need many sentences to successfully train the name finder.</dd>
-
-  <dt>How can I speed up my MaxEnt training time</dt>
-  <dd>Try tweaking the value of <a href="/docs/2.2.0/apidocs/opennlp-tools/opennlp/tools/util/TrainingParameters.html#THREADS_PARAM">TrainingParameters.THREADS_PARAM</a>.</dd>
-
-  <dt>Will my models trained with a previous version of OpenNLP still work with a newer version?</dt>
-  <dd>You should expect it to work. The corpora used is normally the same. However, the behavior may
+<a href="https://opennlp.apache.org/docs/2.5.0/manual/opennlp.html#tools.namefind.training" class="external" target="_blank" rel="noopener">Name Finder Training API</a>.
+At the beginning of that section you can see how the data has to be marked up. Please note you that you need many sentences to successfully train the name finder.</p>
+</li>
+<li>
+<p><em>How can I speed up the training time of (MaxEnt) models?</em></p>
+<p>By default, training runs will be executed <em>single</em>-threaded.
+Try tweaking the value of <a href="https://opennlp.apache.org/docs/2.5.0/apidocs/opennlp-tools/opennlp/tools/util/TrainingParameters.html#THREADS_PARAM" class="external" target="_blank" rel="noopener">TrainingParameters.THREADS_PARAM</a>.
+Make sure to set this parameter to match your target environment. A good starting point is to set this to the number of CPU cores available at runtime.
+Please note, however, that only the compute-intensive parts of the training will benefit by tweaking this parameter.</p>
+</li>
+<li>
+<p><em>Will my models trained with a previous version of OpenNLP still work with a newer version?</em></p>
+<p>You should expect it to work. The corpora used is normally the same. However, the behavior may
 change when we fix bugs or add new features. The test results in the
-<a href="https://cwiki.apache.org/confluence/display/OPENNLP/Test+Plans">project Wiki</a> may contain useful
-information about model compatibility.</dd>
-
-  <dt><strong>Is there a commercial license for OpenNLP?</strong></dt>
-  <dd>OpenNLP is licensed under the business-friendly Apache software license,
-version 2.0. You can read the license
-<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">here</a>
-or <a href="https://en.wikipedia.org/wiki/Apache_License" target="_blank">its Wikipedia page</a>
-for more information.</dd>
-
-  <dt><strong>How can I start contributing to this project?</strong></dt>
-  <dd>Have a look at our <a href="/get-involved.html">Getting Involved</a> page.
+<a href="https://cwiki.apache.org/confluence/display/OPENNLP/Test+Plans" class="external" target="_blank" rel="noopener">project Wiki</a> may contain useful
+information about model compatibility.</p>
+</li>
+<li>
+<p><em>Is there a commercial license for OpenNLP?</em></p>
+<p>OpenNLP is licensed under the business-friendly <a href="https://www.apache.org/licenses/LICENSE-2.0" class="external" target="_blank" rel="noopener">Apache software license</a>.
+You can read its <a href="https://en.wikipedia.org/wiki/Apache_License" class="external" target="_blank" rel="noopener">Wikipedia</a>
+page for more information.</p>
+</li>
+<li>
+<p><em>How can I start contributing to this project?</em></p>
+<p>Have a look at our <a href="/get-involved.html">Getting Involved</a> page.
 We have a list of issues needing help there, as well as instructions to get started
 contributing to OpenNLP. You may also consider making a
-<a href="https://www.apache.org/foundation/contributing.html" target="_blank">donation to the Apache Software Foundation</a>.</dd>
-
-</dl>
+<a href="https://www.apache.org/foundation/contributing.html" class="external" target="_blank" rel="noopener">donation to the Apache Software Foundation</a>.</p>
+</li>
+</ol>
+</div>
 <div class="paragraph">
 <p>In case you have a suggestion of another question that could be added, please do not hesitate in
 <a href="/mailing-lists.html">getting in contact</a>.</p>
