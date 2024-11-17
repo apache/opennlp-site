@@ -22,9 +22,10 @@
 :jbake-status: published
 :idprefix:
 
+The Apache OpenNLP code should follow our code conventions.
 
-The Apache OpenNLP code should follow our code conventions. All code which
-is contributed to the project should adhere to these guidelines. 
+== Guidelines
+All code which is contributed to the project should adhere to these guidelines.
 
 * Use _2_ spaces for indentation. _No_ tabs!
 * Place open braces on the same line as the declaration, for example:
@@ -48,18 +49,21 @@ public class Foo extends Bar {
 
 * Wrap lines longer than 80 to 100 characters. For wrapped lines use an indent of 4 characters.
 * Within a class or interface, definitions should be ordered as follows:
-    * Inner classes
-    * Class (static) variables
-    * Instance variables
-    * Constructors
-    * Methods
+    ** Inner classes
+    ** Class (static) variables
+    ** Instance variables
+    ** Constructors
+    ** Methods
 
-* Do _not_ use package imports, for example:
+* Do _not_ use (full) package imports, for example:
 +
 `import org.apache.opennlp.*`
-* For other cases, we try to follow
-  https://www.oracle.com/java/technologies/cc-java-programming-language.html[Java code conventions,window=_blank] as much as possible.
-  
-## Formatter and Style files
-* A code formatter file for Eclipse can be found link:code-formatter/OpenNLP-Eclipse-Formatter.xml[here,window=read-later] and the import order file link:code-formatter/eclipse-opennlp.importorder[here,window=read-later].
-* A code formatter file for IntelliJ can be found link:code-formatter/OpenNLP-IntelliJ-Formatter.xml[here,window=read-later].
+
+For other cases, we try to follow link:https://www.oracle.com/java/technologies/cc-java-programming-language.html[Java code conventions,window=_blank] as much as possible.
+
+== Formatter and Style files
+A code formatter file for:
+
+* IntelliJ is available pass:[<a href="https://opennlp.apache.org/code-formatter/OpenNLP-IntelliJ-Formatter.xml" download>here</a>].
+* Eclipse is available pass:[<a href="https://opennlp.apache.org/code-formatter/OpenNLP-Eclipse-Formatter.xml" download>here</a>]
+  and the import order file pass:[<a href="https://opennlp.apache.org/code-formatter/eclipse-opennlp.importorder" download>here</a>].
