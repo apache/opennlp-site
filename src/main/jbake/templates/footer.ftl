@@ -29,13 +29,14 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
     <script src="/js/jquery-3.7.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/prettify.js"></script>
-    
-    <script type="text/javascript">
+    <script src="/js/prettify.js" defer></script>
+    <script src="/js/shareon-2.5.0.iife.js" defer init></script>
+    <-- Include most recent Apache Con events
+    <script src="https://www.apachecon.com/event-images/snippet.js" defer></script>
 
+    <script type="text/javascript">
       var link = $('a[href="' + this.location.pathname + '"]');
       if (link != undefined)
     	  link.parents('li,ul').addClass('active');

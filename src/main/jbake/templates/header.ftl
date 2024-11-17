@@ -55,13 +55,14 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- The styles -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/asciidoctor.css" rel="stylesheet">
-    <link href="/css/prettify.css" rel="stylesheet">
-    <link href="/css/custom-style.css" rel="stylesheet">
-    <link href="/css/scheme-light.css" rel="stylesheet">
-    <link href="/css/scheme-dark.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/css/asciidoctor.css" rel="stylesheet"/>
+    <link href="/css/prettify.css" rel="stylesheet"/>
+    <link href="/css/custom-style.css" rel="stylesheet"/>
+    <link href="/css/scheme-light.css" rel="stylesheet"/>
+    <link href="/css/scheme-dark.css" rel="stylesheet"/>
+    <link href="/css/shareon-2.5.0.min.css" rel="stylesheet"/>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
