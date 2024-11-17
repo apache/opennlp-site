@@ -16,31 +16,14 @@
    specific language governing permissions and limitations
    under the License. 
 -->
-<#include "header.ftl">
 
-<#include "menu.ftl">
-
-<div class="container">
-
-    <div class="row-fluid marketing">
-    <div class="span9">
-      <h1>News</h1>
-      <p>Subscribe to Apache OpenNLP updates using the <a href="/${config.feed_file}">feed</a>.</p>
-      <ul>
-        <#list posts as post>
-            <#if (post.status == "published") && (post.category??) && (post.category == "news")>
-                <li><p>${post.date?string("yyyy-MM-dd")}: <a href="/${post.uri}">${post.title}</a></p></li>
-            </#if>
-        </#list>
-      </ul>
-      <p></p>
-    </div>
-    </div>
-
-    <hr>
-
-    <div id="share"><#include "share_link.ftl"></div>
+<div class="shareon" style="margin-top: 30px;">
+  <a class="reddit"></a>
+  <a class="linkedin"></a>
+  <a class="mastodon"></a>
+  <a class="twitter"></a>
+  <a class="telegram"></a>
+  <a class="copy-url"></a>
+  <a class="email"></a>
+  <a class="print"></a>
 </div>
-
-
-<#include "footer.ftl">

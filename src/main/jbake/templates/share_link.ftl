@@ -17,13 +17,7 @@
    under the License. 
 -->
 
-<div class="shareon" style="margin-top: 30px";>
-  <a class="reddit"></a>
-  <a class="linkedin"></a>
-  <a class="mastodon"></a>
-  <a class="twitter"></a>
-  <a class="telegram"></a>
+<div class="shareon">
   <a class="copy-url"></a>
-  <a class="email"></a>
   <a class="print"></a>
 </div>

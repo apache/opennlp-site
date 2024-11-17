@@ -25,6 +25,7 @@
 
     ${content.body}
 
+    <div id="share"><#include "share_link.ftl"></div>
 </div>
 
 <#include "footer.ftl">

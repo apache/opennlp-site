@@ -26,7 +26,7 @@
     ${content.body}
 
     <p><em>${content.date?string("dd MMMM yyyy")}</em></p>
-    <div id="share"><#include "share_links.ftl"></div>
+    <div id="share"><#include "share_news.ftl"></div>
 </div>
 
 <#include "footer.ftl">
