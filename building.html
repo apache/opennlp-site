@@ -34,13 +34,14 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- The styles -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/css/asciidoctor.css" rel="stylesheet">
-    <link href="/css/prettify.css" rel="stylesheet">
-    <link href="/css/custom-style.css" rel="stylesheet">
-    <link href="/css/scheme-light.css" rel="stylesheet">
-    <link href="/css/scheme-dark.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/css/asciidoctor.css" rel="stylesheet"/>
+    <link href="/css/prettify.css" rel="stylesheet"/>
+    <link href="/css/custom-style.css" rel="stylesheet"/>
+    <link href="/css/scheme-light.css" rel="stylesheet"/>
+    <link href="/css/scheme-dark.css" rel="stylesheet"/>
+    <link href="/css/shareon-2.5.0.min.css" rel="stylesheet"/>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -259,13 +260,14 @@ list</a>. The build should always work for everyone.
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://www.apachecon.com/event-images/snippet.js"></script>
     <script src="/js/jquery-3.7.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/prettify.js"></script>
-    
-    <script type="text/javascript">
+    <script src="/js/prettify.js" defer></script>
+    <script src="/js/shareon-2.5.0.iife.js" defer init></script>
+    <-- Include most recent Apache Con events
+    <script src="https://www.apachecon.com/event-images/snippet.js" defer></script>
 
+    <script type="text/javascript">
       var link = $('a[href="' + this.location.pathname + '"]');
       if (link != undefined)
     	  link.parents('li,ul').addClass('active');
