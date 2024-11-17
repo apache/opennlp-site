@@ -25,7 +25,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="#">
                 <img alt="Brand" src="/img/opennlp-navbar-logo.png" class="img-responsive" width="100px" style="position: relative; top: -3px;">
             </a>
         </div>
@@ -36,7 +36,7 @@
                     <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
                 </li>
 
-                <li class="dropdown">
+                <li class="nav-item dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-download-alt"></span> Download <b class="caret"></b></a>
                     <ul class="dropdown-menu">
 		                <li><a href="/download.html">OpenNLP Releases</a></li>
@@ -46,7 +46,16 @@
 		            </ul>
                 </li>
 
-                <li class="dropdown">
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span> Documentation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/docs/">Manual and Javadocs</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="https://cwiki.apache.org/OPENNLP" target="_blank">Wiki</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flag"></span> General <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         
@@ -60,16 +69,7 @@
                     </ul>
                 </li>
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span> Documentation <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/docs/">Manual and Javadocs</a></li>
-                        <li><a href="/faq.html">FAQ</a></li>
-                        <li><a href="https://cwiki.apache.org/OPENNLP" target="_blank">Wiki</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
+                <li class="nav-item dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-console"></span> Development <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="/get-involved.html">Get Involved</a></li>
@@ -83,15 +83,14 @@
                     </ul>
                 </li>
 
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
+                <li class="nav-item dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-leaf"></span> ASF <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="https://www.apache.org/">The Apache Software Foundation</a></li>
-                        <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
-                        <li><a href="https://www.apache.org/security/">Security</a></li>
-                        <li><a href="https://www.apache.org/foundation/sponsorship.html">Become a Sponsor</a></li>
+                        <li><a href="https://www.apache.org/" target="_blank">The Apache Software Foundation</a></li>
+                        <li><a href="https://www.apache.org/foundation/policies/conduct" target="_blank">Code of Conduct</a></li>
+                        <li><a href="https://www.apache.org/foundation/thanks.html" target="_blank">Thanks</a></li>
+                        <li><a href="https://www.apache.org/security/" target="_blank">Security</a></li>
+                        <li><a href="https://www.apache.org/foundation/sponsorship.html" target="_blank">Become a Sponsor</a></li>
                     </ul>
                 </li>
             </ul>

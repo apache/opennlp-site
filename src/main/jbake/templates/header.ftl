@@ -70,7 +70,6 @@
     <![endif]-->
 </head>
 <body onload="prettyPrint()">
-<span class="visible-lg">
-<a href="https://github.com/apache/opennlp"><img style="z-index: 9999; position: absolute; top: 0; right: 0; border: 0;" src="/img/fork-me-on-github.png" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-</span>
-   
+
+<!-- Include pure CSS/HTML5 ForkMeOnGH ribbon -->
+<span id="forkongithub"><a href="https://github.com/apache/opennlp">Fork me on GitHub</a></span>
