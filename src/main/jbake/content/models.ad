@@ -29,6 +29,8 @@ The Apache OpenNLP project provides several pre-trained model files:
 * 1 generic model to conduct _language detection_ on a specified text input
 * 23 language specific models to accomplish: _sentence detection_, _part of speech tagging_, and _tokenization_.
 
+Pre-trained models can be used for testing or getting started. Train your own models for specific use cases.
+
 == Models
 IMPORTANT: All models are zip compressed (like a jar file), they *must not* be uncompressed.
 
@@ -588,7 +590,6 @@ be found https://www.apache.org/dev/release-signing.html[here,window=_blank].
 == SourceForge Resources
 
 The models on Sourceforge for 1.5.0 are found https://opennlp.sourceforge.net/models-1.5/[here].
-and are fully compatible with Apache OpenNLP {opennlp_version}.
+They are fully compatible with Apache OpenNLP {opennlp_version}.
 
-The models can be used for testing or getting started. Please train your own models for all other use cases.
 
