@@ -65,161 +65,161 @@ refer to every language listed below.
 | bg
 | Bulgarian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-bg-ud-btb-sentence-1.1-2.4.0.bin[opennlp-bg-ud-btb-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-bg-ud-btb-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-bg-ud-btb-sentence-1.1-2.4.0.bin.asc[asc]
 
 | cs
 | Czech
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-cs-ud-pdt-sentence-1.1-2.4.0.bin[opennlp-cs-ud-pdt-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-cs-ud-pdt-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-cs-ud-pdt-sentence-1.1-2.4.0.bin.asc[asc]
 
 | da
 | Danish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-da-ud-ddt-sentence-1.1-2.4.0.bin[opennlp-da-ud-ddt-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-da-ud-ddt-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-da-ud-ddt-sentence-1.1-2.4.0.bin.asc[asc]
 
 | de
 | German
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-de-ud-gsd-sentence-1.1-2.4.0.bin[opennlp-de-ud-gsd-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-de-ud-gsd-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-de-ud-gsd-sentence-1.1-2.4.0.bin.asc[asc]
 
 | en
 | English
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-en-ud-ewt-sentence-1.1-2.4.0.bin[opennlp-en-ud-ewt-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-en-ud-ewt-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-en-ud-ewt-sentence-1.1-2.4.0.bin.asc[asc]
 
 | es
 | Spanish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-es-ud-gsd-sentence-1.1-2.4.0.bin[opennlp-es-ud-gsd-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-es-ud-gsd-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-es-ud-gsd-sentence-1.1-2.4.0.bin.asc[asc]
 
 | et
 | Estonian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-et-ud-edt-sentence-1.1-2.4.0.bin[opennlp-et-ud-edt-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-et-ud-edt-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-et-ud-edt-sentence-1.1-2.4.0.bin.asc[asc]
 
 | fi
 | Finnish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-fi-ud-tdt-sentence-1.1-2.4.0.bin[opennlp-fi-ud-tdt-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-fi-ud-tdt-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-fi-ud-tdt-sentence-1.1-2.4.0.bin.asc[asc]
 
 | fr
 | French
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-fr-ud-gsd-sentence-1.1-2.4.0.bin[opennlp-fr-ud-gsd-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-fr-ud-gsd-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-fr-ud-gsd-sentence-1.1-2.4.0.bin.asc[asc]
 
 | hr
 | Croatian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-hr-ud-set-sentence-1.1-2.4.0.bin[opennlp-hr-ud-set-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-hr-ud-set-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-hr-ud-set-sentence-1.1-2.4.0.bin.asc[asc]
 
 | it
 | Italian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-it-ud-vit-sentence-1.1-2.4.0.bin[opennlp-it-ud-vit-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-it-ud-vit-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-it-ud-vit-sentence-1.1-2.4.0.bin.asc[asc]
 
 | lv
 | Latvian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-lv-ud-lvtb-sentence-1.1-2.4.0.bin[opennlp-lv-ud-lvtb-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-lv-ud-lvtb-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-lv-ud-lvtb-sentence-1.1-2.4.0.bin.asc[asc]
 
 | nl
 | Dutch
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-nl-ud-alpino-sentence-1.1-2.4.0.bin[opennlp-nl-ud-alpino-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-nl-ud-alpino-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-nl-ud-alpino-sentence-1.1-2.4.0.bin.asc[asc]
 
 | no
 | Norwegian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-no-ud-bokmaal-sentence-1.1-2.4.0.bin[opennlp-no-ud-bokmaal-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-no-ud-bokmaal-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-no-ud-bokmaal-sentence-1.1-2.4.0.bin.asc[asc]
 
 | pl
 | Polish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-pl-ud-pdb-sentence-1.1-2.4.0.bin[opennlp-pl-ud-pdb-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-pl-ud-pdb-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-pl-ud-pdb-sentence-1.1-2.4.0.bin.asc[asc]
 
 | pt
 | Portuguese
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-pt-ud-gsd-sentence-1.1-2.4.0.bin[opennlp-pt-ud-gsd-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-pt-ud-gsd-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-pt-ud-gsd-sentence-1.1-2.4.0.bin.asc[asc]
 
 | ro
 | Romanian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-ro-ud-rrt-sentence-1.1-2.4.0.bin[opennlp-ro-ud-rrt-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-ro-ud-rrt-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-ro-ud-rrt-sentence-1.1-2.4.0.bin.asc[asc]
 
 | ru
 | Russian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-ru-ud-gsd-sentence-1.1-2.4.0.bin[opennlp-ru-ud-gsd-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-ru-ud-gsd-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-ru-ud-gsd-sentence-1.1-2.4.0.bin.asc[asc]
 
 | sk
 | Slovak
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sk-ud-snk-sentence-1.1-2.4.0.bin[opennlp-sk-ud-snk-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-sk-ud-snk-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-sk-ud-snk-sentence-1.1-2.4.0.bin.asc[asc]
 
 | sl
 | Slovenian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sl-ud-ssj-sentence-1.1-2.4.0.bin[opennlp-sl-ud-ssj-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-sl-ud-ssj-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-sl-ud-ssj-sentence-1.1-2.4.0.bin.asc[asc]
 
 | sr
 | Serbian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sr-ud-set-sentence-1.1-2.4.0.bin[opennlp-sr-ud-set-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-sr-ud-set-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-sr-ud-set-sentence-1.1-2.4.0.bin.asc[asc]
 
 | sv
 | Swedish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sv-ud-talbanken-sentence-1.1-2.4.0.bin[opennlp-sv-ud-talbanken-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-sv-ud-talbanken-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-sv-ud-talbanken-sentence-1.1-2.4.0.bin.asc[asc]
 
 | uk
 | Ukrainian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-uk-ud-iu-sentence-1.1-2.4.0.bin[opennlp-uk-ud-iu-sentence-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-uk-ud-iu-sentence-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-uk-ud-iu-sentence-1.1-2.4.0.bin.asc[asc]
 |======
@@ -236,161 +236,161 @@ refer to every language listed below.
 | bg
 | Bulgarian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-bg-ud-btb-pos-1.1-2.4.0.bin[opennlp-bg-ud-btb-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-bg-ud-btb-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-bg-ud-btb-pos-1.1-2.4.0.bin.asc[asc]
 
 | cs
 | Czech
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-cs-ud-pdt-pos-1.1-2.4.0.bin[opennlp-cs-ud-pdt-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-cs-ud-pdt-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-cs-ud-pdt-pos-1.1-2.4.0.bin.asc[asc]
 
 | da
 | Danish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-da-ud-ddt-pos-1.1-2.4.0.bin[opennlp-da-ud-ddt-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-da-ud-ddt-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-da-ud-ddt-pos-1.1-2.4.0.bin.asc[asc]
 
 | de
 | German
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-de-ud-gsd-pos-1.1-2.4.0.bin[opennlp-de-ud-gsd-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-de-ud-gsd-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-de-ud-gsd-pos-1.1-2.4.0.bin.asc[asc]
 
 | en
 | English
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-en-ud-ewt-pos-1.1-2.4.0.bin[opennlp-en-ud-ewt-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-en-ud-ewt-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-en-ud-ewt-pos-1.1-2.4.0.bin.asc[asc]
 
 | es
 | Spanish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-es-ud-gsd-pos-1.1-2.4.0.bin[opennlp-es-ud-gsd-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-es-ud-gsd-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-es-ud-gsd-pos-1.1-2.4.0.bin.asc[asc]
 
 | et
 | Estonian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-et-ud-edt-pos-1.1-2.4.0.bin[opennlp-et-ud-edt-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-et-ud-edt-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-et-ud-edt-pos-1.1-2.4.0.bin.asc[asc]
 
 | fi
 | Finnish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-fi-ud-tdt-pos-1.1-2.4.0.bin[opennlp-fi-ud-tdt-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-fi-ud-tdt-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-fi-ud-tdt-pos-1.1-2.4.0.bin.asc[asc]
 
 | fr
 | French
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-fr-ud-gsd-pos-1.1-2.4.0.bin[opennlp-fr-ud-gsd-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-fr-ud-gsd-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-fr-ud-gsd-pos-1.1-2.4.0.bin.asc[asc]
 
 | hr
 | Croatian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-hr-ud-set-pos-1.1-2.4.0.bin[opennlp-hr-ud-set-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-hr-ud-set-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-hr-ud-set-pos-1.1-2.4.0.bin.asc[asc]
 
 | it
 | Italian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-it-ud-vit-pos-1.1-2.4.0.bin[opennlp-it-ud-vit-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-it-ud-vit-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-it-ud-vit-pos-1.1-2.4.0.bin.asc[asc]
 
 | lv
 | Latvian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-lv-ud-lvtb-pos-1.1-2.4.0.bin[opennlp-lv-ud-lvtb-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-lv-ud-lvtb-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-lv-ud-lvtb-pos-1.1-2.4.0.bin.asc[asc]
 
 | nl
 | Dutch
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-nl-ud-alpino-pos-1.1-2.4.0.bin[opennlp-nl-ud-alpino-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-nl-ud-alpino-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-nl-ud-alpino-pos-1.1-2.4.0.bin.asc[asc]
 
 | no
 | Norwegian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-no-ud-bokmaal-pos-1.1-2.4.0.bin[opennlp-no-ud-bokmaal-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-no-ud-bokmaal-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-no-ud-bokmaal-pos-1.1-2.4.0.bin.asc[asc]
 
 | pl
 | Polish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-pl-ud-pdb-pos-1.1-2.4.0.bin[opennlp-pl-ud-pdb-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-pl-ud-pdb-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-pl-ud-pdb-pos-1.1-2.4.0.bin.asc[asc]
 
 | pt
 | Portuguese
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-pt-ud-gsd-pos-1.1-2.4.0.bin[opennlp-pt-ud-gsd-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-pt-ud-gsd-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-pt-ud-gsd-pos-1.1-2.4.0.bin.asc[asc]
 
 | ro
 | Romanian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-ro-ud-rrt-pos-1.1-2.4.0.bin[opennlp-ro-ud-rrt-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-ro-ud-rrt-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-ro-ud-rrt-pos-1.1-2.4.0.bin.asc[asc]
 
 | ru
 | Russian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-ru-ud-gsd-pos-1.1-2.4.0.bin[opennlp-ru-ud-gsd-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-ru-ud-gsd-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-ru-ud-gsd-pos-1.1-2.4.0.bin.asc[asc]
 
 | sk
 | Slovak
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sk-ud-snk-pos-1.1-2.4.0.bin[opennlp-sk-ud-snk-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-sk-ud-snk-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-sk-ud-snk-pos-1.1-2.4.0.bin.asc[asc]
 
 | sl
 | Slovenian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sl-ud-ssj-pos-1.1-2.4.0.bin[opennlp-sl-ud-ssj-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-sl-ud-ssj-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-sl-ud-ssj-pos-1.1-2.4.0.bin.asc[asc]
 
 | sr
 | Serbian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sr-ud-set-pos-1.1-2.4.0.bin[opennlp-sr-ud-set-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-sr-ud-set-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-sr-ud-set-pos-1.1-2.4.0.bin.asc[asc]
 
 | sv
 | Swedish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sv-ud-talbanken-pos-1.1-2.4.0.bin[opennlp-sv-ud-talbanken-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-sv-ud-talbanken-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-sv-ud-talbanken-pos-1.1-2.4.0.bin.asc[asc]
 
 | uk
 | Ukrainian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-uk-ud-iu-pos-1.1-2.4.0.bin[opennlp-uk-ud-iu-pos-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-uk-ud-iu-pos-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-uk-ud-iu-pos-1.1-2.4.0.bin.asc[asc]
 |======
@@ -407,161 +407,161 @@ refer to every language listed below.
 | bg
 | Bulgarian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-bg-ud-btb-tokens-1.1-2.4.0.bin[opennlp-bg-ud-btb-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-bg-ud-btb-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-bg-ud-btb-tokens-1.1-2.4.0.bin.asc[asc]
 
 | cs
 | Czech
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-cs-ud-pdt-tokens-1.1-2.4.0.bin[opennlp-cs-ud-pdt-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-cs-ud-pdt-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-cs-ud-pdt-tokens-1.1-2.4.0.bin.asc[asc]
 
 | da
 | Danish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-da-ud-ddt-tokens-1.1-2.4.0.bin[opennlp-da-ud-ddt-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-da-ud-ddt-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-da-ud-ddt-tokens-1.1-2.4.0.bin.asc[asc]
 
 | de
 | German
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-de-ud-gsd-tokens-1.1-2.4.0.bin[opennlp-de-ud-gsd-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-de-ud-gsd-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-de-ud-gsd-tokens-1.1-2.4.0.bin.asc[asc]
 
 | en
 | English
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-en-ud-ewt-tokens-1.1-2.4.0.bin[opennlp-en-ud-ewt-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-en-ud-ewt-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-en-ud-ewt-tokens-1.1-2.4.0.bin.asc[asc]
 
 | es
 | Spanish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-es-ud-gsd-tokens-1.1-2.4.0.bin[opennlp-es-ud-gsd-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-es-ud-gsd-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-es-ud-gsd-tokens-1.1-2.4.0.bin.asc[asc]
 
 | et
 | Estonian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-et-ud-edt-tokens-1.1-2.4.0.bin[opennlp-et-ud-edt-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-et-ud-edt-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-et-ud-edt-tokens-1.1-2.4.0.bin.asc[asc]
 
 | fi
 | Finnish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-fi-ud-tdt-tokens-1.1-2.4.0.bin[opennlp-fi-ud-tdt-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-fi-ud-tdt-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-fi-ud-tdt-tokens-1.1-2.4.0.bin.asc[asc]
 
 | fr
 | French
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-fr-ud-gsd-tokens-1.1-2.4.0.bin[opennlp-fr-ud-gsd-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-fr-ud-gsd-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-fr-ud-gsd-tokens-1.1-2.4.0.bin.asc[asc]
 
 | hr
 | Croatian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-hr-ud-set-tokens-1.1-2.4.0.bin[opennlp-hr-ud-set-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-hr-ud-set-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-hr-ud-set-tokens-1.1-2.4.0.bin.asc[asc]
 
 | it
 | Italian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-it-ud-vit-tokens-1.1-2.4.0.bin[opennlp-it-ud-vit-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-it-ud-vit-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-it-ud-vit-tokens-1.1-2.4.0.bin.asc[asc]
 
 | lv
 | Latvian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-lv-ud-lvtb-tokens-1.1-2.4.0.bin[opennlp-lv-ud-lvtb-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-lv-ud-lvtb-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-lv-ud-lvtb-tokens-1.1-2.4.0.bin.asc[asc]
 
 | nl
 | Dutch
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-nl-ud-alpino-tokens-1.1-2.4.0.bin[opennlp-nl-ud-alpino-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-nl-ud-alpino-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-nl-ud-alpino-tokens-1.1-2.4.0.bin.asc[asc]
 
 | no
 | Norwegian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-no-ud-bokmaal-tokens-1.1-2.4.0.bin[opennlp-no-ud-bokmaal-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-no-ud-bokmaal-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-no-ud-bokmaal-tokens-1.1-2.4.0.bin.asc[asc]
 
 | pl
 | Polish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-pl-ud-pdb-tokens-1.1-2.4.0.bin[opennlp-pl-ud-pdb-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-pl-ud-pdb-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-pl-ud-pdb-tokens-1.1-2.4.0.bin.asc[asc]
 
 | pt
 | Portuguese
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-pt-ud-gsd-tokens-1.1-2.4.0.bin[opennlp-pt-ud-gsd-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-pt-ud-gsd-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-pt-ud-gsd-tokens-1.1-2.4.0.bin.asc[asc]
 
 | ro
 | Romanian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-ro-ud-rrt-tokens-1.1-2.4.0.bin[opennlp-ro-ud-rrt-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-ro-ud-rrt-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-ro-ud-rrt-tokens-1.1-2.4.0.bin.asc[asc]
 
 | ru
 | Russian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-ru-ud-gsd-tokens-1.1-2.4.0.bin[opennlp-ru-ud-gsd-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-ru-ud-gsd-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-ru-ud-gsd-tokens-1.1-2.4.0.bin.asc[asc]
 
 | sk
 | Slovak
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sk-ud-snk-tokens-1.1-2.4.0.bin[opennlp-sk-ud-snk-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-sk-ud-snk-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-sk-ud-snk-tokens-1.1-2.4.0.bin.asc[asc]
 
 | sl
 | Slovenian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sl-ud-ssj-tokens-1.1-2.4.0.bin[opennlp-sl-ud-ssj-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-sl-ud-ssj-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-sl-ud-ssj-tokens-1.1-2.4.0.bin.asc[asc]
 
 | sr
 | Serbian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sr-ud-set-tokens-1.1-2.4.0.bin[opennlp-sr-ud-set-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-sr-ud-set-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-sr-ud-set-tokens-1.1-2.4.0.bin.asc[asc]
 
 | sv
 | Swedish
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sv-ud-talbanken-tokens-1.1-2.4.0.bin[opennlp-sv-ud-talbanken-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-sv-ud-talbanken-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-sv-ud-talbanken-tokens-1.1-2.4.0.bin.asc[asc]
 
 | uk
 | Ukrainian
 | 2.4.0
-| 2.14
+| {ud_version}
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-uk-ud-iu-tokens-1.1-2.4.0.bin[opennlp-uk-ud-iu-tokens-1.1-2.4.0.bin]
 | {opennlp_downloads}/opennlp-uk-ud-iu-tokens-1.1-2.4.0.bin.sha512[sha512] {opennlp_downloads}/opennlp-uk-ud-iu-tokens-1.1-2.4.0.bin.asc[asc]
 |======
