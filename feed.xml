@@ -24,9 +24,43 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Sun, 17 Nov 2024 17:12:58 +0000</pubDate>
-    <lastBuildDate>Sun, 17 Nov 2024 17:12:58 +0000</lastBuildDate>
+    <pubDate>Sat, 23 Nov 2024 10:25:08 +0000</pubDate>
+    <lastBuildDate>Sat, 23 Nov 2024 10:25:08 +0000</lastBuildDate>
 
+    <item>
+      <title>OpenNLP Pre-trained Models 1.2 released</title>
+      <link>https://opennlp.apache.org/news/news-2024-11-23.html</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/news-2024-11-23.html</guid>
+      	<description>
+	&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;New pre-trained &lt;em&gt;sentence detection&lt;/em&gt;, &lt;em&gt;tokenization&lt;/em&gt;, &lt;em&gt;parts of speech tagging&lt;/em&gt;, and &lt;em&gt;lemmatization&lt;/em&gt; models for 9 languages are now available for:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Armenian, Basque, Catalan, Georgian, Greek, Kazakh, Korean, Icelandic, and Turkish.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The existing &lt;em&gt;sentence detection&lt;/em&gt;, &lt;em&gt;tokenization&lt;/em&gt;, and &lt;em&gt;parts of speech tagging&lt;/em&gt; models for the 23 languages,
+published with the &lt;a href=&quot;/news/news-2024-10-28.html&quot;&gt;models release 1.1&lt;/a&gt;, have been re-trained.
+In addition, new &lt;em&gt;lemmatization&lt;/em&gt; models have been trained and added,
+based on &lt;a href=&quot;https://universaldependencies.org&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Universal Dependencies&lt;/a&gt; (UD) treebanks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;All 32 models were trained with OpenNLP 2.5.0 based on the UD release &lt;a href=&quot;https://hdl.handle.net/11234/1-5787&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2.15&lt;/a&gt;
+and are intended to provide usable models under the Apache 2.0 license.
+These models will be available as JAR artifacts via Maven Central, or directly as binary files via our &lt;a href=&quot;/models.html&quot;&gt;models page&lt;/a&gt;.
+See the models&apos; &lt;a href=&quot;https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.2/README&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;README&lt;/a&gt;
+for more information, including how each was created and evaluated.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Apache OpenNLP 2.5.0 released</title>
       <link>https://opennlp.apache.org/news/release-250.html</link>
@@ -67,7 +101,7 @@ The OpenNLP Brat Annotator component has been moved to the OpenNLP sandbox repos
 &lt;p&gt;Thank you to everyone who contributed to this release, including all of our users and the people who submitted bug reports, contributed code or documentation enhancements.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;For a full list of improvements, please see the full list found in &lt;a href=&quot;https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&amp;amp;version=12354554&quot;&gt;Jira&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For a full list of improvements, please see the full list found in &lt;a href=&quot;https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&amp;amp;version=12354554&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Jira&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
@@ -77,13 +111,13 @@ The OpenNLP Brat Annotator component has been moved to the OpenNLP sandbox repos
 	</description>
     </item>
     <item>
-      <title>New OpenNLP Pre-trained Models released</title>
+      <title>OpenNLP Pre-trained Models 1.1 released</title>
       <link>https://opennlp.apache.org/news/news-2024-10-28.html</link>
       <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
       <guid isPermaLink="false">news/news-2024-10-28.html</guid>
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;New pre-trained sentence, parts of speech, and token models for 18 (Indo-European) languages are now available for:&lt;/p&gt;
+&lt;p&gt;New pre-trained &lt;em&gt;sentence detection&lt;/em&gt;, &lt;em&gt;tokenization&lt;/em&gt;, and &lt;em&gt;parts of speech tagging&lt;/em&gt; models for 18 (Indo-European) languages are now available for:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
@@ -93,7 +127,7 @@ The OpenNLP Brat Annotator component has been moved to the OpenNLP sandbox repos
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The existing sentence, parts of speech, and token models for these 5 languages:&lt;/p&gt;
+&lt;p&gt;The existing &lt;em&gt;sentence detection&lt;/em&gt;, &lt;em&gt;tokenization&lt;/em&gt;, and &lt;em&gt;parts of speech tagging&lt;/em&gt; models for these 5 languages:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;ulist&quot;&gt;
 &lt;ul&gt;
@@ -103,12 +137,17 @@ The OpenNLP Brat Annotator component has been moved to the OpenNLP sandbox repos
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;were re-trained. The French models are now based on a GSD treebank, as the previously used FTB treebank &lt;a href=&quot;https://universaldependencies.org/fr/index.html&quot;&gt;is not maintained&lt;/a&gt; and has therefore been discontinued by the &lt;a href=&quot;https://universaldependencies.org&quot;&gt;Universal Dependencies&lt;/a&gt; (UD) project.&lt;/p&gt;
+&lt;p&gt;were re-trained. The French models are now based on a GSD treebank, as the previously used
+FTB treebank &lt;a href=&quot;https://universaldependencies.org/fr/index.html&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;is not maintained&lt;/a&gt; and
+has therefore been discontinued by the &lt;a href=&quot;https://universaldependencies.org&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Universal Dependencies&lt;/a&gt; (UD) project.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;All  models were trained with OpenNLP 2.4.0 based on the UD release &lt;a href=&quot;https://hdl.handle.net/11234/1-5502&quot;&gt;2.14&lt;/a&gt; and are intended to provide usable models under the Apache 2.0 license.
+&lt;p&gt;All  models were trained with OpenNLP 2.4.0 based on the UD release &lt;a href=&quot;https://hdl.handle.net/11234/1-5502&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2.14&lt;/a&gt; and are intended to provide usable models under the Apache 2.0 license.
 These models are available as JAR artifacts via Maven Central, or directly as plain, binary files via our &lt;a href=&quot;/models.html&quot;&gt;models page&lt;/a&gt;.
-See the models&apos; README for more information on the models including how each was created and evaluated.&lt;/p&gt;
+See the models&apos; &lt;a href=&quot;https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.1/README&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;README&lt;/a&gt; for more information on the models including how each was created and evaluated.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
 &lt;/div&gt;
 	</description>
     </item>
@@ -612,8 +651,11 @@ Moreover, it switches the ONNX runtime for the &apos;opennlp-dl&apos; component 
       	<description>
 	&lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Pre-trained sentence, parts of speech, and token models are now available for English, French, Italian, German, and Dutch.
-These models were trained on Universal Dependencies and are intended to provide usable models under the Apache 2.0 license.
+These models were trained on &lt;a href=&quot;https://universaldependencies.org&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Universal Dependencies&lt;/a&gt; (UD) and are intended to provide usable models under the Apache 2.0 license.
 See the models&apos; README for more information on the models including how each was created and evaluated.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
 &lt;/div&gt;
 	</description>
     </item>

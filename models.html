@@ -148,7 +148,7 @@
 <p>1 generic model to conduct <em>language detection</em> on a specified text input</p>
 </li>
 <li>
-<p>23 language specific models to accomplish: <em>sentence detection</em>, <em>part of speech tagging</em>, and <em>tokenization</em>.</p>
+<p>32 language specific models to accomplish: <em>sentence detection</em>, <em>tokenization</em>, <em>lemmatization</em>, and <em>part of speech tagging</em>.</p>
 </li>
 </ul>
 </div>
@@ -163,8 +163,9 @@
 <ul class="sectlevel2">
 <li><a href="#language_detection">Language detection</a></li>
 <li><a href="#sentence_detection">Sentence detection</a></li>
-<li><a href="#part_of_speech_tagging">Part of Speech Tagging</a></li>
 <li><a href="#tokenization">Tokenization</a></li>
+<li><a href="#lemmatization">Lemmatization</a></li>
+<li><a href="#part_of_speech_tagging">Part of Speech Tagging</a></li>
 </ul>
 </li>
 <li><a href="#verifying_signatures">Verifying Signatures</a></li>
@@ -236,8 +237,8 @@ All models are zip compressed (like a jar file), they <strong>must not</strong> 
 <div class="title">Note</div>
 </td>
 <td class="content">
-All models below are compatible with OpenNLP versions &gt;= 1.0.0. The <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/README">README</a> and
-<a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-training-eval-logs-1.1-2.4.0.zip">evaluation logs</a>
+All models below are compatible with OpenNLP versions &gt;= 1.0.0. The <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/README">README</a> and
+<a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-training-eval-logs-1.2-2.5.0.zip">evaluation logs</a>
 refer to every language listed below.
 </td>
 </tr>
@@ -266,409 +267,258 @@ refer to every language listed below.
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">bg</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bulgarian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-bg-ud-btb-sentence-1.1-2.4.0.bin">opennlp-bg-ud-btb-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-bg-ud-btb-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-bg-ud-btb-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-bg-ud-btb-sentence-1.2-2.5.0.bin">opennlp-bg-ud-btb-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-bg-ud-btb-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-bg-ud-btb-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ca</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ca-ud-ancora-sentence-1.2-2.5.0.bin">opennlp-ca-ud-ancora-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ca-ud-ancora-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ca-ud-ancora-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cs</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Czech</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-cs-ud-pdt-sentence-1.1-2.4.0.bin">opennlp-cs-ud-pdt-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-cs-ud-pdt-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-cs-ud-pdt-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-cs-ud-pdt-sentence-1.2-2.5.0.bin">opennlp-cs-ud-pdt-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-cs-ud-pdt-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-cs-ud-pdt-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">da</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Danish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-da-ud-ddt-sentence-1.1-2.4.0.bin">opennlp-da-ud-ddt-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-da-ud-ddt-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-da-ud-ddt-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-da-ud-ddt-sentence-1.2-2.5.0.bin">opennlp-da-ud-ddt-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-da-ud-ddt-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-da-ud-ddt-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">de</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">German</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-de-ud-gsd-sentence-1.1-2.4.0.bin">opennlp-de-ud-gsd-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-de-ud-gsd-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-de-ud-gsd-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-de-ud-gsd-sentence-1.2-2.5.0.bin">opennlp-de-ud-gsd-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-de-ud-gsd-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-de-ud-gsd-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">el</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Greek</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-el-ud-gdt-sentence-1.2-2.5.0.bin">opennlp-el-ud-gdt-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-el-ud-gdt-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-el-ud-gdt-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">en</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">English</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-en-ud-ewt-sentence-1.1-2.4.0.bin">opennlp-en-ud-ewt-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-en-ud-ewt-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-en-ud-ewt-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-en-ud-ewt-sentence-1.2-2.5.0.bin">opennlp-en-ud-ewt-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-en-ud-ewt-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-en-ud-ewt-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">es</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Spanish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-es-ud-gsd-sentence-1.1-2.4.0.bin">opennlp-es-ud-gsd-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-es-ud-gsd-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-es-ud-gsd-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-es-ud-gsd-sentence-1.2-2.5.0.bin">opennlp-es-ud-gsd-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-es-ud-gsd-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-es-ud-gsd-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">et</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Estonian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-et-ud-edt-sentence-1.1-2.4.0.bin">opennlp-et-ud-edt-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-et-ud-edt-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-et-ud-edt-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-et-ud-edt-sentence-1.2-2.5.0.bin">opennlp-et-ud-edt-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-et-ud-edt-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-et-ud-edt-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eu</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Basque</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-eu-ud-bdt-sentence-1.2-2.5.0.bin">opennlp-eu-ud-bdt-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-eu-ud-bdt-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-eu-ud-bdt-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">fi</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Finnish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-fi-ud-tdt-sentence-1.1-2.4.0.bin">opennlp-fi-ud-tdt-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-fi-ud-tdt-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-fi-ud-tdt-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-fi-ud-tdt-sentence-1.2-2.5.0.bin">opennlp-fi-ud-tdt-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fi-ud-tdt-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fi-ud-tdt-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">fr</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">French</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-fr-ud-gsd-sentence-1.1-2.4.0.bin">opennlp-fr-ud-gsd-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-fr-ud-gsd-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-fr-ud-gsd-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-fr-ud-gsd-sentence-1.2-2.5.0.bin">opennlp-fr-ud-gsd-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fr-ud-gsd-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fr-ud-gsd-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">hr</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Croatian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-hr-ud-set-sentence-1.1-2.4.0.bin">opennlp-hr-ud-set-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-hr-ud-set-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-hr-ud-set-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-hr-ud-set-sentence-1.2-2.5.0.bin">opennlp-hr-ud-set-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hr-ud-set-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hr-ud-set-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Armenian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-hy-ud-bsut-sentence-1.2-2.5.0.bin">opennlp-hy-ud-bsut-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hy-ud-bsut-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hy-ud-bsut-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Icelandic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-is-ud-icepahc-sentence-1.2-2.5.0.bin">opennlp-is-ud-icepahc-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-is-ud-icepahc-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-is-ud-icepahc-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">it</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Italian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-it-ud-vit-sentence-1.1-2.4.0.bin">opennlp-it-ud-vit-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-it-ud-vit-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-it-ud-vit-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-it-ud-vit-sentence-1.2-2.5.0.bin">opennlp-it-ud-vit-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-it-ud-vit-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-it-ud-vit-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ka</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Georgian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ka-ud-glc-sentence-1.2-2.5.0.bin">opennlp-ka-ud-glc-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ka-ud-glc-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ka-ud-glc-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kazakh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-kk-ud-ktb-sentence-1.2-2.5.0.bin">opennlp-kk-ud-ktb-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-kk-ud-ktb-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-kk-ud-ktb-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ko</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Korean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ko-ud-kaist-sentence-1.2-2.5.0.bin">opennlp-ko-ud-kaist-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ko-ud-kaist-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ko-ud-kaist-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">lv</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Latvian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-lv-ud-lvtb-sentence-1.1-2.4.0.bin">opennlp-lv-ud-lvtb-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-lv-ud-lvtb-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-lv-ud-lvtb-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-lv-ud-lvtb-sentence-1.2-2.5.0.bin">opennlp-lv-ud-lvtb-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-lv-ud-lvtb-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-lv-ud-lvtb-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">nl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dutch</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-nl-ud-alpino-sentence-1.1-2.4.0.bin">opennlp-nl-ud-alpino-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-nl-ud-alpino-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-nl-ud-alpino-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-nl-ud-alpino-sentence-1.2-2.5.0.bin">opennlp-nl-ud-alpino-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-nl-ud-alpino-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-nl-ud-alpino-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-no-ud-bokmaal-sentence-1.1-2.4.0.bin">opennlp-no-ud-bokmaal-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-no-ud-bokmaal-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-no-ud-bokmaal-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-no-ud-bokmaal-sentence-1.2-2.5.0.bin">opennlp-no-ud-bokmaal-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-no-ud-bokmaal-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-no-ud-bokmaal-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">pl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Polish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-pl-ud-pdb-sentence-1.1-2.4.0.bin">opennlp-pl-ud-pdb-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-pl-ud-pdb-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-pl-ud-pdb-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-pl-ud-pdb-sentence-1.2-2.5.0.bin">opennlp-pl-ud-pdb-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pl-ud-pdb-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pl-ud-pdb-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">pt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Portuguese</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-pt-ud-gsd-sentence-1.1-2.4.0.bin">opennlp-pt-ud-gsd-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-pt-ud-gsd-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-pt-ud-gsd-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-pt-ud-gsd-sentence-1.2-2.5.0.bin">opennlp-pt-ud-gsd-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pt-ud-gsd-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pt-ud-gsd-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ro</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Romanian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-ro-ud-rrt-sentence-1.1-2.4.0.bin">opennlp-ro-ud-rrt-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-ro-ud-rrt-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-ro-ud-rrt-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ro-ud-rrt-sentence-1.2-2.5.0.bin">opennlp-ro-ud-rrt-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ro-ud-rrt-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ro-ud-rrt-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ru</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Russian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-ru-ud-gsd-sentence-1.1-2.4.0.bin">opennlp-ru-ud-gsd-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-ru-ud-gsd-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-ru-ud-gsd-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ru-ud-gsd-sentence-1.2-2.5.0.bin">opennlp-ru-ud-gsd-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ru-ud-gsd-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ru-ud-gsd-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sk</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Slovak</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sk-ud-snk-sentence-1.1-2.4.0.bin">opennlp-sk-ud-snk-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sk-ud-snk-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sk-ud-snk-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sk-ud-snk-sentence-1.2-2.5.0.bin">opennlp-sk-ud-snk-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sk-ud-snk-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sk-ud-snk-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Slovenian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sl-ud-ssj-sentence-1.1-2.4.0.bin">opennlp-sl-ud-ssj-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sl-ud-ssj-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sl-ud-ssj-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sl-ud-ssj-sentence-1.2-2.5.0.bin">opennlp-sl-ud-ssj-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sl-ud-ssj-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sl-ud-ssj-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sr</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Serbian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sr-ud-set-sentence-1.1-2.4.0.bin">opennlp-sr-ud-set-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sr-ud-set-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sr-ud-set-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sr-ud-set-sentence-1.2-2.5.0.bin">opennlp-sr-ud-set-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sr-ud-set-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sr-ud-set-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sv</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Swedish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sv-ud-talbanken-sentence-1.1-2.4.0.bin">opennlp-sv-ud-talbanken-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sv-ud-talbanken-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sv-ud-talbanken-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sv-ud-talbanken-sentence-1.2-2.5.0.bin">opennlp-sv-ud-talbanken-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sv-ud-talbanken-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sv-ud-talbanken-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Turkish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-tr-ud-boun-sentence-1.2-2.5.0.bin">opennlp-tr-ud-boun-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-tr-ud-boun-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-tr-ud-boun-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">uk</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ukrainian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-uk-ud-iu-sentence-1.1-2.4.0.bin">opennlp-uk-ud-iu-sentence-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-uk-ud-iu-sentence-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-uk-ud-iu-sentence-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="part_of_speech_tagging">Part of Speech Tagging</h3>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-All models below are compatible with OpenNLP versions &gt;= 1.0.0. The <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/README">README</a> and
-<a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-training-eval-logs-1.1-2.4.0.zip">evaluation logs</a>
-refer to every language listed below.
-</td>
-</tr>
-</table>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.6666%;">
-<col style="width: 16.667%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">ISO code</th>
-<th class="tableblock halign-left valign-top">Language</th>
-<th class="tableblock halign-left valign-top">Trained with OpenNLP</th>
-<th class="tableblock halign-left valign-top">UD version</th>
-<th class="tableblock halign-left valign-top">File</th>
-<th class="tableblock halign-left valign-top">Signatures</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">bg</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bulgarian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-bg-ud-btb-pos-1.1-2.4.0.bin">opennlp-bg-ud-btb-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-bg-ud-btb-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-bg-ud-btb-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cs</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Czech</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-cs-ud-pdt-pos-1.1-2.4.0.bin">opennlp-cs-ud-pdt-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-cs-ud-pdt-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-cs-ud-pdt-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">da</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Danish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-da-ud-ddt-pos-1.1-2.4.0.bin">opennlp-da-ud-ddt-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-da-ud-ddt-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-da-ud-ddt-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">de</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">German</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-de-ud-gsd-pos-1.1-2.4.0.bin">opennlp-de-ud-gsd-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-de-ud-gsd-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-de-ud-gsd-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">en</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">English</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-en-ud-ewt-pos-1.1-2.4.0.bin">opennlp-en-ud-ewt-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-en-ud-ewt-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-en-ud-ewt-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">es</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Spanish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-es-ud-gsd-pos-1.1-2.4.0.bin">opennlp-es-ud-gsd-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-es-ud-gsd-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-es-ud-gsd-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">et</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Estonian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-et-ud-edt-pos-1.1-2.4.0.bin">opennlp-et-ud-edt-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-et-ud-edt-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-et-ud-edt-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">fi</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Finnish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-fi-ud-tdt-pos-1.1-2.4.0.bin">opennlp-fi-ud-tdt-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-fi-ud-tdt-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-fi-ud-tdt-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">fr</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">French</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-fr-ud-gsd-pos-1.1-2.4.0.bin">opennlp-fr-ud-gsd-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-fr-ud-gsd-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-fr-ud-gsd-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">hr</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Croatian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-hr-ud-set-pos-1.1-2.4.0.bin">opennlp-hr-ud-set-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-hr-ud-set-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-hr-ud-set-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">it</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Italian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-it-ud-vit-pos-1.1-2.4.0.bin">opennlp-it-ud-vit-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-it-ud-vit-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-it-ud-vit-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">lv</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Latvian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-lv-ud-lvtb-pos-1.1-2.4.0.bin">opennlp-lv-ud-lvtb-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-lv-ud-lvtb-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-lv-ud-lvtb-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">nl</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dutch</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-nl-ud-alpino-pos-1.1-2.4.0.bin">opennlp-nl-ud-alpino-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-nl-ud-alpino-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-nl-ud-alpino-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-no-ud-bokmaal-pos-1.1-2.4.0.bin">opennlp-no-ud-bokmaal-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-no-ud-bokmaal-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-no-ud-bokmaal-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">pl</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Polish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-pl-ud-pdb-pos-1.1-2.4.0.bin">opennlp-pl-ud-pdb-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-pl-ud-pdb-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-pl-ud-pdb-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">pt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Portuguese</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-pt-ud-gsd-pos-1.1-2.4.0.bin">opennlp-pt-ud-gsd-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-pt-ud-gsd-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-pt-ud-gsd-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ro</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Romanian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-ro-ud-rrt-pos-1.1-2.4.0.bin">opennlp-ro-ud-rrt-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-ro-ud-rrt-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-ro-ud-rrt-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ru</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Russian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-ru-ud-gsd-pos-1.1-2.4.0.bin">opennlp-ru-ud-gsd-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-ru-ud-gsd-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-ru-ud-gsd-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sk</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Slovak</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sk-ud-snk-pos-1.1-2.4.0.bin">opennlp-sk-ud-snk-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sk-ud-snk-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sk-ud-snk-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sl</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Slovenian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sl-ud-ssj-pos-1.1-2.4.0.bin">opennlp-sl-ud-ssj-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sl-ud-ssj-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sl-ud-ssj-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sr</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Serbian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sr-ud-set-pos-1.1-2.4.0.bin">opennlp-sr-ud-set-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sr-ud-set-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sr-ud-set-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">sv</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Swedish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sv-ud-talbanken-pos-1.1-2.4.0.bin">opennlp-sv-ud-talbanken-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sv-ud-talbanken-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sv-ud-talbanken-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">uk</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ukrainian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-uk-ud-iu-pos-1.1-2.4.0.bin">opennlp-uk-ud-iu-pos-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-uk-ud-iu-pos-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-uk-ud-iu-pos-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-uk-ud-iu-sentence-1.2-2.5.0.bin">opennlp-uk-ud-iu-sentence-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-uk-ud-iu-sentence-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-uk-ud-iu-sentence-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -682,8 +532,8 @@ refer to every language listed below.
 <div class="title">Note</div>
 </td>
 <td class="content">
-All models below are compatible with OpenNLP versions &gt;= 1.0.0. The <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/README">README</a> and
-<a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-training-eval-logs-1.1-2.4.0.zip">evaluation logs</a>
+All models below are compatible with OpenNLP versions &gt;= 1.0.0. The <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/README">README</a> and
+<a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-training-eval-logs-1.2-2.5.0.zip">evaluation logs</a>
 refer to every language listed below.
 </td>
 </tr>
@@ -712,186 +562,848 @@ refer to every language listed below.
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">bg</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bulgarian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-bg-ud-btb-tokens-1.1-2.4.0.bin">opennlp-bg-ud-btb-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-bg-ud-btb-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-bg-ud-btb-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-bg-ud-btb-tokens-1.2-2.5.0.bin">opennlp-bg-ud-btb-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-bg-ud-btb-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-bg-ud-btb-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ca</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ca-ud-ancora-tokens-1.2-2.5.0.bin">opennlp-ca-ud-ancora-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ca-ud-ancora-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ca-ud-ancora-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cs</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Czech</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-cs-ud-pdt-tokens-1.1-2.4.0.bin">opennlp-cs-ud-pdt-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-cs-ud-pdt-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-cs-ud-pdt-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-cs-ud-pdt-tokens-1.2-2.5.0.bin">opennlp-cs-ud-pdt-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-cs-ud-pdt-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-cs-ud-pdt-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">da</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Danish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-da-ud-ddt-tokens-1.1-2.4.0.bin">opennlp-da-ud-ddt-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-da-ud-ddt-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-da-ud-ddt-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-da-ud-ddt-tokens-1.2-2.5.0.bin">opennlp-da-ud-ddt-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-da-ud-ddt-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-da-ud-ddt-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">de</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">German</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-de-ud-gsd-tokens-1.1-2.4.0.bin">opennlp-de-ud-gsd-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-de-ud-gsd-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-de-ud-gsd-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-de-ud-gsd-tokens-1.2-2.5.0.bin">opennlp-de-ud-gsd-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-de-ud-gsd-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-de-ud-gsd-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">el</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Greek</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-el-ud-gdt-tokens-1.2-2.5.0.bin">opennlp-el-ud-gdt-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-el-ud-gdt-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-el-ud-gdt-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">en</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">English</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-en-ud-ewt-tokens-1.1-2.4.0.bin">opennlp-en-ud-ewt-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-en-ud-ewt-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-en-ud-ewt-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-en-ud-ewt-tokens-1.2-2.5.0.bin">opennlp-en-ud-ewt-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-en-ud-ewt-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-en-ud-ewt-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">es</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Spanish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-es-ud-gsd-tokens-1.1-2.4.0.bin">opennlp-es-ud-gsd-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-es-ud-gsd-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-es-ud-gsd-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-es-ud-gsd-tokens-1.2-2.5.0.bin">opennlp-es-ud-gsd-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-es-ud-gsd-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-es-ud-gsd-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">et</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Estonian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-et-ud-edt-tokens-1.1-2.4.0.bin">opennlp-et-ud-edt-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-et-ud-edt-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-et-ud-edt-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-et-ud-edt-tokens-1.2-2.5.0.bin">opennlp-et-ud-edt-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-et-ud-edt-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-et-ud-edt-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eu</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Basque</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-eu-ud-bdt-tokens-1.2-2.5.0.bin">opennlp-eu-ud-bdt-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-eu-ud-bdt-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-eu-ud-bdt-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">fi</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Finnish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-fi-ud-tdt-tokens-1.1-2.4.0.bin">opennlp-fi-ud-tdt-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-fi-ud-tdt-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-fi-ud-tdt-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-fi-ud-tdt-tokens-1.2-2.5.0.bin">opennlp-fi-ud-tdt-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fi-ud-tdt-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fi-ud-tdt-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">fr</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">French</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-fr-ud-gsd-tokens-1.1-2.4.0.bin">opennlp-fr-ud-gsd-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-fr-ud-gsd-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-fr-ud-gsd-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-fr-ud-gsd-tokens-1.2-2.5.0.bin">opennlp-fr-ud-gsd-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fr-ud-gsd-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fr-ud-gsd-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">hr</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Croatian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-hr-ud-set-tokens-1.1-2.4.0.bin">opennlp-hr-ud-set-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-hr-ud-set-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-hr-ud-set-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-hr-ud-set-tokens-1.2-2.5.0.bin">opennlp-hr-ud-set-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hr-ud-set-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hr-ud-set-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Armenian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-hy-ud-bsut-tokens-1.2-2.5.0.bin">opennlp-hy-ud-bsut-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hy-ud-bsut-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hy-ud-bsut-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Icelandic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-is-ud-icepahc-tokens-1.2-2.5.0.bin">opennlp-is-ud-icepahc-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-is-ud-icepahc-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-is-ud-icepahc-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">it</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Italian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-it-ud-vit-tokens-1.1-2.4.0.bin">opennlp-it-ud-vit-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-it-ud-vit-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-it-ud-vit-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-it-ud-vit-tokens-1.2-2.5.0.bin">opennlp-it-ud-vit-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-it-ud-vit-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-it-ud-vit-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ka</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Georgian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ka-ud-glc-tokens-1.2-2.5.0.bin">opennlp-ka-ud-glc-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ka-ud-glc-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ka-ud-glc-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kazakh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-kk-ud-ktb-tokens-1.2-2.5.0.bin">opennlp-kk-ud-ktb-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-kk-ud-ktb-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-kk-ud-ktb-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ko</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Korean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ko-ud-kaist-tokens-1.2-2.5.0.bin">opennlp-ko-ud-kaist-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ko-ud-kaist-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ko-ud-kaist-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">lv</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Latvian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-lv-ud-lvtb-tokens-1.1-2.4.0.bin">opennlp-lv-ud-lvtb-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-lv-ud-lvtb-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-lv-ud-lvtb-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-lv-ud-lvtb-tokens-1.2-2.5.0.bin">opennlp-lv-ud-lvtb-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-lv-ud-lvtb-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-lv-ud-lvtb-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">nl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dutch</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-nl-ud-alpino-tokens-1.1-2.4.0.bin">opennlp-nl-ud-alpino-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-nl-ud-alpino-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-nl-ud-alpino-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-nl-ud-alpino-tokens-1.2-2.5.0.bin">opennlp-nl-ud-alpino-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-nl-ud-alpino-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-nl-ud-alpino-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-no-ud-bokmaal-tokens-1.1-2.4.0.bin">opennlp-no-ud-bokmaal-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-no-ud-bokmaal-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-no-ud-bokmaal-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-no-ud-bokmaal-tokens-1.2-2.5.0.bin">opennlp-no-ud-bokmaal-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-no-ud-bokmaal-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-no-ud-bokmaal-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">pl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Polish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-pl-ud-pdb-tokens-1.1-2.4.0.bin">opennlp-pl-ud-pdb-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-pl-ud-pdb-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-pl-ud-pdb-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-pl-ud-pdb-tokens-1.2-2.5.0.bin">opennlp-pl-ud-pdb-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pl-ud-pdb-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pl-ud-pdb-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">pt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Portuguese</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-pt-ud-gsd-tokens-1.1-2.4.0.bin">opennlp-pt-ud-gsd-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-pt-ud-gsd-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-pt-ud-gsd-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-pt-ud-gsd-tokens-1.2-2.5.0.bin">opennlp-pt-ud-gsd-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pt-ud-gsd-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pt-ud-gsd-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ro</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Romanian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-ro-ud-rrt-tokens-1.1-2.4.0.bin">opennlp-ro-ud-rrt-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-ro-ud-rrt-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-ro-ud-rrt-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ro-ud-rrt-tokens-1.2-2.5.0.bin">opennlp-ro-ud-rrt-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ro-ud-rrt-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ro-ud-rrt-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ru</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Russian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-ru-ud-gsd-tokens-1.1-2.4.0.bin">opennlp-ru-ud-gsd-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-ru-ud-gsd-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-ru-ud-gsd-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ru-ud-gsd-tokens-1.2-2.5.0.bin">opennlp-ru-ud-gsd-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ru-ud-gsd-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ru-ud-gsd-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sk</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Slovak</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sk-ud-snk-tokens-1.1-2.4.0.bin">opennlp-sk-ud-snk-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sk-ud-snk-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sk-ud-snk-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sk-ud-snk-tokens-1.2-2.5.0.bin">opennlp-sk-ud-snk-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sk-ud-snk-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sk-ud-snk-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sl</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Slovenian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sl-ud-ssj-tokens-1.1-2.4.0.bin">opennlp-sl-ud-ssj-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sl-ud-ssj-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sl-ud-ssj-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sl-ud-ssj-tokens-1.2-2.5.0.bin">opennlp-sl-ud-ssj-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sl-ud-ssj-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sl-ud-ssj-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sr</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Serbian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sr-ud-set-tokens-1.1-2.4.0.bin">opennlp-sr-ud-set-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sr-ud-set-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sr-ud-set-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sr-ud-set-tokens-1.2-2.5.0.bin">opennlp-sr-ud-set-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sr-ud-set-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sr-ud-set-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">sv</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Swedish</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-sv-ud-talbanken-tokens-1.1-2.4.0.bin">opennlp-sv-ud-talbanken-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sv-ud-talbanken-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-sv-ud-talbanken-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sv-ud-talbanken-tokens-1.2-2.5.0.bin">opennlp-sv-ud-talbanken-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sv-ud-talbanken-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sv-ud-talbanken-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Turkish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-tr-ud-boun-tokens-1.2-2.5.0.bin">opennlp-tr-ud-boun-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-tr-ud-boun-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-tr-ud-boun-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">uk</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ukrainian</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.14</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.1/opennlp-uk-ud-iu-tokens-1.1-2.4.0.bin">opennlp-uk-ud-iu-tokens-1.1-2.4.0.bin</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-uk-ud-iu-tokens-1.1-2.4.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.1/opennlp-uk-ud-iu-tokens-1.1-2.4.0.bin.asc">asc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-uk-ud-iu-tokens-1.2-2.5.0.bin">opennlp-uk-ud-iu-tokens-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-uk-ud-iu-tokens-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-uk-ud-iu-tokens-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="lemmatization">Lemmatization</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+All models below are compatible with OpenNLP versions &gt;= 1.0.0. The <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/README">README</a> and
+<a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-training-eval-logs-1.2-2.5.0.zip">evaluation logs</a>
+refer to every language listed below.
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ISO code</th>
+<th class="tableblock halign-left valign-top">Language</th>
+<th class="tableblock halign-left valign-top">Trained with OpenNLP</th>
+<th class="tableblock halign-left valign-top">UD version</th>
+<th class="tableblock halign-left valign-top">File</th>
+<th class="tableblock halign-left valign-top">Signatures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bulgarian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-bg-ud-btb-lemmas-1.2-2.5.0.bin">opennlp-bg-ud-btb-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-bg-ud-btb-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-bg-ud-btb-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ca</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ca-ud-ancora-lemmas-1.2-2.5.0.bin">opennlp-ca-ud-ancora-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ca-ud-ancora-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ca-ud-ancora-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Czech</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-cs-ud-pdt-lemmas-1.2-2.5.0.bin">opennlp-cs-ud-pdt-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-cs-ud-pdt-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-cs-ud-pdt-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">da</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Danish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-da-ud-ddt-lemmas-1.2-2.5.0.bin">opennlp-da-ud-ddt-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-da-ud-ddt-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-da-ud-ddt-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">de</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">German</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-de-ud-gsd-lemmas-1.2-2.5.0.bin">opennlp-de-ud-gsd-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-de-ud-gsd-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-de-ud-gsd-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">el</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Greek</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-el-ud-gdt-lemmas-1.2-2.5.0.bin">opennlp-el-ud-gdt-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-el-ud-gdt-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-el-ud-gdt-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">en</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">English</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-en-ud-ewt-lemmas-1.2-2.5.0.bin">opennlp-en-ud-ewt-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-en-ud-ewt-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-en-ud-ewt-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">es</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spanish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-es-ud-gsd-lemmas-1.2-2.5.0.bin">opennlp-es-ud-gsd-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-es-ud-gsd-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-es-ud-gsd-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">et</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Estonian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-et-ud-edt-lemmas-1.2-2.5.0.bin">opennlp-et-ud-edt-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-et-ud-edt-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-et-ud-edt-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eu</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Basque</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-eu-ud-bdt-lemmas-1.2-2.5.0.bin">opennlp-eu-ud-bdt-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-eu-ud-bdt-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-eu-ud-bdt-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finnish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-fi-ud-tdt-lemmas-1.2-2.5.0.bin">opennlp-fi-ud-tdt-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fi-ud-tdt-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fi-ud-tdt-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">French</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-fr-ud-gsd-lemmas-1.2-2.5.0.bin">opennlp-fr-ud-gsd-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fr-ud-gsd-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fr-ud-gsd-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Croatian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-hr-ud-set-lemmas-1.2-2.5.0.bin">opennlp-hr-ud-set-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hr-ud-set-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hr-ud-set-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Armenian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-hy-ud-bsut-lemmas-1.2-2.5.0.bin">opennlp-hy-ud-bsut-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hy-ud-bsut-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hy-ud-bsut-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Icelandic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-is-ud-icepahc-lemmas-1.2-2.5.0.bin">opennlp-is-ud-icepahc-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-is-ud-icepahc-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-is-ud-icepahc-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">it</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Italian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-it-ud-vit-lemmas-1.2-2.5.0.bin">opennlp-it-ud-vit-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-it-ud-vit-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-it-ud-vit-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ka</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Georgian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ka-ud-glc-lemmas-1.2-2.5.0.bin">opennlp-ka-ud-glc-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ka-ud-glc-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ka-ud-glc-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kazakh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-kk-ud-ktb-lemmas-1.2-2.5.0.bin">opennlp-kk-ud-ktb-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-kk-ud-ktb-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-kk-ud-ktb-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ko</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Korean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ko-ud-kaist-lemmas-1.2-2.5.0.bin">opennlp-ko-ud-kaist-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ko-ud-kaist-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ko-ud-kaist-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lv</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Latvian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-lv-ud-lvtb-lemmas-1.2-2.5.0.bin">opennlp-lv-ud-lvtb-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-lv-ud-lvtb-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-lv-ud-lvtb-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dutch</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-nl-ud-alpino-lemmas-1.2-2.5.0.bin">opennlp-nl-ud-alpino-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-nl-ud-alpino-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-nl-ud-alpino-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-no-ud-bokmaal-lemmas-1.2-2.5.0.bin">opennlp-no-ud-bokmaal-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-no-ud-bokmaal-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-no-ud-bokmaal-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Polish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-pl-ud-pdb-lemmas-1.2-2.5.0.bin">opennlp-pl-ud-pdb-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pl-ud-pdb-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pl-ud-pdb-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Portuguese</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-pt-ud-gsd-lemmas-1.2-2.5.0.bin">opennlp-pt-ud-gsd-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pt-ud-gsd-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pt-ud-gsd-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ro</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Romanian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ro-ud-rrt-lemmas-1.2-2.5.0.bin">opennlp-ro-ud-rrt-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ro-ud-rrt-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ro-ud-rrt-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ru</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Russian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ru-ud-gsd-lemmas-1.2-2.5.0.bin">opennlp-ru-ud-gsd-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ru-ud-gsd-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ru-ud-gsd-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Slovak</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sk-ud-snk-lemmas-1.2-2.5.0.bin">opennlp-sk-ud-snk-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sk-ud-snk-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sk-ud-snk-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Slovenian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sl-ud-ssj-lemmas-1.2-2.5.0.bin">opennlp-sl-ud-ssj-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sl-ud-ssj-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sl-ud-ssj-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Serbian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sr-ud-set-lemmas-1.2-2.5.0.bin">opennlp-sr-ud-set-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sr-ud-set-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sr-ud-set-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sv</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Swedish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sv-ud-talbanken-lemmas-1.2-2.5.0.bin">opennlp-sv-ud-talbanken-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sv-ud-talbanken-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sv-ud-talbanken-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Turkish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-tr-ud-boun-lemmas-1.2-2.5.0.bin">opennlp-tr-ud-boun-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-tr-ud-boun-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-tr-ud-boun-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">uk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ukrainian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-uk-ud-iu-lemmas-1.2-2.5.0.bin">opennlp-uk-ud-iu-lemmas-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-uk-ud-iu-lemmas-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-uk-ud-iu-lemmas-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="part_of_speech_tagging">Part of Speech Tagging</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+All models below are compatible with OpenNLP versions &gt;= 1.0.0. The <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/README">README</a> and
+<a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-training-eval-logs-1.2-2.5.0.zip">evaluation logs</a>
+refer to every language listed below.
+</td>
+</tr>
+</table>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ISO code</th>
+<th class="tableblock halign-left valign-top">Language</th>
+<th class="tableblock halign-left valign-top">Trained with OpenNLP</th>
+<th class="tableblock halign-left valign-top">UD version</th>
+<th class="tableblock halign-left valign-top">File</th>
+<th class="tableblock halign-left valign-top">Signatures</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bg</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bulgarian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-bg-ud-btb-pos-1.2-2.5.0.bin">opennlp-bg-ud-btb-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-bg-ud-btb-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-bg-ud-btb-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ca</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalan</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ca-ud-ancora-pos-1.2-2.5.0.bin">opennlp-ca-ud-ancora-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ca-ud-ancora-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ca-ud-ancora-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Czech</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-cs-ud-pdt-pos-1.2-2.5.0.bin">opennlp-cs-ud-pdt-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-cs-ud-pdt-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-cs-ud-pdt-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">da</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Danish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-da-ud-ddt-pos-1.2-2.5.0.bin">opennlp-da-ud-ddt-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-da-ud-ddt-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-da-ud-ddt-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">de</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">German</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-de-ud-gsd-pos-1.2-2.5.0.bin">opennlp-de-ud-gsd-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-de-ud-gsd-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-de-ud-gsd-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">el</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Greek</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-el-ud-gdt-pos-1.2-2.5.0.bin">opennlp-el-ud-gdt-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-el-ud-gdt-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-el-ud-gdt-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">en</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">English</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-en-ud-ewt-pos-1.2-2.5.0.bin">opennlp-en-ud-ewt-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-en-ud-ewt-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-en-ud-ewt-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">es</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Spanish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-es-ud-gsd-pos-1.2-2.5.0.bin">opennlp-es-ud-gsd-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-es-ud-gsd-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-es-ud-gsd-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">et</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Estonian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-et-ud-edt-pos-1.2-2.5.0.bin">opennlp-et-ud-edt-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-et-ud-edt-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-et-ud-edt-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eu</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Basque</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-eu-ud-bdt-pos-1.2-2.5.0.bin">opennlp-eu-ud-bdt-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-eu-ud-bdt-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-eu-ud-bdt-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Finnish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-fi-ud-tdt-pos-1.2-2.5.0.bin">opennlp-fi-ud-tdt-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fi-ud-tdt-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fi-ud-tdt-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">fr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">French</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-fr-ud-gsd-pos-1.2-2.5.0.bin">opennlp-fr-ud-gsd-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fr-ud-gsd-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-fr-ud-gsd-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Croatian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-hr-ud-set-pos-1.2-2.5.0.bin">opennlp-hr-ud-set-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hr-ud-set-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hr-ud-set-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Armenian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-hy-ud-bsut-pos-1.2-2.5.0.bin">opennlp-hy-ud-bsut-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hy-ud-bsut-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-hy-ud-bsut-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">is</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Icelandic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-is-ud-icepahc-pos-1.2-2.5.0.bin">opennlp-is-ud-icepahc-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-is-ud-icepahc-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-is-ud-icepahc-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">it</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Italian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-it-ud-vit-pos-1.2-2.5.0.bin">opennlp-it-ud-vit-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-it-ud-vit-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-it-ud-vit-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ka</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Georgian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ka-ud-glc-pos-1.2-2.5.0.bin">opennlp-ka-ud-glc-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ka-ud-glc-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ka-ud-glc-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">kk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kazakh</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-kk-ud-ktb-pos-1.2-2.5.0.bin">opennlp-kk-ud-ktb-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-kk-ud-ktb-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-kk-ud-ktb-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ko</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Korean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ko-ud-kaist-pos-1.2-2.5.0.bin">opennlp-ko-ud-kaist-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ko-ud-kaist-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ko-ud-kaist-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lv</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Latvian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-lv-ud-lvtb-pos-1.2-2.5.0.bin">opennlp-lv-ud-lvtb-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-lv-ud-lvtb-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-lv-ud-lvtb-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">nl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dutch</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-nl-ud-alpino-pos-1.2-2.5.0.bin">opennlp-nl-ud-alpino-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-nl-ud-alpino-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-nl-ud-alpino-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norwegian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-no-ud-bokmaal-pos-1.2-2.5.0.bin">opennlp-no-ud-bokmaal-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-no-ud-bokmaal-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-no-ud-bokmaal-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Polish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-pl-ud-pdb-pos-1.2-2.5.0.bin">opennlp-pl-ud-pdb-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pl-ud-pdb-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pl-ud-pdb-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">pt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Portuguese</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-pt-ud-gsd-pos-1.2-2.5.0.bin">opennlp-pt-ud-gsd-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pt-ud-gsd-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-pt-ud-gsd-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ro</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Romanian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ro-ud-rrt-pos-1.2-2.5.0.bin">opennlp-ro-ud-rrt-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ro-ud-rrt-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ro-ud-rrt-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ru</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Russian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-ru-ud-gsd-pos-1.2-2.5.0.bin">opennlp-ru-ud-gsd-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ru-ud-gsd-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-ru-ud-gsd-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Slovak</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sk-ud-snk-pos-1.2-2.5.0.bin">opennlp-sk-ud-snk-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sk-ud-snk-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sk-ud-snk-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sl</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Slovenian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sl-ud-ssj-pos-1.2-2.5.0.bin">opennlp-sl-ud-ssj-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sl-ud-ssj-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sl-ud-ssj-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Serbian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sr-ud-set-pos-1.2-2.5.0.bin">opennlp-sr-ud-set-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sr-ud-set-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sr-ud-set-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sv</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Swedish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-sv-ud-talbanken-pos-1.2-2.5.0.bin">opennlp-sv-ud-talbanken-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sv-ud-talbanken-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-sv-ud-talbanken-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">tr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Turkish</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-tr-ud-boun-pos-1.2-2.5.0.bin">opennlp-tr-ud-boun-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-tr-ud-boun-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-tr-ud-boun-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">uk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ukrainian</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.5.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.apache.org/dyn/closer.cgi/opennlp/models/ud-models-1.2/opennlp-uk-ud-iu-pos-1.2-2.5.0.bin">opennlp-uk-ud-iu-pos-1.2-2.5.0.bin</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-uk-ud-iu-pos-1.2-2.5.0.bin.sha512">sha512</a> <a href="https://downloads.apache.org/opennlp/models/ud-models-1.2/opennlp-uk-ud-iu-pos-1.2-2.5.0.bin.asc">asc</a></p></td>
 </tr>
 </tbody>
 </table>
