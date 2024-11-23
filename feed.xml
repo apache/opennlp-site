@@ -24,8 +24,8 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Sat, 23 Nov 2024 10:25:08 +0000</pubDate>
-    <lastBuildDate>Sat, 23 Nov 2024 10:25:08 +0000</lastBuildDate>
+    <pubDate>Sat, 23 Nov 2024 10:59:38 +0000</pubDate>
+    <lastBuildDate>Sat, 23 Nov 2024 10:59:38 +0000</lastBuildDate>
 
     <item>
       <title>OpenNLP Pre-trained Models 1.2 released</title>
@@ -50,7 +50,7 @@ In addition, new &lt;em&gt;lemmatization&lt;/em&gt; models have been trained and
 based on &lt;a href=&quot;https://universaldependencies.org&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Universal Dependencies&lt;/a&gt; (UD) treebanks.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;All 32 models were trained with OpenNLP 2.5.0 based on the UD release &lt;a href=&quot;https://hdl.handle.net/11234/1-5787&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2.15&lt;/a&gt;
+&lt;p&gt;All models, for a total of 32 languages, were trained with OpenNLP 2.5.0 based on the UD release &lt;a href=&quot;https://hdl.handle.net/11234/1-5787&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2.15&lt;/a&gt;
 and are intended to provide usable models under the Apache 2.0 license.
 These models will be available as JAR artifacts via Maven Central, or directly as binary files via our &lt;a href=&quot;/models.html&quot;&gt;models page&lt;/a&gt;.
 See the models&apos; &lt;a href=&quot;https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.2/README&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;README&lt;/a&gt;
