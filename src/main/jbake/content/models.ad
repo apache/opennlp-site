@@ -990,6 +990,15 @@ refer to every language listed below.
 |======
 
 
+== Maven Artifacts
+
+All models listed above are also bundled in JAR files and distributed via *Maven Central*:
+
+* link:https://search.maven.org/search?q=opennlp%20models%20sentdetect[Sentence-Detector,role=external,window=_blank]
+* link:https://search.maven.org/search?q=opennlp%20models%20tokenizer[Tokenization,role=external,window=_blank]
+* link:https://search.maven.org/search?q=opennlp%20models%20lemmatizer[Lemmatizer,role=external,window=_blank])
+* link:https://search.maven.org/search?q=opennlp%20models%20pos[POS Tagging,role=external,window=_blank])
+
 == Verifying Signatures
 The sha512, sha1, md5, and asc files are signature files and can be used to verify the integrity of the
 downloaded distribution package.

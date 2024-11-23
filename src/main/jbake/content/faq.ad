@@ -29,9 +29,10 @@ link:https://stackoverflow.com/questions/tagged/opennlp[forums,role=external,win
 Where can I download the pre-trained models used in OpenNLP?::
 Models for 32 languages are available at the project's link:/models.html[Models download] page or
 bundled in JAR files distributed via *Maven Central*
-(link:https://central.sonatype.com/search?q=opennlp+models+sentdetect[Sentence-Detector,role=external,window=_blank],
-link:https://central.sonatype.com/search?q=opennlp+models+tokenizer[Tokenization,role=external,window=_blank],
-link:https://central.sonatype.com/search?q=opennlp+models+pos[POS Tagging,role=external,window=_blank]).
+(link:https://search.maven.org/search?q=opennlp%20models%20sentdetect[Sentence-Detector,role=external,window=_blank],
+link:https://search.maven.org/search?q=opennlp%20models%20tokenizer[Tokenization,role=external,window=_blank],
+link:https://search.maven.org/search?q=opennlp%20models%20lemmatizer[Lemmatizer,role=external,window=_blank]),
+link:https://search.maven.org/search?q=opennlp%20models%20pos[POS Tagging,role=external,window=_blank]).
 
 How to train a Named Entity Recognition (NER) model?::
 To train the name finder model you need training data that contains the entities you would like to detect.
