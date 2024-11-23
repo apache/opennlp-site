@@ -34,7 +34,7 @@ published with the link:/news/news-2024-10-28.html[models release 1.1], have bee
 In addition, new _lemmatization_ models have been trained and added,
 based on https://universaldependencies.org[Universal Dependencies,role=external,window=_blank] (UD) treebanks.
 
-All 32 models were trained with OpenNLP 2.5.0 based on the UD release https://hdl.handle.net/11234/1-5787[2.15,role=external,window=_blank]
+All models, for a total of 32 languages, were trained with OpenNLP 2.5.0 based on the UD release link:https://hdl.handle.net/11234/1-5787[2.15,role=external,window=_blank]
 and are intended to provide usable models under the Apache 2.0 license.
 These models will be available as JAR artifacts via Maven Central, or directly as binary files via our link:/models.html[models page].
 See the models' link:https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.2/README[README,role=external,window=_blank]
