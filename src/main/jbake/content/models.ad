@@ -48,8 +48,8 @@ Use the URLs in the tables below to download the pre-trained models for use with
 https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.report.txt[Effectiveness]
  https://www.apache.org/dyn/closer.cgi/opennlp/models/langdetect/1.8.3/langdetect-183.bin.misclassified.txt[Misclassified]
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/langdetect/1.8.3/langdetect-183.bin[langdetect-183.bin]
-| https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.md5[md5]
-https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.sha1[sha1]
+| https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.sha256[sha256]
+https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.sha512[sha512]
 https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.asc[asc]
 |======
 
