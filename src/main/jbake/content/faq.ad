@@ -31,7 +31,7 @@ Models for 32 languages are available at the project's link:/models.html[Models 
 bundled in JAR files distributed via *Maven Central*
 (link:https://search.maven.org/search?q=opennlp%20models%20sentdetect[Sentence-Detector,role=external,window=_blank],
 link:https://search.maven.org/search?q=opennlp%20models%20tokenizer[Tokenization,role=external,window=_blank],
-link:https://search.maven.org/search?q=opennlp%20models%20lemmatizer[Lemmatizer,role=external,window=_blank]),
+link:https://search.maven.org/search?q=opennlp%20models%20lemmatizer[Lemmatizer,role=external,window=_blank],
 link:https://search.maven.org/search?q=opennlp%20models%20pos[POS Tagging,role=external,window=_blank]).
 
 How to train a Named Entity Recognition (NER) model?::
