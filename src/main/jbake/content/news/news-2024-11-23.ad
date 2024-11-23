@@ -1,0 +1,43 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= OpenNLP Pre-trained Models 1.2 released
+Apache OpenNLP
+2024-11-23
+:jbake-type: post
+:jbake-tags: news
+:jbake-status: published
+:category: news
+:idprefix:
+
+New pre-trained _sentence detection_, _tokenization_, _parts of speech tagging_, and _lemmatization_ models for 9 languages are now available for:
+
+* Armenian, Basque, Catalan, Georgian, Greek, Kazakh, Korean, Icelandic, and Turkish.
+
+The existing _sentence detection_, _tokenization_, and _parts of speech tagging_ models for the 23 languages,
+published with the link:/news/news-2024-10-28.html[models release 1.1], have been re-trained.
+In addition, new _lemmatization_ models have been trained and added,
+based on https://universaldependencies.org[Universal Dependencies,role=external,window=_blank] (UD) treebanks.
+
+All 32 models were trained with OpenNLP 2.5.0 based on the UD release https://hdl.handle.net/11234/1-5787[2.15,role=external,window=_blank]
+and are intended to provide usable models under the Apache 2.0 license.
+These models will be available as JAR artifacts via Maven Central, or directly as binary files via our link:/models.html[models page].
+See the models' link:https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.2/README[README,role=external,window=_blank]
+for more information, including how each was created and evaluated.
+
+--The Apache OpenNLP Team

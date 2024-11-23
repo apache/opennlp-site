@@ -6,27 +6,27 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://opennlp.apache.org/</loc>
-  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://opennlp.apache.org/download.html</loc>
-  <lastmod>2017-12-25T21:04:09+00:00</lastmod>
+  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://opennlp.apache.org/models.html</loc>
-  <lastmod>2017-12-25T21:04:09+00:00</lastmod>
+  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://opennlp.apache.org/maven-dependency.html</loc>
-  <lastmod>2017-12-25T21:04:09+00:00</lastmod>
+  <lastmod>2024-10-29T12:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://opennlp.apache.org/news/</loc>
-  <lastmod>2017-12-25T21:04:09+00:00</lastmod>
+  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -46,17 +46,17 @@
 </url>
 <url>
   <loc>https://opennlp.apache.org/docs/</loc>
-  <lastmod>2017-12-25T21:04:09+00:00</lastmod>
+  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://opennlp.apache.org/faq.html</loc>
-  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://opennlp.apache.org/get-involved.html</loc>
-  <lastmod>2017-11-19T19:45:09+00:00</lastmod>
+  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -66,12 +66,12 @@
 </url>
 <url>
   <loc>https://opennlp.apache.org/using-git.html</loc>
-  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://opennlp.apache.org/building.html</loc>
-  <lastmod>2023-06-09T00:10:58+00:00</lastmod>
+  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -81,12 +81,12 @@
 </url>
 <url>
   <loc>https://opennlp.apache.org/release.html</loc>
-  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://opennlp.apache.org/team.html</loc>
-  <lastmod>2017-11-02T10:51:58+00:00</lastmod>
+  <lastmod>2024-05-20T07:20:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>

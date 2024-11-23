@@ -27,7 +27,7 @@ link:https://stackoverflow.com/questions/tagged/opennlp[forums,role=external,win
 
 [qanda]
 Where can I download the pre-trained models used in OpenNLP?::
-Models for 23 languages are available at the project's link:/models.html[Models download] page or
+Models for 32 languages are available at the project's link:/models.html[Models download] page or
 bundled in JAR files distributed via *Maven Central*
 (link:https://central.sonatype.com/search?q=opennlp+models+sentdetect[Sentence-Detector,role=external,window=_blank],
 link:https://central.sonatype.com/search?q=opennlp+models+tokenizer[Tokenization,role=external,window=_blank],

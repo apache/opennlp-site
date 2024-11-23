@@ -16,7 +16,7 @@
    specific language governing permissions and limitations
    under the License.
 ////
-= New OpenNLP Pre-trained Models released
+= OpenNLP Pre-trained Models 1.1 released
 Apache OpenNLP
 2024-10-28
 :jbake-type: post
@@ -25,16 +25,20 @@ Apache OpenNLP
 :category: news
 :idprefix:
 
-New pre-trained sentence, parts of speech, and token models for 18 (Indo-European) languages are now available for:
+New pre-trained _sentence detection_, _tokenization_, and _parts of speech tagging_ models for 18 (Indo-European) languages are now available for:
 
 * Bulgarian, Czech, Croatian, Danish, Estonian, Finnish, Latvian, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swedish, and Ukrainian.
 
-The existing sentence, parts of speech, and token models for these 5 languages:
+The existing _sentence detection_, _tokenization_, and _parts of speech tagging_ models for these 5 languages:
 
 * Dutch, English, French, German, and Italian
 
-were re-trained. The French models are now based on a GSD treebank, as the previously used FTB treebank https://universaldependencies.org/fr/index.html[is not maintained] and has therefore been discontinued by the https://universaldependencies.org[Universal Dependencies] (UD) project.
+were re-trained. The French models are now based on a GSD treebank, as the previously used
+FTB treebank link:https://universaldependencies.org/fr/index.html[is not maintained,role=external,window=_blank] and
+has therefore been discontinued by the link:https://universaldependencies.org[Universal Dependencies,role=external,window=_blank] (UD) project.
 
-All  models were trained with OpenNLP 2.4.0 based on the UD release https://hdl.handle.net/11234/1-5502[2.14] and are intended to provide usable models under the Apache 2.0 license.
+All  models were trained with OpenNLP 2.4.0 based on the UD release link:https://hdl.handle.net/11234/1-5502[2.14,role=external,window=_blank] and are intended to provide usable models under the Apache 2.0 license.
 These models are available as JAR artifacts via Maven Central, or directly as plain, binary files via our link:/models.html[models page].
-See the models' README for more information on the models including how each was created and evaluated.
+See the models' link:https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.1/README[README,role=external,window=_blank] for more information on the models including how each was created and evaluated.
+
+--The Apache OpenNLP Team
