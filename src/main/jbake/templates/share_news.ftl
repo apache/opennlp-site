@@ -20,9 +20,9 @@
 <div class="shareon" style="margin-top: 30px;">
   <a class="reddit"></a>
   <a class="linkedin"></a>
-  <a class="mastodon"></a>
-  <a class="twitter"></a>
+  <a class="bluesky"></a>
   <a class="telegram"></a>
+  <a class="mastodon"></a>
   <a class="copy-url"></a>
   <a class="email"></a>
   <a class="print"></a>

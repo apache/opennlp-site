@@ -32,7 +32,7 @@
     <script src="/js/jquery-3.7.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/prettify.js" defer></script>
-    <script src="/js/shareon-2.5.0.iife.js" defer init></script>
+    <script src="/js/shareon-2.6.0.iife.js" defer init></script>
     <!-- Include most recent Apache Con events -->
     <script src="https://www.apachecon.com/event-images/snippet.js" defer></script>
 

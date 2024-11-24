@@ -62,7 +62,7 @@
     <link href="/css/custom-style.css" rel="stylesheet"/>
     <link href="/css/scheme-light.css" rel="stylesheet"/>
     <link href="/css/scheme-dark.css" rel="stylesheet"/>
-    <link href="/css/shareon-2.5.0.min.css" rel="stylesheet"/>
+    <link href="/css/shareon-2.6.0.min.css" rel="stylesheet"/>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
