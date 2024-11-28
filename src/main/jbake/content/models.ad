@@ -38,12 +38,13 @@ Use the URLs in the tables below to download the pre-trained models for use with
 
 === Language detection
 
-[options="header"]
+NOTE: The model below is compatible with OpenNLP versions >= 1.8.3.
+
+[options="header", cols="10,30,10,~,15"]
 |======
-| Language | Description | Compatibility | README and Reports | File | Signatures
+| Language | Description | Reports | Model File | Signatures
 | Detects 103 languages
 | Detects 103 languages in ISO 693-3 standard. Works well with longer texts that have at least 2 sentences or more from the same language.
-| >= 1.8.3
 | https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/README.txt[README]
 https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.report.txt[Effectiveness]
  https://www.apache.org/dyn/closer.cgi/opennlp/models/langdetect/1.8.3/langdetect-183.bin.misclassified.txt[Misclassified]
@@ -56,12 +57,11 @@ https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.a
 === Sentence detection
 
 NOTE: All models below are compatible with OpenNLP versions >= 1.0.0. The {opennlp_downloads}/{opennlp_models}/README[README] and
-{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.2-2.5.0.zip[evaluation logs]
-refer to every language listed below.
+{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.2-2.5.0.zip[evaluation logs] refer to every language listed below.
 
-[options="header"]
+[options="header", cols="10,15,15,10,~,15"]
 |======
-| ISO code | Language | Trained with OpenNLP | UD version |  File | Signatures
+| ISO code | Language | Trained with OpenNLP | UD version | Model File | Signatures
 | bg
 | Bulgarian
 | 2.5.0
@@ -290,12 +290,11 @@ refer to every language listed below.
 === Tokenization
 
 NOTE: All models below are compatible with OpenNLP versions >= 1.0.0. The {opennlp_downloads}/{opennlp_models}/README[README] and
-{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.2-2.5.0.zip[evaluation logs]
-refer to every language listed below.
+{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.2-2.5.0.zip[evaluation logs] refer to every language listed below.
 
-[options="header"]
+[options="header", cols="10,15,15,10,~,15"]
 |======
-| ISO code | Language | Trained with OpenNLP | UD version |  File | Signatures
+| ISO code | Language | Trained with OpenNLP | UD version | Model File | Signatures
 | bg
 | Bulgarian
 | 2.5.0
@@ -524,12 +523,11 @@ refer to every language listed below.
 === Lemmatization
 
 NOTE: All models below are compatible with OpenNLP versions >= 1.0.0. The {opennlp_downloads}/{opennlp_models}/README[README] and
-{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.2-2.5.0.zip[evaluation logs]
-refer to every language listed below.
+{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.2-2.5.0.zip[evaluation logs] refer to every language listed below.
 
-[options="header"]
+[options="header", cols="10,15,15,10,~,15"]
 |======
-| ISO code | Language | Trained with OpenNLP | UD version |  File | Signatures
+| ISO code | Language | Trained with OpenNLP | UD version | Model File | Signatures
 | bg
 | Bulgarian
 | 2.5.0
@@ -758,12 +756,11 @@ refer to every language listed below.
 === Part of Speech Tagging
 
 NOTE: All models below are compatible with OpenNLP versions >= 1.0.0. The {opennlp_downloads}/{opennlp_models}/README[README] and
-{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.2-2.5.0.zip[evaluation logs]
-refer to every language listed below.
+{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.2-2.5.0.zip[evaluation logs] refer to every language listed below.
 
-[options="header"]
+[options="header", cols="10,15,15,10,~,15"]
 |======
-| ISO code | Language | Trained with OpenNLP | UD version |  File | Signatures
+| ISO code | Language | Trained with OpenNLP | UD version | Model File | Signatures
 | bg
 | Bulgarian
 | 2.5.0
