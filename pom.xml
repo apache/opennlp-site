@@ -507,6 +507,17 @@
                   <outputDirectory>${project.build.directory}/distr/2.5.0</outputDirectory>
                   <excludes>**/lib/**/*</excludes>
                 </artifactItem>
+
+                <artifactItem>
+                  <groupId>org.apache.opennlp</groupId>
+                  <artifactId>opennlp-distr</artifactId>
+                  <version>2.5.1</version>
+                  <overWrite>false</overWrite>
+                  <type>zip</type>
+                  <classifier>bin</classifier>
+                  <outputDirectory>${project.build.directory}/distr/2.5.1</outputDirectory>
+                  <excludes>**/lib/**/*</excludes>
+                </artifactItem>
               </artifactItems>
             </configuration>
           </execution>
