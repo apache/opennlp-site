@@ -11,7 +11,7 @@
 </url>
 <url>
   <loc>https://opennlp.apache.org/download.html</loc>
-  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
+  <lastmod>2024-12-06T09:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -21,12 +21,12 @@
 </url>
 <url>
   <loc>https://opennlp.apache.org/maven-dependency.html</loc>
-  <lastmod>2024-10-29T12:30:00+00:00</lastmod>
+  <lastmod>2024-12-06T09:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://opennlp.apache.org/news/</loc>
-  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
+  <lastmod>2024-12-06T09:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -46,7 +46,7 @@
 </url>
 <url>
   <loc>https://opennlp.apache.org/docs/</loc>
-  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
+  <lastmod>2024-12-06T09:30:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -93,6 +93,36 @@
   <loc>https://opennlp.apache.org/privacy-policy.html</loc>
   <lastmod>2017-11-02T10:51:58+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-251.html</loc>
+  <lastmod>2024-12-06T09:30:00+00:00</lastmod>
+  <priority>0.66</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/news-2024-11-23.html</loc>
+  <lastmod>2024-11-23T10:10:00+00:00</lastmod>
+  <priority>0.68</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-250.html</loc>
+  <lastmod>2024-11-11T10:10:00+00:00</lastmod>
+  <priority>0.66</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/news-2024-10-28.html</loc>
+  <lastmod>2024-10-28T10:10:00+00:00</lastmod>
+  <priority>0.68</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-240.html</loc>
+  <lastmod>2024-07-16T10:10:00+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-230.html</loc>
+  <lastmod>2023-07-31T10:10:00+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://opennlp.apache.org/news/release-184.html</loc>
