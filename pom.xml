@@ -526,7 +526,7 @@
                   <overWrite>false</overWrite>
                   <type>zip</type>
                   <classifier>bin</classifier>
-                  <outputDirectory>${project.build.directory}/distr/2.5.1</outputDirectory>
+                  <outputDirectory>${project.build.directory}/distr/2.5.2</outputDirectory>
                   <excludes>**/lib/**/*</excludes>
                 </artifactItem>
               </artifactItems>
