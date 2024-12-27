@@ -324,7 +324,6 @@ Move the last version's links to the documentation to the Legacy Documentation (
 * link:/docs/${previous.release}/manual/opennlp.html[Apache OpenNLP Manual]
 * link:/docs/${previous.release}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
 * link:/docs/${previous.release}/apidocs/opennlp-tools-models/index.html[Apache OpenNLP Tools Models Javadoc]
-* link:/docs/${previous.release}/apidocs/opennlp-dl/index.html[Apache OpenNLP DL Javadoc]
 * link:/docs/${previous.release}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
 * link:/docs/${previous.release}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]
 ----
