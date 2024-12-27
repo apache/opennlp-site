@@ -30,9 +30,9 @@ NOTE: All the documentation is also included in the binary distribution.
 == Apache OpenNLP {opennlp_version} documentation
 
 * link:/docs/{opennlp_version}/manual/opennlp.html[Apache OpenNLP Manual]
-* link:/docs/2.5.1/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
-* link:/docs/2.5.1/apidocs/opennlp-tools-models/index.html[Apache OpenNLP Tools Models Javadoc]
-* link:/docs/2.5.1/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
-* link:/docs/2.5.1/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]
+* link:/docs/{opennlp_version}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
+* link:/docs/{opennlp_version}/apidocs/opennlp-tools-models/index.html[Apache OpenNLP Tools Models Javadoc]
+* link:/docs/{opennlp_version}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
+* link:/docs/{opennlp_version}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]
 
 TIP: Documentation for archived releases can be found link:/docs/legacy.html[here].
