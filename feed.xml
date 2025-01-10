@@ -24,8 +24,8 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Fri, 10 Jan 2025 10:06:45 +0000</pubDate>
-    <lastBuildDate>Fri, 10 Jan 2025 10:06:45 +0000</lastBuildDate>
+    <pubDate>Fri, 10 Jan 2025 10:36:42 +0000</pubDate>
+    <lastBuildDate>Fri, 10 Jan 2025 10:36:42 +0000</lastBuildDate>
 
     <item>
       <title>Apache OpenNLP 2.5.3 released</title>
@@ -45,7 +45,7 @@
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.5.3 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.5.3 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
@@ -86,7 +86,7 @@
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.5.2 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.5.2 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
@@ -128,7 +128,7 @@ The latter had been deactivated for some time and are now part of the unit tests
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.5.1 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.5.1 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
@@ -207,7 +207,7 @@ for more information, including how each was created and evaluated.&lt;/p&gt;
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.5.0 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.5.0 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
@@ -297,7 +297,7 @@ See the models&apos; &lt;a href=&quot;https://dist.apache.org/repos/dist/release
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.4.0 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.4.0 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
@@ -340,7 +340,7 @@ as Maven dependencies and directly used from an application.&lt;/p&gt;
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.3.3 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.3.3 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
@@ -385,7 +385,7 @@ The ITs were not executed for quite some time, but are now executed for every re
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.3.2 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.3.2 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
@@ -432,7 +432,7 @@ you can use the newly added module opennlp-dl-gpu. Moreover, we fixed the CLI on
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.3.1 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.3.1 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
@@ -474,7 +474,7 @@ Moreover, it switches the ONNX runtime for the &apos;opennlp-dl&apos; component 
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.3.0 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.3.0 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
@@ -515,7 +515,7 @@ Moreover, it switches the ONNX runtime for the &apos;opennlp-dl&apos; component 
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.2.0 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.2.0 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
@@ -556,7 +556,7 @@ Moreover, it switches the ONNX runtime for the &apos;opennlp-dl&apos; component 
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.1.1 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.1.1 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
@@ -597,7 +597,7 @@ Moreover, it switches the ONNX runtime for the &apos;opennlp-dl&apos; component 
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.1.0 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.1.0 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
@@ -660,7 +660,7 @@ Moreover, it switches the ONNX runtime for the &apos;opennlp-dl&apos; component 
 &lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.0.0 binary and source distributions are available for download from our download page: &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Apache OpenNLP 2.0.0 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven Dependency&lt;/a&gt;&lt;/p&gt;
