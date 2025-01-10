@@ -35,6 +35,8 @@ jobs:
           java-version: '8'
           distribution: 'temurin'
           cache: maven
+      - name: maven-settings-xml-action
+        run: echo "<settings xmlns=\"http://maven.apache.org/SETTINGS/1.0.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd\"> <activeProfiles> <activeProfile>github</activeProfile> </activeProfiles> <profiles> <profile> <id>github</id> <repositories> <repository> <id>central-repo</id> <url>https://repo.maven.apache.org/maven2</url> <releases> <enabled>true</enabled> </releases> <snapshots> <enabled>false</enabled> </snapshots> </repository> </repositories> <pluginRepositories> <pluginRepository> <id>central-plugin-repository</id> <url>https://repo.maven.apache.org/maven2</url> <releases> <enabled>true</enabled> </releases> <snapshots> <enabled>false</enabled> </snapshots> </pluginRepository> </pluginRepositories> </profile> </profiles> <servers/> <mirrors/> <pluginGroups/> </settings>" > ~/.m2/settings.xml
       - name: Build with Maven
         run: mvn help:system -U -ntp --batch-mode --show-version --fail-at-end clean install
       - name: basic validations
