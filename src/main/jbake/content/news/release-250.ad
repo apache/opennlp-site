@@ -31,7 +31,7 @@ The Apache OpenNLP library is a machine learning based toolkit for the processin
 
 It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
 
-Apache OpenNLP 2.5.0 binary and source distributions are available for download from our download page: link:/download.html[download page]
+Apache OpenNLP 2.5.0 binary and source distributions are available for download from our link:/download.html[download page].
 
 The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: link:/maven-dependency.html[Maven Dependency]
 
