@@ -24,8 +24,8 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Fri, 10 Jan 2025 10:36:42 +0000</pubDate>
-    <lastBuildDate>Fri, 10 Jan 2025 10:36:42 +0000</lastBuildDate>
+    <pubDate>Sat, 11 Jan 2025 15:17:54 +0000</pubDate>
+    <lastBuildDate>Sat, 11 Jan 2025 15:17:54 +0000</lastBuildDate>
 
     <item>
       <title>Apache OpenNLP 2.5.3 released</title>
@@ -1163,11 +1163,11 @@ The Language Detector Model can detect 103 languages and outputs ISO 639-3 codes
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;More information about this release can be found in the &lt;em&gt;README.txt&lt;/em&gt; at:
-&lt;a href=&quot;https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/README.txt&quot; class=&quot;bare&quot;&gt;https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/README.txt&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://downloads.apache.org/opennlp/models/langdetect/1.8.3/README.txt&quot; class=&quot;bare&quot;&gt;https://downloads.apache.org/opennlp/models/langdetect/1.8.3/README.txt&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Details about this model effectiveness can be found in the following report:
-&lt;a href=&quot;https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.report.txt&quot; class=&quot;bare&quot;&gt;https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.report.txt&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://downloads.apache.org/opennlp/models/langdetect/1.8.3/langdetect-183.bin.report.txt&quot; class=&quot;bare&quot;&gt;https://downloads.apache.org/opennlp/models/langdetect/1.8.3/langdetect-183.bin.report.txt&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
