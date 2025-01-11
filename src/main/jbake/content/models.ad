@@ -45,13 +45,13 @@ NOTE: The model below is compatible with OpenNLP versions >= 1.8.3.
 | Language | Description | Reports | Model File | Signatures
 | Detects 103 languages
 | Detects 103 languages in ISO 693-3 standard. Works well with longer texts that have at least 2 sentences or more from the same language.
-| https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/README.txt[README]
-https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.report.txt[Effectiveness]
+| https://downloads.apache.org/opennlp/models/langdetect/1.8.3/README.txt[README]
+https://downloads.apache.org/opennlp/models/langdetect/1.8.3/langdetect-183.bin.report.txt[Effectiveness]
  https://www.apache.org/dyn/closer.cgi/opennlp/models/langdetect/1.8.3/langdetect-183.bin.misclassified.txt[Misclassified]
 | https://www.apache.org/dyn/closer.cgi/opennlp/models/langdetect/1.8.3/langdetect-183.bin[langdetect-183.bin]
-| https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.sha256[sha256]
-https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.sha512[sha512]
-https://www.apache.org/dist/opennlp/models/langdetect/1.8.3/langdetect-183.bin.asc[asc]
+| https://downloads.apache.org/opennlp/models/langdetect/1.8.3/langdetect-183.bin.sha256[sha256]
+https://downloads.apache.org/opennlp/models/langdetect/1.8.3/langdetect-183.bin.sha512[sha512]
+https://downloads.apache.org/opennlp/models/langdetect/1.8.3/langdetect-183.bin.asc[asc]
 |======
 
 === Sentence detection
@@ -1007,7 +1007,7 @@ Use the following commands to verify the integrity:
 * `gpg --print-md MD5 fileName.zip`
 * `gpg --verify fileName.tar.gz.asc`
 
-It might be necessary to import the https://www.apache.org/dist/opennlp/KEYS[KEYS file,window=_blank] to verify the integrity
+It might be necessary to import the https://downloads.apache.org/opennlp/KEYS[KEYS file,window=_blank] to verify the integrity
 of the asc files.
 
 That can easily be done with:

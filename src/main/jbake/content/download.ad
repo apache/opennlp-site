@@ -37,20 +37,20 @@ It must be untarred with a GNU compatible version of tar.
 |.tar.gz | .zip
 
 | https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.tar.gz[apache-opennlp-{opennlp_version}-bin.tar.gz]
-https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.tar.gz.sha512[sha512]
-https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.tar.gz.asc[asc]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.tar.gz.sha512[sha512]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.tar.gz.asc[asc]
 
 | https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.zip[apache-opennlp-{opennlp_version}-bin.zip]
-https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.zip.sha512[sha512]
-https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.zip.asc[asc]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.zip.sha512[sha512]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-bin.zip.asc[asc]
 
 | https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.tar.gz[apache-opennlp-{opennlp_version}-src.tar.gz]
-https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.tar.gz.sha512[sha512]
-https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.tar.gz.asc[asc]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.tar.gz.sha512[sha512]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.tar.gz.asc[asc]
 
 | https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.zip[apache-opennlp-{opennlp_version}-src.zip]
-https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.zip.sha512[sha512]
-https://www.apache.org/dist/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.zip.asc[asc]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.zip.sha512[sha512]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_version}/apache-opennlp-{opennlp_version}-src.zip.asc[asc]
 |===
 
 == Verifying Signatures
@@ -62,7 +62,7 @@ Use the following commands to verify the integrity:
 * `gpg --print-md sha512 fileName.tar.gz`
 * `gpg --verify fileName.tar.gz.asc`
 
-It might be necessary to import the https://www.apache.org/dist/opennlp/KEYS[KEYS file] to verify the integrity
+It might be necessary to import the https://downloads.apache.org/opennlp/KEYS[KEYS file] to verify the integrity
 of the asc files.
 
 That can easily be done with:
