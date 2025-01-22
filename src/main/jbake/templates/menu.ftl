@@ -87,6 +87,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-leaf"></span> ASF <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="https://www.apache.org/" target="_blank">The Apache Software Foundation</a></li>
+                        <li><a href="https://www.apache.org/licenses" target="_blank">License</a></li>
                         <li><a href="https://www.apache.org/foundation/policies/conduct" target="_blank">Code of Conduct</a></li>
                         <li><a href="https://www.apache.org/foundation/thanks.html" target="_blank">Thanks</a></li>
                         <li><a href="https://www.apache.org/security/" target="_blank">Security</a></li>
