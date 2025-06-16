@@ -1,0 +1,41 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= OpenNLP Pre-trained Models 1.3 released
+Apache OpenNLP
+2025-06-16
+:jbake-type: post
+:jbake-tags: news
+:jbake-status: published
+:category: news
+:idprefix:
+
+== What's changed?
+
+* New pre-trained _sentence detection_, _tokenization_, _parts of speech tagging_, and _lemmatization_ models are now available for 4 languages:
+** Afrikaans, Indonesian, Irish, and Persian.
+* The Czech models required a change in training, that is a different treebank: 'PDTC', see: https://github.com/UniversalDependencies/UD_Czech-PDTC/blob/master/README.md.
+
+== Details
+All models, for a total of 36 languages, were trained with OpenNLP 2.5.4 based on the UD 2.16 release link:https://hdl.handle.net/11234/1-5901[2.16,role=external,window=_blank]
+and are intended to provide usable models under the Apache 2.0 license.
+These models will soon be available as JAR artifacts via Maven Central, or directly as binary files via our link:/models.html[models page].
+See the models' link:https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.3/README[README,role=external,window=_blank]
+for more information, including how each was created and evaluated.
+
+--The Apache OpenNLP Team

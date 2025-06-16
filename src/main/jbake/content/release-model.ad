@@ -159,7 +159,7 @@ Commit the distribution via SVN to https://dist.apache.org/repos/dist/release:
 svn co https://dist.apache.org/repos/dist/release/opennlp/ dist
 # check if the KEYS file contains your key, if not, update it
 # move the files from dev/models/<MODEL_TYPE>-<MODEL_VERSION> to dist/models/<MODEL_TYPE>-<MODEL_VERSION>
-svn commit --username <username> -m "Adding OpenNLP Models <version>"
+svn mv https://dist.apache.org/repos/dist/dev/opennlp/models/ud-models-x.y/ https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-x.y/ -m "Release pre-trained Apache OpenNLP models x.y"
 ----
 
 === Delete Old Model Release(s)

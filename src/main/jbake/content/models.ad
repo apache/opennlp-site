@@ -27,7 +27,7 @@
 The Apache OpenNLP project provides several pre-trained model files:
 
 * 1 generic model to conduct _language detection_ on a specified text input
-* 32 language specific models to accomplish: _sentence detection_, _tokenization_, _lemmatization_, and _part of speech tagging_.
+* 36 language specific models to accomplish: _sentence detection_, _tokenization_, _lemmatization_, and _part of speech tagging_.
 
 Pre-trained models can be used for testing or getting started. Train your own models for specific use cases.
 
@@ -57,933 +57,1044 @@ https://downloads.apache.org/opennlp/models/langdetect/1.8.3/langdetect-183.bin.
 === Sentence detection
 
 NOTE: All models below are compatible with OpenNLP versions >= 1.0.0. The {opennlp_downloads}/{opennlp_models}/README[README] and
-{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.2-2.5.0.zip[evaluation logs] refer to every language listed below.
+{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.3-2.5.4.zip[evaluation logs] refer to every language listed below.
 
 [options="header", cols="10,15,15,10,~,15"]
 |======
 | ISO code | Language | Trained with OpenNLP | UD version | Model File | Signatures
+| af
+| Afrikaans
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-af-ud-afribooms-sentence-1.3-2.5.4.bin[opennlp-af-ud-afribooms-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-af-ud-lemmas-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-af-ud-afribooms-sentence-1.3-2.5.4.bin.asc[asc]
+
 | bg
 | Bulgarian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-bg-ud-btb-sentence-1.2-2.5.0.bin[opennlp-bg-ud-btb-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-bg-ud-btb-sentence-1.3-2.5.4.bin[opennlp-bg-ud-btb-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-sentence-1.3-2.5.4.bin.asc[asc]
 
 | ca
 | Catalan
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ca-ud-ancora-sentence-1.2-2.5.0.bin[opennlp-ca-ud-ancora-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ca-ud-ancora-sentence-1.3-2.5.4.bin[opennlp-ca-ud-ancora-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-sentence-1.3-2.5.4.bin.asc[asc]
 
 | cs
 | Czech
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-cs-ud-pdt-sentence-1.2-2.5.0.bin[opennlp-cs-ud-pdt-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-cs-ud-pdt-sentence-1.3-2.5.4.bin[opennlp-cs-ud-pdt-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-sentence-1.3-2.5.4.bin.asc[asc]
 
 | da
 | Danish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-da-ud-ddt-sentence-1.2-2.5.0.bin[opennlp-da-ud-ddt-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-da-ud-ddt-sentence-1.3-2.5.4.bin[opennlp-da-ud-ddt-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-sentence-1.3-2.5.4.bin.asc[asc]
 
 | de
 | German
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-de-ud-gsd-sentence-1.2-2.5.0.bin[opennlp-de-ud-gsd-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-de-ud-gsd-sentence-1.3-2.5.4.bin[opennlp-de-ud-gsd-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-sentence-1.3-2.5.4.bin.asc[asc]
 
 | el
 | Greek
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-el-ud-gdt-sentence-1.2-2.5.0.bin[opennlp-el-ud-gdt-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-el-ud-gdt-sentence-1.3-2.5.4.bin[opennlp-el-ud-gdt-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-sentence-1.3-2.5.4.bin.asc[asc]
 
 | en
 | English
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-en-ud-ewt-sentence-1.2-2.5.0.bin[opennlp-en-ud-ewt-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-en-ud-ewt-sentence-1.3-2.5.4.bin[opennlp-en-ud-ewt-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-sentence-1.3-2.5.4.bin.asc[asc]
 
 | es
 | Spanish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-es-ud-gsd-sentence-1.2-2.5.0.bin[opennlp-es-ud-gsd-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-es-ud-gsd-sentence-1.3-2.5.4.bin[opennlp-es-ud-gsd-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-sentence-1.3-2.5.4.bin.asc[asc]
 
 | et
 | Estonian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-et-ud-edt-sentence-1.2-2.5.0.bin[opennlp-et-ud-edt-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-et-ud-edt-sentence-1.3-2.5.4.bin[opennlp-et-ud-edt-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-sentence-1.3-2.5.4.bin.asc[asc]
 
 | eu
 | Basque
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-eu-ud-bdt-sentence-1.2-2.5.0.bin[opennlp-eu-ud-bdt-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-eu-ud-bdt-sentence-1.3-2.5.4.bin[opennlp-eu-ud-bdt-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-sentence-1.3-2.5.4.bin.asc[asc]
+
+| fa
+| Persian
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fa-ud-perdt-sentence-1.3-2.5.4.bin[opennlp-fa-ud-perdt-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-fa-ud-pos-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fa-ud-perdt-sentence-1.3-2.5.4.bin.asc[asc]
 
 | fi
 | Finnish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fi-ud-tdt-sentence-1.2-2.5.0.bin[opennlp-fi-ud-tdt-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fi-ud-tdt-sentence-1.3-2.5.4.bin[opennlp-fi-ud-tdt-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-sentence-1.3-2.5.4.bin.asc[asc]
 
 | fr
 | French
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fr-ud-gsd-sentence-1.2-2.5.0.bin[opennlp-fr-ud-gsd-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fr-ud-gsd-sentence-1.3-2.5.4.bin[opennlp-fr-ud-gsd-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-sentence-1.3-2.5.4.bin.asc[asc]
+
+| ga
+| Irish
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ga-ud-idt-sentence-1.3-2.5.4.bin[opennlp-ga-ud-idt-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ga-ud-idt-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ga-ud-idt-sentence-1.3-2.5.4.bin.asc[asc]
 
 | hr
 | Croatian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hr-ud-set-sentence-1.2-2.5.0.bin[opennlp-hr-ud-set-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hr-ud-set-sentence-1.3-2.5.4.bin[opennlp-hr-ud-set-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-sentence-1.3-2.5.4.bin.asc[asc]
 
 | hy
 | Armenian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hy-ud-bsut-sentence-1.2-2.5.0.bin[opennlp-hy-ud-bsut-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hy-ud-bsut-sentence-1.3-2.5.4.bin[opennlp-hy-ud-bsut-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-sentence-1.3-2.5.4.bin.asc[asc]
+
+| id
+| Indonesian
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-id-ud-gsd-sentence-1.3-2.5.4.bin[opennlp-id-ud-gsd-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-id-ud-gsd-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-id-ud-gsd-sentence-1.3-2.5.4.bin.asc[asc]
 
 | is
 | Icelandic
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-is-ud-icepahc-sentence-1.2-2.5.0.bin[opennlp-is-ud-icepahc-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-sentence-1.2-2.5.0.bin.asc[asc]
-
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-is-ud-icepahc-sentence-1.3-2.5.4.bin[opennlp-is-ud-icepahc-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-sentence-1.3-2.5.4.bin.asc[asc]
 | it
 | Italian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-it-ud-vit-sentence-1.2-2.5.0.bin[opennlp-it-ud-vit-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-it-ud-vit-sentence-1.3-2.5.4.bin[opennlp-it-ud-vit-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-sentence-1.3-2.5.4.bin.asc[asc]
 
 | ka
 | Georgian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ka-ud-glc-sentence-1.2-2.5.0.bin[opennlp-ka-ud-glc-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ka-ud-glc-sentence-1.3-2.5.4.bin[opennlp-ka-ud-glc-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-sentence-1.3-2.5.4.bin.asc[asc]
 
 | kk
 | Kazakh
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-kk-ud-ktb-sentence-1.2-2.5.0.bin[opennlp-kk-ud-ktb-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-kk-ud-ktb-sentence-1.3-2.5.4.bin[opennlp-kk-ud-ktb-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-sentence-1.3-2.5.4.bin.asc[asc]
 
 | ko
 | Korean
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ko-ud-kaist-sentence-1.2-2.5.0.bin[opennlp-ko-ud-kaist-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ko-ud-kaist-sentence-1.3-2.5.4.bin[opennlp-ko-ud-kaist-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-sentence-1.3-2.5.4.bin.asc[asc]
 
 | lv
 | Latvian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-lv-ud-lvtb-sentence-1.2-2.5.0.bin[opennlp-lv-ud-lvtb-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-lv-ud-lvtb-sentence-1.3-2.5.4.bin[opennlp-lv-ud-lvtb-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-sentence-1.3-2.5.4.bin.asc[asc]
 
 | nl
 | Dutch
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-nl-ud-alpino-sentence-1.2-2.5.0.bin[opennlp-nl-ud-alpino-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-nl-ud-alpino-sentence-1.3-2.5.4.bin[opennlp-nl-ud-alpino-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-sentence-1.3-2.5.4.bin.asc[asc]
 
 | no
 | Norwegian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-no-ud-bokmaal-sentence-1.2-2.5.0.bin[opennlp-no-ud-bokmaal-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-no-ud-bokmaal-sentence-1.3-2.5.4.bin[opennlp-no-ud-bokmaal-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-sentence-1.3-2.5.4.bin.asc[asc]
 
 | pl
 | Polish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pl-ud-pdb-sentence-1.2-2.5.0.bin[opennlp-pl-ud-pdb-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pl-ud-pdb-sentence-1.3-2.5.4.bin[opennlp-pl-ud-pdb-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-sentence-1.3-2.5.4.bin.asc[asc]
 
 | pt
 | Portuguese
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pt-ud-gsd-sentence-1.2-2.5.0.bin[opennlp-pt-ud-gsd-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pt-ud-gsd-sentence-1.3-2.5.4.bin[opennlp-pt-ud-gsd-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-sentence-1.3-2.5.4.bin.asc[asc]
 
 | ro
 | Romanian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ro-ud-rrt-sentence-1.2-2.5.0.bin[opennlp-ro-ud-rrt-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ro-ud-rrt-sentence-1.3-2.5.4.bin[opennlp-ro-ud-rrt-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-sentence-1.3-2.5.4.bin.asc[asc]
 
 | ru
 | Russian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ru-ud-gsd-sentence-1.2-2.5.0.bin[opennlp-ru-ud-gsd-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ru-ud-gsd-sentence-1.3-2.5.4.bin[opennlp-ru-ud-gsd-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-sentence-1.3-2.5.4.bin.asc[asc]
 
 | sk
 | Slovak
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sk-ud-snk-sentence-1.2-2.5.0.bin[opennlp-sk-ud-snk-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sk-ud-snk-sentence-1.3-2.5.4.bin[opennlp-sk-ud-snk-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-sentence-1.3-2.5.4.bin.asc[asc]
 
 | sl
 | Slovenian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sl-ud-ssj-sentence-1.2-2.5.0.bin[opennlp-sl-ud-ssj-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sl-ud-ssj-sentence-1.3-2.5.4.bin[opennlp-sl-ud-ssj-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-sentence-1.3-2.5.4.bin.asc[asc]
 
 | sr
 | Serbian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sr-ud-set-sentence-1.2-2.5.0.bin[opennlp-sr-ud-set-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sr-ud-set-sentence-1.3-2.5.4.bin[opennlp-sr-ud-set-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-sentence-1.3-2.5.4.bin.asc[asc]
 
 | sv
 | Swedish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sv-ud-talbanken-sentence-1.2-2.5.0.bin[opennlp-sv-ud-talbanken-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sv-ud-talbanken-sentence-1.3-2.5.4.bin[opennlp-sv-ud-talbanken-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-sentence-1.3-2.5.4.bin.asc[asc]
 
 | tr
 | Turkish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-tr-ud-boun-sentence-1.2-2.5.0.bin[opennlp-tr-ud-boun-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-tr-ud-boun-sentence-1.3-2.5.4.bin[opennlp-tr-ud-boun-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-sentence-1.3-2.5.4.bin.asc[asc]
 
 | uk
 | Ukrainian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-uk-ud-iu-sentence-1.2-2.5.0.bin[opennlp-uk-ud-iu-sentence-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-sentence-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-sentence-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-uk-ud-iu-sentence-1.3-2.5.4.bin[opennlp-uk-ud-iu-sentence-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-sentence-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-sentence-1.3-2.5.4.bin.asc[asc]
 |======
 
 === Tokenization
 
 NOTE: All models below are compatible with OpenNLP versions >= 1.0.0. The {opennlp_downloads}/{opennlp_models}/README[README] and
-{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.2-2.5.0.zip[evaluation logs] refer to every language listed below.
+{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.3-2.5.4.zip[evaluation logs] refer to every language listed below.
 
 [options="header", cols="10,15,15,10,~,15"]
 |======
 | ISO code | Language | Trained with OpenNLP | UD version | Model File | Signatures
+| af
+| Afrikaans
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-af-ud-afribooms-tokens-1.3-2.5.4.bin[opennlp-af-ud-afribooms-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-af-ud-afribooms-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-af-ud-afribooms-tokens-1.3-2.5.4.bin.asc[asc]
+
 | bg
 | Bulgarian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-bg-ud-btb-tokens-1.2-2.5.0.bin[opennlp-bg-ud-btb-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-bg-ud-btb-tokens-1.3-2.5.4.bin[opennlp-bg-ud-btb-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-tokens-1.3-2.5.4.bin.asc[asc]
 
 | ca
 | Catalan
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ca-ud-ancora-tokens-1.2-2.5.0.bin[opennlp-ca-ud-ancora-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ca-ud-ancora-tokens-1.3-2.5.4.bin[opennlp-ca-ud-ancora-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-tokens-1.3-2.5.4.bin.asc[asc]
 
 | cs
 | Czech
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-cs-ud-pdt-tokens-1.2-2.5.0.bin[opennlp-cs-ud-pdt-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-cs-ud-pdt-tokens-1.3-2.5.4.bin[opennlp-cs-ud-pdt-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-tokens-1.3-2.5.4.bin.asc[asc]
 
 | da
 | Danish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-da-ud-ddt-tokens-1.2-2.5.0.bin[opennlp-da-ud-ddt-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-da-ud-ddt-tokens-1.3-2.5.4.bin[opennlp-da-ud-ddt-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-tokens-1.3-2.5.4.bin.asc[asc]
 
 | de
 | German
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-de-ud-gsd-tokens-1.2-2.5.0.bin[opennlp-de-ud-gsd-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-de-ud-gsd-tokens-1.3-2.5.4.bin[opennlp-de-ud-gsd-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-tokens-1.3-2.5.4.bin.asc[asc]
 
 | el
 | Greek
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-el-ud-gdt-tokens-1.2-2.5.0.bin[opennlp-el-ud-gdt-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-el-ud-gdt-tokens-1.3-2.5.4.bin[opennlp-el-ud-gdt-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-tokens-1.3-2.5.4.bin.asc[asc]
 
 | en
 | English
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-en-ud-ewt-tokens-1.2-2.5.0.bin[opennlp-en-ud-ewt-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-en-ud-ewt-tokens-1.3-2.5.4.bin[opennlp-en-ud-ewt-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-tokens-1.3-2.5.4.bin.asc[asc]
 
 | es
 | Spanish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-es-ud-gsd-tokens-1.2-2.5.0.bin[opennlp-es-ud-gsd-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-es-ud-gsd-tokens-1.3-2.5.4.bin[opennlp-es-ud-gsd-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-tokens-1.3-2.5.4.bin.asc[asc]
 
 | et
 | Estonian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-et-ud-edt-tokens-1.2-2.5.0.bin[opennlp-et-ud-edt-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-et-ud-edt-tokens-1.3-2.5.4.bin[opennlp-et-ud-edt-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-tokens-1.3-2.5.4.bin.asc[asc]
 
 | eu
 | Basque
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-eu-ud-bdt-tokens-1.2-2.5.0.bin[opennlp-eu-ud-bdt-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-eu-ud-bdt-tokens-1.3-2.5.4.bin[opennlp-eu-ud-bdt-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-tokens-1.3-2.5.4.bin.asc[asc]
+
+| fa
+| Persian
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fa-ud-perdt-tokens-1.3-2.5.4.bin[opennlp-fa-ud-perdt-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-fa-ud-perdt-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fa-ud-perdt-tokens-1.3-2.5.4.bin.asc[asc]
 
 | fi
 | Finnish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fi-ud-tdt-tokens-1.2-2.5.0.bin[opennlp-fi-ud-tdt-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fi-ud-tdt-tokens-1.3-2.5.4.bin[opennlp-fi-ud-tdt-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-tokens-1.3-2.5.4.bin.asc[asc]
 
 | fr
 | French
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fr-ud-gsd-tokens-1.2-2.5.0.bin[opennlp-fr-ud-gsd-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fr-ud-gsd-tokens-1.3-2.5.4.bin[opennlp-fr-ud-gsd-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-tokens-1.3-2.5.4.bin.asc[asc]
+
+| ga
+| Irish
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ga-ud-idt-tokens-1.3-2.5.4.bin[opennlp-ga-ud-idt-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ga-ud-idt-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ga-ud-idt-tokens-1.3-2.5.4.bin.asc[asc]
 
 | hr
 | Croatian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hr-ud-set-tokens-1.2-2.5.0.bin[opennlp-hr-ud-set-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hr-ud-set-tokens-1.3-2.5.4.bin[opennlp-hr-ud-set-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-tokens-1.3-2.5.4.bin.asc[asc]
 
 | hy
 | Armenian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hy-ud-bsut-tokens-1.2-2.5.0.bin[opennlp-hy-ud-bsut-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hy-ud-bsut-tokens-1.3-2.5.4.bin[opennlp-hy-ud-bsut-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-tokens-1.3-2.5.4.bin.asc[asc]
+
+| id
+| Indonesian
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-id-ud-gsd-tokens-1.3-2.5.4.bin[opennlp-id-ud-gsd-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-id-ud-gsd-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-id-ud-gsd-tokens-1.3-2.5.4.bin.asc[asc]
 
 | is
 | Icelandic
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-is-ud-icepahc-tokens-1.2-2.5.0.bin[opennlp-is-ud-icepahc-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-is-ud-icepahc-tokens-1.3-2.5.4.bin[opennlp-is-ud-icepahc-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-tokens-1.3-2.5.4.bin.asc[asc]
 
 | it
 | Italian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-it-ud-vit-tokens-1.2-2.5.0.bin[opennlp-it-ud-vit-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-it-ud-vit-tokens-1.3-2.5.4.bin[opennlp-it-ud-vit-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-tokens-1.3-2.5.4.bin.asc[asc]
 
 | ka
 | Georgian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ka-ud-glc-tokens-1.2-2.5.0.bin[opennlp-ka-ud-glc-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ka-ud-glc-tokens-1.3-2.5.4.bin[opennlp-ka-ud-glc-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-tokens-1.3-2.5.4.bin.asc[asc]
 
 | kk
 | Kazakh
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-kk-ud-ktb-tokens-1.2-2.5.0.bin[opennlp-kk-ud-ktb-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-kk-ud-ktb-tokens-1.3-2.5.4.bin[opennlp-kk-ud-ktb-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-tokens-1.3-2.5.4.bin.asc[asc]
 
 | ko
 | Korean
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ko-ud-kaist-tokens-1.2-2.5.0.bin[opennlp-ko-ud-kaist-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ko-ud-kaist-tokens-1.3-2.5.4.bin[opennlp-ko-ud-kaist-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-tokens-1.3-2.5.4.bin.asc[asc]
 
 | lv
 | Latvian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-lv-ud-lvtb-tokens-1.2-2.5.0.bin[opennlp-lv-ud-lvtb-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-lv-ud-lvtb-tokens-1.3-2.5.4.bin[opennlp-lv-ud-lvtb-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-tokens-1.3-2.5.4.bin.asc[asc]
 
 | nl
 | Dutch
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-nl-ud-alpino-tokens-1.2-2.5.0.bin[opennlp-nl-ud-alpino-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-nl-ud-alpino-tokens-1.3-2.5.4.bin[opennlp-nl-ud-alpino-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-tokens-1.3-2.5.4.bin.asc[asc]
 
 | no
 | Norwegian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-no-ud-bokmaal-tokens-1.2-2.5.0.bin[opennlp-no-ud-bokmaal-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-no-ud-bokmaal-tokens-1.3-2.5.4.bin[opennlp-no-ud-bokmaal-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-tokens-1.3-2.5.4.bin.asc[asc]
 
 | pl
 | Polish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pl-ud-pdb-tokens-1.2-2.5.0.bin[opennlp-pl-ud-pdb-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pl-ud-pdb-tokens-1.3-2.5.4.bin[opennlp-pl-ud-pdb-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-tokens-1.3-2.5.4.bin.asc[asc]
 
 | pt
 | Portuguese
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pt-ud-gsd-tokens-1.2-2.5.0.bin[opennlp-pt-ud-gsd-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pt-ud-gsd-tokens-1.3-2.5.4.bin[opennlp-pt-ud-gsd-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-tokens-1.3-2.5.4.bin.asc[asc]
 
 | ro
 | Romanian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ro-ud-rrt-tokens-1.2-2.5.0.bin[opennlp-ro-ud-rrt-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ro-ud-rrt-tokens-1.3-2.5.4.bin[opennlp-ro-ud-rrt-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-tokens-1.3-2.5.4.bin.asc[asc]
 
 | ru
 | Russian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ru-ud-gsd-tokens-1.2-2.5.0.bin[opennlp-ru-ud-gsd-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ru-ud-gsd-tokens-1.3-2.5.4.bin[opennlp-ru-ud-gsd-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-tokens-1.3-2.5.4.bin.asc[asc]
 
 | sk
 | Slovak
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sk-ud-snk-tokens-1.2-2.5.0.bin[opennlp-sk-ud-snk-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sk-ud-snk-tokens-1.3-2.5.4.bin[opennlp-sk-ud-snk-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-tokens-1.3-2.5.4.bin.asc[asc]
 
 | sl
 | Slovenian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sl-ud-ssj-tokens-1.2-2.5.0.bin[opennlp-sl-ud-ssj-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sl-ud-ssj-tokens-1.3-2.5.4.bin[opennlp-sl-ud-ssj-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-tokens-1.3-2.5.4.bin.asc[asc]
 
 | sr
 | Serbian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sr-ud-set-tokens-1.2-2.5.0.bin[opennlp-sr-ud-set-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sr-ud-set-tokens-1.3-2.5.4.bin[opennlp-sr-ud-set-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-tokens-1.3-2.5.4.bin.asc[asc]
 
 | sv
 | Swedish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sv-ud-talbanken-tokens-1.2-2.5.0.bin[opennlp-sv-ud-talbanken-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sv-ud-talbanken-tokens-1.3-2.5.4.bin[opennlp-sv-ud-talbanken-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-tokens-1.3-2.5.4.bin.asc[asc]
 
 | tr
 | Turkish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-tr-ud-boun-tokens-1.2-2.5.0.bin[opennlp-tr-ud-boun-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-tr-ud-boun-tokens-1.3-2.5.4.bin[opennlp-tr-ud-boun-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-tokens-1.3-2.5.4.bin.asc[asc]
 
 | uk
 | Ukrainian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-uk-ud-iu-tokens-1.2-2.5.0.bin[opennlp-uk-ud-iu-tokens-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-tokens-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-tokens-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-uk-ud-iu-tokens-1.3-2.5.4.bin[opennlp-uk-ud-iu-tokens-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-tokens-1.3-2.5.4.bin.asc[asc]
 |======
 
 === Lemmatization
 
 NOTE: All models below are compatible with OpenNLP versions >= 1.0.0. The {opennlp_downloads}/{opennlp_models}/README[README] and
-{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.2-2.5.0.zip[evaluation logs] refer to every language listed below.
+{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.3-2.5.4.zip[evaluation logs] refer to every language listed below.
 
 [options="header", cols="10,15,15,10,~,15"]
 |======
 | ISO code | Language | Trained with OpenNLP | UD version | Model File | Signatures
+| af
+| Afrikaans
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-af-ud-afribooms-lemmas-1.3-2.5.4.bin[opennlp-af-ud-afribooms-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-af-ud-lemmas-tokens-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-af-ud-afribooms-lemmas-1.3-2.5.4.bin.asc[asc]
+
 | bg
 | Bulgarian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-bg-ud-btb-lemmas-1.2-2.5.0.bin[opennlp-bg-ud-btb-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-bg-ud-btb-lemmas-1.3-2.5.4.bin[opennlp-bg-ud-btb-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | ca
 | Catalan
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ca-ud-ancora-lemmas-1.2-2.5.0.bin[opennlp-ca-ud-ancora-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ca-ud-ancora-lemmas-1.3-2.5.4.bin[opennlp-ca-ud-ancora-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | cs
 | Czech
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-cs-ud-pdt-lemmas-1.2-2.5.0.bin[opennlp-cs-ud-pdt-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-cs-ud-pdt-lemmas-1.3-2.5.4.bin[opennlp-cs-ud-pdt-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | da
 | Danish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-da-ud-ddt-lemmas-1.2-2.5.0.bin[opennlp-da-ud-ddt-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-da-ud-ddt-lemmas-1.3-2.5.4.bin[opennlp-da-ud-ddt-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | de
 | German
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-de-ud-gsd-lemmas-1.2-2.5.0.bin[opennlp-de-ud-gsd-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-de-ud-gsd-lemmas-1.3-2.5.4.bin[opennlp-de-ud-gsd-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | el
 | Greek
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-el-ud-gdt-lemmas-1.2-2.5.0.bin[opennlp-el-ud-gdt-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-el-ud-gdt-lemmas-1.3-2.5.4.bin[opennlp-el-ud-gdt-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | en
 | English
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-en-ud-ewt-lemmas-1.2-2.5.0.bin[opennlp-en-ud-ewt-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-en-ud-ewt-lemmas-1.3-2.5.4.bin[opennlp-en-ud-ewt-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | es
 | Spanish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-es-ud-gsd-lemmas-1.2-2.5.0.bin[opennlp-es-ud-gsd-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-es-ud-gsd-lemmas-1.3-2.5.4.bin[opennlp-es-ud-gsd-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | et
 | Estonian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-et-ud-edt-lemmas-1.2-2.5.0.bin[opennlp-et-ud-edt-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-et-ud-edt-lemmas-1.3-2.5.4.bin[opennlp-et-ud-edt-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | eu
 | Basque
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-eu-ud-bdt-lemmas-1.2-2.5.0.bin[opennlp-eu-ud-bdt-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-eu-ud-bdt-lemmas-1.3-2.5.4.bin[opennlp-eu-ud-bdt-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-lemmas-1.3-2.5.4.bin.asc[asc]
+
+| fa
+| Persian
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fa-ud-perdt-lemmas-1.3-2.5.4.bin[opennlp-fa-ud-perdt-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-fa-ud-perdt-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fa-ud-perdt-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | fi
 | Finnish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fi-ud-tdt-lemmas-1.2-2.5.0.bin[opennlp-fi-ud-tdt-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fi-ud-tdt-lemmas-1.3-2.5.4.bin[opennlp-fi-ud-tdt-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | fr
 | French
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fr-ud-gsd-lemmas-1.2-2.5.0.bin[opennlp-fr-ud-gsd-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fr-ud-gsd-lemmas-1.3-2.5.4.bin[opennlp-fr-ud-gsd-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-lemmas-1.3-2.5.4.bin.asc[asc]
+
+| ga
+| Irish
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ga-ud-idt-lemmas-1.3-2.5.4.bin[opennlp-ga-ud-idt-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ga-ud-idt-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ga-ud-idt-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | hr
 | Croatian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hr-ud-set-lemmas-1.2-2.5.0.bin[opennlp-hr-ud-set-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hr-ud-set-lemmas-1.3-2.5.4.bin[opennlp-hr-ud-set-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | hy
 | Armenian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hy-ud-bsut-lemmas-1.2-2.5.0.bin[opennlp-hy-ud-bsut-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hy-ud-bsut-lemmas-1.3-2.5.4.bin[opennlp-hy-ud-bsut-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-lemmas-1.3-2.5.4.bin.asc[asc]
+
+| id
+| Indonesian
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-id-ud-gsd-lemmas-1.3-2.5.4.bin[opennlp-id-ud-gsd-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-id-ud-gsd-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-id-ud-gsd-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | is
 | Icelandic
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-is-ud-icepahc-lemmas-1.2-2.5.0.bin[opennlp-is-ud-icepahc-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-is-ud-icepahc-lemmas-1.3-2.5.4.bin[opennlp-is-ud-icepahc-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | it
 | Italian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-it-ud-vit-lemmas-1.2-2.5.0.bin[opennlp-it-ud-vit-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-it-ud-vit-lemmas-1.3-2.5.4.bin[opennlp-it-ud-vit-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | ka
 | Georgian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ka-ud-glc-lemmas-1.2-2.5.0.bin[opennlp-ka-ud-glc-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ka-ud-glc-lemmas-1.3-2.5.4.bin[opennlp-ka-ud-glc-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | kk
 | Kazakh
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-kk-ud-ktb-lemmas-1.2-2.5.0.bin[opennlp-kk-ud-ktb-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-kk-ud-ktb-lemmas-1.3-2.5.4.bin[opennlp-kk-ud-ktb-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | ko
 | Korean
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ko-ud-kaist-lemmas-1.2-2.5.0.bin[opennlp-ko-ud-kaist-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ko-ud-kaist-lemmas-1.3-2.5.4.bin[opennlp-ko-ud-kaist-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | lv
 | Latvian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-lv-ud-lvtb-lemmas-1.2-2.5.0.bin[opennlp-lv-ud-lvtb-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-lv-ud-lvtb-lemmas-1.3-2.5.4.bin[opennlp-lv-ud-lvtb-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | nl
 | Dutch
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-nl-ud-alpino-lemmas-1.2-2.5.0.bin[opennlp-nl-ud-alpino-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-nl-ud-alpino-lemmas-1.3-2.5.4.bin[opennlp-nl-ud-alpino-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | no
 | Norwegian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-no-ud-bokmaal-lemmas-1.2-2.5.0.bin[opennlp-no-ud-bokmaal-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-no-ud-bokmaal-lemmas-1.3-2.5.4.bin[opennlp-no-ud-bokmaal-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | pl
 | Polish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pl-ud-pdb-lemmas-1.2-2.5.0.bin[opennlp-pl-ud-pdb-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pl-ud-pdb-lemmas-1.3-2.5.4.bin[opennlp-pl-ud-pdb-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | pt
 | Portuguese
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pt-ud-gsd-lemmas-1.2-2.5.0.bin[opennlp-pt-ud-gsd-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pt-ud-gsd-lemmas-1.3-2.5.4.bin[opennlp-pt-ud-gsd-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | ro
 | Romanian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ro-ud-rrt-lemmas-1.2-2.5.0.bin[opennlp-ro-ud-rrt-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ro-ud-rrt-lemmas-1.3-2.5.4.bin[opennlp-ro-ud-rrt-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | ru
 | Russian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ru-ud-gsd-lemmas-1.2-2.5.0.bin[opennlp-ru-ud-gsd-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ru-ud-gsd-lemmas-1.3-2.5.4.bin[opennlp-ru-ud-gsd-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | sk
 | Slovak
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sk-ud-snk-lemmas-1.2-2.5.0.bin[opennlp-sk-ud-snk-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sk-ud-snk-lemmas-1.3-2.5.4.bin[opennlp-sk-ud-snk-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | sl
 | Slovenian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sl-ud-ssj-lemmas-1.2-2.5.0.bin[opennlp-sl-ud-ssj-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sl-ud-ssj-lemmas-1.3-2.5.4.bin[opennlp-sl-ud-ssj-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | sr
 | Serbian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sr-ud-set-lemmas-1.2-2.5.0.bin[opennlp-sr-ud-set-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sr-ud-set-lemmas-1.3-2.5.4.bin[opennlp-sr-ud-set-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | sv
 | Swedish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sv-ud-talbanken-lemmas-1.2-2.5.0.bin[opennlp-sv-ud-talbanken-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sv-ud-talbanken-lemmas-1.3-2.5.4.bin[opennlp-sv-ud-talbanken-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | tr
 | Turkish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-tr-ud-boun-lemmas-1.2-2.5.0.bin[opennlp-tr-ud-boun-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-tr-ud-boun-lemmas-1.3-2.5.4.bin[opennlp-tr-ud-boun-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-lemmas-1.3-2.5.4.bin.asc[asc]
 
 | uk
 | Ukrainian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-uk-ud-iu-lemmas-1.2-2.5.0.bin[opennlp-uk-ud-iu-lemmas-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-lemmas-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-lemmas-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-uk-ud-iu-lemmas-1.3-2.5.4.bin[opennlp-uk-ud-iu-lemmas-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-lemmas-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-lemmas-1.3-2.5.4.bin.asc[asc]
 |======
 
 === Part of Speech Tagging
 
 NOTE: All models below are compatible with OpenNLP versions >= 1.0.0. The {opennlp_downloads}/{opennlp_models}/README[README] and
-{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.2-2.5.0.zip[evaluation logs] refer to every language listed below.
+{opennlp_downloads}/{opennlp_models}/opennlp-training-eval-logs-1.3-2.5.4.zip[evaluation logs] refer to every language listed below.
 
 [options="header", cols="10,15,15,10,~,15"]
 |======
 | ISO code | Language | Trained with OpenNLP | UD version | Model File | Signatures
+| af
+| Afrikaans
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-af-ud-afribooms-pos-1.3-2.5.4.bin[opennlp-af-ud-afribooms-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-af-ud-lemmas-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-af-ud-afribooms-pos-1.3-2.5.4.bin.asc[asc]
+
 | bg
 | Bulgarian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-bg-ud-btb-pos-1.2-2.5.0.bin[opennlp-bg-ud-btb-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-bg-ud-btb-pos-1.3-2.5.4.bin[opennlp-bg-ud-btb-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-bg-ud-btb-pos-1.3-2.5.4.bin.asc[asc]
 
 | ca
 | Catalan
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ca-ud-ancora-pos-1.2-2.5.0.bin[opennlp-ca-ud-ancora-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ca-ud-ancora-pos-1.3-2.5.4.bin[opennlp-ca-ud-ancora-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ca-ud-ancora-pos-1.3-2.5.4.bin.asc[asc]
 
 | cs
 | Czech
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-cs-ud-pdt-pos-1.2-2.5.0.bin[opennlp-cs-ud-pdt-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-cs-ud-pdt-pos-1.3-2.5.4.bin[opennlp-cs-ud-pdt-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-cs-ud-pdt-pos-1.3-2.5.4.bin.asc[asc]
 
 | da
 | Danish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-da-ud-ddt-pos-1.2-2.5.0.bin[opennlp-da-ud-ddt-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-da-ud-ddt-pos-1.3-2.5.4.bin[opennlp-da-ud-ddt-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-da-ud-ddt-pos-1.3-2.5.4.bin.asc[asc]
 
 | de
 | German
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-de-ud-gsd-pos-1.2-2.5.0.bin[opennlp-de-ud-gsd-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-de-ud-gsd-pos-1.3-2.5.4.bin[opennlp-de-ud-gsd-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-de-ud-gsd-pos-1.3-2.5.4.bin.asc[asc]
 
 | el
 | Greek
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-el-ud-gdt-pos-1.2-2.5.0.bin[opennlp-el-ud-gdt-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-el-ud-gdt-pos-1.3-2.5.4.bin[opennlp-el-ud-gdt-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-el-ud-gdt-pos-1.3-2.5.4.bin.asc[asc]
 
 | en
 | English
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-en-ud-ewt-pos-1.2-2.5.0.bin[opennlp-en-ud-ewt-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-en-ud-ewt-pos-1.3-2.5.4.bin[opennlp-en-ud-ewt-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-en-ud-ewt-pos-1.3-2.5.4.bin.asc[asc]
 
 | es
 | Spanish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-es-ud-gsd-pos-1.2-2.5.0.bin[opennlp-es-ud-gsd-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-es-ud-gsd-pos-1.3-2.5.4.bin[opennlp-es-ud-gsd-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-es-ud-gsd-pos-1.3-2.5.4.bin.asc[asc]
 
 | et
 | Estonian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-et-ud-edt-pos-1.2-2.5.0.bin[opennlp-et-ud-edt-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-et-ud-edt-pos-1.3-2.5.4.bin[opennlp-et-ud-edt-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-et-ud-edt-pos-1.3-2.5.4.bin.asc[asc]
 
 | eu
 | Basque
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-eu-ud-bdt-pos-1.2-2.5.0.bin[opennlp-eu-ud-bdt-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-eu-ud-bdt-pos-1.3-2.5.4.bin[opennlp-eu-ud-bdt-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-eu-ud-bdt-pos-1.3-2.5.4.bin.asc[asc]
+
+| fa
+| Persian
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fa-ud-perdt-pos-1.3-2.5.4.bin[opennlp-fa-ud-perdt-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-fa-ud-pos-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fa-ud-perdt-pos-1.3-2.5.4.bin.asc[asc]
 
 | fi
 | Finnish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fi-ud-tdt-pos-1.2-2.5.0.bin[opennlp-fi-ud-tdt-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fi-ud-tdt-pos-1.3-2.5.4.bin[opennlp-fi-ud-tdt-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fi-ud-tdt-pos-1.3-2.5.4.bin.asc[asc]
 
 | fr
 | French
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fr-ud-gsd-pos-1.2-2.5.0.bin[opennlp-fr-ud-gsd-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-fr-ud-gsd-pos-1.3-2.5.4.bin[opennlp-fr-ud-gsd-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-fr-ud-gsd-pos-1.3-2.5.4.bin.asc[asc]
+
+| ga
+| Irish
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ga-ud-idt-pos-1.3-2.5.4.bin[opennlp-ga-ud-idt-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ga-ud-idt-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ga-ud-idt-pos-1.3-2.5.4.bin.asc[asc]
 
 | hr
 | Croatian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hr-ud-set-pos-1.2-2.5.0.bin[opennlp-hr-ud-set-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hr-ud-set-pos-1.3-2.5.4.bin[opennlp-hr-ud-set-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hr-ud-set-pos-1.3-2.5.4.bin.asc[asc]
 
 | hy
 | Armenian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hy-ud-bsut-pos-1.2-2.5.0.bin[opennlp-hy-ud-bsut-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-hy-ud-bsut-pos-1.3-2.5.4.bin[opennlp-hy-ud-bsut-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-hy-ud-bsut-pos-1.3-2.5.4.bin.asc[asc]
+
+| id
+| Indonesian
+| 2.5.4
+| {ud_version}
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-id-ud-gsd-pos-1.3-2.5.4.bin[opennlp-id-ud-gsd-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-id-ud-gsd-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-id-ud-gsd-pos-1.3-2.5.4.bin.asc[asc]
 
 | is
 | Icelandic
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-is-ud-icepahc-pos-1.2-2.5.0.bin[opennlp-is-ud-icepahc-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-is-ud-icepahc-pos-1.3-2.5.4.bin[opennlp-is-ud-icepahc-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-is-ud-icepahc-pos-1.3-2.5.4.bin.asc[asc]
 
 | it
 | Italian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-it-ud-vit-pos-1.2-2.5.0.bin[opennlp-it-ud-vit-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-it-ud-vit-pos-1.3-2.5.4.bin[opennlp-it-ud-vit-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-it-ud-vit-pos-1.3-2.5.4.bin.asc[asc]
 
 | ka
 | Georgian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ka-ud-glc-pos-1.2-2.5.0.bin[opennlp-ka-ud-glc-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ka-ud-glc-pos-1.3-2.5.4.bin[opennlp-ka-ud-glc-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ka-ud-glc-pos-1.3-2.5.4.bin.asc[asc]
 
 | kk
 | Kazakh
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-kk-ud-ktb-pos-1.2-2.5.0.bin[opennlp-kk-ud-ktb-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-kk-ud-ktb-pos-1.3-2.5.4.bin[opennlp-kk-ud-ktb-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-kk-ud-ktb-pos-1.3-2.5.4.bin.asc[asc]
 
 | ko
 | Korean
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ko-ud-kaist-pos-1.2-2.5.0.bin[opennlp-ko-ud-kaist-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ko-ud-kaist-pos-1.3-2.5.4.bin[opennlp-ko-ud-kaist-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ko-ud-kaist-pos-1.3-2.5.4.bin.asc[asc]
 
 | lv
 | Latvian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-lv-ud-lvtb-pos-1.2-2.5.0.bin[opennlp-lv-ud-lvtb-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-lv-ud-lvtb-pos-1.3-2.5.4.bin[opennlp-lv-ud-lvtb-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-lv-ud-lvtb-pos-1.3-2.5.4.bin.asc[asc]
 
 | nl
 | Dutch
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-nl-ud-alpino-pos-1.2-2.5.0.bin[opennlp-nl-ud-alpino-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-nl-ud-alpino-pos-1.3-2.5.4.bin[opennlp-nl-ud-alpino-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-nl-ud-alpino-pos-1.3-2.5.4.bin.asc[asc]
 
 | no
 | Norwegian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-no-ud-bokmaal-pos-1.2-2.5.0.bin[opennlp-no-ud-bokmaal-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-no-ud-bokmaal-pos-1.3-2.5.4.bin[opennlp-no-ud-bokmaal-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-no-ud-bokmaal-pos-1.3-2.5.4.bin.asc[asc]
 
 | pl
 | Polish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pl-ud-pdb-pos-1.2-2.5.0.bin[opennlp-pl-ud-pdb-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pl-ud-pdb-pos-1.3-2.5.4.bin[opennlp-pl-ud-pdb-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pl-ud-pdb-pos-1.3-2.5.4.bin.asc[asc]
 
 | pt
 | Portuguese
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pt-ud-gsd-pos-1.2-2.5.0.bin[opennlp-pt-ud-gsd-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-pt-ud-gsd-pos-1.3-2.5.4.bin[opennlp-pt-ud-gsd-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-pt-ud-gsd-pos-1.3-2.5.4.bin.asc[asc]
 
 | ro
 | Romanian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ro-ud-rrt-pos-1.2-2.5.0.bin[opennlp-ro-ud-rrt-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ro-ud-rrt-pos-1.3-2.5.4.bin[opennlp-ro-ud-rrt-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ro-ud-rrt-pos-1.3-2.5.4.bin.asc[asc]
 
 | ru
 | Russian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ru-ud-gsd-pos-1.2-2.5.0.bin[opennlp-ru-ud-gsd-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-ru-ud-gsd-pos-1.3-2.5.4.bin[opennlp-ru-ud-gsd-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-ru-ud-gsd-pos-1.3-2.5.4.bin.asc[asc]
 
 | sk
 | Slovak
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sk-ud-snk-pos-1.2-2.5.0.bin[opennlp-sk-ud-snk-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sk-ud-snk-pos-1.3-2.5.4.bin[opennlp-sk-ud-snk-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sk-ud-snk-pos-1.3-2.5.4.bin.asc[asc]
 
 | sl
 | Slovenian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sl-ud-ssj-pos-1.2-2.5.0.bin[opennlp-sl-ud-ssj-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sl-ud-ssj-pos-1.3-2.5.4.bin[opennlp-sl-ud-ssj-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sl-ud-ssj-pos-1.3-2.5.4.bin.asc[asc]
 
 | sr
 | Serbian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sr-ud-set-pos-1.2-2.5.0.bin[opennlp-sr-ud-set-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sr-ud-set-pos-1.3-2.5.4.bin[opennlp-sr-ud-set-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sr-ud-set-pos-1.3-2.5.4.bin.asc[asc]
 
 | sv
 | Swedish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sv-ud-talbanken-pos-1.2-2.5.0.bin[opennlp-sv-ud-talbanken-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-sv-ud-talbanken-pos-1.3-2.5.4.bin[opennlp-sv-ud-talbanken-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-sv-ud-talbanken-pos-1.3-2.5.4.bin.asc[asc]
 
 | tr
 | Turkish
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-tr-ud-boun-pos-1.2-2.5.0.bin[opennlp-tr-ud-boun-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-tr-ud-boun-pos-1.3-2.5.4.bin[opennlp-tr-ud-boun-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-tr-ud-boun-pos-1.3-2.5.4.bin.asc[asc]
 
 | uk
 | Ukrainian
-| 2.5.0
+| 2.5.4
 | {ud_version}
-| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-uk-ud-iu-pos-1.2-2.5.0.bin[opennlp-uk-ud-iu-pos-1.2-2.5.0.bin]
-| {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-pos-1.2-2.5.0.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-pos-1.2-2.5.0.bin.asc[asc]
+| https://www.apache.org/dyn/closer.cgi/opennlp/models/{opennlp_models}/opennlp-uk-ud-iu-pos-1.3-2.5.4.bin[opennlp-uk-ud-iu-pos-1.3-2.5.4.bin]
+| {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-pos-1.3-2.5.4.bin.sha512[sha512] {opennlp_downloads}/{opennlp_models}/opennlp-uk-ud-iu-pos-1.3-2.5.4.bin.asc[asc]
 |======
 
 
