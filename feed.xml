@@ -24,9 +24,54 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Wed, 16 Apr 2025 19:39:35 +0000</pubDate>
-    <lastBuildDate>Wed, 16 Apr 2025 19:39:35 +0000</lastBuildDate>
+    <pubDate>Mon, 16 Jun 2025 14:21:20 +0000</pubDate>
+    <lastBuildDate>Mon, 16 Jun 2025 14:21:20 +0000</lastBuildDate>
 
+    <item>
+      <title>OpenNLP Pre-trained Models 1.3 released</title>
+      <link>https://opennlp.apache.org/news/news-2025-06-16.html</link>
+      <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/news-2025-06-16.html</guid>
+      	<description>
+	&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_changed&quot;&gt;What&amp;#8217;s changed?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;New pre-trained &lt;em&gt;sentence detection&lt;/em&gt;, &lt;em&gt;tokenization&lt;/em&gt;, &lt;em&gt;parts of speech tagging&lt;/em&gt;, and &lt;em&gt;lemmatization&lt;/em&gt; models are now available for 4 languages:&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Afrikaans, Indonesian, Irish, and Persian.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Czech models required a change in training, that is a different treebank: &apos;PDTC&apos;, see: &lt;a href=&quot;https://github.com/UniversalDependencies/UD_Czech-PDTC/blob/master/README.md&quot; class=&quot;bare&quot;&gt;https://github.com/UniversalDependencies/UD_Czech-PDTC/blob/master/README.md&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;details&quot;&gt;Details&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;All models, for a total of 36 languages, were trained with OpenNLP 2.5.4 based on the UD 2.16 release &lt;a href=&quot;https://hdl.handle.net/11234/1-5901&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2.16&lt;/a&gt;
+and are intended to provide usable models under the Apache 2.0 license.
+These models will soon be available as JAR artifacts via Maven Central, or directly as binary files via our &lt;a href=&quot;/models.html&quot;&gt;models page&lt;/a&gt;.
+See the models&apos; &lt;a href=&quot;https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.3/README&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;README&lt;/a&gt;
+for more information, including how each was created and evaluated.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Apache OpenNLP 2.5.4 released</title>
       <link>https://opennlp.apache.org/news/release-254.html</link>

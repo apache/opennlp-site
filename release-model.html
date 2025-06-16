@@ -392,7 +392,7 @@ Acknowledge the voting results on the mailing list in the VOTE thread.</p>
 <pre>svn co https://dist.apache.org/repos/dist/release/opennlp/ dist
 # check if the KEYS file contains your key, if not, update it
 # move the files from dev/models/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt; to dist/models/&lt;MODEL_TYPE&gt;-&lt;MODEL_VERSION&gt;
-svn commit --username &lt;username&gt; -m "Adding OpenNLP Models &lt;version&gt;"</pre>
+svn mv https://dist.apache.org/repos/dist/dev/opennlp/models/ud-models-x.y/ https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-x.y/ -m "Release pre-trained Apache OpenNLP models x.y"</pre>
 </div>
 </div>
 </div>

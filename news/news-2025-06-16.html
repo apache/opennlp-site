@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>FAQ - Apache OpenNLP</title>
+    <title>OpenNLP Pre-trained Models 1.3 released - Apache OpenNLP</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="dark light">
@@ -136,67 +136,56 @@
 </nav>
 
 <div class="container">
-    <h1 class="title">FAQ</h1>
+    <h1 class="title">OpenNLP Pre-trained Models 1.3 released</h1>
 
-    <div class="paragraph">
-<p>This list contains common questions asked in <a href="mailing-lists.html">mailing lists</a> and
-<a href="https://stackoverflow.com/questions/tagged/opennlp" class="external" target="_blank" rel="noopener">forums</a>.</p>
+    <div class="sect1">
+<h2 id="whats_changed">What&#8217;s changed?</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>New pre-trained <em>sentence detection</em>, <em>tokenization</em>, <em>parts of speech tagging</em>, and <em>lemmatization</em> models are now available for 4 languages:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Afrikaans, Indonesian, Irish, and Persian.</p>
+</li>
+</ul>
 </div>
-<div class="qlist qanda">
-<ol>
-<li>
-<p><em>Where can I download the pre-trained models used in OpenNLP?</em></p>
-<p>Models for 36 languages are available at the project&#8217;s <a href="/models.html">Models download</a> page or
-bundled in JAR files distributed via <strong>Maven Central</strong>
-(<a href="https://search.maven.org/search?q=opennlp%20models%20sentdetect" class="external" target="_blank" rel="noopener">Sentence-Detector</a>,
-<a href="https://search.maven.org/search?q=opennlp%20models%20tokenizer" class="external" target="_blank" rel="noopener">Tokenization</a>,
-<a href="https://search.maven.org/search?q=opennlp%20models%20lemmatizer" class="external" target="_blank" rel="noopener">Lemmatizer</a>,
-<a href="https://search.maven.org/search?q=opennlp%20models%20pos" class="external" target="_blank" rel="noopener">POS Tagging</a>).</p>
 </li>
 <li>
-<p><em>How to train a Named Entity Recognition (NER) model?</em></p>
-<p>To train the name finder model you need training data that contains the entities you would like to detect.
-Have a look at our manual, in special the sections under the
-<a href="https://opennlp.apache.org/docs/2.5.4/manual/opennlp.html#tools.namefind.training" class="external" target="_blank" rel="noopener">Name Finder Training API</a>.
-At the beginning of that section you can see how the data has to be marked up. Please note you that you need many sentences to successfully train the name finder.</p>
+<p>The Czech models required a change in training, that is a different treebank: 'PDTC', see: <a href="https://github.com/UniversalDependencies/UD_Czech-PDTC/blob/master/README.md" class="bare">https://github.com/UniversalDependencies/UD_Czech-PDTC/blob/master/README.md</a>.</p>
 </li>
-<li>
-<p><em>How can I speed up the training time of (MaxEnt) models?</em></p>
-<p>By default, training runs will be executed <em>single</em>-threaded.
-Try tweaking the value of <a href="https://opennlp.apache.org/docs/2.5.4/apidocs/opennlp-tools/opennlp/tools/util/TrainingParameters.html#THREADS_PARAM" class="external" target="_blank" rel="noopener">TrainingParameters.THREADS_PARAM</a>.
-Make sure to set this parameter to match your target environment. A good starting point is to set this to the number of CPU cores available at runtime.
-Please note, however, that only the compute-intensive parts of the training will benefit by tweaking this parameter.</p>
-</li>
-<li>
-<p><em>Will my models trained with a previous version of OpenNLP still work with a newer version?</em></p>
-<p>You should expect it to work. The corpora used is normally the same. However, the behavior may
-change when we fix bugs or add new features. The test results in the
-<a href="https://cwiki.apache.org/confluence/display/OPENNLP/Test+Plans" class="external" target="_blank" rel="noopener">project Wiki</a> may contain useful
-information about model compatibility.</p>
-</li>
-<li>
-<p><em>Is there a commercial license for OpenNLP?</em></p>
-<p>OpenNLP is licensed under the business-friendly <a href="https://www.apache.org/licenses/LICENSE-2.0" class="external" target="_blank" rel="noopener">Apache software license</a>.
-You can read its <a href="https://en.wikipedia.org/wiki/Apache_License" class="external" target="_blank" rel="noopener">Wikipedia</a>
-page for more information.</p>
-</li>
-<li>
-<p><em>How can I start contributing to this project?</em></p>
-<p>Have a look at our <a href="/get-involved.html">Getting Involved</a> page.
-We have a list of issues needing help there, as well as instructions to get started
-contributing to OpenNLP. You may also consider making a
-<a href="https://www.apache.org/foundation/contributing.html" class="external" target="_blank" rel="noopener">donation to the Apache Software Foundation</a>.</p>
-</li>
-</ol>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="details">Details</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>All models, for a total of 36 languages, were trained with OpenNLP 2.5.4 based on the UD 2.16 release <a href="https://hdl.handle.net/11234/1-5901" class="external" target="_blank" rel="noopener">2.16</a>
+and are intended to provide usable models under the Apache 2.0 license.
+These models will soon be available as JAR artifacts via Maven Central, or directly as binary files via our <a href="/models.html">models page</a>.
+See the models' <a href="https://dist.apache.org/repos/dist/release/opennlp/models/ud-models-1.3/README" class="external" target="_blank" rel="noopener">README</a>
+for more information, including how each was created and evaluated.</p>
 </div>
 <div class="paragraph">
-<p>In case you have a suggestion of another question that could be added, please do not hesitate in
-<a href="/mailing-lists.html">getting in contact</a>.</p>
+<p>--The Apache OpenNLP Team</p>
+</div>
+</div>
 </div>
 
+    <p><em>16 June 2025</em></p>
     <div id="share">
-<div class="shareon">
+<div class="shareon" style="margin-top: 30px;">
+  <a class="reddit"></a>
+  <a class="linkedin"></a>
+  <a class="bluesky"></a>
+  <a class="telegram"></a>
+  <a class="mastodon"></a>
   <a class="copy-url"></a>
+  <a class="email"></a>
   <a class="print"></a>
 </div></div>
 </div>
