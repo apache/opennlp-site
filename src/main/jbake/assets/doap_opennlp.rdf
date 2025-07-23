@@ -37,8 +37,8 @@
     <release>
       <Version>
         <name>Apache OpenNLP</name>
-        <created>2025-04-16</created>
-        <revision>2.5.4</revision>
+        <created>2025-07-23</created>
+        <revision>2.5.5</revision>
       </Version>
     </release>
     <repository>

@@ -263,11 +263,15 @@ Thanks to all voters. I'll proceed with the steps.
 === Release Nexus Staging Repository
 
 Release the staging repository. This will make the artifacts available in the Maven Central repository.
-To do this go to the https://repository.apache.org[repository server], log in, go to the staging area and release the staging repository linked to this release
+To do this,
+
+1. go to the https://repository.apache.org[repository server] and log in,
+2. go to the staging area and
+3. release the staging repository linked to this release.
 
 === Merge the Release Branch
 
-Merge the release branch into `main`.
+Merge the release branch into `main` or the maintenance branch for the 2.x release: `opennlp-2.x`.
 
 === Commit Distribution to SVN
 
