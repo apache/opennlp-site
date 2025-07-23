@@ -157,13 +157,13 @@ bundled in JAR files distributed via <strong>Maven Central</strong>
 <p><em>How to train a Named Entity Recognition (NER) model?</em></p>
 <p>To train the name finder model you need training data that contains the entities you would like to detect.
 Have a look at our manual, in special the sections under the
-<a href="https://opennlp.apache.org/docs/2.5.4/manual/opennlp.html#tools.namefind.training" class="external" target="_blank" rel="noopener">Name Finder Training API</a>.
+<a href="https://opennlp.apache.org/docs/2.5.5/manual/opennlp.html#tools.namefind.training" class="external" target="_blank" rel="noopener">Name Finder Training API</a>.
 At the beginning of that section you can see how the data has to be marked up. Please note you that you need many sentences to successfully train the name finder.</p>
 </li>
 <li>
 <p><em>How can I speed up the training time of (MaxEnt) models?</em></p>
 <p>By default, training runs will be executed <em>single</em>-threaded.
-Try tweaking the value of <a href="https://opennlp.apache.org/docs/2.5.4/apidocs/opennlp-tools/opennlp/tools/util/TrainingParameters.html#THREADS_PARAM" class="external" target="_blank" rel="noopener">TrainingParameters.THREADS_PARAM</a>.
+Try tweaking the value of <a href="https://opennlp.apache.org/docs/2.5.5/apidocs/opennlp-tools/opennlp/tools/util/TrainingParameters.html#THREADS_PARAM" class="external" target="_blank" rel="noopener">TrainingParameters.THREADS_PARAM</a>.
 Make sure to set this parameter to match your target environment. A good starting point is to set this to the number of CPU cores available at runtime.
 Please note, however, that only the compute-intensive parts of the training will benefit by tweaking this parameter.</p>
 </li>
