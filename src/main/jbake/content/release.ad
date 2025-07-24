@@ -208,6 +208,8 @@ Tag:
 
 https://github.com/apache/opennlp/releases/tag/opennlp-x.y.z
 
+Tag Hash: the-hash-of-the-tag-commit
+
 Release notes:
 
 <Add link to the Jira release notes>
@@ -239,7 +241,9 @@ Thanks!
 == After a Successful Vote
 
 The vote is successful if at least 3 _+1_ votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
-Acknowledge the voting results on the mailing list in the VOTE thread by sending a mail.
+
+Announce the voting results by sending a *new* email to the mailing list.
+*Do not* simply reply to the existing VOTE thread; use a separate email to clearly document the outcome.
 
 Message Subject: [RESULT] [VOTE] Apache OpenNLP [version]
 
@@ -272,6 +276,7 @@ To do this,
 === Merge the Release Branch
 
 Merge the release branch into `main` or the maintenance branch for the 2.x release: `opennlp-2.x`.
+If you are using a GitHub Pull Request for this operation, *do not squash the commits*. Use *rebase* instead.
 
 === Commit Distribution to SVN
 
@@ -349,6 +354,14 @@ Move the last version's links to the documentation to the Legacy Documentation (
 - Commit the website changes.
 - Rebuild opennlp-site and redeploy the site (if Automatic Buildbot doesn't kick in)
 - Test and review the website. Test that all download links are working. Test that the documentation is updated and can be viewed
+
+=== Create a GitHub Release
+
+After merging the release branch, create a new GitHub release for the corresponding tag.
+
+This step is important because it allows automation tools to detect and process the release, enabling the generation of changelogs and release notes automatically.
+
+Make sure the GitHub release includes a summary of key changes. For a complete list of updates, refer to the official changelog on the website.
 
 === Post-Release Steps
 
