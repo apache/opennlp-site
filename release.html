@@ -159,6 +159,7 @@
 <li><a href="#commit_distribution_to_svn">Commit Distribution to SVN</a></li>
 <li><a href="#delete_old_releases">Delete Old Release(s)</a></li>
 <li><a href="#update_the_website">Update the Website</a></li>
+<li><a href="#create_a_github_release">Create a GitHub Release</a></li>
 <li><a href="#post_release_steps">Post-Release Steps</a></li>
 </ul>
 </li>
@@ -448,6 +449,8 @@ Tag:
 
 https://github.com/apache/opennlp/releases/tag/opennlp-x.y.z
 
+Tag Hash: the-hash-of-the-tag-commit
+
 Release notes:
 
 &lt;Add link to the Jira release notes&gt;
@@ -483,8 +486,11 @@ Thanks!
 <h2 id="after_a_successful_vote">After a Successful Vote</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The vote is successful if at least 3 <em>+1</em> votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.
-Acknowledge the voting results on the mailing list in the VOTE thread by sending a mail.</p>
+<p>The vote is successful if at least 3 <em>+1</em> votes are received from OpenNLP PMC members after a minimum of 72 hours of sending the vote email.</p>
+</div>
+<div class="paragraph">
+<p>Announce the voting results by sending a <strong>new</strong> email to the mailing list.
+<strong>Do not</strong> simply reply to the existing VOTE thread; use a separate email to clearly document the outcome.</p>
 </div>
 <div class="paragraph">
 <p>Message Subject: [RESULT] [VOTE] Apache OpenNLP [version]</p>
@@ -529,7 +535,8 @@ To do this,</p>
 <div class="sect2">
 <h3 id="merge_the_release_branch">Merge the Release Branch</h3>
 <div class="paragraph">
-<p>Merge the release branch into <code>main</code> or the maintenance branch for the 2.x release: <code>opennlp-2.x</code>.</p>
+<p>Merge the release branch into <code>main</code> or the maintenance branch for the 2.x release: <code>opennlp-2.x</code>.
+If you are using a GitHub Pull Request for this operation, <strong>do not squash the commits</strong>. Use <strong>rebase</strong> instead.</p>
 </div>
 </div>
 <div class="sect2">
@@ -652,6 +659,18 @@ opennlp.next.version=</code></pre>
 </li>
 </ul>
 </div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="create_a_github_release">Create a GitHub Release</h3>
+<div class="paragraph">
+<p>After merging the release branch, create a new GitHub release for the corresponding tag.</p>
+</div>
+<div class="paragraph">
+<p>This step is important because it allows automation tools to detect and process the release, enabling the generation of changelogs and release notes automatically.</p>
+</div>
+<div class="paragraph">
+<p>Make sure the GitHub release includes a summary of key changes. For a complete list of updates, refer to the official changelog on the website.</p>
 </div>
 </div>
 <div class="sect2">
