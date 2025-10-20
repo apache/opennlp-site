@@ -30,3 +30,7 @@ Welcome to OpenNLP Site Source Code
 
 #### Test Site locally - starts a web server on Port 8080
 `mvn clean package jbake:inline -Djbake.port=8080 -Djbake.listenAddress=0.0.0.0`
+
+### Build Bot
+
+Website is build via ASF BuildBot. You find it here: https://ci.apache.org/
