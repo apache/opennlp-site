@@ -27,6 +27,13 @@ WARNING: This page contains the archived documentation. Please refer to link:/do
 There exists a manual and Javadoc API documentation for Apache OpenNLP. The manual
 explains how the various OpenNLP components can be used and trained.
 
+== Apache OpenNLP 2.5.6 documentation
+* link:/docs/2.5.6/manual/opennlp.html[Apache OpenNLP Manual]
+* link:/docs/2.5.6/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
+* link:/docs/2.5.6/apidocs/opennlp-tools-models/index.html[Apache OpenNLP Tools Models Javadoc]
+* link:/docs/2.5.6/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
+* link:/docs/2.5.6/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]
+
 == Apache OpenNLP 2.5.5 documentation
 * link:/docs/2.5.5/manual/opennlp.html[Apache OpenNLP Manual]
 * link:/docs/2.5.5/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
