@@ -220,6 +220,16 @@ here: https://ci-builds.apache.org/job/OpenNLP/job/eval-tests-releases/<add-link
 Reminder: The up-2-date KEYS file for signature verification can be
 found here: https://dist.apache.org/repos/dist/release/opennlp/KEYS
 
+Checklist for reference:
+
+[ ] Both source (tar.gz/zip) and binary artifacts (tar.gz/zip) are present, along with .asc and .sha512 files for each.
+[ ] PGP signatures are valid for the release artifacts using the KEYS file from dist.apache.org
+[ ] SHA512 checksums are correct and verified.
+[ ] LICENSE and NOTICE files exist and are accurate.
+[ ] No unexpected binary files in the source release.
+[ ] All source files have appropriate ASF headers (excluding generated files and legacy files).
+[ ] Build completes successfully from source and the instruction to do so are clear.
+
 Please vote on releasing these packages as Apache OpenNLP x.y.z The
 vote is open for at least the next 72 hours.
 
