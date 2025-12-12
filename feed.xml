@@ -24,8 +24,8 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Thu, 11 Dec 2025 10:41:47 +0000</pubDate>
-    <lastBuildDate>Thu, 11 Dec 2025 10:41:47 +0000</lastBuildDate>
+    <pubDate>Fri, 12 Dec 2025 13:00:54 +0000</pubDate>
+    <lastBuildDate>Fri, 12 Dec 2025 13:00:54 +0000</lastBuildDate>
 
     <item>
       <title>Apache OpenNLP 2.5.7 released</title>
@@ -36,7 +36,7 @@
 	&lt;div id=&quot;preamble&quot;&gt;
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.5.71.&lt;/p&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.5.7.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
