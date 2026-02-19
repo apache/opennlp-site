@@ -102,28 +102,3 @@ To use the OpenNLP Morfologik-Addon define the following dependency:
   <version>{opennlp_version}</version>
 </dependency>
 ----
-
-== SNAPSHOTS
-=== OpenNLP Tools SNAPSHOT Dependency
-To use the current version of the _main_ branch define the following dependency:
-
-[source,xml,indent=0,subs=attributes+]
-----
-<dependency>
-  <groupId>org.apache.opennlp</groupId>
-  <artifactId>opennlp-tools</artifactId>
-  <version>{opennlp_next_version}</version>
-</dependency>
-----
-
-NOTE: All `SNAPSHOT` dependencies require the following Maven repository:
-
-[source,xml,indent=0,subs=attributes+]
-----
-<repositories>
-  <repository>
-    <id>apache opennlp snapshot</id>
-    <url>https://repository.apache.org/content/repositories/snapshots/</url>
-  </repository>
-</repositories>
-----
