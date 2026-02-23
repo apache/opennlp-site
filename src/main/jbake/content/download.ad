@@ -26,7 +26,7 @@
 
 == Official Releases
 
-Apache OpenNLP {opennlp_version} is now available for download.
+Apache OpenNLP {opennlp_3x_version} an {opennlp_version} are now available for download.
 
 IMPORTANT: Please note that the _tar.gz_ archive contains file names longer than 100 characters and has
 been created using https://www.gnu.org/software/tar/[GNU tar,window=_blank] extensions.

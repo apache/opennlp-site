@@ -41,11 +41,12 @@ The 3.x release line of Apache OpenNLP introduces no known breaking changes whil
 The core API remains stable and fully compatible with 2.x, so existing projects can continue using the opennlp-tools artifact without modifications.
 
 Key Highlights and Recommendations:
-- Modularization: The project is now organized into multiple modules:
-- opennlp-api, opennlp-core, opennlp-cli, opennlp-extensions, ML modules (e.g., opennlp-ml-maxent, opennlp-ml-perceptron), and more.
-- Users can include only the modules needed, reducing dependency footprint.
-- Only opennlp-runtime is mandatory for basic functionality.
-- CLI Stability: Existing command-line usage remains unchanged.
+
+* Modularization: The project is now organized into multiple modules:
+* opennlp-api, opennlp-core, opennlp-cli, opennlp-extensions, ML modules (e.g., opennlp-ml-maxent, opennlp-ml-perceptron), and more.
+* Users can include only the modules needed, reducing dependency footprint.
+* Only opennlp-runtime is mandatory for basic functionality.
+* CLI Stability: Existing command-line usage remains unchanged.
 
 For further details, check the full list of link:https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&version=12355662[changes,role=external,window=_blank] via the project's issue tracker.
 
