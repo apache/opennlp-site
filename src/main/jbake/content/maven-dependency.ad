@@ -30,7 +30,29 @@ The Apache OpenNLP project publishes the library, javadoc and source code jars.
 To use OpenNLP in your https://maven.apache.org[Maven,window=_blank] project, specify exactly one of the following dependencies,
 all transient dependencies are resolved automatically.
 
-== Latest Release
+== 3.x Series
+
+To use OpenNLP as a library define the following dependency:
+
+[source,xml,indent=0,subs=attributes+]
+----
+<dependency>
+    <groupId>org.apache.opennlp</groupId>
+    <artifactId>opennlp-runtime</artifactId>
+    <version>${opennlp_3x_version}</version>
+</dependency>
+<!-- if model support is needed -->
+<dependency>
+    <groupId>org.apache.opennlp</groupId>
+    <artifactId>opennlp-models</artifactId>
+    <version>${opennlp_3x_version}</version>
+</dependency>
+----
+
+Only opennlp-runtime needs to be added as a dependency, and you can add additional modules
+(e.g. opennlp-ml-maxent, opennlp-models, etc.) as required by your project.
+
+== 2.x Series
 === OpenNLP Tools Dependency
 To use the OpenNLP Tools define the following dependency:
 

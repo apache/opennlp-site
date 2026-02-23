@@ -30,7 +30,21 @@ The Apache OpenNLP project publishes the library, javadoc and source code jars.
 To use OpenNLP in your https://gradle.org[Gradle,window=_blank] project, specify exactly one of the following dependencies,
 all transient dependencies are resolved automatically.
 
-== Latest Release
+
+== 3.x Series
+
+To use OpenNLP as a library define the following dependency:
+
+[source,xml,indent=0,subs=attributes+]
+----
+compile group: "org.apache.opennlp", name: "opennlp-runtime", version: "${opennlp_3x_version}"
+compile group: "org.apache.opennlp", name: "opennlp-models", version: "${opennlp_3x_version}"
+----
+
+Only opennlp-runtime needs to be added as a dependency, and you can add additional modules
+(e.g. opennlp-ml-maxent, opennlp-models, etc.) as required by your project.
+
+== 2.x Series
 === OpenNLP Tools Dependency
 
 To use the OpenNLP Tools define the following dependency:
