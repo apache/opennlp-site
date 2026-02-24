@@ -27,7 +27,7 @@ Welcome to OpenNLP Site Source Code
 #### Build
 
 ```bash
-mvn clean install`
+mvn clean install
 ```
 
 #### Test Site locally - starts a web server on Port 8080
