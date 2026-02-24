@@ -1,0 +1,61 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 3.0.0-M1 released
+Apache OpenNLP
+2026-02-23
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 3.0.0-M1.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+Apache OpenNLP 3.0.0-M1 binary and source distributions are available for download from our link:/download.html[download page].
+
+The OpenNLP library is distributed by Maven Central as well. See the link:/maven-dependency.html[Maven dependency] page for more details.
+
+== What's new in Apache OpenNLP 3.0.0-M1
+
+The 3.x release line of Apache OpenNLP introduces no known breaking changes while significantly modularizing the project to improve library usage and future extensibility.
+The core API remains stable and fully compatible with 2.x, so existing projects can continue using the opennlp-tools artifact without modifications.
+
+Key Highlights and Recommendations:
+
+* Modularization: The project is now organized into multiple modules:
+* opennlp-api, opennlp-core, opennlp-cli, opennlp-extensions, ML modules (e.g., opennlp-ml-maxent, opennlp-ml-perceptron), and more.
+* Users can include only the modules needed, reducing dependency footprint.
+* Only opennlp-runtime is mandatory for basic functionality.
+* CLI Stability: Existing command-line usage remains unchanged.
+
+For further details, check the full list of link:https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&version=12355662[changes,role=external,window=_blank] via the project's issue tracker.
+
+== Migrating from 2.x to 3.x
+
+The 3.x release line of Apache OpenNLP introduces no known breaking changes but modularizes the project for better usage as a library and to support future extensibility. The core API remains stable and compatible with 2.x, but the project structure has been reorganized into multiple modules.
+
+That means, that you can continue to use the previous opennlp-tools artifact as a dependency. However, we strongly recommend to switch to the new modular structure and import only the components you need, which will result in a smaller dependency footprint.
+
+Only opennlp-runtime needs to be added as a dependency, and you can add additional modules (e.g. opennlp-ml-maxent, opennlp-models, etc.) as required by your project. For users of the traditional CLI toolkit, nothing changes with the 3.x release line. CLI usage remains stable
+
+--The Apache OpenNLP Team

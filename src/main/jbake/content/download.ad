@@ -24,13 +24,39 @@
 :toc:
 :toc-title: Content
 
-== Latest Official Release
+== Official Releases
 
-Apache OpenNLP {opennlp_version} is now available for download.
+Apache OpenNLP {opennlp_3x_version} and {opennlp_version} are now available for download.
 
 IMPORTANT: Please note that the _tar.gz_ archive contains file names longer than 100 characters and has
 been created using https://www.gnu.org/software/tar/[GNU tar,window=_blank] extensions.
 It must be untarred with a GNU compatible version of tar.
+
+
+=== 3.x Series
+
+[options="header"]
+|===
+|.tar.gz | .zip
+
+| https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_3x_version}/apache-opennlp-{opennlp_3x_version}-bin.tar.gz[apache-opennlp-{opennlp_3x_version}-bin.tar.gz]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_3x_version}/apache-opennlp-{opennlp_3x_version}-bin.tar.gz.sha512[sha512]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_3x_version}/apache-opennlp-{opennlp_3x_version}-bin.tar.gz.asc[asc]
+
+| https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_3x_version}/apache-opennlp-{opennlp_3x_version}-bin.zip[apache-opennlp-{opennlp_3x_version}-bin.zip]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_3x_version}/apache-opennlp-{opennlp_3x_version}-bin.zip.sha512[sha512]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_3x_version}/apache-opennlp-{opennlp_3x_version}-bin.zip.asc[asc]
+
+| https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_3x_version}/apache-opennlp-{opennlp_3x_version}-src.tar.gz[apache-opennlp-{opennlp_3x_version}-src.tar.gz]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_3x_version}/apache-opennlp-{opennlp_3x_version}-src.tar.gz.sha512[sha512]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_3x_version}/apache-opennlp-{opennlp_3x_version}-src.tar.gz.asc[asc]
+
+| https://www.apache.org/dyn/closer.cgi/opennlp/opennlp-{opennlp_3x_version}/apache-opennlp-{opennlp_3x_version}-src.zip[apache-opennlp-{opennlp_3x_version}-src.zip]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_3x_version}/apache-opennlp-{opennlp_3x_version}-src.zip.sha512[sha512]
+https://downloads.apache.org/opennlp/opennlp-{opennlp_3x_version}/apache-opennlp-{opennlp_3x_version}-src.zip.asc[asc]
+|===
+
+=== 2.x Series
 
 [options="header"]
 |===
