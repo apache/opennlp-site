@@ -151,7 +151,8 @@ all transient dependencies are resolved automatically.</p>
 <div id="toc" class="toc">
 <div id="toctitle">Content</div>
 <ul class="sectlevel1">
-<li><a href="#latest_release">Latest Release</a>
+<li><a href="#3_x_series">3.x Series</a></li>
+<li><a href="#2_x_series">2.x Series</a>
 <ul class="sectlevel2">
 <li><a href="#opennlp_tools_dependency">OpenNLP Tools Dependency</a></li>
 <li><a href="#opennlp_tools_models_dependency">OpenNLP Tools Models Dependency</a></li>
@@ -161,16 +162,38 @@ all transient dependencies are resolved automatically.</p>
 <li><a href="#opennlp_morfologik_addon_dependency">OpenNLP Morfologik AddOn Dependency</a></li>
 </ul>
 </li>
-<li><a href="#snapshots">SNAPSHOTS</a>
-<ul class="sectlevel2">
-<li><a href="#opennlp_tools_snapshot_dependency">OpenNLP Tools SNAPSHOT Dependency</a></li>
-</ul>
-</li>
 </ul>
 </div>
 </div>
 <div class="sect1">
-<h2 id="latest_release">Latest Release</h2>
+<h2 id="3_x_series">3.x Series</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To use OpenNLP as a library define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;org.apache.opennlp&lt;/groupId&gt;
+    &lt;artifactId&gt;opennlp-runtime&lt;/artifactId&gt;
+    &lt;version&gt;$3.0.0-M1&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;!-- if model support is needed --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.apache.opennlp&lt;/groupId&gt;
+    &lt;artifactId&gt;opennlp-models&lt;/artifactId&gt;
+    &lt;version&gt;$3.0.0-M1&lt;/version&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Only opennlp-runtime needs to be added as a dependency, and you can add additional modules
+(e.g. opennlp-ml-maxent, opennlp-models, etc.) as required by your project.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2_x_series">2.x Series</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="opennlp_tools_dependency">OpenNLP Tools Dependency</h3>
@@ -259,48 +282,6 @@ all transient dependencies are resolved automatically.</p>
   &lt;artifactId&gt;opennlp-morfologik-addon&lt;/artifactId&gt;
   &lt;version&gt;2.5.7&lt;/version&gt;
 &lt;/dependency&gt;</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="snapshots">SNAPSHOTS</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="opennlp_tools_snapshot_dependency">OpenNLP Tools SNAPSHOT Dependency</h3>
-<div class="paragraph">
-<p>To use the current version of the <em>main</em> branch define the following dependency:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="xml">&lt;dependency&gt;
-  &lt;groupId&gt;org.apache.opennlp&lt;/groupId&gt;
-  &lt;artifactId&gt;opennlp-tools&lt;/artifactId&gt;
-  &lt;version&gt;2.5.8-SNAPSHOT&lt;/version&gt;
-&lt;/dependency&gt;</code></pre>
-</div>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-All <code>SNAPSHOT</code> dependencies require the following Maven repository:
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code data-lang="xml">&lt;repositories&gt;
-  &lt;repository&gt;
-    &lt;id&gt;apache opennlp snapshot&lt;/id&gt;
-    &lt;url&gt;https://repository.apache.org/content/repositories/snapshots/&lt;/url&gt;
-  &lt;/repository&gt;
-&lt;/repositories&gt;</code></pre>
 </div>
 </div>
 </div>

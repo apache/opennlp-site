@@ -151,7 +151,8 @@ all transient dependencies are resolved automatically.</p>
 <div id="toc" class="toc">
 <div id="toctitle">Content</div>
 <ul class="sectlevel1">
-<li><a href="#latest_release">Latest Release</a>
+<li><a href="#3_x_series">3.x Series</a></li>
+<li><a href="#2_x_series">2.x Series</a>
 <ul class="sectlevel2">
 <li><a href="#opennlp_tools_dependency">OpenNLP Tools Dependency</a></li>
 <li><a href="#opennlp_tools_models_dependency">OpenNLP Tools Models Dependency</a></li>
@@ -170,7 +171,25 @@ all transient dependencies are resolved automatically.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="latest_release">Latest Release</h2>
+<h2 id="3_x_series">3.x Series</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To use OpenNLP as a library define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code data-lang="xml">compile group: "org.apache.opennlp", name: "opennlp-runtime", version: "$3.0.0-M1"
+compile group: "org.apache.opennlp", name: "opennlp-models", version: "$3.0.0-M1"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Only opennlp-runtime needs to be added as a dependency, and you can add additional modules
+(e.g. opennlp-ml-maxent, opennlp-models, etc.) as required by your project.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2_x_series">2.x Series</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="opennlp_tools_dependency">OpenNLP Tools Dependency</h3>
