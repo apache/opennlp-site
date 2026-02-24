@@ -30,6 +30,7 @@ NOTE: All the documentation is also included in the binary distribution.
 == Apache OpenNLP {opennlp_3x_version} documentation
 
 * link:/docs/{opennlp_3x_version}/manual/opennlp.html[Apache OpenNLP Manual]
+* link:/docs/{opennlp_3x_version}/opennlp.pdf[Apache OpenNLP PDF Manual]
 * link:/docs/{opennlp_3x_version}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
 // FIXME: Current M1 artifact only contains tools javadoc - see https://issues.apache.org/jira/browse/OPENNLP-1803
 // * link:/docs/{opennlp_3x_version}/apidocs/opennlp-tools-models/index.html[Apache OpenNLP Tools Models Javadoc]
