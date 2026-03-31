@@ -23,26 +23,45 @@
 :idprefix:
 
 There exists a manual and Javadoc API documentation for Apache OpenNLP.
-The manual explains how the various OpenNLP components can be used and trained.
+The OpenNLP _developer manual_ explains how the various OpenNLP components can be used and trained.
 
 NOTE: All the documentation is also included in the binary distribution.
 
-== Apache OpenNLP {opennlp_3x_version} documentation
+== Apache OpenNLP {opennlp_3x_version}
 
-* link:/docs/{opennlp_3x_version}/manual/opennlp.html[Apache OpenNLP Manual]
-* link:/docs/{opennlp_3x_version}/opennlp.pdf[Apache OpenNLP PDF Manual]
-* link:/docs/{opennlp_3x_version}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
-// FIXME: Current M1 artifact only contains tools javadoc - see https://issues.apache.org/jira/browse/OPENNLP-1803
-// * link:/docs/{opennlp_3x_version}/apidocs/opennlp-tools-models/index.html[Apache OpenNLP Tools Models Javadoc]
-// * link:/docs/{opennlp_3x_version}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
-// * link:/docs/{opennlp_3x_version}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]
+=== Developer documentation
 
-== Apache OpenNLP {opennlp_version} documentation
+* link:/docs/{opennlp_3x_version}/manual/opennlp.html[Apache OpenNLP Developer Manual (HTML)]
+* link:/docs/{opennlp_3x_version}/opennlp.pdf[Apache OpenNLP Developer Manual (PDF)]
+
+=== API Javadoc
+
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-api/index.html[Apache OpenNLP API]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-cli/index.html[Apache OpenNLP CLI]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-dl/index.html[Apache OpenNLP DL]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-formats/index.html[Apache OpenNLP Formats]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-ml-bayes/index.html[Apache OpenNLP ML Bayes]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-ml-commons/index.html[Apache OpenNLP ML Commons]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-ml-maxent/index.html[Apache OpenNLP ML Maxent]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-ml-perceptron/index.html[Apache OpenNLP ML Perceptron]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-model-resolver/index.html[Apache OpenNLP Model resolver]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-morfologik/index.html[Apache OpenNLP Morfologik]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-runtime/index.html[Apache OpenNLP Runtime]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA]
+
+== Apache OpenNLP {opennlp_version}
+
+=== Developer documentation
 
 * link:/docs/{opennlp_version}/manual/opennlp.html[Apache OpenNLP Manual]
-* link:/docs/{opennlp_version}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools Javadoc]
-* link:/docs/{opennlp_version}/apidocs/opennlp-tools-models/index.html[Apache OpenNLP Tools Models Javadoc]
-* link:/docs/{opennlp_version}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA Javadoc]
-* link:/docs/{opennlp_version}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon Javadoc]
+* link:/docs/{opennlp_version}/opennlp.pdf[Apache OpenNLP PDF Manual]
 
-TIP: Documentation for archived releases can be found link:/docs/legacy.html[here].
+=== API Javadoc
+
+* link:/docs/{opennlp_version}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools]
+* link:/docs/{opennlp_version}/apidocs/opennlp-tools-models/index.html[Apache OpenNLP Tools Models]
+* link:/docs/{opennlp_version}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA]
+* link:/docs/{opennlp_version}/apidocs/opennlp-morfologik-addon/index.html[Apache OpenNLP Morfologik Addon]
+
+NOTE: The documentation of archived releases can be found link:/docs/legacy.html[here].

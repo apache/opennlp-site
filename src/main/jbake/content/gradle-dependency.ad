@@ -24,28 +24,37 @@
 :toc: preamble
 :toc-title: Content
 
-Apache OpenNLP is also distributed via the Maven Central Repository.
-The maven artifacts are located https://repo1.maven.org/maven2/org/apache/opennlp/[here].
+Apache OpenNLP is also distributed via link:https://repo1.maven.org/maven2/org/apache/opennlp/[Maven Central Repository].
 The Apache OpenNLP project publishes the library, javadoc and source code jars.
-To use OpenNLP in your https://gradle.org[Gradle,window=_blank] project, specify exactly one of the following dependencies,
+To use OpenNLP in your link:https://gradle.org[Gradle,window=_blank] project, specify exactly one of the following dependencies,
 all transient dependencies are resolved automatically.
 
 
-== 3.x Series
+== Apache OpenNLP 3.x Series
 
+=== Runtime dependency
 To use OpenNLP as a library define the following dependency:
 
 [source,xml,indent=0,subs=attributes+]
 ----
-compile group: "org.apache.opennlp", name: "opennlp-runtime", version: "${opennlp_3x_version}"
-compile group: "org.apache.opennlp", name: "opennlp-models", version: "${opennlp_3x_version}"
+compile group: "org.apache.opennlp", name: "opennlp-runtime", version: "{opennlp_3x_version}"
 ----
 
-Only opennlp-runtime needs to be added as a dependency, and you can add additional modules
-(e.g. opennlp-ml-maxent, opennlp-models, etc.) as required by your project.
+NOTE: Only `opennlp-runtime` needs to be added as a dependency, and you can add additional modules
+(e.g. `opennlp-ml-maxent`, `opennlp-dl`, etc.) as required.
 
-== 2.x Series
-=== OpenNLP Tools Dependency
+=== Model Resolver dependency
+If model classpath scanning support is required, just add:
+
+[source,xml,indent=0,subs=attributes+]
+----
+compile group: "org.apache.opennlp", name: "opennlp-model-resolver", version: "{opennlp_3x_version}"
+----
+
+TIP: Other components can be declared similarily as in the previous 2.x release, see below.
+
+== Apache OpenNLP 2.x Series
+=== Tools dependency
 
 To use the OpenNLP Tools define the following dependency:
 
@@ -56,7 +65,7 @@ dependencies {
 }
 ----
 
-=== OpenNLP Tools Models Dependency
+=== Tools Model dependency
 
 To use the OpenNLP Tools Models define the following dependency:
 
@@ -67,7 +76,7 @@ dependencies {
 }
 ----
 
-=== OpenNLP DL Dependency
+=== DL dependency
 
 To use the OpenNLP DL define the following dependency:
 
@@ -78,7 +87,7 @@ dependencies {
 }
 ----
 
-=== OpenNLP DL GPU Dependency
+=== DL GPU dependency
 
 To use the OpenNLP DL GPU define the following dependency:
 
@@ -89,7 +98,7 @@ dependencies {
 }
 ----
 
-=== OpenNLP UIMA Annotators Dependency
+=== UIMA Annotators dependency
 
 To use the OpenNLP UIMA Annotators define the following dependency:
 
@@ -100,7 +109,7 @@ dependencies {
 }
 ----
 
-=== OpenNLP Morfologik AddOn Dependency
+=== Morfologik AddOn dependency
 
 To use the OpenNLP Morfologik-Addon define the following dependency:
 
@@ -109,22 +118,4 @@ To use the OpenNLP Morfologik-Addon define the following dependency:
 dependencies {
   implementation group: 'org.apache.opennlp', name: 'opennlp-morfologik-addon', version: '{opennlp_version}'
 }
-----
-
-== SNAPSHOTS
-=== OpenNLP Tools SNAPSHOT Dependency
-
-To use the current version of the _main_ branch define the following dependency:
-
-----
-dependencies {
-  implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '2.5.1-SNAPSHOT'
-}
-----
-
-NOTE: All `SNAPSHOT` dependencies require the following Maven repository:
-
-[source,indent=0,subs=attributes+]
-----
-  https://repository.apache.org/content/repositories/snapshots/
 ----

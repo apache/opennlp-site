@@ -24,36 +24,44 @@
 :toc: preamble
 :toc-title: Content
 
-Apache OpenNLP is also distributed via the Maven Central Repository.
-The maven artifacts are located https://repo1.maven.org/maven2/org/apache/opennlp/[here].
+Apache OpenNLP is also distributed via link:https://repo1.maven.org/maven2/org/apache/opennlp/[Maven Central Repository].
 The Apache OpenNLP project publishes the library, javadoc and source code jars.
-To use OpenNLP in your https://maven.apache.org[Maven,window=_blank] project, specify exactly one of the following dependencies,
+To use OpenNLP in your link:https://maven.apache.org[Maven,window=_blank] project, specify exactly one of the following dependencies,
 all transient dependencies are resolved automatically.
 
-== 3.x Series
+== Apache OpenNLP 3.x Series
 
 To use OpenNLP as a library define the following dependency:
 
+=== Runtime dependency
 [source,xml,indent=0,subs=attributes+]
 ----
 <dependency>
     <groupId>org.apache.opennlp</groupId>
     <artifactId>opennlp-runtime</artifactId>
-    <version>${opennlp_3x_version}</version>
-</dependency>
-<!-- if model support is needed -->
-<dependency>
-    <groupId>org.apache.opennlp</groupId>
-    <artifactId>opennlp-models</artifactId>
-    <version>${opennlp_3x_version}</version>
+    <version>{opennlp_3x_version}</version>
 </dependency>
 ----
 
-Only opennlp-runtime needs to be added as a dependency, and you can add additional modules
-(e.g. opennlp-ml-maxent, opennlp-models, etc.) as required by your project.
+NOTE: Only `opennlp-runtime` needs to be added as a dependency, and you can add additional modules
+(e.g. `opennlp-ml-maxent`, `opennlp-dl`, etc.) as required.
 
-== 2.x Series
-=== OpenNLP Tools Dependency
+=== Model Resolver dependency
+If model classpath scanning support is required, just add:
+
+[source,xml,indent=0,subs=attributes+]
+----
+<dependency>
+    <groupId>org.apache.opennlp</groupId>
+    <artifactId>opennlp-model-resolver</artifactId>
+    <version>{opennlp_3x_version}</version>
+</dependency>
+----
+
+TIP: Other components can be declared similarily as in the previous 2.x release, see below. Check the Developer Manual for a detailed outline of existing components.
+
+== Apache OpenNLP 2.x Series
+=== Tools dependency
 To use the OpenNLP Tools define the following dependency:
 
 [source,xml,indent=0,subs=attributes+]
@@ -65,7 +73,7 @@ To use the OpenNLP Tools define the following dependency:
 </dependency>
 ----
 
-=== OpenNLP Tools Models Dependency
+=== Tools Models dependency
 To use the OpenNLP Tools Models define the following dependency:
 
 [source,xml,indent=0,subs=attributes+]
@@ -77,7 +85,7 @@ To use the OpenNLP Tools Models define the following dependency:
 </dependency>
 ----
 
-=== OpenNLP DL Dependency
+=== DL dependency
 To use the OpenNLP DL define the following dependency:
 
 [source,xml,indent=0,subs=attributes+]
@@ -89,7 +97,7 @@ To use the OpenNLP DL define the following dependency:
 </dependency>
 ----
 
-=== OpenNLP DL GPU Dependency
+=== DL GPU dependency
 To use the OpenNLP DL GPU define the following dependency:
 
 [source,xml,indent=0,subs=attributes+]
@@ -101,7 +109,7 @@ To use the OpenNLP DL GPU define the following dependency:
 </dependency>
 ----
 
-=== OpenNLP UIMA Annotators Dependency
+=== UIMA Annotators dependency
 To use the OpenNLP UIMA Annotators define the following dependency:
 
 [source,xml,indent=0,subs=attributes+]
@@ -113,7 +121,7 @@ To use the OpenNLP UIMA Annotators define the following dependency:
 </dependency>
 ----
 
-=== OpenNLP Morfologik AddOn Dependency
+=== Morfologik AddOn dependency
 To use the OpenNLP Morfologik-Addon define the following dependency:
 
 [source,xml,indent=0,subs=attributes+]

@@ -1,0 +1,68 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 3.0.0-M2 released
+Apache OpenNLP
+2026-03-31
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 3.0.0-M2.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+Apache OpenNLP 3.0.0-M2 binary and source distributions are available for download from our link:/download.html[download page].
+
+The OpenNLP library is distributed by Maven Central as well. See the link:/maven-dependency.html[Maven dependency] page for more details.
+
+== What's new
+
+The 3.x release line of Apache OpenNLP introduces no known breaking changes while significantly modularizing the project to improve library usage and future extensibility.
+The core API remains stable and fully compatible with 2.x, so existing projects can continue using the opennlp-tools artifact without modifications.
+
+Key Highlights and Recommendations:
+
+- Notable Changes:
+ ** The minimum Java compiler level was raised to *21* (OPENNLP-1735)
+ ** The artifact 'opennlp-models' was renamed to 'opennlp-model-resolver'. It can be used to detect and load OpenNLP compliant models from the classpath (OPENNLP-1807)
+- New Features:
+ ** Apache OpenNLP can now detect sentiment from text (OPENNLP-855)
+ ** The eval corpus format for GermEval2014 is now supported (OPENNLP-976)
+ ** Document Categorization is now possible via a binding to LibSVM (OPENNLP-1808)
+- Bug Fixes:
+ ** The SentenceDetector got three fixes in handling edge cases with abbreviation dictionaries (OPENNLP-1809, OPENNLP-1810, OPENNLP-1811) - NOTE: These fixes have been back-ported to OpenNLP 2.5.8.
+- Improvements:
+ ** Language Codes passed in are now stricter validated to comply with ISO-693 standard (OPENNLP-991)
+ ** The OpenNLP developer manual (HTML + PDF) got an uplift for the UIMA documentation part, being largely extended (OPENNLP-49)
+
+For further details, check the full list of link:https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&version=12356724[changes,role=external,window=_blank] via the project's issue tracker.
+
+== Migrating from 2.x to 3.x
+
+The 3.x release line of Apache OpenNLP upgrades the compiler level to Java 21 and modularizes the project for better usage as a library and to support future extensibility. The core API remains stable and compatible with 2.x, but the project structure has been reorganized into multiple modules.
+
+That means, that you can continue to use the previous opennlp-tools artifact as a dependency. However, we strongly recommend to switch to the new modular structure and import only the components you need, which will result in a smaller dependency footprint.
+
+Only opennlp-runtime needs to be added as a dependency, and you can add additional modules (e.g. opennlp-ml-maxent, opennlp-models, etc.) as required by your project. For users of the traditional CLI toolkit, nothing changes with the 3.x release line. CLI usage remains stable
+
+--The Apache OpenNLP Team
