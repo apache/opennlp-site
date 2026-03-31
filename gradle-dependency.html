@@ -141,8 +141,7 @@
     <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Apache OpenNLP is also distributed via the Maven Central Repository.
-The maven artifacts are located <a href="https://repo1.maven.org/maven2/org/apache/opennlp/">here</a>.
+<p>Apache OpenNLP is also distributed via <a href="https://repo1.maven.org/maven2/org/apache/opennlp/">Maven Central Repository</a>.
 The Apache OpenNLP project publishes the library, javadoc and source code jars.
 To use OpenNLP in your <a href="https://gradle.org" target="_blank" rel="noopener">Gradle</a> project, specify exactly one of the following dependencies,
 all transient dependencies are resolved automatically.</p>
@@ -151,139 +150,36 @@ all transient dependencies are resolved automatically.</p>
 <div id="toc" class="toc">
 <div id="toctitle">Content</div>
 <ul class="sectlevel1">
-<li><a href="#3_x_series">3.x Series</a></li>
-<li><a href="#2_x_series">2.x Series</a>
+<li><a href="#apache_opennlp_3_x_series">Apache OpenNLP 3.x Series</a>
 <ul class="sectlevel2">
-<li><a href="#opennlp_tools_dependency">OpenNLP Tools Dependency</a></li>
-<li><a href="#opennlp_tools_models_dependency">OpenNLP Tools Models Dependency</a></li>
-<li><a href="#opennlp_dl_dependency">OpenNLP DL Dependency</a></li>
-<li><a href="#opennlp_dl_gpu_dependency">OpenNLP DL GPU Dependency</a></li>
-<li><a href="#opennlp_uima_annotators_dependency">OpenNLP UIMA Annotators Dependency</a></li>
-<li><a href="#opennlp_morfologik_addon_dependency">OpenNLP Morfologik AddOn Dependency</a></li>
+<li><a href="#runtime_dependency">Runtime dependency</a></li>
+<li><a href="#model_resolver_dependency">Model Resolver dependency</a></li>
 </ul>
 </li>
-<li><a href="#snapshots">SNAPSHOTS</a>
+<li><a href="#apache_opennlp_2_x_series">Apache OpenNLP 2.x Series</a>
 <ul class="sectlevel2">
-<li><a href="#opennlp_tools_snapshot_dependency">OpenNLP Tools SNAPSHOT Dependency</a></li>
+<li><a href="#tools_dependency">Tools dependency</a></li>
+<li><a href="#tools_model_dependency">Tools Model dependency</a></li>
+<li><a href="#dl_dependency">DL dependency</a></li>
+<li><a href="#dl_gpu_dependency">DL GPU dependency</a></li>
+<li><a href="#uima_annotators_dependency">UIMA Annotators dependency</a></li>
+<li><a href="#morfologik_addon_dependency">Morfologik AddOn dependency</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect1">
-<h2 id="3_x_series">3.x Series</h2>
+<h2 id="apache_opennlp_3_x_series">Apache OpenNLP 3.x Series</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="runtime_dependency">Runtime dependency</h3>
 <div class="paragraph">
 <p>To use OpenNLP as a library define the following dependency:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code data-lang="xml">compile group: "org.apache.opennlp", name: "opennlp-runtime", version: "$3.0.0-M1"
-compile group: "org.apache.opennlp", name: "opennlp-models", version: "$3.0.0-M1"</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Only opennlp-runtime needs to be added as a dependency, and you can add additional modules
-(e.g. opennlp-ml-maxent, opennlp-models, etc.) as required by your project.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="2_x_series">2.x Series</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="opennlp_tools_dependency">OpenNLP Tools Dependency</h3>
-<div class="paragraph">
-<p>To use the OpenNLP Tools define the following dependency:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>dependencies {
-  implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '2.5.7'
-}</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="opennlp_tools_models_dependency">OpenNLP Tools Models Dependency</h3>
-<div class="paragraph">
-<p>To use the OpenNLP Tools Models define the following dependency:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>dependencies {
-  implementation group: 'org.apache.opennlp', name: 'opennlp-tools-models', version: '2.5.7'
-}</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="opennlp_dl_dependency">OpenNLP DL Dependency</h3>
-<div class="paragraph">
-<p>To use the OpenNLP DL define the following dependency:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>dependencies {
-  implementation group: 'org.apache.opennlp', name: 'opennlp-dl', version: '2.5.7'
-}</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="opennlp_dl_gpu_dependency">OpenNLP DL GPU Dependency</h3>
-<div class="paragraph">
-<p>To use the OpenNLP DL GPU define the following dependency:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>dependencies {
-  implementation group: 'org.apache.opennlp', name: 'opennlp-dl-gpu', version: '2.5.7'
-}</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="opennlp_uima_annotators_dependency">OpenNLP UIMA Annotators Dependency</h3>
-<div class="paragraph">
-<p>To use the OpenNLP UIMA Annotators define the following dependency:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>dependencies {
-  implementation group: 'org.apache.opennlp', name: 'opennlp-uima', version: '2.5.7'
-}</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="opennlp_morfologik_addon_dependency">OpenNLP Morfologik AddOn Dependency</h3>
-<div class="paragraph">
-<p>To use the OpenNLP Morfologik-Addon define the following dependency:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>dependencies {
-  implementation group: 'org.apache.opennlp', name: 'opennlp-morfologik-addon', version: '2.5.7'
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="snapshots">SNAPSHOTS</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="opennlp_tools_snapshot_dependency">OpenNLP Tools SNAPSHOT Dependency</h3>
-<div class="paragraph">
-<p>To use the current version of the <em>main</em> branch define the following dependency:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>dependencies {
-  implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '2.5.1-SNAPSHOT'
-}</pre>
+<pre class="prettyprint highlight"><code data-lang="xml">compile group: "org.apache.opennlp", name: "opennlp-runtime", version: "3.0.0-M2"</code></pre>
 </div>
 </div>
 <div class="admonitionblock note">
@@ -293,14 +189,116 @@ compile group: "org.apache.opennlp", name: "opennlp-models", version: "$3.0.0-M1
 <div class="title">Note</div>
 </td>
 <td class="content">
-All <code>SNAPSHOT</code> dependencies require the following Maven repository:
+Only <code>opennlp-runtime</code> needs to be added as a dependency, and you can add additional modules
+(e.g. <code>opennlp-ml-maxent</code>, <code>opennlp-dl</code>, etc.) as required.
 </td>
 </tr>
 </table>
 </div>
+</div>
+<div class="sect2">
+<h3 id="model_resolver_dependency">Model Resolver dependency</h3>
+<div class="paragraph">
+<p>If model classpath scanning support is required, just add:</p>
+</div>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code>https://repository.apache.org/content/repositories/snapshots/</code></pre>
+<pre class="prettyprint highlight"><code data-lang="xml">compile group: "org.apache.opennlp", name: "opennlp-model-resolver", version: "3.0.0-M2"</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+Other components can be declared similarily as in the previous 2.x release, see below.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="apache_opennlp_2_x_series">Apache OpenNLP 2.x Series</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="tools_dependency">Tools dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP Tools define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-tools', version: '2.5.8'
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="tools_model_dependency">Tools Model dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP Tools Models define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-tools-models', version: '2.5.8'
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="dl_dependency">DL dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP DL define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-dl', version: '2.5.8'
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="dl_gpu_dependency">DL GPU dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP DL GPU define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-dl-gpu', version: '2.5.8'
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="uima_annotators_dependency">UIMA Annotators dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP UIMA Annotators define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-uima', version: '2.5.8'
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="morfologik_addon_dependency">Morfologik AddOn dependency</h3>
+<div class="paragraph">
+<p>To use the OpenNLP Morfologik-Addon define the following dependency:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>dependencies {
+  implementation group: 'org.apache.opennlp', name: 'opennlp-morfologik-addon', version: '2.5.8'
+}</code></pre>
 </div>
 </div>
 </div>
