@@ -58,7 +58,7 @@ public final class Site {
     public static void main(final String[] args) throws Exception {
         if (args.length < 4) {
             throw new IllegalArgumentException(
-                    "usage: Site <source> <dest> <staged> <cache> [--serve] [--port=N]");
+                    "usage: Site <source> <dest> <staged> <cache> [--serve] [--port=N] [--no-fetch]");
         }
         final Path source = Path.of(args[0]);
         final Path dest = Path.of(args[1]);
@@ -66,15 +66,28 @@ public final class Site {
         final Path cacheDir = Path.of(args[3]);
 
         boolean serve = false;
+        boolean noFetch = false;
         int port = 8080;
         for (int i = 4; i < args.length; i++) {
             final String a = args[i];
             if (a.equals("--serve")) serve = true;
+            else if (a.equals("--no-fetch")) noFetch = true;
             else if (a.startsWith("--port=")) port = Integer.parseInt(a.substring("--port=".length()));
         }
+        // Env-var fallback so CI can flip the switch without touching pom args.
+        if (!noFetch) {
+            final String env = System.getenv("OPENNLP_SITE_NO_FETCH");
+            noFetch = env != null && (env.equals("1") || env.equalsIgnoreCase("true"));
+        }
 
-        System.out.println("[site] fetching contributor data...");
-        final Contributors.Sections sections = Contributors.load(cacheDir);
+        final Contributors.Sections sections;
+        if (noFetch) {
+            System.out.println("[site] --no-fetch: skipping live GitHub + Whimsy retrieval");
+            sections = Contributors.empty();
+        } else {
+            System.out.println("[site] fetching contributor data...");
+            sections = Contributors.load(cacheDir);
+        }
         System.out.printf("[site] active=%d emeritus=%d wall-of-fame=%d%n",
                 sections.active().size(), sections.emeritus().size(), sections.wallOfFame().size());
 

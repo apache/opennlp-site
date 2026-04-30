@@ -35,6 +35,11 @@ public final class Contributors {
 
     public record Sections(List<Contributor> active, List<Contributor> emeritus, List<Contributor> wallOfFame) {}
 
+    /** No-network fallback used by --no-fetch / OPENNLP_SITE_NO_FETCH. */
+    public static Sections empty() {
+        return new Sections(List.of(), List.of(), List.of());
+    }
+
     public static Sections load(final Path cacheDir) throws Exception {
         final String token = System.getenv("GITHUB_TOKEN");
         final HttpCache cache = new HttpCache(cacheDir, Duration.ofHours(6), token);

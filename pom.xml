@@ -701,6 +701,38 @@
         </plugins>
       </build>
     </profile>
+
+    <!-- mvn compile -Pno-fetch  ->  skip the live GitHub + Whimsy retrieval entirely.
+         Use this when network egress to api.github.com / whimsy.apache.org is blocked
+         (corporate proxy, restricted CI runner, offline build). The team page renders
+         with empty Active/Emeritus/Wall-of-Fame sections; everything else builds
+         normally. The same can be triggered with -DopennlpSiteNoFetch=true or by
+         exporting OPENNLP_SITE_NO_FETCH=1 in the build environment. -->
+    <profile>
+      <id>no-fetch</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>opennlp-site</id>
+                <configuration>
+                  <arguments>
+                    <argument>${project.basedir}/src/main/jbake</argument>
+                    <argument>${project.build.directory}/${project.build.finalName}</argument>
+                    <argument>${project.build.directory}/jbake-staged</argument>
+                    <argument>${project.build.directory}/contrib-cache</argument>
+                    <argument>--no-fetch</argument>
+                  </arguments>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
   </profiles>
 
 </project>

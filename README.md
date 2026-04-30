@@ -55,9 +55,41 @@ The team page (`team.html`) is populated at build time by the `org.apache.opennl
 - the OpenNLP committer/PMC roster from [Whimsy LDAP exports](https://whimsy.apache.org/public/), and
 - live contributor + activity data from the GitHub REST API across `apache/opennlp`, `apache/opennlp-site`, `apache/opennlp-addons` and `apache/opennlp-sandbox`.
 
-It then partitions members into **Active Team** (any activity in the last 2 years), **Emeritus** (committer/PMC with no recent activity) and a **Wall of Fame** (everyone with a GitHub login). Identity merging (login + apache id + email + normalized name) and bot filtering match the logic of the `opennlp-stats` reference tool.
+It then partitions members into **Active Team** (any activity in the last 2 years), **Emeritus** (committer/PMC with no recent activity) and a **Wall of Fame** (everyone else with a GitHub login — committers/PMCs aren't repeated here). Identity merging (login + apache id + email + normalized name) and bot filtering match the logic of the `opennlp-stats` reference tool.
 
 HTTP responses are cached on disk under `target/contrib-cache/` with a 6-hour TTL, so iterative local builds are cheap. The build runs without a GitHub token; anonymous rate limits (60 req/h) may leave a few `/users/{login}` lookups unresolved on a cold cache, which can drop a committer whose GitHub login differs from their Apache id into Emeritus until the cache warms. Re-running the build inside the TTL fills it in.
+
+##### Manual roster overrides
+
+Whimsy doesn't always carry `githubUsername` for committers, and the live `/users/{login}` bridge can hit anonymous rate limits, so `src/main/resources/team-overrides.properties` lets you pin attributes per Apache id. The file is read at build time and merged on top of the Whimsy + GitHub data.
+
+| Key | Meaning |
+| --- | --- |
+| `<apacheId>.gh` | One or more `;`-separated GitHub logins. The first is used for the card link and avatar; the rest are merged into the same record so their commits/PRs/comments roll up. |
+| `<apacheId>.status` | `active` or `emeritus`. Forces the section bucket regardless of what the live activity check says. |
+| `<apacheId>.chair` | `true` for the current PMC chair. Renders an extra orange `Chair` badge on the card and adds the chair entry to the legend. |
+
+Example:
+
+```properties
+jzemerick.gh     = jzonthemtn
+jzemerick.status = active
+jzemerick.chair  = true
+
+joern.gh         = kottmann
+joern.status     = active
+```
+
+##### Skipping the live fetch (offline / restricted CI)
+
+If the build environment can't reach `api.github.com` or `whimsy.apache.org` — corporate proxy, blocked CI runner, demo build — skip the retrieval entirely:
+
+```bash
+mvn compile -Pno-fetch          # Maven profile
+OPENNLP_SITE_NO_FETCH=1 mvn compile   # env var (any non-empty truthy value)
+```
+
+The team page renders with empty Active/Emeritus/Wall-of-Fame sections (each shows a "No contributors to show." placeholder); the rest of the site builds normally.
 
 #### Build Bot
 
