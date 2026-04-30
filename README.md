@@ -24,16 +24,41 @@ Welcome to OpenNLP Site Source Code
 [![Build Status](https://github.com/apache/opennlp/workflows/Java%20CI/badge.svg)](https://github.com/apache/opennlp-site/actions)
 [![Stack Overflow](https://img.shields.io/badge/stack%20overflow-opennlp-f1eefe.svg)](https://stackoverflow.com/questions/tagged/opennlp)
 
+#### Requirements
+
+- Java 21
+- Maven 3.6.3+
+
 #### Build
 
 ```bash
 mvn clean install
 ```
 
-#### Test Site locally - starts a web server on Port 8080
+The output is rendered to `target/opennlp-site/`. Open `target/opennlp-site/index.html` in a browser to preview.
+
+#### Live dev mode
+
 ```bash
-mvn clean package jbake:inline -Djbake.port=8080 -Djbake.listenAddress=0.0.0.0
+mvn compile -Pserve                       # http://localhost:8080/
+mvn compile -Pserve -Djbake.port=9000     # custom port
 ```
+
+Bakes the site once, then serves `target/opennlp-site/` over HTTP and watches `src/main/jbake/` recursively. Any change to a content file, template, asset or `jbake.properties` triggers a re-bake (debounced ~400 ms); reload the browser to see it. Press Ctrl-C to stop.
+
+The contributor fetch (Whimsy + GitHub) runs once at startup and is reused across re-bakes — no re-fetch and no new rate-limit cost while you iterate. Cached HTTP responses live under `target/contrib-cache/`. Restart `mvn compile -Pserve` to refresh the contributor data.
+
+#### Live contributor data
+
+The team page (`team.html`) is populated at build time by the `org.apache.opennlp.website.Site` driver, which fetches:
+
+- the OpenNLP committer/PMC roster from [Whimsy LDAP exports](https://whimsy.apache.org/public/), and
+- live contributor + activity data from the GitHub REST API across `apache/opennlp`, `apache/opennlp-site`, `apache/opennlp-addons` and `apache/opennlp-sandbox`.
+
+It then partitions members into **Active Team** (any activity in the last 2 years), **Emeritus** (committer/PMC with no recent activity) and a **Wall of Fame** (everyone with a GitHub login). Identity merging (login + apache id + email + normalized name) and bot filtering match the logic of the `opennlp-stats` reference tool.
+
+HTTP responses are cached on disk under `target/contrib-cache/` with a 6-hour TTL, so iterative local builds are cheap. The build runs without a GitHub token; anonymous rate limits (60 req/h) may leave a few `/users/{login}` lookups unresolved on a cold cache, which can drop a committer whose GitHub login differs from their Apache id into Emeritus until the cache warms. Re-running the build inside the TTL fills it in.
+
 #### Build Bot
 
-Website is build via ASF BuildBot. You find it [here](https://ci.apache.org/).
+Website is built via ASF BuildBot. You find it [here](https://ci.apache.org/).

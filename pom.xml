@@ -22,7 +22,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <packaging>pom</packaging>
 
   <groupId>org.apache.opennlp</groupId>
   <artifactId>opennlp-site</artifactId>
@@ -32,12 +31,71 @@
   <properties>
     <!-- Build Properties -->
     <jbake-core.version>2.6.7</jbake-core.version>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <maven.version>3.3.9</maven.version>
+    <maven.compiler.release>21</maven.compiler.release>
+    <maven.version>3.6.3</maven.version>
     <asciidoctor.version>2.5.10</asciidoctor.version>
     <freemarker.version>2.3.32</freemarker.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <dependencies>
+    <!-- JBake itself; we drive it programmatically from Site.java -->
+    <dependency>
+      <groupId>org.jbake</groupId>
+      <artifactId>jbake-core</artifactId>
+      <version>${jbake-core.version}</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>jul-to-slf4j</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <!-- Freemarker templates (.ftl) -->
+    <dependency>
+      <groupId>org.freemarker</groupId>
+      <artifactId>freemarker</artifactId>
+      <version>${freemarker.version}</version>
+    </dependency>
+    <!-- AsciiDoc rendering (.ad) -->
+    <dependency>
+      <groupId>org.asciidoctor</groupId>
+      <artifactId>asciidoctorj</artifactId>
+      <version>${asciidoctor.version}</version>
+    </dependency>
+    <!-- JBake 2.6 demoted these to runtime scope, but Site.java touches the API directly -->
+    <dependency>
+      <groupId>commons-configuration</groupId>
+      <artifactId>commons-configuration</artifactId>
+      <version>1.10</version>
+    </dependency>
+    <!-- Pinned to 3.0.37 because JBake 2.6.7 hard-codes admin/admin to open the embedded
+         "cache" database. OrientDB 3.2 disabled those default credentials and JBake's
+         ContentStore.startup fails with OSecurityAccessException, aborting the bake. -->
+    <dependency>
+      <groupId>com.orientechnologies</groupId>
+      <artifactId>orientdb-core</artifactId>
+      <version>3.0.37</version>
+    </dependency>
+    <!-- OrientDB 3.0.37 transitively pulls JNA 4.5.0, which ships only i386/x86_64 native
+         stubs. 5.13.0 adds arm64-darwin so the build runs on Apple Silicon. -->
+    <dependency>
+      <groupId>net.java.dev.jna</groupId>
+      <artifactId>jna</artifactId>
+      <version>5.13.0</version>
+    </dependency>
+    <dependency>
+      <groupId>net.java.dev.jna</groupId>
+      <artifactId>jna-platform</artifactId>
+      <version>5.13.0</version>
+    </dependency>
+    <!-- JSON parsing for the GitHub + Whimsy clients in contributors/ -->
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20240303</version>
+    </dependency>
+  </dependencies>
 
   <build>
     <finalName>opennlp-site</finalName>
@@ -45,53 +103,32 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.10.1</version>
+        <version>3.13.0</version>
         <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
+          <release>${maven.compiler.release}</release>
         </configuration>
-    </plugin>
+      </plugin>
       <plugin>
-        <groupId>org.jbake</groupId>
-        <artifactId>jbake-maven-plugin</artifactId>
-        <version>0.3.5</version>
-
-        <!-- dependencies -->
-        <dependencies>
-          <!-- optional : a jbake version -->
-          <dependency>
-            <groupId>org.jbake</groupId>
-            <artifactId>jbake-core</artifactId>
-            <version>${jbake-core.version}</version>
-          </dependency>
-          <!-- for freemarker templates (.ftl) -->
-          <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-            <version>${freemarker.version}</version>
-          </dependency>
-          <!-- for ascii doc format (.ad) -->
-          <dependency>
-            <groupId>org.asciidoctor</groupId>
-            <artifactId>asciidoctorj</artifactId>
-            <version>${asciidoctor.version}</version>
-          </dependency>
-          <!-- Overriding orientdb, required to work on Apple Silicon (M1,..) -->
-          <dependency>
-            <groupId>com.orientechnologies</groupId>
-            <artifactId>orientdb-core</artifactId>
-            <version>3.1.16</version>
-          </dependency>
-
-        </dependencies>
-
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.1</version>
         <executions>
           <execution>
-            <id>default-generate</id>
+            <id>opennlp-site</id>
             <phase>compile</phase>
             <goals>
-              <goal>generate</goal>
+              <goal>java</goal>
             </goals>
+            <configuration>
+              <includeProjectDependencies>true</includeProjectDependencies>
+              <mainClass>org.apache.opennlp.website.Site</mainClass>
+              <arguments>
+                <argument>${project.basedir}/src/main/jbake</argument>
+                <argument>${project.build.directory}/${project.build.finalName}</argument>
+                <argument>${project.build.directory}/jbake-staged</argument>
+                <argument>${project.build.directory}/contrib-cache</argument>
+              </arguments>
+            </configuration>
           </execution>
         </executions>
       </plugin>
@@ -631,5 +668,39 @@
 
     </plugins>
   </build>
+
+  <profiles>
+    <!-- mvn compile -Pserve  ->  bake once, serve target/opennlp-site/ on http://localhost:${jbake.port}/,
+         and re-bake whenever something under src/main/jbake/ changes. -->
+    <profile>
+      <id>serve</id>
+      <properties>
+        <jbake.port>8080</jbake.port>
+      </properties>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>opennlp-site</id>
+                <configuration>
+                  <arguments>
+                    <argument>${project.basedir}/src/main/jbake</argument>
+                    <argument>${project.build.directory}/${project.build.finalName}</argument>
+                    <argument>${project.build.directory}/jbake-staged</argument>
+                    <argument>${project.build.directory}/contrib-cache</argument>
+                    <argument>--serve</argument>
+                    <argument>--port=${jbake.port}</argument>
+                  </arguments>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 
 </project>
