@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"opennlp.tools.tokenize","l":"DetokenizerEvaluator"},{"p":"opennlp.tools.parser","l":"ParserCrossValidator"}];updateSearchResults();

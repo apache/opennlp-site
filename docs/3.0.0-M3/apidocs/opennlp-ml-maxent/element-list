@@ -1,0 +1,4 @@
+opennlp.tools.ml.maxent
+opennlp.tools.ml.maxent.io
+opennlp.tools.ml.maxent.quasinewton
+opennlp.tools.monitoring

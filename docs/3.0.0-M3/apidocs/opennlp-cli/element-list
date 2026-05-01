@@ -1,0 +1,14 @@
+opennlp.tools.cmdline.chunker
+opennlp.tools.cmdline.dictionary
+opennlp.tools.cmdline.doccat
+opennlp.tools.cmdline.entitylinker
+opennlp.tools.cmdline.langdetect
+opennlp.tools.cmdline.languagemodel
+opennlp.tools.cmdline.lemmatizer
+opennlp.tools.cmdline.namefind
+opennlp.tools.cmdline.parser
+opennlp.tools.cmdline.postag
+opennlp.tools.cmdline.sentdetect
+opennlp.tools.cmdline.sentiment
+opennlp.tools.cmdline.tokenizer
+opennlp.tools.parser
