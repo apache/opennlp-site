@@ -1,0 +1,76 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 2.5.9 released
+Apache OpenNLP
+2026-05-01
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.5.9.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+Apache OpenNLP 2.5.9 binary and source distributions are available for download from our link:/download.html[download page].
+
+The OpenNLP library is distributed by Maven Central as well. See the link:/maven-dependency.html[Maven dependency] page for more details.
+
+== What's new in Apache OpenNLP 2.5.9
+
+This is a *maintenance and security release* on the 2.x line. It backports the security fixes shipped in 3.0.0-M3 and refreshes several dependencies.
+
+=== Security Fixes
+
+Three security issues are addressed in this release (also fixed in *3.0.0-M3* on the 3.x line).
+
+==== XXE in `DictionaryEntryPersistor` (OPENNLP-1819, CVE-2026-40682)
+
+The `DictionaryEntryPersistor` previously used a `SAXParserFactory` that did not enable secure processing or disable DTD handling, leaving external entity resolution active. A malicious dictionary file could exploit this for *local file disclosure* or *SSRF* before any dictionary entry was processed.
+
+The parsing path is now aligned with the project's existing `XmlUtil` helper, which properly sets `FEATURE_SECURE_PROCESSING` and `disallow-doctype-decl`.
+
+==== Arbitrary Class Instantiation in `ExtensionLoader` (OPENNLP-1820, CVE-2026-42027)
+
+`ExtensionLoader.instantiateExtension()` performed its `isAssignableFrom` type check *after* `Class.forName()` had already executed the target class's static initializer, allowing a crafted model archive to trigger the static initializer of any class on the classpath.
+
+The fix introduces a *package-prefix allowlist* consulted before `Class.forName()` is invoked:
+
+* Classes under `opennlp.*` remain permitted by default.
+* Other packages must be opted in via `ExtensionLoader.registerAllowedPackage(String)` or the `OPENNLP_EXT_ALLOWED_PACKAGES` system property (comma-separated list).
+
+==== OOM via Unbounded Array Allocation in `AbstractModelReader` (OPENNLP-1821, CVE-2026-42440)
+
+`getOutcomes()`, `getOutcomePatterns()`, and `getPredicates()` read attacker-controlled 32-bit count fields from binary model streams and passed them directly to array allocations. A crafted `.bin` file could trigger an immediate `OutOfMemoryError` and crash the JVM.
+
+Each count is now bounded (default *10,000,000*, configurable via `-DOPENNLP_MAX_ENTRIES=<n>`), with negative or oversized values failing fast via `IllegalArgumentException`.
+
+WARNING: For all three issues, users who cannot upgrade immediately should restrict input (dictionary and model files) to *trusted sources only*.
+
+=== Dependency Updates
+
+* Update log4j2 to 2.25.4 (OPENNLP-1817)
+* Update ONNX runtime to 1.25.0 (OPENNLP-1822)
+
+For further details, check the full list of link:https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&version=12356814[changes,role=external,window=_blank] via the project's issue tracker.
+
+--The Apache OpenNLP Team
