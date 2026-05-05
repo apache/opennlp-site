@@ -149,3 +149,116 @@ div.qlist.qanda > ol > li {
         display: none;
     }
 }
+
+/* Contributor card grid (Active / Emeritus / Wall of Fame on team.html)
+-------------------------------------------------- */
+.contributor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5em 0;
+}
+
+.contributor-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+}
+
+.contributor-card:hover,
+.contributor-card:focus {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-color: #5614b0;
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+
+.contributor-badge {
+    flex: 0 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95em;
+    letter-spacing: 0.5px;
+}
+
+.contributor-name {
+    flex: 1 1 auto;
+    color: #333;
+    font-size: 1em;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+.contributor-role {
+    flex: 0 0 auto;
+    font-size: 0.75em;
+    font-weight: 600;
+    color: #5614b0;
+    border: 1px solid #5614b0;
+    border-radius: 3px;
+    padding: 1px 5px;
+    letter-spacing: 0.5px;
+}
+
+.contributor-role-chair {
+    color: #fff;
+    background: #f59523;
+    border-color: #f59523;
+    letter-spacing: 0.3px;
+}
+
+.contributor-empty {
+    grid-column: 1 / -1;
+    color: #777;
+    font-style: italic;
+    margin: 0;
+}
+
+.contributor-legend {
+    color: #555;
+    font-size: 0.85em;
+    margin: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.4em;
+    align-items: center;
+}
+
+.contributor-legend .contributor-role {
+    display: inline-flex;
+    align-items: center;
+}
+
+.team-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em 1.5em;
+    margin: 0 0 1.5em 0;
+}
+
+.team-last-updated {
+    color: #777;
+    font-size: 0.85em;
+    margin: 0;
+}
+
+.team-last-updated time {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color: #555;
+}
