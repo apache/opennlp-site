@@ -37,7 +37,7 @@ mvn clean install
 
 The output is rendered to `target/opennlp-site/`. Open `target/opennlp-site/index.html` in a browser to preview.
 
-#### Live dev mode
+#### Live Dev Mode
 
 ```bash
 mvn compile -Pserve                       # http://localhost:8080/
@@ -48,7 +48,7 @@ Bakes the site once, then serves `target/opennlp-site/` over HTTP and watches `s
 
 The contributor fetch (Whimsy + GitHub) runs once at startup and is reused across re-bakes — no re-fetch and no new rate-limit cost while you iterate. Cached HTTP responses live under `target/contrib-cache/`. Restart `mvn compile -Pserve` to refresh the contributor data.
 
-#### Live contributor data
+#### Live Contributor Data
 
 The team page (`team.html`) is populated at build time by the `org.apache.opennlp.website.Site` driver, which fetches:
 
@@ -59,7 +59,7 @@ It then partitions members into **Active Team** (any activity in the last 2 year
 
 HTTP responses are cached on disk under `target/contrib-cache/` with a 6-hour TTL, so iterative local builds are cheap. The build runs without a GitHub token; anonymous rate limits (60 req/h) may leave a few `/users/{login}` lookups unresolved on a cold cache, which can drop a committer whose GitHub login differs from their Apache id into Emeritus until the cache warms. Re-running the build inside the TTL fills it in.
 
-##### Manual roster overrides
+##### Manual Roster Overrides
 
 Whimsy doesn't always carry `githubUsername` for committers, and the live `/users/{login}` bridge can hit anonymous rate limits, so `src/main/resources/team-overrides.properties` lets you pin attributes per Apache id. The file is read at build time and merged on top of the Whimsy + GitHub data.
 
