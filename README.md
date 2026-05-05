@@ -94,5 +94,3 @@ The team page renders with empty Active/Emeritus/Wall-of-Fame sections (each sho
 #### Build Bot
 
 Website is built via ASF BuildBot. You find it [here](https://ci.apache.org/).
-
-
