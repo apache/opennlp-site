@@ -14,52 +14,40 @@
    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
    KIND, either express or implied.  See the License for the
    specific language governing permissions and limitations
-   under the License.   
+   under the License.
 ////
-= Apache OpenNLP project team
+= Apache OpenNLP Project Team
 :jbake-type: page
-:jbake-tags: maven
+:jbake-tags: team
 :jbake-status: published
 :idprefix:
 
-The OpenNLP team currently consists of:
+<!-- LAST_UPDATED -->
 
-* Jörn Kottmann (joern) (C-P)
-* Grant Ingersoll (gsingers) (C-P)
-* Isabel Drost (isabel) (P)
-* James Kosin (jkosin) (C-P)
-* Jason Baldridge (jbaldrid) (C-P)
-* Thomas Morton (tsmorton) (C-P)
-* William Silva (colen) (C-P)
-* Rodrigo Agerri (ragerri) (C-P)
-* Aliaksandr Autayeu (autayeu) ( C )
-* Boris Galitsky (bgalitsky) ( C )
-* Mark Giaconia ( C ) 
-* Tommaso Teofili (tommaso) (C-P)
-* Vinh Khuc (vkhuc) ( C )
-* Anthony Beylerian (beylerian) ( C )
-* Mondher Bouazizi (mondher) ( C )
-* Chris Mattmann (mattmann) ( C )
-* Anastasija Mensikova (anastasijam) ( C )
-* Suneel Marthi (smarthi) (C-P)
-* Daniel Russ (druss) (C-P)
-* Peter Thygesen (thygesen) ( C-P )
-* Koji Sekiguchi (koji) ( C-P )
-* Bruno P. Kinoshita (kinow) (C-P)
-* Jeff Zemerick (jzemerick) **Chair** ( C-P )
-* Richard Zowalla (rzo1) ( C-P )
-* Martin Wiesner (mawiesne) ( C-P )
-* Atita Arora (atarora) ( C-P )
-* Nishant Shrivastava (shrivnis) ( C )
+== Active Team
 
-These people contributed to OpenNLP:
+The following people are currently active on Apache OpenNLP.
 
-* Sean Adams
-* Thilo Goetz (twgoetz)
-* Gann Bierner
-* Eric Friedman
-* Joao Cavalcanti
-* Hyosup Shim
+<!-- ACTIVE -->
 
-*C* indicates a committer and *P* a PMC member.
- 
+== Emeritus
+
+Open source contribution is voluntary, and priorities, jobs and life circumstances change.
+The people below have served Apache OpenNLP in the past as committers or PMC members and
+are not currently active on the project. Their merit doesn't expire, and they're warmly
+welcome to return to active contribution at any time; a short note to the dev or private
+list is enough.
+
+<!-- EMERITUS -->
+
+== Wall of Fame -- Thanks to our Contributors
+
+Apache OpenNLP exists because of the people below, who have contributed code, reviews,
+documentation and bug reports across https://github.com/apache/opennlp[opennlp],
+https://github.com/apache/opennlp-site[opennlp-site],
+https://github.com/apache/opennlp-addons[opennlp-addons] and
+https://github.com/apache/opennlp-sandbox[opennlp-sandbox]. The list is generated
+automatically from GitHub: if you've contributed and don't see yourself, please ping us
+on the dev@ mailing list.
+
+<!-- WALL_OF_FAME -->
