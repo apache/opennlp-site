@@ -27,7 +27,7 @@ Welcome to OpenNLP Site Source Code
 #### Requirements
 
 - Java 21
-- Maven 3.6.3+
+- Maven 3.9.x
 
 #### Build
 
