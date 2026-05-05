@@ -24,8 +24,8 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Tue, 5 May 2026 19:02:03 +0000</pubDate>
-    <lastBuildDate>Tue, 5 May 2026 19:02:03 +0000</lastBuildDate>
+    <pubDate>Tue, 5 May 2026 19:25:17 +0000</pubDate>
+    <lastBuildDate>Tue, 5 May 2026 19:25:17 +0000</lastBuildDate>
 
     <item>
       <title>Apache OpenNLP 3.0.0-M3 released</title>
