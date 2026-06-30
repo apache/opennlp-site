@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"opennlp.spellcheck"},{"l":"opennlp.spellcheck.cmdline"},{"l":"opennlp.spellcheck.dictionary"},{"l":"opennlp.spellcheck.distance"},{"l":"opennlp.spellcheck.normalizer"},{"l":"opennlp.spellcheck.stream"},{"l":"opennlp.spellcheck.symspell"}];updateSearchResults();

@@ -24,9 +24,155 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Thu, 25 Jun 2026 05:27:53 +0000</pubDate>
-    <lastBuildDate>Thu, 25 Jun 2026 05:27:53 +0000</lastBuildDate>
+    <pubDate>Tue, 30 Jun 2026 06:56:59 +0000</pubDate>
+    <lastBuildDate>Tue, 30 Jun 2026 06:56:59 +0000</lastBuildDate>
 
+    <item>
+      <title>Apache OpenNLP 3.0.0-M4 released</title>
+      <link>https://opennlp.apache.org/news/release-300-M4.html</link>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-300-M4.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 3.0.0-M4.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Apache OpenNLP 3.0.0-M4 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven dependency&lt;/a&gt; page for more details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_3_0_0_m4&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 3.0.0-M4&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release focuses on &lt;strong&gt;security hardening&lt;/strong&gt;, &lt;strong&gt;new NLP capabilities&lt;/strong&gt;, and &lt;strong&gt;dependency maintenance&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;security_fixes&quot;&gt;Security Fixes&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;One security issue is addressed in this release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;cwe_502_deserialization_of_untrusted_data_opennlp_1823_cve_2026_43825&quot;&gt;CWE-502 Deserialization of Untrusted Data (OPENNLP-1823, CVE-2026-43825)&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Fixed unsafe Java deserialization in &lt;code&gt;SvmDoccatModel.deserialize()&lt;/code&gt; (libsvm doccat module, 3.x before 3.0.0-M4) that
+could allow remote code execution via a crafted stream when a gadget chain is present on the classpath;
+an &lt;code&gt;ObjectInputFilter&lt;/code&gt; is now applied.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;new_features_and_improvements&quot;&gt;New Features and Improvements&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Include list of stop words for various languages (OPENNLP-660)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add SymSpell-based spell correction component (OPENNLP-1832)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Add BertTokenizer with BERT basic tokenization (OPENNLP-1837)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Harden SvmDoccatModel.deserialize() with ObjectInputFilter and resource limits (OPENNLP-1823)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tolerate unsupported XML parser security options (OPENNLP-1835)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fix NameFinderDL only worked with Person, expand to all types (OPENNLP-1846)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Several updates of dependencies were conducted, see Jira release notes listing - URL down below&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Some minor tasks have been completed&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;bug_fixes&quot;&gt;Bug fixes&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;This release ships four bug fixes for: OPENNLP-1826, OPENNLP-1836, OPENNLP-1839, and OPENNLP-1840&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;important_changes&quot;&gt;IMPORTANT CHANGES&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The ONNX input encoding in SentenceVectorsDL was fixed, which changes the produced sentence vectors.
+Any embeddings persisted with the old encoding are not comparable to the new output and must be re-generated. (OPENNLP-1836 - PR #1072)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;WordpieceTokenizer (public API, used by opennlp-dl) now splits punctuation runs into single tokens, collapses
+partially-matched words to a single [UNK], and throws from tokenizePos instead of returning null.
+These change tokenization output for existing callers. (OPENNLP-1837 - PR #1073)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NameFinderDL now decodes all BIO entity types (PER/ORG/LOC/…) instead of only persons. Span.getType() now returns
+the entity label rather than the covered text, which is a contract change for existing callers. (OPENNLP-1846 - PR #1086)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The opennlp-dl components are now thread-safe; as part of this, loadVocab became public static (source- and binary-incompatible)
+and AbstractDL&amp;#8217;s implicit no-arg constructor was removed.
+Both affect downstream code that calls loadVocab or extends AbstractDL. (OPENNLP-1844 - PR #1084)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;dependency_updates&quot;&gt;Dependency Updates&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Update ONNX runtime to 1.26.0 (OPENNLP-1824)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update gRPC to 1.81.0 (OPENNLP-1825)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update log4j2 to 2.26.0 (OPENNLP-1827)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update Slf4j to 2.0.18 (OPENNLP-1831)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update gRPC to 1.82.0 (OPENNLP-1847)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update Morfologik to 2.2.0 (OPENNLP-1848)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For further details, check the full list of &lt;a href=&quot;https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&amp;amp;version=12356941&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;changes&lt;/a&gt; via the project&amp;#8217;s issue tracker.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Apache OpenNLP 2.5.10 released</title>
       <link>https://opennlp.apache.org/news/release-2510.html</link>
