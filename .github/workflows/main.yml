@@ -85,3 +85,4 @@ jobs:
           [ -d target/opennlp-site/docs/3.0.0-M1 ] && echo 'docs for 3.0.0-M1 exist'
           [ -d target/opennlp-site/docs/3.0.0-M2 ] && echo 'docs for 3.0.0-M2 exist'
           [ -d target/opennlp-site/docs/3.0.0-M3 ] && echo 'docs for 3.0.0-M3 exist'
+          [ -d target/opennlp-site/docs/3.0.0-M4 ] && echo 'docs for 3.0.0-M3 exist'

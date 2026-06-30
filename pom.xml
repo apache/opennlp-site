@@ -690,6 +690,16 @@
                   <outputDirectory>${project.build.directory}/distr/3.0.0-M3</outputDirectory>
                   <excludes>**/lib/**/*</excludes>
                 </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.opennlp</groupId>
+                  <artifactId>opennlp-distr</artifactId>
+                  <version>3.0.0-M4</version>
+                  <overWrite>false</overWrite>
+                  <type>zip</type>
+                  <classifier>bin</classifier>
+                  <outputDirectory>${project.build.directory}/distr/3.0.0-M4</outputDirectory>
+                  <excludes>**/lib/**/*</excludes>
+                </artifactItem>
               </artifactItems>
             </configuration>
           </execution>

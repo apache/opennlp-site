@@ -32,7 +32,7 @@ Welcome to OpenNLP Site Source Code
 #### Build
 
 ```bash
-mvn clean install
+mvn clean verify
 ```
 
 The output is rendered to `target/opennlp-site/`. Open `target/opennlp-site/index.html` in a browser to preview.
@@ -40,8 +40,10 @@ The output is rendered to `target/opennlp-site/`. Open `target/opennlp-site/inde
 #### Live Dev Mode
 
 ```bash
-mvn compile -Pserve                       # http://localhost:8080/
-mvn compile -Pserve -Djbake.port=9000     # custom port
+# http://localhost:8080/
+mvn compile -Pserve                       
+# custom port
+mvn compile -Pserve -Djbake.port=9000     
 ```
 
 Bakes the site once, then serves `target/opennlp-site/` over HTTP and watches `src/main/jbake/` recursively. Any change to a content file, template, asset or `jbake.properties` triggers a re-bake (debounced ~400 ms); reload the browser to see it. Press Ctrl-C to stop.

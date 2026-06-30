@@ -44,10 +44,12 @@ NOTE: All the documentation is also included in the binary distribution.
 * link:/docs/{opennlp_3x_version}/apidocs/opennlp-ml-commons/index.html[Apache OpenNLP ML Commons]
 * link:/docs/{opennlp_3x_version}/apidocs/opennlp-ml-maxent/index.html[Apache OpenNLP ML Maxent]
 * link:/docs/{opennlp_3x_version}/apidocs/opennlp-ml-perceptron/index.html[Apache OpenNLP ML Perceptron]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-ml-libsvm/index.html[Apache OpenNLP ML LibSVM Javadoc]
 * link:/docs/{opennlp_3x_version}/apidocs/opennlp-model-resolver/index.html[Apache OpenNLP Model resolver]
 * link:/docs/{opennlp_3x_version}/apidocs/opennlp-morfologik/index.html[Apache OpenNLP Morfologik]
 * link:/docs/{opennlp_3x_version}/apidocs/opennlp-runtime/index.html[Apache OpenNLP Runtime]
 * link:/docs/{opennlp_3x_version}/apidocs/opennlp-tools/index.html[Apache OpenNLP Tools]
+* link:/docs/{opennlp_3x_version}/apidocs/opennlp-spellcheck/index.html[Apache OpenNLP Spellchecker Javadoc]
 * link:/docs/{opennlp_3x_version}/apidocs/opennlp-uima/index.html[Apache OpenNLP UIMA]
 
 == Apache OpenNLP {opennlp_version}
