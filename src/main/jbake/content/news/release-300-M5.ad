@@ -1,0 +1,86 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 3.0.0-M5 released
+Apache OpenNLP
+2026-07-24
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 3.0.0-M5.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+Apache OpenNLP 3.0.0-M5 binary and source distributions are available for download from our link:/download.html[download page].
+
+The OpenNLP library is distributed by Maven Central as well. See the link:/maven-dependency.html[Maven dependency] page for more details.
+
+== What's new in Apache OpenNLP 3.0.0-M5
+
+This milestone release delivers 33 resolved issues, headlined by a major overhaul of Unicode handling and text normalization.
+In addition, it brings *security hardening*, *new NLP capabilities*, and *dependency maintenance*.
+
+=== Security Fixes
+
+One security issue is addressed in this release.
+
+==== CWE-502 Arbitrary Class Instantiation via XML Feature Generator Descriptor and Format Name in Apache OpenNLP (OPENNLP-1890, CVE-2026-63317)
+
+* OpenNLP contained three code paths that instantiated arbitrary classes by name without validation,
+letting attackers with control over model archives or format names trigger side effects from any classpath class's constructor or static initializer.
+The fix enforces a package-prefix allowlist (defaulting to opennlp.*) before class loading; until upgrading,
+users should only load models and format names from trusted sources.
+
+=== New Features and Improvements
+
+* The centerpiece of this release is a new Unicode-aware normalization and tokenization stack.
+A new normalization engine (CharClass, Dimension, and confusables support) is paired with an offset/alignment layer (Alignment, AlignedText)
+that correctly tracks character offsets through length-changing folds such as expansions and contractions.
+* On top of this, OpenNLP now ships a UAX #29 compliant word tokenizer (WordSegmenter, WordTokenizer, WordType),
+a layered Term model with TermAnalyzer, and a per-language NormalizationProfile registry.
+* Full Unicode case folding has been added to text normalization, whitespace handling is now aligned with the Unicode
+White_Space property, and the deep-learning components support offset-safe input normalization.
+* A new emoji annotation layer is wired into the Sentiment, Name Finder, and Doccat components,
+with offset-aware bidirectional emoji and emoticon expansion/contraction.
+* Performance and robustness also received attention: legacy CharSequenceNormalizers replace regex matching with cursor scans,
+Tag patterns are precompiled to avoid repeated compilation,
+and normalization/tokenization hot paths saw non-breaking performance improvements.
+* Stemmers are now thread-safe, with a new StemmerFactory and per-thread stem caching, and previously unexecuted stemmer
+tests have been brought back into the build.
+* Housekeeping updates include moving to Apache Parent 39, plus a fix to the binary distribution LICENSE to include
+the BSD section for the bundled stopword lists.
+* Documentation improvements cover the Entity Linker framework, the BioNLP converter, and a new Dev Manual section
+on Unicode normalization and the UAX #29 tokenizer.
+
+=== Bug fixes
+* None
+
+=== Dependency Updates
+
+* Update ONNX runtime to 1.27.0 (OPENNLP-1873)
+* Update log4j2 to 2.26.1 (OPENNLP-1874)
+* Update gRPC to 1.82.2 (OPENNLP-1857)
+
+For further details, check the full list of link:https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&version=12357221[changes,role=external,window=_blank] via the project's issue tracker.
+
+--The Apache OpenNLP Team
