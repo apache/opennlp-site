@@ -1,0 +1,55 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 2.5.11 released
+Apache OpenNLP
+2026-07-24
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.5.11.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+Apache OpenNLP 2.5.11 binary and source distributions are available for download from our link:/download.html[download page].
+
+The OpenNLP library is distributed by Maven Central as well. See the link:/maven-dependency.html[Maven dependency] page for more details.
+
+== What's new in Apache OpenNLP 2.5.11
+
+This is a *maintenance release* on the 2.x line. It refreshes several dependencies.
+
+=== Improvements:
+* Class instantiation in StreamFactory / StringInterners is now allowlist-based (OPENNLP-1890)
+* Deserialization in BaseModel has been hardened (OPENNLP-1891)
+* DocBook DTDs are now resolved from a local catalog instead of a remote URL (OPENNLP-1854)
+
+=== Dependency Updates
+* Move to Apache Parent 39 (OPENNLP-1855)
+* Update JUnit to 6.1.2 (OPENNLP-1856)
+* Update ONNX runtime to 1.27.0 (OPENNLP-1873)
+* Update Log4j2 to 2.26.1 (OPENNLP-1874)
+
+For further details, check the full list of link:https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&version=12357211[changes,role=external,window=_blank] via the project's issue tracker.
+
+--The Apache OpenNLP Team
