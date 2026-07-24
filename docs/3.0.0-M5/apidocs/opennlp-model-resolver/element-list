@@ -1,0 +1,4 @@
+opennlp.tools.models
+opennlp.tools.models.classgraph
+opennlp.tools.models.dir
+opennlp.tools.models.simple
