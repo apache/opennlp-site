@@ -1,0 +1,65 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Security
+:jbake-type: page
+:jbake-tags: security
+:jbake-status: published
+:idprefix:
+
+== Reporting a Vulnerability
+
+*Please do not report security issues through GitHub, the mailing lists, or any other public channel.*
+
+Report suspected vulnerabilities privately to the Apache Security Team at
+mailto:security@apache.org[security@apache.org]. The team forwards the report to the Apache OpenNLP PMC
+and coordinates the response with you. The https://www.apache.org/security/[ASF security process]
+describes what to expect.
+
+== Supported Versions
+
+Security fixes are made to the most recent release of the 2.x line and to the current 3.x line.
+Apache OpenNLP 1.x is end of life and receives no fixes; users still on 1.x should
+link:/download.html[upgrade].
+
+== Security Model
+
+Apache OpenNLP is a library and a set of command-line tools. It is not a server: it opens no listening
+sockets, has no user accounts and no authentication, and runs entirely with the privileges of the
+application that embeds it. Its security model is therefore almost entirely about *input trust boundaries*:
+
+* *Text you analyze is untrusted.* OpenNLP is designed to process hostile text safely. Crashes, hangs and
+  unbounded memory growth caused by crafted text are vulnerabilities — please report them.
+* *Models, dictionaries and training data are trusted.* They are closer to configuration or code than to
+  data; loading a model you have not vetted is comparable to loading a JAR you have not vetted. We harden
+  these readers regardless, and we do want to hear about weaknesses in them.
+* *Configuration is trusted.* System properties, file paths and API parameters are set by the operator,
+  not by an attacker.
+
+The full policy — including the detailed trust levels for each input category, the hardening measures in
+place, and a list of frequently reported non-findings — is maintained with the source code:
+
+https://github.com/apache/opennlp/blob/main/SECURITY.md[Apache OpenNLP Security Policy and Security Model]
+
+That document is the authoritative version; the summary above is provided for orientation only.
+
+== Published Advisories
+
+Advisories for Apache OpenNLP are announced on the link:/mailing-lists.html[announce and dev mailing lists]
+and published in the https://www.cve.org/[CVE] program. Past advisories can also be found in our
+link:/news/[news archive].

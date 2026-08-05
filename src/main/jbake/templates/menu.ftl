@@ -65,7 +65,8 @@
                         <li><a href="https://issues.apache.org/jira/browse/OPENNLP" target="_blank">Issue tracker</a></li>
                         <li><a href="/books-tutorials-and-talks.html">Books, Tutorials and Talks</a></li>
                         <li><a href="/powered-by-opennlp.html">Powered by Apache OpenNLP</a></li>
-                        
+                        <li><a href="/security.html">Security</a></li>
+
                     </ul>
                 </li>
 
@@ -90,7 +91,7 @@
                         <li><a href="https://www.apache.org/licenses" target="_blank">License</a></li>
                         <li><a href="https://www.apache.org/foundation/policies/conduct" target="_blank">Code of Conduct</a></li>
                         <li><a href="https://www.apache.org/foundation/thanks.html" target="_blank">Thanks</a></li>
-                        <li><a href="https://www.apache.org/security/" target="_blank">Security</a></li>
+                        <li><a href="https://www.apache.org/security/" target="_blank">ASF Security</a></li>
                         <li><a href="https://www.apache.org/foundation/sponsorship.html" target="_blank">Become a Sponsor</a></li>
                     </ul>
                 </li>

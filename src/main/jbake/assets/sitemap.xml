@@ -90,6 +90,11 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://opennlp.apache.org/security.html</loc>
+  <lastmod>2026-08-05T00:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://opennlp.apache.org/privacy-policy.html</loc>
   <lastmod>2017-11-02T10:51:58+00:00</lastmod>
   <priority>0.80</priority>
