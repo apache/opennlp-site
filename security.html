@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Apache OpenNLP 2.1.0 released - Apache OpenNLP</title>
+    <title>Security - Apache OpenNLP</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="dark light">
@@ -137,74 +137,83 @@
 </nav>
 
 <div class="container">
-    <h1 class="title">Apache OpenNLP 2.1.0 released</h1>
+    <h1 class="title">Security</h1>
 
-    <div id="preamble">
+    <div class="sect1">
+<h2 id="reporting_a_vulnerability">Reporting a Vulnerability</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.1.0.</p>
+<p><strong>Please do not report security issues through GitHub, the mailing lists, or any other public channel.</strong></p>
 </div>
 <div class="paragraph">
-<p>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.</p>
-</div>
-<div class="paragraph">
-<p>It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.</p>
-</div>
-<div class="paragraph">
-<p>Apache OpenNLP 2.1.0 binary and source distributions are available for download from our <a href="/download.html">download page</a>.</p>
-</div>
-<div class="paragraph">
-<p>The OpenNLP library is distributed by Maven Central as well. See the Maven Dependency page for more details: <a href="/maven-dependency.html">Maven Dependency</a></p>
+<p>Report suspected vulnerabilities privately to the Apache Security Team at
+<a href="mailto:security@apache.org">security@apache.org</a>. The team forwards the report to the Apache OpenNLP PMC
+and coordinates the response with you. The <a href="https://www.apache.org/security/">ASF security process</a>
+describes what to expect.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="whats_new_in_apache_opennlp_2_1_0">What&#8217;s new in Apache OpenNLP 2.1.0</h2>
+<h2 id="supported_versions">Supported Versions</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Security fixes are made to the most recent release of the 2.x line and to the current 3.x line.
+Apache OpenNLP 1.x is end of life and receives no fixes; users still on 1.x should
+<a href="/download.html">upgrade</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="security_model">Security Model</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Apache OpenNLP is a library and a set of command-line tools. It is not a server: it opens no listening
+sockets, has no user accounts and no authentication, and runs entirely with the privileges of the
+application that embeds it. Its security model is therefore almost entirely about <strong>input trust boundaries</strong>:</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>Update language codes in documentation</p>
+<p><strong>Text you analyze is untrusted.</strong> OpenNLP is designed to process hostile text safely. Crashes, hangs and
+unbounded memory growth caused by crafted text are vulnerabilities — please report them.</p>
 </li>
 <li>
-<p>Enable optional GPU inference in ONNX Runtime configuration</p>
+<p><strong>Models, dictionaries and training data are trusted.</strong> They are closer to configuration or code than to
+data; loading a model you have not vetted is comparable to loading a JAR you have not vetted. We harden
+these readers regardless, and we do want to hear about weaknesses in them.</p>
 </li>
 <li>
-<p>Allow for unlimited text length in document classification with ONNX Runtime</p>
-</li>
-<li>
-<p>Fix alphaNumOpt in tokenizer example</p>
-</li>
-<li>
-<p>Training of MaxEnt model with large corpora fails with java.io.UTFDataFormatException</p>
-</li>
-<li>
-<p>Make parameter names in the params file be not case-sensitive</p>
-</li>
-<li>
-<p>Upgrade JUnit to version 5</p>
+<p><strong>Configuration is trusted.</strong> System properties, file paths and API parameters are set by the operator,
+not by an attacker.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>For a full list please see the list of items addressed in <a href="https://issues.apache.org/jira/browse/OPENNLP-1370?jql=project%20%3D%20OPENNLP%20AND%20status%20in%20(Resolved%2C%20Closed)%20AND%20fixVersion%20in%20(2.1.0)%20ORDER%20BY%20priority%20DESC%2C%20updated%20DESC">Jira</a>.</p>
+<p>The full policy — including the detailed trust levels for each input category, the hardening measures in
+place, and a list of frequently reported non-findings — is maintained with the source code:</p>
 </div>
 <div class="paragraph">
-<p>--The Apache OpenNLP Team</p>
+<p><a href="https://github.com/apache/opennlp/blob/main/SECURITY.md">Apache OpenNLP Security Policy and Security Model</a></p>
+</div>
+<div class="paragraph">
+<p>That document is the authoritative version; the summary above is provided for orientation only.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="published_advisories">Published Advisories</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Advisories for Apache OpenNLP are announced on the <a href="/mailing-lists.html">announce and dev mailing lists</a>
+and published in the <a href="https://www.cve.org/">CVE</a> program. Past advisories can also be found in our
+<a href="/news/">news archive</a>.</p>
 </div>
 </div>
 </div>
 
-    <p><em>23 November 2022</em></p>
     <div id="share">
-<div class="shareon" style="margin-top: 30px;">
-  <a class="reddit"></a>
-  <a class="linkedin"></a>
-  <a class="bluesky"></a>
-  <a class="telegram"></a>
-  <a class="mastodon"></a>
+<div class="shareon">
   <a class="copy-url"></a>
-  <a class="email"></a>
   <a class="print"></a>
 </div></div>
 </div>
