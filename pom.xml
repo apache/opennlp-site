@@ -30,13 +30,43 @@
 
   <properties>
     <!-- Build Properties -->
-    <jbake-core.version>2.6.7</jbake-core.version>
+    <jbake-core.version>2.7.0</jbake-core.version>
+    <commons-configuration2.version>2.15.1</commons-configuration2.version>
+    <commons-io.version>2.22.0</commons-io.version>
+    <commons-lang3.version>3.20.0</commons-lang3.version>
+    <commons-beanutils.version>1.11.0</commons-beanutils.version>
     <maven.compiler.release>21</maven.compiler.release>
     <maven.version>3.6.3</maven.version>
     <asciidoctor.version>2.5.10</asciidoctor.version>
     <freemarker.version>2.3.32</freemarker.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <!-- JBake 2.7 declares older Commons artifacts than commons-configuration2 2.15 needs at runtime. -->
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-configuration2</artifactId>
+        <version>${commons-configuration2.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>${commons-io.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>${commons-lang3.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-beanutils</groupId>
+        <artifactId>commons-beanutils</artifactId>
+        <version>${commons-beanutils.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <dependencies>
     <!-- JBake itself; we drive it programmatically from Site.java -->
@@ -48,6 +78,15 @@
         <exclusion>
           <groupId>org.slf4j</groupId>
           <artifactId>jul-to-slf4j</artifactId>
+        </exclusion>
+        <!-- No SLF4J binding, as on JBake 2.6 where logback was optional. -->
+        <exclusion>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-core</artifactId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -63,22 +102,7 @@
       <artifactId>asciidoctorj</artifactId>
       <version>${asciidoctor.version}</version>
     </dependency>
-    <!-- JBake 2.6 demoted these to runtime scope, but Site.java touches the API directly -->
-    <dependency>
-      <groupId>commons-configuration</groupId>
-      <artifactId>commons-configuration</artifactId>
-      <version>1.10</version>
-    </dependency>
-    <!-- Pinned to 3.0.37 because JBake 2.6.7 hard-codes admin/admin to open the embedded
-         "cache" database. OrientDB 3.2 disabled those default credentials and JBake's
-         ContentStore.startup fails with OSecurityAccessException, aborting the bake. -->
-    <dependency>
-      <groupId>com.orientechnologies</groupId>
-      <artifactId>orientdb-core</artifactId>
-      <version>3.0.37</version>
-    </dependency>
-    <!-- OrientDB 3.0.37 transitively pulls JNA 4.5.0, which ships only i386/x86_64 native
-         stubs. 5.13.0 adds arm64-darwin so the build runs on Apple Silicon. -->
+    <!-- OrientDB (via jbake-core) picks JNA up reflectively; 5.13.0 has arm64-darwin stubs. -->
     <dependency>
       <groupId>net.java.dev.jna</groupId>
       <artifactId>jna</artifactId>
