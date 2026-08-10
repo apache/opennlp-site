@@ -1,0 +1,63 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 1.9.x has reached End of Life
+Apache OpenNLP
+2026-08-10
+:jbake-type: post
+:jbake-tags: news
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team announces that the 1.9.x release line, and with it the whole 1.x series, has reached
+end of life. link:/news/release-194.html[Apache OpenNLP 1.9.4], released in November 2021, is the final
+release of that line.
+
+== What this means
+
+* There will be no further 1.9.x releases.
+* No bug fixes, dependency updates or security fixes will be made for 1.9.x or any earlier version.
+* Issues can only be addressed on a supported release.
+
+The supported release lines are the 2.x and 3.x series. The current releases of both are on our
+link:/download.html[download page]. See our link:/security.html[security page] for the version support policy.
+
+Existing 1.x artifacts remain available from https://repo1.maven.org/maven2/org/apache/opennlp/[Maven Central]
+and the https://archive.apache.org/dist/opennlp/[Apache archive], but they are unmaintained and are not
+recommended for new or existing deployments.
+
+== Upgrading to a supported release
+
+We encourage all users still on 1.x to upgrade. A few things to be aware of:
+
+* OpenNLP 1.9.x builds on Java 8. OpenNLP 2.5.x requires Java 17 or later, and OpenNLP 3.x
+  requires Java 21 or later.
+* The `org.apache.opennlp:opennlp-tools` coordinates are unchanged in the 2.x line, so the dependency
+  itself does not need to be replaced. In 3.x the project has been modularized and `opennlp-runtime`
+  becomes the entry-point dependency. See the link:/maven-dependency.html[Maven]
+  and link:/gradle-dependency.html[Gradle] pages for the current coordinates.
+* Models trained with OpenNLP 1.x still load in 2.x and 3.x. New pre-trained models for a
+  growing number of languages are available on our link:/models.html[models page].
+* The current developer manual and Javadoc are on the link:/docs/index.html[documentation page].
+  The archived 1.x documentation remains available link:/docs/legacy.html[here].
+
+If you run into problems while upgrading, please reach out on the
+link:/mailing-lists.html[users mailing list]. We are happy to help.
+
+--The Apache OpenNLP Team
