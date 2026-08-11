@@ -91,13 +91,23 @@
 </url>
 <url>
   <loc>https://opennlp.apache.org/security.html</loc>
-  <lastmod>2026-08-05T00:00:00+00:00</lastmod>
+  <lastmod>2026-08-10T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://opennlp.apache.org/privacy-policy.html</loc>
   <lastmod>2017-11-02T10:51:58+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/news-2026-08-10.html</loc>
+  <lastmod>2026-08-10T00:00:00+00:00</lastmod>
+  <priority>0.68</priority>
+</url>
+<url>
+  <loc>https://opennlp.apache.org/news/release-195.html</loc>
+  <lastmod>2026-06-18T00:00:00+00:00</lastmod>
+  <priority>0.66</priority>
 </url>
 <url>
   <loc>https://opennlp.apache.org/news/release-251.html</loc>
