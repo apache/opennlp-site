@@ -34,8 +34,8 @@ describes what to expect.
 == Supported Versions
 
 Security fixes are made to the most recent release of the 2.x line and to the current 3.x line.
-Apache OpenNLP 1.x is end of life and receives no fixes; users still on 1.x should
-link:/download.html[upgrade].
+Apache OpenNLP 1.x is link:/news/news-2026-08-10.html[end of life] and receives no fixes; users still on 1.x
+should link:/download.html[upgrade].
 
 == Security Model
 
