@@ -121,6 +121,20 @@
     </dependency>
   </dependencies>
 
+  <repositories>
+    <!-- Fresh releases are available here before they sync to Maven Central -->
+    <repository>
+      <id>apache-public</id>
+      <url>https://repository.apache.org/content/groups/public/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
   <build>
     <finalName>opennlp-site</finalName>
 
