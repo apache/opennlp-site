@@ -24,9 +24,270 @@
     <atom:link href="https://opennlp.apache.org/feed.xml" rel="self" type="application/rss+xml" />
     <description>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text</description>
     <language>en-us</language>
-    <pubDate>Tue, 11 Aug 2026 18:21:51 +0000</pubDate>
-    <lastBuildDate>Tue, 11 Aug 2026 18:21:51 +0000</lastBuildDate>
+    <pubDate>Fri, 11 Sep 2026 17:56:02 +0000</pubDate>
+    <lastBuildDate>Fri, 11 Sep 2026 17:56:02 +0000</lastBuildDate>
 
+    <item>
+      <title>Apache OpenNLP 2.5.12 released</title>
+      <link>https://opennlp.apache.org/news/release-2512.html</link>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-2512.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.5.12.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Apache OpenNLP 2.5.12 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven dependency&lt;/a&gt; page for more details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_2_5_12&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.5.12&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is a &lt;strong&gt;maintenance release&lt;/strong&gt; on the 2.x line. It contains a security fix, bug fixes, performance improvements, and dependency updates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;security_fixes&quot;&gt;Security Fixes&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;One security issue is addressed in this release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;redos_stack_exhaustion_in_regexnamefinderfactory_built_in_email_and_url_patterns_opennlp_1922_cve_2026_82617&quot;&gt;ReDoS / stack exhaustion in RegexNameFinderFactory built-in EMAIL and URL patterns (OPENNLP-1922, CVE-2026-82617)&lt;/h4&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The built-in EMAIL and URL patterns of RegexNameFinderFactory (DEFAULT_REGEX_NAME_FINDER) contained ambiguous nested quantifiers.
+Applications applying these finders to untrusted text could be driven into super-linear backtracking (EMAIL) or unbounded matcher recursion
+ending in a StackOverflowError (URL) by a small crafted input, denying service to the embedding application.
+Users of the built-in finders are recommended to upgrade.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;improvements&quot;&gt;Improvements&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cached models are now verified against their SHA-512 checksum (OPENNLP-1902)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BeamSearch now uses chain nodes instead of per-candidate Sequence copies (OPENNLP-1903)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The sentence detector abbreviation veto is no longer quadratic in document length (OPENNLP-1906)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The source distribution now includes the Maven Wrapper config (OPENNLP-1896, OPENNLP-1913)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;bug_fixes&quot;&gt;Bug fixes&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Default-locale case folding no longer corrupts lemmatizer models and output (OPENNLP-1904)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Default-locale case folding no longer breaks Morfologik dictionary lookup (OPENNLP-1905)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed broken line encoding for mwnd.cmd (OPENNLP-1915)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;dependency_updates&quot;&gt;Dependency Updates&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Update ONNX runtime to 1.28.0 (OPENNLP-1908)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update classgraph to 4.8.194 (OPENNLP-1907)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update Maven Wrapper to 3.3.4 (OPENNLP-1914)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update logcaptor to 2.12.7 (OPENNLP-1923)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For further details, check the full list of &lt;a href=&quot;https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&amp;amp;version=12357274&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;changes&lt;/a&gt; via the project&amp;#8217;s issue tracker.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
+      <title>Apache OpenNLP 3.0.0-M6 released</title>
+      <link>https://opennlp.apache.org/news/release-300-M6.html</link>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-300-M6.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 3.0.0-M6.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Apache OpenNLP 3.0.0-M6 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven dependency&lt;/a&gt; page for more details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_3_0_0_m6&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 3.0.0-M6&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This milestone release delivers 25 resolved issues. It extends the text analysis stack introduced in 3.0.0-M5 with &lt;strong&gt;new NLP capabilities&lt;/strong&gt;,
+and includes &lt;strong&gt;security fixes&lt;/strong&gt;, &lt;strong&gt;bug fixes&lt;/strong&gt;, and &lt;strong&gt;dependency maintenance&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;security_fixes&quot;&gt;Security Fixes&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Two security issues are addressed in this release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;redos_stack_exhaustion_in_regexnamefinderfactory_built_in_email_and_url_patterns_opennlp_1922_cve_2026_82617&quot;&gt;ReDoS / stack exhaustion in RegexNameFinderFactory built-in EMAIL and URL patterns (OPENNLP-1922, CVE-2026-82617)&lt;/h4&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The built-in EMAIL and URL patterns of RegexNameFinderFactory (DEFAULT_REGEX_NAME_FINDER) contained ambiguous nested quantifiers.
+Applications applying these finders to untrusted text could be driven into super-linear backtracking (EMAIL) or unbounded matcher recursion
+ending in a StackOverflowError (URL) by a small crafted input, denying service to the embedding application.
+Users of the built-in finders are recommended to upgrade.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;cwe_789_oom_dos_via_unbounded_array_allocation_in_symspellmodelserializer_opennlp_1899_cve_2026_67211&quot;&gt;CWE-789 OOM DoS via Unbounded Array Allocation in SymSpellModelSerializer (OPENNLP-1899, CVE-2026-67211)&lt;/h4&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;SymSpellModelSerializer read the unigram and bigram count fields of a binary SymSpell model and used them to pre-size maps,
+checking only that they were non-negative. A tiny crafted model file could therefore trigger a multi-gigabyte allocation and an OutOfMemoryError
+in any process loading SymSpell models from untrusted sources. Affected are 3.0.0-M4 and 3.0.0-M5, which ship the opennlp-spellcheck extension.
+Both counts are now bounded by AbstractModelReader.MAX_ENTRIES (default 10,000,000), which can be raised via the OPENNLP_MAX_ENTRIES system property
+if larger dictionaries are needed. Until upgrading, users should only load SymSpell models from trusted sources.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;new_features_and_improvements&quot;&gt;New Features and Improvements&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A new pure-Java SentencePiece inference implementation produces exact original-text spans (OPENNLP-1885).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A new document annotation container provides typed, offset-anchored layers (OPENNLP-1888), with a document-scoped term vector layer on top of it (OPENNLP-1897).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dictionary-based tokenization is now available for Japanese, Korean, and Chinese (OPENNLP-1894).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Stemming now supports Hunspell affix dictionaries (OPENNLP-1893).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A new Paragraph Normalizer handles Gutenberg-style and Markdown text (OPENNLP-1921). The Normalizer documentation has been improved, and misconfigured chains now fail loudly (OPENNLP-1916).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A general verified installer handles user-supplied third-party resources (OPENNLP-1909), and cached models are now verified against their SHA-512 checksum (OPENNLP-1902).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Performance: BeamSearch now uses chain nodes instead of per-candidate Sequence copies (OPENNLP-1903), and the sentence detector abbreviation veto is no longer quadratic in document length (OPENNLP-1906).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The OpenNLP security model is now documented and published (OPENNLP-1900).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The source distribution now includes the Maven Wrapper config (OPENNLP-1896, OPENNLP-1913).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;bug_fixes&quot;&gt;Bug fixes&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Default-locale case folding no longer corrupts lemmatizer models and output (OPENNLP-1904)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Default-locale case folding no longer breaks Morfologik dictionary lookup (OPENNLP-1905)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed broken line encoding for mwnd.cmd (OPENNLP-1915)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;dependency_updates&quot;&gt;Dependency Updates&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Update ONNX runtime to 1.28.0 (OPENNLP-1908)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update classgraph to 4.8.194 (OPENNLP-1907)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update Maven Wrapper to 3.3.4 (OPENNLP-1914)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update SLF4J to 2.0.19 (OPENNLP-1936)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Update logcaptor to 2.12.7 (OPENNLP-1923)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For further details, check the full list of &lt;a href=&quot;https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&amp;amp;version=12357275&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;changes&lt;/a&gt; via the project&amp;#8217;s issue tracker.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
     <item>
       <title>Apache OpenNLP 1.9.x has reached End of Life</title>
       <link>https://opennlp.apache.org/news/news-2026-08-10.html</link>
@@ -880,6 +1141,74 @@ For all three issues, users who cannot upgrade immediately should restrict input
 	</description>
     </item>
     <item>
+      <title>Apache OpenNLP 2.5.8 released</title>
+      <link>https://opennlp.apache.org/news/release-258.html</link>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <guid isPermaLink="false">news/release-258.html</guid>
+      	<description>
+	&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.5.8.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Apache OpenNLP 2.5.8 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven dependency&lt;/a&gt; page for more details.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats_new_in_apache_opennlp_2_5_8&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.5.8&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Summary:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Bug Fixes:&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The SentenceDetector got three fixes in handling edge cases with abbreviation dictionaries (OPENNLP-1809, OPENNLP-1810, OPENNLP-1811) - NOTE: These fixes have been back-ported to OpenNLP 2.5.8.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improvements:&lt;/p&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The OpenNLP developer manual (HTML + PDF) got an uplift for the UIMA documentation part, being largely extended (OPENNLP-49)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Some updates of dependencies&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For further details, check the full list of &lt;a href=&quot;https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&amp;amp;version=12356577&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;changes&lt;/a&gt; via the project&amp;#8217;s issue tracker.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+	</description>
+    </item>
+    <item>
       <title>Apache OpenNLP 3.0.0-M2 released</title>
       <link>https://opennlp.apache.org/news/release-300-M2.html</link>
       <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
@@ -986,74 +1315,6 @@ The core API remains stable and fully compatible with 2.x, so existing projects 
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Only opennlp-runtime needs to be added as a dependency, and you can add additional modules (e.g. opennlp-ml-maxent, opennlp-models, etc.) as required by your project. For users of the traditional CLI toolkit, nothing changes with the 3.x release line. CLI usage remains stable&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-	</description>
-    </item>
-    <item>
-      <title>Apache OpenNLP 2.5.8 released</title>
-      <link>https://opennlp.apache.org/news/release-258.html</link>
-      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
-      <guid isPermaLink="false">news/release-258.html</guid>
-      	<description>
-	&lt;div id=&quot;preamble&quot;&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.5.8.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Apache OpenNLP 2.5.8 binary and source distributions are available for download from our &lt;a href=&quot;/download.html&quot;&gt;download page&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The OpenNLP library is distributed by Maven Central as well. See the &lt;a href=&quot;/maven-dependency.html&quot;&gt;Maven dependency&lt;/a&gt; page for more details.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;whats_new_in_apache_opennlp_2_5_8&quot;&gt;What&amp;#8217;s new in Apache OpenNLP 2.5.8&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Summary:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Bug Fixes:&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The SentenceDetector got three fixes in handling edge cases with abbreviation dictionaries (OPENNLP-1809, OPENNLP-1810, OPENNLP-1811) - NOTE: These fixes have been back-ported to OpenNLP 2.5.8.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Improvements:&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;The OpenNLP developer manual (HTML + PDF) got an uplift for the UIMA documentation part, being largely extended (OPENNLP-49)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Some updates of dependencies&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;For further details, check the full list of &lt;a href=&quot;https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&amp;amp;version=12356577&quot; class=&quot;external&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;changes&lt;/a&gt; via the project&amp;#8217;s issue tracker.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;--The Apache OpenNLP Team&lt;/p&gt;

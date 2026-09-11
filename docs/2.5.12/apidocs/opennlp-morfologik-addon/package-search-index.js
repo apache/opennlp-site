@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html","k":"18"},{"l":"opennlp.morfologik.builder"},{"l":"opennlp.morfologik.cmdline"},{"l":"opennlp.morfologik.cmdline.builder"},{"l":"opennlp.morfologik.lemmatizer"},{"l":"opennlp.morfologik.tagdict"},{"l":"opennlp.morfologik.util"}];updateSearchResults();
