@@ -695,6 +695,16 @@
                   <excludes>**/lib/**/*</excludes>
                 </artifactItem>
                 <artifactItem>
+                  <groupId>org.apache.opennlp</groupId>
+                  <artifactId>opennlp-distr</artifactId>
+                  <version>2.5.12</version>
+                  <overWrite>false</overWrite>
+                  <type>zip</type>
+                  <classifier>bin</classifier>
+                  <outputDirectory>${project.build.directory}/distr/2.5.12</outputDirectory>
+                  <excludes>**/lib/**/*</excludes>
+                </artifactItem>
+                <artifactItem>
                     <groupId>org.apache.opennlp</groupId>
                     <artifactId>opennlp-distr</artifactId>
                     <version>3.0.0-M1</version>
@@ -742,6 +752,16 @@
                   <type>zip</type>
                   <classifier>bin</classifier>
                   <outputDirectory>${project.build.directory}/distr/3.0.0-M5</outputDirectory>
+                  <excludes>**/lib/**/*</excludes>
+                </artifactItem>
+                <artifactItem>
+                  <groupId>org.apache.opennlp</groupId>
+                  <artifactId>opennlp-distr</artifactId>
+                  <version>3.0.0-M6</version>
+                  <overWrite>false</overWrite>
+                  <type>zip</type>
+                  <classifier>bin</classifier>
+                  <outputDirectory>${project.build.directory}/distr/3.0.0-M6</outputDirectory>
                   <excludes>**/lib/**/*</excludes>
                 </artifactItem>
               </artifactItems>

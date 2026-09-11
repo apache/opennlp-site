@@ -1,0 +1,88 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 3.0.0-M6 released
+Apache OpenNLP
+2026-09-11
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 3.0.0-M6.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+Apache OpenNLP 3.0.0-M6 binary and source distributions are available for download from our link:/download.html[download page].
+
+The OpenNLP library is distributed by Maven Central as well. See the link:/maven-dependency.html[Maven dependency] page for more details.
+
+== What's new in Apache OpenNLP 3.0.0-M6
+
+This milestone release delivers 25 resolved issues. It extends the text analysis stack introduced in 3.0.0-M5 with *new NLP capabilities*,
+and includes *security fixes*, *bug fixes*, and *dependency maintenance*.
+
+=== Security Fixes
+
+Two security issues are addressed in this release.
+
+==== ReDoS / stack exhaustion in RegexNameFinderFactory built-in EMAIL and URL patterns (OPENNLP-1922, CVE-2026-82617)
+
+* The built-in EMAIL and URL patterns of RegexNameFinderFactory (DEFAULT_REGEX_NAME_FINDER) contained ambiguous nested quantifiers.
+Applications applying these finders to untrusted text could be driven into super-linear backtracking (EMAIL) or unbounded matcher recursion
+ending in a StackOverflowError (URL) by a small crafted input, denying service to the embedding application.
+Users of the built-in finders are recommended to upgrade.
+
+==== CWE-789 OOM DoS via Unbounded Array Allocation in SymSpellModelSerializer (OPENNLP-1899, CVE-2026-67211)
+
+* SymSpellModelSerializer read the unigram and bigram count fields of a binary SymSpell model and used them to pre-size maps,
+checking only that they were non-negative. A tiny crafted model file could therefore trigger a multi-gigabyte allocation and an OutOfMemoryError
+in any process loading SymSpell models from untrusted sources. Affected are 3.0.0-M4 and 3.0.0-M5, which ship the opennlp-spellcheck extension.
+Both counts are now bounded by AbstractModelReader.MAX_ENTRIES (default 10,000,000), which can be raised via the OPENNLP_MAX_ENTRIES system property
+if larger dictionaries are needed. Until upgrading, users should only load SymSpell models from trusted sources.
+
+=== New Features and Improvements
+
+* A new pure-Java SentencePiece inference implementation produces exact original-text spans (OPENNLP-1885).
+* A new document annotation container provides typed, offset-anchored layers (OPENNLP-1888), with a document-scoped term vector layer on top of it (OPENNLP-1897).
+* Dictionary-based tokenization is now available for Japanese, Korean, and Chinese (OPENNLP-1894).
+* Stemming now supports Hunspell affix dictionaries (OPENNLP-1893).
+* A new Paragraph Normalizer handles Gutenberg-style and Markdown text (OPENNLP-1921). The Normalizer documentation has been improved, and misconfigured chains now fail loudly (OPENNLP-1916).
+* A general verified installer handles user-supplied third-party resources (OPENNLP-1909), and cached models are now verified against their SHA-512 checksum (OPENNLP-1902).
+* Performance: BeamSearch now uses chain nodes instead of per-candidate Sequence copies (OPENNLP-1903), and the sentence detector abbreviation veto is no longer quadratic in document length (OPENNLP-1906).
+* The OpenNLP security model is now documented and published (OPENNLP-1900).
+* The source distribution now includes the Maven Wrapper config (OPENNLP-1896, OPENNLP-1913).
+
+=== Bug fixes
+* Default-locale case folding no longer corrupts lemmatizer models and output (OPENNLP-1904)
+* Default-locale case folding no longer breaks Morfologik dictionary lookup (OPENNLP-1905)
+* Fixed broken line encoding for mwnd.cmd (OPENNLP-1915)
+
+=== Dependency Updates
+* Update ONNX runtime to 1.28.0 (OPENNLP-1908)
+* Update classgraph to 4.8.194 (OPENNLP-1907)
+* Update Maven Wrapper to 3.3.4 (OPENNLP-1914)
+* Update SLF4J to 2.0.19 (OPENNLP-1936)
+* Update logcaptor to 2.12.7 (OPENNLP-1923)
+
+For further details, check the full list of link:https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&version=12357275[changes,role=external,window=_blank] via the project's issue tracker.
+
+--The Apache OpenNLP Team
