@@ -62,7 +62,7 @@
                         <li><a href="/news/">News</a></li>
 			            <li><a href="https://blogsarchive.apache.org/#opennlp" target="_blank">Blog</a></li>
                         <li><a href="/mailing-lists.html">Mailing Lists</a></li>
-                        <li><a href="https://issues.apache.org/jira/browse/OPENNLP" target="_blank">Issue tracker</a></li>
+                        <li><a href="https://github.com/apache/opennlp/issues" target="_blank">Issue tracker</a></li>
                         <li><a href="/books-tutorials-and-talks.html">Books, Tutorials and Talks</a></li>
                         <li><a href="/powered-by-opennlp.html">Powered by Apache OpenNLP</a></li>
                         <li><a href="/security.html">Security</a></li>
