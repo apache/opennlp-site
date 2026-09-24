@@ -38,7 +38,7 @@
     <maven.compiler.release>21</maven.compiler.release>
     <maven.version>3.6.3</maven.version>
     <asciidoctor.version>2.5.10</asciidoctor.version>
-    <freemarker.version>2.3.32</freemarker.version>
+    <freemarker.version>2.3.35</freemarker.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
