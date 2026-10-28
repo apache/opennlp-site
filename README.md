@@ -76,7 +76,8 @@ Example:
 ```properties
 jzemerick.gh     = jzonthemtn
 jzemerick.status = active
-jzemerick.chair  = true
+
+mawiesne.chair   = true
 
 joern.gh         = kottmann
 joern.status     = active
