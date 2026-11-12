@@ -1,0 +1,68 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 2.5.13 released
+Apache OpenNLP
+2026-11-12
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 2.5.13.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+Apache OpenNLP 2.5.13 binary and source distributions are available for download from our link:/download.html[download page].
+
+The OpenNLP library is distributed by Maven Central as well. See the link:/maven-dependency.html[Maven dependency] page for more details.
+
+== What's new in Apache OpenNLP 2.5.13
+
+This is a *maintenance release* on the 2.x line. It requires Java 17 and backports bug fixes and thread-safety improvements from the 3.x line.
+
+=== Highlights
+
+* *Thread safety*: `TokenizerME` no longer changes the shared `WhitespaceTokenizer.INSTANCE`, and `MorfologikTagDictionary`, `AbstractModel` and `AbstractClassPathModelFinder.findModels` can be shared between threads.
+* *Deep learning*: `SentenceVectorsDL` runs on a GPU, `DocumentCategorizerDL` computes a numerically stable softmax, invalid document split options are rejected instead of looping forever, and `close()` can be called more than once.
+* *Model downloads*: `DownloadUtil` uses a local copy of the model index when the model host cannot be reached and verifies cached models against their SHA-512 checksum.
+* *Format readers and data*: the AD readers no longer hang at end of file or fail on the FlorestaVirgem corpus, the bundled Spanish head rules match tags with escaped dots, and `MarkableFileInputStream` and the Leipzig reader release their file handles.
+* `BaseModel` loads on Android, and `StringUtil.toUpperCase` maps supplementary-plane letters.
+* *Release artifacts*: the binary distribution LICENSE covers all bundled third-party code.
+
+=== Notes
+
+* `DownloadUtil` stores the model index and a `.sha512` file next to each downloaded model in the download directory. A cached model whose checksum does not match fails to load with an `IOException`.
+* `DocumentCategorizerDL` and `NameFinderDL` reject a document split size below 1, a negative overlap, or an overlap not smaller than the split size with `IllegalArgumentException`.
+* `MorfologikTagDictionary.clearThreadLocalState()` releases the dictionary lookup of the current thread.
+
+=== Dependency Updates
+* Apache Parent POM 40
+* ClassGraph 5.0.2
+* ONNX Runtime 1.31.1
+* SLF4J 2.0.20
+* Maven 3.10.0 via the Maven Wrapper
+
+For further details, check the full list of changes in the link:https://github.com/apache/opennlp/releases/tag/opennlp-2.5.13[GitHub release notes,role=external,window=_blank],
+the link:https://github.com/apache/opennlp/compare/opennlp-2.5.12...opennlp-2.5.13[changes since 2.5.12,role=external,window=_blank],
+or the link:https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&version=12357511[JIRA release notes,role=external,window=_blank].
+
+--The Apache OpenNLP Team
