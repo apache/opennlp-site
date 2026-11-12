@@ -1,0 +1,95 @@
+////
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.
+////
+= Apache OpenNLP 3.0.0 released
+Apache OpenNLP
+2026-11-12
+:jbake-type: post
+:jbake-tags: community
+:jbake-status: published
+:category: news
+:idprefix:
+
+The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 3.0.0.
+
+The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.
+
+It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.
+
+Apache OpenNLP 3.0.0 binary and source distributions are available for download from our link:/download.html[download page].
+
+The OpenNLP library is distributed by Maven Central as well. See the link:/maven-dependency.html[Maven dependency] page for more details.
+
+== What's new in Apache OpenNLP 3.0.0
+
+Apache OpenNLP 3.0.0 is the *first release of the 3.x line*. It requires Java 21 and splits the toolkit into separate Maven modules;
+`opennlp-tools` remains available as an aggregate of the core modules. The migration notes below describe what changes for users of 2.x.
+
+=== Highlights
+
+Compared with 2.x, OpenNLP 3.0.0 brings:
+
+* *Modular artifacts*: `opennlp-api`, `opennlp-runtime`, `opennlp-formats`, `opennlp-cli`, the `opennlp-ml-*` trainers, `opennlp-model-resolver`, `opennlp-spellcheck` and the extension modules.
+* *Thread-safe core components*: `POSTaggerME`, `TokenizerME`, `SentenceDetectorME`, `ChunkerME`, `LemmatizerME` and `NameFinderME` can be shared across threads.
+* *Unicode text processing*: a normalization engine with offset alignment, full case folding, emoji and emoticon handling, confusable skeletons and a UAX 29 word tokenizer, based on Unicode 18.0 data.
+* *Subword tokenization*: Byte Pair Encoding, a WordPiece encoder, SentencePiece inference with spans on the original text, and WordPiece vocabularies from Hugging Face `tokenizer.json` files.
+* *Dependency parsing*: a transition-based parser and a feedforward neural parser, both with command-line tools.
+* *New components*: SymSpell spell correction, a sentiment detector, SVM document categorization, Hunspell-based stemming and analysis, dictionary-based tokenization for Japanese, Korean and Chinese, and stopword lists.
+* *Deep learning*: text embeddings through a provider SPI, GPU inference and batched `embedAll` with padding strategies for `SentenceVectorsDL`, and thread-safe ONNX components.
+* *No regular expressions in production code*, enforced at build time, with `CompatibilityMode` and `WhitespaceMode` to reproduce the 2.x output.
+* *Security*: a documented link:/security.html[security model], hardened XML parsing and model deserialization, and checksum verification of downloaded models.
+
+=== Migration from 2.x
+
+* Java 21 or later is required.
+* `opennlp-tools` still works as a single dependency. For a smaller footprint, depend on `opennlp-runtime` and add the modules you use, for example `opennlp-ml-maxent`, `opennlp-formats` or `opennlp-model-resolver`.
+* Renamed artifacts: `opennlp-tools-models` is now `opennlp-model-resolver`, and `opennlp-morfologik-addon` is now `opennlp-morfologik`. Java package names are unchanged.
+* Models trained with 1.x or 2.x may depend on the earlier text processing. Until they are retrained, start the JVM with `-Dopennlp.whitespace.mode=LEGACY` and `-Dopennlp.compat.mode=LEGACY`. Both modes are process-wide and must match the mode the models were trained under.
+* Public methods of `opennlp-api`, `opennlp-runtime` and `opennlp-spellcheck` throw `IllegalArgumentException` instead of `NullPointerException` for `null` or invalid arguments (GH-1395, GH-1396, GH-1397).
+* The core `+*ME+` classes can be shared across threads. The `+ThreadSafe*ME+` wrappers are deprecated.
+* Tokenizer: the alphanumeric optimization is configured with a `TokenizerCharacterPolicy`. The `Pattern` variants of the `TokenizerFactory` constructor, `TokenizerFactory.create`, the `TokSpanEventStream` constructor, `TokenizerFactory.getAlphaNumericPattern()`, `Factory.getAlphanumeric(String)` and `Factory.DEFAULT_ALPHANUMERIC` are deprecated for removal in 4.0.
+A call that passes `null` as the pattern no longer compiles; use the overloads without that argument, for example `TokenizerFactory.create(null, "eng", null, true)`.
+Subclasses that override or call the protected `TokenizerFactory.init` must pass a `TokenizerCharacterPolicy`. Models with a custom `alphaNumericPattern` still load; an invalid pattern now fails with `InvalidFormatException` (GH-1479).
+* `BasicContextGenerator(String)` takes the separator literally instead of as a regular expression, rejects a separator containing a backslash, no longer returns empty predicates, and splits on Unicode whitespace by default (OPENNLP-1929).
+* `ParserFactory.create` and the chunking and tree insert `Parser` constructors reject a beam size below 1 or an advance percentage outside (0, 1] with `IllegalArgumentException` (GH-1476).
+* `AbstractClassPathModelFinder`: the protected `asRegex` and `matchesPattern` methods were removed; use `matchesWildcard(url, "*.bin")` (OPENNLP-1932). `findModels` returns an unmodifiable set (GH-1506).
+* `PlainTextByLineStream.reset()` closes the previous reader, so its `InputStreamFactory` must return a new stream for each pass.
+* `RealBasicEventStream` reads a line that contains only an outcome as an event without contexts instead of ending the stream.
+* AD reader: self-closing markup such as `<s/>` no longer opens a sentence, paragraph, title, box or text, and tag names must match exactly (GH-1447).
+* MASC reader: region offsets must consist of ASCII digits without a sign; other documents are skipped (OPENNLP-1990).
+* CoNLL-U reader: a multiword token range whose word lines are missing throws `InvalidFormatException` (OPENNLP-1952).
+* `EmojiEntityType` gains `HAND`, `SKY_AND_WEATHER` and `TOOL`, and confusable skeletons follow UTS 39 18.0.0 (GH-1347).
+* Sentence vectors: GPU sessions use `LONGEST` padding by default for models with token output and a padding token. Set `PaddingStrategy.EXACT_LENGTH` in `SentenceVectorsOptions` to keep unpadded batches (GH-1392). Stored vectors from 2.x should be recomputed.
+
+=== Dependency Updates
+* Apache Parent POM 40
+* Apache Commons Secure XML 1.1.0 (new)
+* Apache UIMA uimaj 3.7.0
+* ClassGraph 5.0.2
+* ONNX Runtime 1.31.1
+* SLF4J 2.0.20
+* Maven 3.10.0 via the Maven Wrapper
+
+=== New Contributors
+A warm welcome to our new contributors: link:https://github.com/ppkarwasz[ppkarwasz,role=external,window=_blank], link:https://github.com/xlb3055[xlb3055,role=external,window=_blank] and link:https://github.com/siddiqueirshad[siddiqueirshad,role=external,window=_blank].
+
+For further details, check the full list of changes in the link:https://github.com/apache/opennlp/releases/tag/opennlp-3.0.0[GitHub release notes,role=external,window=_blank],
+the link:https://github.com/apache/opennlp/compare/opennlp-3.0.0-M6...opennlp-3.0.0[changes since 3.0.0-M6,role=external,window=_blank],
+or the link:https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&version=12356725[JIRA release notes,role=external,window=_blank].
+
+--The Apache OpenNLP Team
