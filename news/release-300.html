@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Apache OpenNLP 3.0.0 released - Apache OpenNLP</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <meta name="description" content="Apache OpenNLP is a machine learning based toolkit for the processing of natural language text." />
+    <meta name="author" content="The Apache OpenNLP Team" />
+    <meta name="keywords" content="java, natural language processing, nlp, apache, open source, web site" />
+    <meta name="generator" content="JBake"/>
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- The styles -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="/css/asciidoctor.css" rel="stylesheet"/>
+    <link href="/css/prettify.css" rel="stylesheet"/>
+    <link href="/css/custom-style.css" rel="stylesheet"/>
+    <link href="/css/scheme-light.css" rel="stylesheet"/>
+    <link href="/css/scheme-dark.css" rel="stylesheet"/>
+    <link href="/css/shareon-2.6.0.min.css" rel="stylesheet"/>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body onload="prettyPrint()">
+
+<!-- Include pure CSS/HTML5 ForkMeOnGH ribbon -->
+<span id="forkongithub"><a href="https://github.com/apache/opennlp">Fork me on GitHub</a></span>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="/img/opennlp-navbar-logo.png" class="img-responsive" width="100px" style="position: relative; top: -3px;">
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-download-alt"></span> Download <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+		                <li><a href="/download.html">OpenNLP Releases</a></li>
+                        <li><a href="/models.html">OpenNLP Models</a></li>
+		                <li><a href="/maven-dependency.html">Maven Integration</a></li>
+		                <li><a href="/gradle-dependency.html">Gradle Integration</a></li>
+		            </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-book"></span> Documentation <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/docs/">Manual and Javadocs</a></li>
+                        <li><a href="/faq.html">FAQ</a></li>
+                        <li><a href="https://cwiki.apache.org/OPENNLP" target="_blank">Wiki</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flag"></span> General <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        <li><a href="/news/">News</a></li>
+			            <li><a href="https://blogsarchive.apache.org/#opennlp" target="_blank">Blog</a></li>
+                        <li><a href="/mailing-lists.html">Mailing Lists</a></li>
+                        <li><a href="https://github.com/apache/opennlp/issues" target="_blank">Issue tracker</a></li>
+                        <li><a href="/books-tutorials-and-talks.html">Books, Tutorials and Talks</a></li>
+                        <li><a href="/powered-by-opennlp.html">Powered by Apache OpenNLP</a></li>
+                        <li><a href="/security.html">Security</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-console"></span> Development <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/get-involved.html">Get Involved</a></li>
+                        <li><a href="/source-code.html">Source Code</a></li>
+                        <li><a href="/using-git.html">Using Git</a></li>
+                        <li><a href="/building.html">Building</a></li>
+                        <li><a href="/code-conventions.html">Code Conventions</a></li>
+                        <li><a href="/release.html">Release</a></li>
+                        <li><a href="/release-model.html">Release Models</a></li>
+                        <li><a href="/team.html">Project Team</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-leaf"></span> ASF <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.apache.org/" target="_blank">The Apache Software Foundation</a></li>
+                        <li><a href="https://www.apache.org/licenses" target="_blank">License</a></li>
+                        <li><a href="https://www.apache.org/foundation/policies/conduct" target="_blank">Code of Conduct</a></li>
+                        <li><a href="https://www.apache.org/foundation/thanks.html" target="_blank">Thanks</a></li>
+                        <li><a href="https://www.apache.org/security/" target="_blank">ASF Security</a></li>
+                        <li><a href="https://www.apache.org/foundation/sponsorship.html" target="_blank">Become a Sponsor</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+    <h1 class="title">Apache OpenNLP 3.0.0 released</h1>
+
+    <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Apache OpenNLP team is pleased to announce the release of Apache OpenNLP 3.0.0.</p>
+</div>
+<div class="paragraph">
+<p>The Apache OpenNLP library is a machine learning based toolkit for the processing of natural language text.</p>
+</div>
+<div class="paragraph">
+<p>It supports the most common NLP tasks, such as tokenization, sentence segmentation, part-of-speech tagging, named entity extraction, chunking, parsing, and coreference resolution.</p>
+</div>
+<div class="paragraph">
+<p>Apache OpenNLP 3.0.0 binary and source distributions are available for download from our <a href="/download.html">download page</a>.</p>
+</div>
+<div class="paragraph">
+<p>The OpenNLP library is distributed by Maven Central as well. See the <a href="/maven-dependency.html">Maven dependency</a> page for more details.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="whats_new_in_apache_opennlp_3_0_0">What&#8217;s new in Apache OpenNLP 3.0.0</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Apache OpenNLP 3.0.0 is the <strong>first release of the 3.x line</strong>. It requires Java 21 and splits the toolkit into separate Maven modules;
+<code>opennlp-tools</code> remains available as an aggregate of the core modules. The migration notes below describe what changes for users of 2.x.</p>
+</div>
+<div class="sect2">
+<h3 id="highlights">Highlights</h3>
+<div class="paragraph">
+<p>Compared with 2.x, OpenNLP 3.0.0 brings:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Modular artifacts</strong>: <code>opennlp-api</code>, <code>opennlp-runtime</code>, <code>opennlp-formats</code>, <code>opennlp-cli</code>, the <code>opennlp-ml-*</code> trainers, <code>opennlp-model-resolver</code>, <code>opennlp-spellcheck</code> and the extension modules.</p>
+</li>
+<li>
+<p><strong>Thread-safe core components</strong>: <code>POSTaggerME</code>, <code>TokenizerME</code>, <code>SentenceDetectorME</code>, <code>ChunkerME</code>, <code>LemmatizerME</code> and <code>NameFinderME</code> can be shared across threads.</p>
+</li>
+<li>
+<p><strong>Unicode text processing</strong>: a normalization engine with offset alignment, full case folding, emoji and emoticon handling, confusable skeletons and a UAX 29 word tokenizer, based on Unicode 18.0 data.</p>
+</li>
+<li>
+<p><strong>Subword tokenization</strong>: Byte Pair Encoding, a WordPiece encoder, SentencePiece inference with spans on the original text, and WordPiece vocabularies from Hugging Face <code>tokenizer.json</code> files.</p>
+</li>
+<li>
+<p><strong>Dependency parsing</strong>: a transition-based parser and a feedforward neural parser, both with command-line tools.</p>
+</li>
+<li>
+<p><strong>New components</strong>: SymSpell spell correction, a sentiment detector, SVM document categorization, Hunspell-based stemming and analysis, dictionary-based tokenization for Japanese, Korean and Chinese, and stopword lists.</p>
+</li>
+<li>
+<p><strong>Deep learning</strong>: text embeddings through a provider SPI, GPU inference and batched <code>embedAll</code> with padding strategies for <code>SentenceVectorsDL</code>, and thread-safe ONNX components.</p>
+</li>
+<li>
+<p><strong>No regular expressions in production code</strong>, enforced at build time, with <code>CompatibilityMode</code> and <code>WhitespaceMode</code> to reproduce the 2.x output.</p>
+</li>
+<li>
+<p><strong>Security</strong>: a documented <a href="/security.html">security model</a>, hardened XML parsing and model deserialization, and checksum verification of downloaded models.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="migration_from_2_x">Migration from 2.x</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Java 21 or later is required.</p>
+</li>
+<li>
+<p><code>opennlp-tools</code> still works as a single dependency. For a smaller footprint, depend on <code>opennlp-runtime</code> and add the modules you use, for example <code>opennlp-ml-maxent</code>, <code>opennlp-formats</code> or <code>opennlp-model-resolver</code>.</p>
+</li>
+<li>
+<p>Renamed artifacts: <code>opennlp-tools-models</code> is now <code>opennlp-model-resolver</code>, and <code>opennlp-morfologik-addon</code> is now <code>opennlp-morfologik</code>. Java package names are unchanged.</p>
+</li>
+<li>
+<p>Models trained with 1.x or 2.x may depend on the earlier text processing. Until they are retrained, start the JVM with <code>-Dopennlp.whitespace.mode=LEGACY</code> and <code>-Dopennlp.compat.mode=LEGACY</code>. Both modes are process-wide and must match the mode the models were trained under.</p>
+</li>
+<li>
+<p>Public methods of <code>opennlp-api</code>, <code>opennlp-runtime</code> and <code>opennlp-spellcheck</code> throw <code>IllegalArgumentException</code> instead of <code>NullPointerException</code> for <code>null</code> or invalid arguments (GH-1395, GH-1396, GH-1397).</p>
+</li>
+<li>
+<p>The core <code>*ME</code> classes can be shared across threads. The <code>ThreadSafe*ME</code> wrappers are deprecated.</p>
+</li>
+<li>
+<p>Tokenizer: the alphanumeric optimization is configured with a <code>TokenizerCharacterPolicy</code>. The <code>Pattern</code> variants of the <code>TokenizerFactory</code> constructor, <code>TokenizerFactory.create</code>, the <code>TokSpanEventStream</code> constructor, <code>TokenizerFactory.getAlphaNumericPattern()</code>, <code>Factory.getAlphanumeric(String)</code> and <code>Factory.DEFAULT_ALPHANUMERIC</code> are deprecated for removal in 4.0.
+A call that passes <code>null</code> as the pattern no longer compiles; use the overloads without that argument, for example <code>TokenizerFactory.create(null, "eng", null, true)</code>.
+Subclasses that override or call the protected <code>TokenizerFactory.init</code> must pass a <code>TokenizerCharacterPolicy</code>. Models with a custom <code>alphaNumericPattern</code> still load; an invalid pattern now fails with <code>InvalidFormatException</code> (GH-1479).</p>
+</li>
+<li>
+<p><code>BasicContextGenerator(String)</code> takes the separator literally instead of as a regular expression, rejects a separator containing a backslash, no longer returns empty predicates, and splits on Unicode whitespace by default (OPENNLP-1929).</p>
+</li>
+<li>
+<p><code>ParserFactory.create</code> and the chunking and tree insert <code>Parser</code> constructors reject a beam size below 1 or an advance percentage outside (0, 1] with <code>IllegalArgumentException</code> (GH-1476).</p>
+</li>
+<li>
+<p><code>AbstractClassPathModelFinder</code>: the protected <code>asRegex</code> and <code>matchesPattern</code> methods were removed; use <code>matchesWildcard(url, "*.bin")</code> (OPENNLP-1932). <code>findModels</code> returns an unmodifiable set (GH-1506).</p>
+</li>
+<li>
+<p><code>PlainTextByLineStream.reset()</code> closes the previous reader, so its <code>InputStreamFactory</code> must return a new stream for each pass.</p>
+</li>
+<li>
+<p><code>RealBasicEventStream</code> reads a line that contains only an outcome as an event without contexts instead of ending the stream.</p>
+</li>
+<li>
+<p>AD reader: self-closing markup such as <code>&lt;s/&gt;</code> no longer opens a sentence, paragraph, title, box or text, and tag names must match exactly (GH-1447).</p>
+</li>
+<li>
+<p>MASC reader: region offsets must consist of ASCII digits without a sign; other documents are skipped (OPENNLP-1990).</p>
+</li>
+<li>
+<p>CoNLL-U reader: a multiword token range whose word lines are missing throws <code>InvalidFormatException</code> (OPENNLP-1952).</p>
+</li>
+<li>
+<p><code>EmojiEntityType</code> gains <code>HAND</code>, <code>SKY_AND_WEATHER</code> and <code>TOOL</code>, and confusable skeletons follow UTS 39 18.0.0 (GH-1347).</p>
+</li>
+<li>
+<p>Sentence vectors: GPU sessions use <code>LONGEST</code> padding by default for models with token output and a padding token. Set <code>PaddingStrategy.EXACT_LENGTH</code> in <code>SentenceVectorsOptions</code> to keep unpadded batches (GH-1392). Stored vectors from 2.x should be recomputed.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="dependency_updates">Dependency Updates</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Apache Parent POM 40</p>
+</li>
+<li>
+<p>Apache Commons Secure XML 1.1.0 (new)</p>
+</li>
+<li>
+<p>Apache UIMA uimaj 3.7.0</p>
+</li>
+<li>
+<p>ClassGraph 5.0.2</p>
+</li>
+<li>
+<p>ONNX Runtime 1.31.1</p>
+</li>
+<li>
+<p>SLF4J 2.0.20</p>
+</li>
+<li>
+<p>Maven 3.10.0 via the Maven Wrapper</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="new_contributors">New Contributors</h3>
+<div class="paragraph">
+<p>A warm welcome to our new contributors: <a href="https://github.com/ppkarwasz" class="external" target="_blank" rel="noopener">ppkarwasz</a>, <a href="https://github.com/xlb3055" class="external" target="_blank" rel="noopener">xlb3055</a> and <a href="https://github.com/siddiqueirshad" class="external" target="_blank" rel="noopener">siddiqueirshad</a>.</p>
+</div>
+<div class="paragraph">
+<p>For further details, check the full list of changes in the <a href="https://github.com/apache/opennlp/releases/tag/opennlp-3.0.0" class="external" target="_blank" rel="noopener">GitHub release notes</a>,
+the <a href="https://github.com/apache/opennlp/compare/opennlp-3.0.0-M6&#8230;&#8203;opennlp-3.0.0" class="external" target="_blank" rel="noopener">changes since 3.0.0-M6</a>,
+or the <a href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12311215&amp;version=12356725" class="external" target="_blank" rel="noopener">JIRA release notes</a>.</p>
+</div>
+<div class="paragraph">
+<p>--The Apache OpenNLP Team</p>
+</div>
+</div>
+</div>
+</div>
+
+    <p><em>17 November 2026</em></p>
+    <div id="share">
+<div class="shareon" style="margin-top: 30px;">
+  <a class="reddit"></a>
+  <a class="linkedin"></a>
+  <a class="bluesky"></a>
+  <a class="telegram"></a>
+  <a class="mastodon"></a>
+  <a class="copy-url"></a>
+  <a class="email"></a>
+  <a class="print"></a>
+</div></div>
+</div>
+
+    <footer class='footer'>
+        <div class="container">
+            <p class="text-muted">Copyright &copy; 2026  The Apache Software Foundation, Licensed under the
+            <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>  <br>
+            Apache OpenNLP, OpenNLP, Apache, the Apache logo, and the Apache OpenNLP project logo are
+            trademarks of The Apache Software Foundation. -
+            <a href="https://privacy.apache.org/policies/privacy-policy-public.html">Privacy Policy</a> -
+            <a href="/security.html">Security</a></p>
+        </div>
+    </footer>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/prettify.js" defer></script>
+    <script src="/js/shareon-2.6.0.iife.js" defer init></script>
+    <!-- Include most recent Apache Con events -->
+    <script src="https://www.apachecon.com/event-images/snippet.js" defer></script>
+
+    <script type="text/javascript">
+      var link = $('a[href="' + this.location.pathname + '"]');
+      if (link != undefined)
+    	  link.parents('li,ul').addClass('active');
+	
+	</script>
+
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        /* We explicitly disable cookie tracking to avoid privacy issues */
+        _paq.push(['disableCookies']);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//analytics.apache.org/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '33']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+</body>
+</html>

@@ -1,0 +1,7 @@
+opennlp.spellcheck
+opennlp.spellcheck.cmdline
+opennlp.spellcheck.dictionary
+opennlp.spellcheck.distance
+opennlp.spellcheck.normalizer
+opennlp.spellcheck.stream
+opennlp.spellcheck.symspell
