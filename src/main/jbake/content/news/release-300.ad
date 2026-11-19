@@ -40,6 +40,17 @@ The OpenNLP library is distributed by Maven Central as well. See the link:/maven
 Apache OpenNLP 3.0.0 is the *first release of the 3.x line*. It requires Java 21 and splits the toolkit into separate Maven modules;
 `opennlp-tools` remains available as an aggregate of the core modules. The migration notes below describe what changes for users of 2.x.
 
+=== Security Fixes
+
+One security issue is addressed in this release.
+
+==== Denial of service via inefficient regular expression in the coordinate name finder (CVE-2026-120404)
+
+* The built-in regular expression name finder for latitude and longitude coordinates used a pattern that is vulnerable to excessive backtracking (CWE-1333).
+An attacker who can supply text that an application analyzes with this name finder can cause high CPU consumption, leading to denial of service.
+Affected are Apache OpenNLP 2.0.0 before 2.5.13 (`opennlp-tools`) and 3.0.0-M1 through 3.0.0-M6 (`opennlp-runtime`). Users are recommended to upgrade.
+Severity: moderate. Credit: Alex Palinkash (link:https://github.com/alex-sc[alex-sc,role=external,window=_blank]).
+
 === Highlights
 
 Compared with 2.x, OpenNLP 3.0.0 brings:

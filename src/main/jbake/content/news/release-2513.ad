@@ -39,6 +39,17 @@ The OpenNLP library is distributed by Maven Central as well. See the link:/maven
 
 This is a *maintenance release* on the 2.x line. It requires Java 17 and backports bug fixes and thread-safety improvements from the 3.x line.
 
+=== Security Fixes
+
+One security issue is addressed in this release.
+
+==== Denial of service via inefficient regular expression in the coordinate name finder (CVE-2026-120404)
+
+* The built-in regular expression name finder for latitude and longitude coordinates used a pattern that is vulnerable to excessive backtracking (CWE-1333).
+An attacker who can supply text that an application analyzes with this name finder can cause high CPU consumption, leading to denial of service.
+Affected are Apache OpenNLP 2.0.0 before 2.5.13 (`opennlp-tools`). Users are recommended to upgrade.
+Severity: moderate. Credit: Alex Palinkash (link:https://github.com/alex-sc[alex-sc,role=external,window=_blank]).
+
 === Highlights
 
 * *Thread safety*: `TokenizerME` no longer changes the shared `WhitespaceTokenizer.INSTANCE`, and `MorfologikTagDictionary`, `AbstractModel` and `AbstractClassPathModelFinder.findModels` can be shared between threads.
